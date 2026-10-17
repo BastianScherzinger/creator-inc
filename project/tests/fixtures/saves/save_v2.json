@@ -1,0 +1,52 @@
+{
+	"_hinweis": "EINGEFROREN. Nachbildung eines Spielstands, wie ihn die App in Schema-Version 2 geschrieben hat (Stand 2026-09-11, vor ADR-021): Welt 1, Upload freigeschaltet, Weltwechsel ueber die alte Stufen-Schwelle erreicht, eine Station ueber der heutigen Obergrenze. Darf nie wieder angefasst werden (ADR-006).",
+	"schema_version": 2,
+	"kapital": 98765.25,
+	"stationen": {
+		"station_intake": {
+			"stufe": 62,
+			"freigeschaltet": true
+		},
+		"station_buffer": {
+			"stufe": 20,
+			"freigeschaltet": true
+		},
+		"station_processing": {
+			"stufe": 18,
+			"freigeschaltet": true
+		},
+		"station_transport": {
+			"stufe": 6,
+			"freigeschaltet": true
+		},
+		"station_special": {
+			"stufe": 0,
+			"freigeschaltet": false
+		}
+	},
+	"unlocks": [
+		"unlock_transport",
+		"unlock_world_2"
+	],
+	"letzter_zeitstempel": 1789100000,
+	"gesamt_verdient": 512000.5,
+	"spielzeit_sekunden": 4020.0,
+	"auftraege": {
+		"wartend": 1,
+		"seit_letztem": 120.0
+	},
+	"einstellungen": {
+		"ton": false
+	},
+	"tutorial": {
+		"schritt": 5,
+		"beendet": true
+	},
+	"schub": {
+		"faktor": 2.0,
+		"rest": 90.0
+	},
+	"welt_index": 0,
+	"durchlaeufe": 0,
+	"bestand": 0.0
+}

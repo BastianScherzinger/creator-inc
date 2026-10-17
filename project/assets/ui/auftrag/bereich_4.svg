@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 128">
+<path d="M24 70 A40 40 0 0 1 104 70 Z" fill="#FFF7EA"/>
+<clipPath id="k81"><path d="M24 70 A40 40 0 0 1 104 70 Z"/></clipPath>
+<g clip-path="url(#k81)"><g transform="translate(4 4)"><path d="M24 70 A40 40 0 0 1 104 70 Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<path d="M24 70 A40 40 0 0 1 104 70 Z" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M64 8 V16 M22 28 L28 34 M106 28 L100 34" fill="none" stroke="#1B1726" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="8" y="70" width="112" height="44" rx="6" fill="#FF4FA3"/>
+<clipPath id="k82"><rect x="8" y="70" width="112" height="44" rx="6"/></clipPath>
+<g clip-path="url(#k82)"><g transform="translate(4 4)"><rect x="8" y="70" width="112" height="44" rx="6" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="8" y="70" width="112" height="44" rx="6" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M26 88 H44 M58 88 H76 M90 88 H102" fill="none" stroke="#FFF7EA" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

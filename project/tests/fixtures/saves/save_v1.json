@@ -1,0 +1,37 @@
+{
+	"_hinweis": "EINGEFROREN. Diese Datei wurde von der App in Schema-Version 1 geschrieben (2026-09-10) und darf nie wieder angefasst werden -- weder formatiert noch ergaenzt. Ihr einziger Zweck ist der Nachweis, dass ein Stand aus jener Zeit auch in Monaten noch laedt (ADR-006). Wer sie an ein neues Schema anpasst, hat den Test abgeschafft, ohne es zu merken.",
+	"schema_version": 1,
+	"kapital": 12480.5,
+	"stationen": {
+		"station_intake": {
+			"stufe": 14,
+			"freigeschaltet": true
+		},
+		"station_buffer": {
+			"stufe": 11,
+			"freigeschaltet": true
+		},
+		"station_processing": {
+			"stufe": 9,
+			"freigeschaltet": true
+		},
+		"station_transport": {
+			"stufe": 3,
+			"freigeschaltet": true
+		},
+		"station_special": {
+			"stufe": 0,
+			"freigeschaltet": false
+		}
+	},
+	"unlocks": [
+		"unlock_transport"
+	],
+	"letzter_zeitstempel": 1789000000,
+	"gesamt_verdient": 48210.75,
+	"spielzeit_sekunden": 3612.25,
+	"auftraege": {
+		"rest": 41.5,
+		"bereit": false
+	}
+}

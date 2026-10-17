@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 128">
+<rect x="20" y="52" width="14" height="62" rx="5" fill="#D9A86C"/>
+<clipPath id="k40"><rect x="20" y="52" width="14" height="62" rx="5"/></clipPath>
+<g clip-path="url(#k40)"><g transform="translate(4 4)"><rect x="20" y="52" width="14" height="62" rx="5" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="20" y="52" width="14" height="62" rx="5" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="94" y="52" width="14" height="62" rx="5" fill="#D9A86C"/>
+<clipPath id="k41"><rect x="94" y="52" width="14" height="62" rx="5"/></clipPath>
+<g clip-path="url(#k41)"><g transform="translate(4 4)"><rect x="94" y="52" width="14" height="62" rx="5" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="94" y="52" width="14" height="62" rx="5" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="10" y="34" width="108" height="24" rx="8" fill="#D9A86C"/>
+<clipPath id="k42"><rect x="10" y="34" width="108" height="24" rx="8"/></clipPath>
+<g clip-path="url(#k42)"><g transform="translate(4 4)"><rect x="10" y="34" width="108" height="24" rx="8" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="10" y="34" width="108" height="24" rx="8" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="42" y="8" width="44" height="30" rx="5" fill="#FFF7EA"/>
+<clipPath id="k43"><rect x="42" y="8" width="44" height="30" rx="5"/></clipPath>
+<g clip-path="url(#k43)"><g transform="translate(4 4)"><rect x="42" y="8" width="44" height="30" rx="5" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="42" y="8" width="44" height="30" rx="5" fill="none" stroke="#1B1726" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,68 @@
+{
+	"_kommentar": "Platzierungen der belohnten Werbung. Keine Zahl im Code. Der Stub liest dieselbe Datei wie spaeter das echte SDK -- damit sind Sperrzeiten und Limits schon vor dem SDK-Einbau erprobt.",
+
+	"_grundsatz": "Belohnte Werbung ist ANGEBOT, nie Bedingung. Kein Fortschritt im Spiel haengt daran, dass jemand Werbung sieht -- wer nie eine ansieht, kommt vollstaendig durch. Das ist keine Vorsicht gegenueber Google, sondern die Bedingung dafuer, dass das Angebot als Geschenk gelesen wird und nicht als Wegezoll. Jeder Knopf nennt vorher den Gegenwert (K3 C1).",
+
+	"anbieter": "stub",
+	"_anbieter_hinweis": "stub = keine Werbung (Standard, freier Download seit 17.10.2026: die Angebote sind reine Boni ohne Werbe-Anschein, Dauer 1 s). admob = AdServiceAdmob, nur mit Plugin, Datenschutz Fassung B, Data Safety neu und Florins AdMob-Konto. Siehe docs/release/ADMOB.md.",
+	"admob": {
+		"echte_ids_verwenden": false,
+		"test_app_id": "ca-app-pub-3940256099942544~3347511713",
+		"test_belohnt": "ca-app-pub-3940256099942544/5224354917",
+		"echt": {"app_id": "", "belohnt": ""}
+	},
+
+	"stub_dauer_sekunden": 1.0,
+	"stub_fehlerquote": 0.0,
+
+	"_global": "Gilt fuer ALLE Platzierungen zusammen. mindestabstand_sekunden: zwischen zwei Werbungen mindestens so lange Ruhe (nie zwei hintereinander). hoechstzahl_pro_tag: Obergrenze je Kalendertag, egal wo. erst_ab: Startschutz -- vorher ist nirgends ein Angebot sichtbar: erst nach spielzeit_s Sekunden Spielzeit UND wenn der genannte Raum gekauft ist.",
+	"mindestabstand_sekunden": 180.0,
+	"hoechstzahl_pro_tag": 10,
+	"erst_ab": {"spielzeit_s": 300.0, "bereich": "bereich_1"},
+
+	"platzierungen": {
+		"schub": {
+			"_zweck": "Dauer-Boost: Faktor und Dauer stehen in data/balance/<welt>.json -> schub (x1,5 fuer 30 Min, stapelbar bis 2 h; x2 riss den Pacing-Korridor um ~55 %). Das Angebot steht dauerhaft in der Mitte der Menueleiste. geschenk_sekunden: der erste Boost ist ein Geschenk ohne Werbung und kuerzer als der bezahlte.",
+			"sperrzeit_sekunden": 0.0,
+			"hoechstzahl_pro_sitzung": 8,
+			"geschenk_sekunden": 600.0
+		},
+		"offline_verdoppeln": {
+			"_zweck": "Vervielfacht den bereits gutgeschriebenen Offline-Ertrag (faktor 2 = Ertrag x2, K6: x3 wirkt wie Druck). Erscheint nur im Rueckkehr-Bericht und nur, wenn ueberhaupt etwas zusammengekommen ist.",
+			"faktor": 2.0,
+			"sperrzeit_sekunden": 0.0,
+			"hoechstzahl_pro_sitzung": 1
+		},
+		"raum_sofort": {
+			"_zweck": "Raum-Panel eines noch nicht gekauften Raums: Ab ab_anteil gespart wird der Rest geschenkt, der Raum steht sofort. Pro Raum einmal -- danach ist er gekauft.",
+			"ab_anteil": 0.7,
+			"sperrzeit_sekunden": 0.0,
+			"hoechstzahl_pro_sitzung": 6
+		},
+		"ziel_doppelt": {
+			"_zweck": "Nach dem Einloesen eines Ziels: dieselbe Belohnung noch einmal. Kleiner, aber haeufiger Anlass.",
+			"faktor": 2.0,
+			"angebot_sekunden": 14.0,
+			"sperrzeit_sekunden": 600.0,
+			"hoechstzahl_pro_sitzung": 6
+		},
+		"kiste": {
+			"_zweck": "Lieferkiste: Ohne Werbung bringt sie sekunden_ohne Sekunden Einkommen (balance momente.kiste_sekunden), mit Werbung sekunden_mit. Das Angebot erscheint nach dem Oeffnen; ohne Tipp darauf bleibt die normale Belohnung.",
+			"sekunden_mit": 900.0,
+			"angebot_sekunden": 12.0,
+			"sperrzeit_sekunden": 0.0,
+			"hoechstzahl_pro_sitzung": 6
+		},
+		"geschenk_doppelt": {
+			"_zweck": "Tagesgeschenk-Karte: der Betrag noch einmal.",
+			"faktor": 2.0,
+			"sperrzeit_sekunden": 0.0,
+			"hoechstzahl_pro_sitzung": 1
+		},
+		"crew_ziehen": {
+			"_zweck": "Crew-Karte: eine Karte gratis. Hoechstens einmal am Tag. (Einbau in stationsmenue.gd steht noch aus.)",
+			"sperrzeit_sekunden": 0.0,
+			"hoechstzahl_pro_tag": 1
+		}
+	}
+}

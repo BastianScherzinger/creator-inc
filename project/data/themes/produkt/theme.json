@@ -1,0 +1,1023 @@
+{
+	"_kommentar": "Anzeigetexte fuer Welt 5 -- Das Rechenzentrum (mit Selin). Die einzige Stelle im Projekt, an der thematische Begriffe stehen duerfen (ADR-010). Systeme kennen ausschliesslich die neutralen IDs. Tonregel: keine echten Coin-Namen, keine Anlageberatung.",
+	"id": "produkt",
+	"welt_name": "Das Rechenzentrum",
+	"welt_untertitel": "Das Rechenzentrum",
+	"welt_ziel": "Die Halle läuft von allein",
+	"marken_namen": [
+		"Die Kühlung läuft",
+		"Die ersten Dauerkunden",
+		"Das Solardach liefert"
+	],
+	"ziel_warum": {
+		"station_stufe": "damit kein Teil der Kette die anderen ausbremst",
+		"ausstattung_stufe": "so schafft die Station mehr in derselben Zeit",
+		"bereich": "neuer Raum, neue Technik, mehr Rechenleistung zum Vermieten",
+		"verdient": "Geld für den nächsten Ausbau"
+	},
+	"waehrung": "€",
+	"stationen": {
+		"station_intake": {
+			"name": "Strom",
+			"beschreibung": "Der Verteilerkasten. Ohne Strom läuft kein Server.",
+			"engpass_hinweis": "Zu wenig Strom. Die Server stehen still.",
+			"einheit": "kW",
+			"kurz": "Der Verteilerkasten. Ohne ihn summt hier nichts."
+		},
+		"station_buffer": {
+			"name": "Server",
+			"beschreibung": "Gitterregale voller Rechenkarten. Es summt wie ein Raumschiff.",
+			"engpass_hinweis": "Mehr Strom als Server. Die Leistung verpufft.",
+			"einheit": "Rechenleistung",
+			"kurz": "Das Regal mit den Servern. Hier wird gerechnet."
+		},
+		"station_processing": {
+			"name": "Vermietung",
+			"beschreibung": "Das Kontrollpult. Hier wird Rechenleistung an Firmen vermietet.",
+			"engpass_hinweis": "Die Server rechnen, aber niemand kann die Leistung mieten.",
+			"einheit": "Rechenstunden/Min",
+			"kurz": "Das Pult. Hier sieht man, was vermietet wird."
+		},
+		"station_transport": {
+			"name": "Kühlung",
+			"beschreibung": "Lüfter, Rohre, kaltes Wasser. Wärme kostet Rechenleistung.",
+			"engpass_hinweis": "Es wird zu warm. Die Halle drosselt sich selbst.",
+			"einheit": "Effizienz",
+			"kurz": "Der Lüftungskanal. Kalt hält länger."
+		},
+		"station_special": {
+			"name": "Dauerkunden",
+			"beschreibung": "Das Pult mit den Kundenrechnern. Wer fest mietet, zahlt jeden Monat.",
+			"engpass_hinweis": "Gerade mietet kein Dauerkunde.",
+			"einheit": "Erlös je Dauerkunde",
+			"kurz": "Ein Bildschirm, eine Kurve. Hier wächst die Zahl fester Kunden."
+		}
+	},
+	"upgrades": {
+		"station_intake": [
+			"Ein Mehrfachstecker, der nicht schmilzt",
+			"Starkstrom bis ans Regal",
+			"Ein eigener Zähler",
+			"Eine Batterie für die Nacht",
+			"Selin misst jede Leitung nach",
+			"Der Strom reicht für zwei Hallen",
+			"Keine Sicherung fliegt mehr"
+		],
+		"station_buffer": [
+			"Die Karten sitzen richtig",
+			"Ein zweiter Server",
+			"Kabelbinder statt Kabelsalat",
+			"Acht Karten pro Server",
+			"Ein Regal nur für Server",
+			"Selin tauscht die alten Karten",
+			"Jeder Server läuft rund um die Uhr",
+			"Ein voller Serverschrank"
+		],
+		"station_processing": [
+			"Zwei Monitore am Pult",
+			"Eine Liste, welcher Server was tut",
+			"Ein Schlüsselstick statt Notizzettel",
+			"Warnungen, bevor etwas ausfällt",
+			"Ein bequemer Sessel für die Nacht",
+			"Der Tresor bekommt ein Tastenfeld",
+			"Das Pult zeigt alles auf einen Blick"
+		],
+		"station_transport": [
+			"Ein Ventilator mehr",
+			"Luft rein, Luft raus",
+			"Ein Klimagerät",
+			"Ein Kühlkreislauf",
+			"Die Lüfterwand",
+			"Tauchkühlung"
+		],
+		"station_special": [
+			"Der erste Dauerkunde",
+			"Ein zweiter Dauerkunde",
+			"Ein Schloss für den Schrank",
+			"Die Kurve an der Wand",
+			"Ein ganzes Regal voller Kundenrechner",
+			"Die Schleuse ist zu"
+		]
+	},
+	"meilenstein_name": "Stabil",
+	"meilenstein_text": "Die Halle läuft ruhiger. Selin hat es gemessen und nichts gesagt. Das ist Lob.",
+	"grossauftrag": {
+		"titel": "Ein guter Auftrag",
+		"texte": [
+			"Die Server laufen eine Nacht ohne Ausfall. Selin trägt es in ihr Heft ein.",
+			"Ein kalter Morgen. Die Kühlung hat kaum etwas zu tun.",
+			"Das Solardach liefert mehr als geplant. Roman rechnet zweimal nach."
+		]
+	},
+	"offline_bericht": {
+		"titel": "Willkommen zurück",
+		"text": "Während du weg warst, wurden %d Rechenstunden vermietet.",
+		"von": "selin",
+		"saetze": [
+			"Du warst weg. Die Halle nicht. So arbeitet eine Maschine für dich.",
+			"Die Server liefen. Zwei sind ausgefallen, leise. Selin hat sie getauscht.",
+			"Mo war hier und hat den großen Lüfter gestreichelt. Der hat nicht reagiert.",
+			"Roman hat nachgezählt. Es fehlt keine Rechenstunde. Er klingt enttäuscht.",
+			"Younes war da und hat gefilmt. Sein Kommentar: „Noch einmal.“"
+		]
+	},
+	"weltwechsel": {
+		"titel": "Die Zentrale",
+		"text": "Ganz oben über der Stadt. Glaswände, ein leerer Tresor und eine Liste von Selin.",
+		"knopf": "Los",
+		"figur": "mit Selin und allen"
+	},
+	"silhouetten": {
+		"_kommentar": "Welche Silhouette in dieser Welt welche Rolle spielt. Im Rechenzentrum sind es Technik und Besuch.",
+		"npc_standard": "Techniker auf Rundgang",
+		"npc_flach": "Elektriker, der nur kurz misst",
+		"npc_gebeugt": "Tauscht eine Karte im Server",
+		"npc_klein": "Mo, zu Besuch",
+		"npc_breit": "Selin"
+	},
+	"tutorial": {
+		"_kommentar": "Die Saetze der Einfuehrung. Der ABLAUF steht in data/tutorial/tutorial.json und kennt nur diese IDs -- er ueberlebt einen Themenwechsel unveraendert (D3/ADR-010). Ton: Der Spieler wird nicht belehrt, sondern eingeweiht. Kein Satz erklaert, was ein Knopf tut; jeder Satz sagt, warum es sich lohnt.",
+		"zoom": {
+			"von": "selin",
+			"text": "Mit zwei Fingern ziehst du die Karte groß und klein.",
+			"text_b": "Zwei Finger zoomen. Doppeltipp auf freien Boden: Raum oder Überblick."
+		},
+		"ueberspringen": "Kenne ich schon",
+		"waehlen": {
+			"titel": "Strom",
+			"text": "Ohne Strom läuft kein Server. Gerade bremst er am meisten. Tipp den Kasten an."
+		},
+		"ausbauen": {
+			"titel": "Schneller werden",
+			"text": "Mehr Stufen, mehr Strom für die Server. Bau aus, bis etwas anderes bremst."
+		},
+		"ausstattung": {
+			"titel": "Etwas, das man sieht",
+			"text": "Ausstattung steht wirklich in der Halle und macht die Station schneller."
+		},
+		"engpass": {
+			"titel": "Wo es klemmt",
+			"text": "Rot heißt: Hier stockt es. Jeder Ausbau wirkt erst nach einer halben Minute."
+		},
+		"ziele": {
+			"titel": "Drei Ziele",
+			"text": "Drei Aufgaben, die als Nächstes sowieso dran sind. Abhaken bringt Geld."
+		},
+		"flur": {
+			"titel": "Die Kabeltrasse",
+			"text": "Gitterrost und Rohre. Dort kommt die Kühlung hin."
+		},
+		"neu_hier": {
+			"titel": "Das Rechenzentrum",
+			"text": "Strom treibt Server an. Firmen mieten deren Rechenleistung. Davon lebst du."
+		},
+		"besonderheit": {
+			"titel": "Auslastung",
+			"text": "Offene Aufträge schrumpfen mit der Zeit. Halte die Server ausgelastet."
+		}
+	},
+	"belohnung": {
+		"_kommentar": "Texte der Belohnungsschleife. Der Ton ist wichtig: Es ist ein ANGEBOT, kein Wegezoll. Kein Satz darf klingen, als bekaeme man ohne Werbung zu wenig.",
+		"schub_knopf": "Turbo-Modus",
+		"schub_laeuft": "Turbo-Modus %s",
+		"schub_wartet": "Turbo-Modus in %s",
+		"schub_titel": "Turbo-Modus",
+		"schub_text": "Ein paar Minuten lang laufen die Server auf Anschlag.",
+		"offline_verdoppeln": "Verdoppeln",
+		"offline_verdoppelt_titel": "Doppelt",
+		"offline_verdoppelt_text": "Die Rechenstunden wurden verdoppelt.",
+		"laeuft_gerade": "Läuft …",
+		"nichts_da_titel": "Gerade nichts da",
+		"nichts_da_text": "Versuch es gleich nochmal."
+	},
+	"schlange_format": "%d Aufträge offen",
+	"limit": {
+		"_kommentar": "Texte der harten Obergrenze. Nur Welt 2 (auftrag) benutzt diesen Abschnitt wirklich; die anderen tragen ihn der Struktur wegen. 'format' bekommt Titel und Auslastung in Prozent, 'knopf' den Preis.",
+		"titel": "Anschluss",
+		"format": "%s  %d %%",
+		"knopf": "Umbauen  (%s)",
+		"wand_titel": "Es klemmt",
+		"wand_text": "Die Leitung ist am Limit. Mehr Server helfen gerade nicht.",
+		"erledigt_titel": "Weniger",
+		"erledigt_text": "Ein neuer Anschluss. Selin hat ihn selbst verlegt."
+	},
+	"abspann": {
+		"_kommentar": "Der Abspann erscheint genau einmal, am Ende von Welt 6. Hier nur der Struktur wegen, woertlich wie in kapital/theme.json -- der Pflichthinweis bleibt ueberall stehen.",
+		"titel": "Der Zähler läuft weiter",
+		"text": "Du musst nicht mehr hinsehen.\n\nAngefangen hat es mit drei Aufrufen.\nZwei warst du.\nDer dritte hat nichts gesagt. Und ist geblieben.",
+		"knopf": "Von vorn",
+		"hinweis": "Dies ist ein Spiel. Es bildet weder echte Märkte noch echte Erträge ab und ist keine Anlageberatung."
+	},
+	"personen": {
+		"_kommentar": "Nur Welt 4 benutzt diesen Abschnitt wirklich. Die anderen tragen ihn der Struktur wegen -- alle Themen haben dieselben Schluessel, damit ein fehlender Eintrag auffaellt statt stillschweigend zu fehlen.",
+		"ueberlast_text": "Jemand steht länger am Pult als alle anderen. Es wird davon nicht mehr vermietet."
+	},
+	"eroeffnung": {
+		"_kommentar": "Der allererste Bildschirm eines neuen Spielstands. Nur Welt 1 fuellt ihn -- in jeder anderen Welt bleibt er leer, weil dort niemand neu anfaengt. Ein leerer Titel heisst: nicht zeigen.",
+		"titel": "",
+		"text": "",
+		"knopf": ""
+	},
+	"ausstattung": {
+		"station_intake": {
+			"ausstattung_1": {
+				"name": "Anschluss",
+				"stufen": [
+					"Mehrfachstecker",
+					"Starkstromdose",
+					"Verteilerschrank",
+					"Trafo-Kasten"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Speicher",
+				"stufen": [
+					"Nichts",
+					"Autobatterie",
+					"Akkuschrank",
+					"Batterie-Container"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Messung",
+				"stufen": [
+					"Zähler",
+					"Digitalzähler",
+					"Messpult",
+					"Leitstand-Monitor"
+				]
+			}
+		},
+		"station_buffer": {
+			"ausstattung_1": {
+				"name": "Server 1",
+				"stufen": [
+					"Offene Platine",
+					"Server mit 4 Karten",
+					"Server mit 8 Karten",
+					"Einschub im Serverschrank"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Server 2",
+				"stufen": [
+					"Leer",
+					"Server",
+					"Doppelserver",
+					"Voller Serverschrank"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Kabel",
+				"stufen": [
+					"Kabelsalat",
+					"Kabelbinder",
+					"Kabelkanal",
+					"Leuchtender Kabelbaum"
+				]
+			}
+		},
+		"station_processing": {
+			"ausstattung_1": {
+				"name": "Monitor",
+				"stufen": [
+					"Laptop",
+					"Zwei Monitore",
+					"Monitorbogen",
+					"Hologramm-Säule"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Zugangsschutz",
+				"stufen": [
+					"Notizzettel",
+					"Schlüsselstick",
+					"Tresorbox",
+					"Tresor mit Tastenfeld"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Sessel",
+				"stufen": [
+					"Klappstuhl",
+					"Bürostuhl",
+					"Gaming-Sessel",
+					"Kommandosessel"
+				]
+			}
+		},
+		"station_transport": {
+			"ausstattung_1": {
+				"name": "Lüfter",
+				"stufen": [
+					"Tischventilator",
+					"Wandlüfter",
+					"Lüfterwand",
+					"Industrie-Lüfter"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Klima",
+				"stufen": [
+					"Offenes Fenster",
+					"Klimagerät",
+					"Kühlaggregat",
+					"Kühlturm"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Wasser",
+				"stufen": [
+					"Eimer",
+					"Schlauch",
+					"Kühlkreislauf",
+					"Tauchkühlbecken"
+				]
+			}
+		},
+		"station_special": {
+			"ausstattung_1": {
+				"name": "Kundenrechner",
+				"stufen": [
+					"Ein Mini-PC",
+					"Zwei Mini-PCs",
+					"Regal mit Kundenrechnern",
+					"Schrank mit Kundenrechnern"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Absicherung",
+				"stufen": [
+					"Vorhängeschloss",
+					"Schlüsselkasten",
+					"Fingerabdruckscanner",
+					"Sicherheitsschleuse"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Auslastung",
+				"stufen": [
+					"Papierausdruck",
+					"Tablet",
+					"Wandbildschirm",
+					"Laufschrift-Leiste"
+				]
+			}
+		}
+	},
+	"bereiche": {
+		"bereich_1": {
+			"name": "Die Kabeltrasse",
+			"text": "Gitterrost, Rohre, kalte Luft. Hier kommt die Kühlung hin.",
+			"danach": "Danach hier: die Kühlung. Es war schon zu warm."
+		},
+		"bereich_2": {
+			"name": "Die Trafostation",
+			"text": "Eigener Trafo. Die ganze Halle läuft ruhiger.",
+			"danach": "Danach hier: alle Stationen schneller. Und die Sicherung bleibt drin."
+		},
+		"bereich_3": {
+			"name": "Der Kontrollraum",
+			"text": "Teppich, Glas, ein Pult. Hier laufen die Dauerkunden.",
+			"danach": "Danach hier: Dauerkunden. Sie mieten fest und bringen stetig Geld."
+		},
+		"bereich_4": {
+			"name": "Das Solardach",
+			"text": "Die Sonne schickt keine Rechnung. Mehr Strom.",
+			"danach": "Danach hier: mehr Strom. Die Sonne schickt keine Rechnung."
+		},
+		"bereich_5": {
+			"name": "Die zweite Halle",
+			"text": "Noch eine Reihe Server. Selin hat sie schon verkabelt.",
+			"wartet": "Selin verlegt dort noch Kabel.",
+			"danach": "Danach hier: alle Stationen schneller. Noch eine Reihe Server."
+		},
+		"bereich_6": {
+			"name": "Selins Labor",
+			"text": "Messgeräte, Kabel, ein Hocker. Hier testet Selin neue Server, bevor sie laufen.",
+			"danach": "Alle Stationen laufen schneller. Fehler fallen auf, bevor sie Geld kosten."
+		}
+	},
+	"nebenraeume": {
+		"selins_labor": {
+			"name": "Selins Labor",
+			"text": "Hier tüftelt Selin an ihren Messreihen. Zum Ausbauen gibt es hier nichts."
+		}
+	},
+	"ziel_formate": {
+		"station_stufe": "%s auf Stufe %d",
+		"ausstattung_stufe": "%s: %s auf Stufe %d",
+		"ausstattung_gesamt": "%d Ausstattungsstufen kaufen",
+		"bereich": "%s gehört dir",
+		"verdient": "%s € verdienen",
+		"momente": "%d Momente antippen",
+		"sterne": "%d Sterne sammeln",
+		"stufen_gesamt": "%d Stufen insgesamt",
+		"abschluss": "Die Halle läuft von allein – niemand muss mehr danebenstehen",
+		"freigeschaltet": "Den Umbau fertigstellen",
+		"alle": "Eine Sammlung komplett",
+		"ausstattung_station": "%d Ausstattungsstufen an einer Station"
+	},
+	"absender": {
+		"plattform": "Dein Kanal",
+		"selin": "Selin",
+		"roman": "Roman",
+		"mo": "Mo",
+		"younes": "Younes",
+		"du": "Du"
+	},
+	"nachrichten": {
+		"nachricht_01": {
+			"von": "selin",
+			"text": "Das ist die Halle. Hier entsteht ein Rechenzentrum: Server rechnen Tag und Nacht.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "selin",
+					"text": "Das ist die Halle. Hier entsteht ein Rechenzentrum: Server rechnen Tag und Nacht.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "selin",
+					"text": "Firmen mieten unsere Rechenleistung. Tipp auf Strom und bau ihn aus.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "selin",
+					"text": "Ziel: Die Halle läuft von allein. Problem: Die Sicherung hält wenig aus.",
+					"stimmung": "geschockt"
+				}
+			]
+		},
+		"nachricht_02": {
+			"von": "mo",
+			"text": "Die Halle summt wie ein Raumschiff. Kauf was für Server."
+		},
+		"nachricht_03": {
+			"von": "selin",
+			"text": "Wir vermieten Rechenleistung. Bau Server und Vermietung aus."
+		},
+		"nachricht_04": {
+			"von": "roman",
+			"text": "Stromrechnung da: Strom, Strom und Mo. Kauf die Kabeltrasse."
+		},
+		"nachricht_05": {
+			"von": "selin",
+			"text": "Kabeltrasse offen, die Kühlung läuft. Weiter: die Trafostation.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "selin",
+					"text": "Kabeltrasse offen, die Kühlung läuft. Weiter: die Trafostation.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "mo",
+					"text": "Ich hab dort eine Matratze hingelegt. Ich bewache die Kabel.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "selin",
+					"text": "Bis Freitag. Dann gehört der Platz den Servern.",
+					"stimmung": "geschockt"
+				}
+			]
+		},
+		"nachricht_16": {
+			"von": "plattform",
+			"text": "Doku über die Halle: 10.000 Aufrufe. Weiter: Trafostation."
+		},
+		"nachricht_06": {
+			"von": "mo",
+			"text": "Eigener Trafo! Wasserkocher an, Sicherung bleibt drin.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Eigener Trafo! Wasserkocher an, Sicherung bleibt drin.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "selin",
+					"text": "Viermal getestet. Ich habe mitgezählt.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "selin",
+					"text": "Ein Kunde fragt schon nach mehr. Bau Server und Kühlung aus.",
+					"stimmung": "geschockt"
+				}
+			]
+		},
+		"nachricht_17": {
+			"von": "roman",
+			"text": "Wärme kostet Rechenleistung. Bau die Kühlung aus."
+		},
+		"nachricht_07": {
+			"von": "selin",
+			"text": "Zwei Server sind ausgefallen, 23:40 Uhr. Ein Kunde wartet.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "selin",
+					"text": "Zwei Server sind ausgefallen, 23:40 Uhr. Ein Kunde wartet.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "selin",
+					"text": "Mo hält die Taschenlampe, Roman die Stoppuhr.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "selin",
+					"text": "Soll jemand die Nacht übernehmen? Danach: der Kontrollraum.",
+					"stimmung": "neutral"
+				}
+			],
+			"antworten": [
+				{
+					"text": "Ich komme.",
+					"reaktion": "Gut. Bring eine Taschenlampe. Mo hat die Batterien gegessen."
+				},
+				{
+					"text": "Geh schlafen.",
+					"reaktion": "Um 4:10 Uhr liefen sie wieder. Ich habe nicht geschlafen. Mo schon."
+				}
+			]
+		},
+		"nachricht_18": {
+			"von": "mo",
+			"text": "Der Lüfter heißt jetzt Wolfgang. Kühlung weiter ausbauen."
+		},
+		"nachricht_09": {
+			"von": "selin",
+			"text": "Der Kontrollraum ist frei. Jetzt sehen wir, was die Halle leistet.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "selin",
+					"text": "Der Kontrollraum ist frei. Jetzt sehen wir, was die Halle leistet.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "selin",
+					"text": "Bau die Dauerkunden aus: Wer fest mietet, zahlt jeden Monat.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "mo",
+					"text": "Ein Bildschirm, auf dem alles grün ist. Mein Stuhl kommt hierher.",
+					"stimmung": "jubelnd"
+				}
+			]
+		},
+		"nachricht_08": {
+			"von": "mo",
+			"text": "Roman starrt auf eine rote Zelle. Spar fürs Solardach."
+		},
+		"nachricht_19": {
+			"von": "younes",
+			"text": "Doku: 2 Mio. Aufrufe, Firmen fragen. Vermietung ausbauen."
+		},
+		"nachricht_10": {
+			"von": "selin",
+			"text": "Ein Solardach senkt die Stromkosten. Kauf es."
+		},
+		"nachricht_20": {
+			"von": "mo",
+			"text": "Ich hab Brötchen mit. Wolfgang kriegt keins. Selin hat eins genommen!",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Ich hab Brötchen mit. Wolfgang kriegt keins. Selin hat eins genommen!",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "selin",
+					"text": "Ich habe deine Clips von Anfang an gesehen. Auch den ersten.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "selin",
+					"text": "Roman hat mir deine Zahlen gezeigt. Weiter: das Solardach.",
+					"stimmung": "neutral"
+				}
+			]
+		},
+		"nachricht_11": {
+			"von": "selin",
+			"text": "Solardach fertig. Weiter: die zweite Halle."
+		},
+		"nachricht_12": {
+			"von": "roman",
+			"text": "Das Solardach war die beste Entscheidung. Ich sag es einmal."
+		},
+		"nachricht_14": {
+			"von": "selin",
+			"text": "Die zweite Halle ist verkabelt. Du musst nur noch unterschreiben.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "selin",
+					"text": "Die zweite Halle ist verkabelt. Du musst nur noch unterschreiben.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "selin",
+					"text": "Dann stehen dort noch einmal so viele Server. Bau sie danach aus.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "younes",
+					"text": "Ich filme das Unterschreiben. Gleich, oder erst lesen?",
+					"stimmung": "neutral"
+				}
+			],
+			"antworten": [
+				{
+					"text": "Gebt her.",
+					"reaktion": "Deine Hand hat gezittert. Selin sagte: reicht."
+				},
+				{
+					"text": "Erst lesen.",
+					"reaktion": "Selin liest nicht vor. Sie hält dir den Vertrag hin. Ich hab es gefilmt."
+				}
+			]
+		},
+		"nachricht_13": {
+			"von": "mo",
+			"text": "Selin hat mir ein Kissen auf die Matratze gelegt!"
+		},
+		"nachricht_21": {
+			"von": "selin",
+			"text": "Zweite Halle läuft. Baut noch ein Stück aus."
+		},
+		"nachricht_22": {
+			"von": "roman",
+			"text": "Dreimal geprüft: Die Halle trägt sich selbst."
+		},
+		"nachricht_15": {
+			"von": "selin",
+			"text": "Die Halle läuft von allein. Wir haben mehr, als wir brauchen.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "selin",
+					"text": "Die Halle läuft von allein. Wir haben mehr, als wir brauchen.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "selin",
+					"text": "Jetzt wird es gefährlich: Wer viel hat, kann viel verlieren.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "selin",
+					"text": "Ganz oben wartet eine Liste von Beteiligungen. Ich zeige sie dir.",
+					"stimmung": "neutral"
+				}
+			]
+		},
+		"nachricht_23": {
+			"von": "selin",
+			"text": "Ein Wetterdienst will bei uns rechnen. Tipp das ! über mir."
+		},
+		"nachricht_24": {
+			"von": "plattform",
+			"text": "Der Wetterdienst rechnet bei euch, jeden Monat fest."
+		}
+	},
+	"momente": {
+		"texte": [
+			"Ein Auftrag ist erledigt",
+			"Die Kühlung hat Luft",
+			"Selin tauscht eine Karte",
+			"Die Sonne scheint aufs Dach",
+			"Mo hat nichts angefasst"
+		],
+		"gross_titel": "Die Halle läuft auf Anschlag",
+		"kiste": {
+			"titel": "Ersatzteile sind da",
+			"text": "Neue Teile für die Halle. Tipp die Kiste an, der Inhalt bringt Geld."
+		}
+	},
+	"abschluss": {
+		"titel": "Sie summt",
+		"text": "Das Rechenzentrum ist fertig. Es summt. Niemand muss mehr danebenstehen.\n\nSelin schreibt.",
+		"antwort": "Gefährlich?",
+		"zahlen": {
+			"spielzeit": "Spielzeit",
+			"verdient": "Verdient",
+			"raeume": "Räume",
+			"ausstattung": "Ausstattung"
+		}
+	},
+	"menue": {
+		"ausbau": "Ausbau",
+		"ziele": "Ziele",
+		"handy": "Handy",
+		"laden": "Laden",
+		"schub": "Boost"
+	},
+	"stil": {
+		"akzent": "#8B5CF6",
+		"akzent_text": "#FFFFFF",
+		"akzent_tief": "#6A3FD0"
+	},
+	"absender_farben": {
+		"plattform": "#1B1726",
+		"selin": "#8B5CF6",
+		"roman": "#FF7A1A",
+		"mo": "#3D7BFF",
+		"younes": "#FF4FA3",
+		"du": "#8B5CF6"
+	},
+	"absender_figur": {
+		"mo": "figur_cap",
+		"younes": "figur_buckethat",
+		"roman": "figur_brille",
+		"selin": "figur_zopf",
+		"du": "figur_kapuze"
+	},
+	"ziele": {
+		"_kommentar": "Missionsnamen je Ziel-ID (nur Missionen; jeder Eintrag hier erscheint im Missionen-Streifen). Zahlen stehen auch in balance/<welt>.json -- bei Aenderung dort hier nachziehen.",
+		"ziel_07": "Mission: Selin nickt (3 Sterne)",
+		"ziel_17": "Mission: 12 Sterne, Selin schweigt",
+		"ziel_22": "Mission: 100 Ausstattungsstufen",
+		"ziel_36": "Mission: 20 Sterne, Heft voll",
+		"ziel_37": "Mission: 500 Mrd € verdient"
+	},
+	"ketten": {
+		"start": "Die Halle",
+		"bereich_1": "Kühlung",
+		"bereich_2": "Strom",
+		"bereich_3": "Dauerkunden",
+		"bereich_4": "Sonne",
+		"bereich_5": "Halle zwei",
+		"welt": "Die große Liste",
+		"auftrag": "Auftrag: Server für den Wetterdienst"
+	},
+	"crew": {
+		"station_intake": {
+			"name": "Mo",
+			"portrait": "mo",
+			"raenge": [
+				"Kocht heimlich",
+				"Stromwart",
+				"Sicherungsheld"
+			]
+		},
+		"station_buffer": {
+			"name": "Selin",
+			"portrait": "selin",
+			"raenge": [
+				"Misst",
+				"Tauscht",
+				"Baut um"
+			]
+		},
+		"station_processing": {
+			"name": "Younes",
+			"portrait": "younes",
+			"raenge": [
+				"Erster Versuch",
+				"Vierzehnter Versuch",
+				"Sechzehnter Versuch"
+			]
+		},
+		"station_transport": {
+			"name": "Roman",
+			"portrait": "roman",
+			"raenge": [
+				"Thermometer",
+				"Tabelle",
+				"Wärmebilanz"
+			]
+		},
+		"station_special": {
+			"name": "Selin",
+			"portrait": "selin",
+			"raenge": [
+				"Skeptisch",
+				"Neugierig",
+				"Zuckt"
+			]
+		}
+	},
+	"auftraege": {
+		"_kommentar": "K3 B3: Mini-Aufgaben zwischen Raum 3 und 4 (Ziel-IDs ziel_auftrag_1..3, kette 'auftrag'). Ein '!' steht ueber der Figur (absender_figur). Tipp -> Szene: 'satz' (warum es dem Geschaeft hilft) + 'aufgabe_format' mit dem echten Zieltext (was zu tun ist) -> 'knopf_start' springt zum Ziel. Ist das Ziel erfuellt: 'dank' + 'knopf_holen' loest es ein. Saetze <= 90 Zeichen.",
+		"knopf_start": "Mach ich",
+		"knopf_holen": "Abholen",
+		"aufgabe_format": "Deine Aufgabe: %s",
+		"symbol": "!",
+		"ziel_auftrag_1": {
+			"figur": "selin",
+			"satz": "Der Wetterdienst rechnet nachts. Mehr Strom heißt mehr Rechenzeit, die er bezahlt.",
+			"dank": "Der Strom reicht. Ich hab es zweimal gemessen. Das ist Physik, keine Meinung."
+		},
+		"ziel_auftrag_2": {
+			"figur": "roman",
+			"satz": "Ich hab nachgerechnet: Mit mehr Leistung passt der Wetterdienst rein. Und zahlt mehr.",
+			"dank": "Die Zahlen stimmen. Ich bin fast beleidigt, dass ich keinen Fehler finde."
+		},
+		"ziel_auftrag_3": {
+			"figur": "mo",
+			"satz": "Der Wetterdienst testet heute Nacht. Läuft alles, unterschreibt er den Vertrag.",
+			"dank": "Unterschrieben! Und morgen wird es sonnig. Das haben wir ausgerechnet."
+		}
+	},
+	"kapitel": [
+		{
+			"id": "kapitel_1",
+			"titel": "Die Halle",
+			"ab_bereich": "",
+			"aufgabe": "Baue Strom, Server und Vermietung aus. Kaufe die Kabeltrasse für die Kühlung.",
+			"entscheidung": ""
+		},
+		{
+			"id": "kapitel_2",
+			"titel": "Zu wenig Strom",
+			"ab_bereich": "bereich_2",
+			"aufgabe": "Baue Server und Kühlung aus, damit nichts ausfällt. Kaufe den Kontrollraum.",
+			"entscheidung": "nachricht_07"
+		},
+		{
+			"id": "kapitel_3",
+			"titel": "Die Dauerkunden",
+			"ab_bereich": "bereich_3",
+			"aufgabe": "Erledige den Auftrag des Wetterdienstes und kaufe das Solardach.",
+			"entscheidung": ""
+		},
+		{
+			"id": "kapitel_4",
+			"titel": "Die Halle läuft von allein",
+			"ab_bereich": "bereich_4",
+			"aufgabe": "Kaufe die zweite Halle und baue alles aus, bis niemand mehr danebenstehen muss.",
+			"entscheidung": "nachricht_14"
+		}
+	],
+	"auftragsbrett": {
+		"_kommentar": "Absender und Warum-Satz je Ziel-ID (Auftragsbrett, Welle 2b). Bewusst NICHT unter \"ziele\": jeder Schluessel dort zaehlt als Mission.",
+		"ziel_02": {
+			"absender": "selin",
+			"satz": "Ein besserer Server: Dann halten die Karten ihre Last."
+		},
+		"ziel_01": {
+			"absender": "selin",
+			"satz": "Zehn Stufen: Dann trägt die Halle die ersten Mieter."
+		},
+		"ziel_04": {
+			"absender": "selin",
+			"satz": "Die Kabeltrasse: Ohne sie wird die Kühlung nicht geliefert."
+		},
+		"ziel_26": {
+			"absender": "selin",
+			"satz": "Genug Strom, sonst fliegt die Sicherung beim ersten Kunden."
+		},
+		"ziel_10": {
+			"absender": "plattform",
+			"satz": "Drei Momente antippen: kleine Extras für die Stromkasse."
+		},
+		"ziel_03": {
+			"absender": "selin",
+			"satz": "Vermietung auf Stufe 10: Jetzt zahlen die ersten Firmen."
+		},
+		"ziel_06": {
+			"absender": "selin",
+			"satz": "Sechs Ausstattungsstufen: Die Halle sieht nach Betrieb aus."
+		},
+		"ziel_07": {
+			"absender": "mo",
+			"satz": "Sterne machen Stationen schneller. Das merken die Mieter."
+		},
+		"ziel_27": {
+			"absender": "selin",
+			"satz": "Zweiter Server komplett: Doppelt so viele Kunden passen rein."
+		},
+		"ziel_09": {
+			"absender": "selin",
+			"satz": "Die Trafostation: Eigene Leistung, kein Sicherungsflackern."
+		},
+		"ziel_29": {
+			"absender": "roman",
+			"satz": "15 Ausstattungsstufen: Weniger Ausfälle, mehr Vertrauen."
+		},
+		"ziel_30": {
+			"absender": "selin",
+			"satz": "Stärkerer Anschluss: Sonst flackert das Licht beim Kunden."
+		},
+		"ziel_13": {
+			"absender": "plattform",
+			"satz": "500 Mio. € verdienen: Das Geld für den Kontrollraum."
+		},
+		"ziel_05": {
+			"absender": "selin",
+			"satz": "Kühlung auf Stufe 5: Heiße Server rechnen langsamer."
+		},
+		"ziel_11": {
+			"absender": "selin",
+			"satz": "Zweiter Server hochrüsten: Mehr Leistung zu vermieten."
+		},
+		"ziel_08": {
+			"absender": "selin",
+			"satz": "Server auf Stufe 20: Dann hält die Halle Spitzenzeiten aus."
+		},
+		"ziel_14": {
+			"absender": "selin",
+			"satz": "Der Kontrollraum: Wir sehen, wenn ein Server ausfällt."
+		},
+		"ziel_auftrag_1": {
+			"absender": "selin",
+			"satz": "Ein Wetterdienst will bei uns rechnen: fester Kunde."
+		},
+		"ziel_auftrag_2": {
+			"absender": "roman",
+			"satz": "Der Vertrag steht, wenn die Server stabil laufen."
+		},
+		"ziel_auftrag_3": {
+			"absender": "mo",
+			"satz": "Letzte Aufgabe. Dann überweist der Wetterdienst jeden Monat."
+		},
+		"ziel_16": {
+			"absender": "selin",
+			"satz": "30 Ausstattungsstufen: Die Halle läuft zuverlässig."
+		},
+		"ziel_12": {
+			"absender": "selin",
+			"satz": "Strom auf Stufe 25: Kein Ausfall in der Nacht."
+		},
+		"ziel_28": {
+			"absender": "selin",
+			"satz": "Besserer Anschluss: Mehr Kunden, gleiche Sicherung."
+		},
+		"ziel_15": {
+			"absender": "selin",
+			"satz": "Dauerkunden zahlen jeden Monat. Das ist unsere Sicherheit."
+		},
+		"ziel_18": {
+			"absender": "selin",
+			"satz": "Starke Kühlung: Auch im Sommer rechnet die Halle schnell."
+		},
+		"ziel_17": {
+			"absender": "mo",
+			"satz": "Zwölf Sterne: Wolfgang pustet kaum noch."
+		},
+		"ziel_20": {
+			"absender": "selin",
+			"satz": "Das Solardach: Strom von der Sonne, weniger Kosten."
+		},
+		"ziel_24": {
+			"absender": "selin",
+			"satz": "Die zweite Halle: Doppelt so viele Server."
+		},
+		"ziel_35": {
+			"absender": "selin",
+			"satz": "Die Vermietung komplett ausgestattet: Jede Firma findet Platz."
+		},
+		"ziel_19": {
+			"absender": "selin",
+			"satz": "Vermietung ausgebaut: Mehr Firmen zahlen mehr."
+		},
+		"ziel_31": {
+			"absender": "selin",
+			"satz": "Dauerkunden bauen aus: Mehr feste Verträge."
+		},
+		"ziel_32": {
+			"absender": "selin",
+			"satz": "Dauerkunden auf Stufe 15: Ein zweiter Wetterdienst wäre möglich."
+		},
+		"ziel_34": {
+			"absender": "selin",
+			"satz": "Server auf Stufe 40: Die Halle trägt auch große Aufträge."
+		},
+		"ziel_22": {
+			"absender": "roman",
+			"satz": "100 Ausstattungsstufen: Die Tabelle ist nur noch grün."
+		},
+		"ziel_33": {
+			"absender": "selin",
+			"satz": "Strom auf Stufe 40: Auch bei Gewitter keine Panne."
+		},
+		"ziel_37": {
+			"absender": "plattform",
+			"satz": "500 Mrd. € verdient: Die Halle gehört zu den Großen."
+		},
+		"ziel_21": {
+			"absender": "selin",
+			"satz": "Vermietung auf Stufe 50: Die Halle ist ausgebucht."
+		},
+		"ziel_23": {
+			"absender": "selin",
+			"satz": "Dauerkunden auf Stufe 30: Verträge für das ganze Jahr."
+		},
+		"ziel_36": {
+			"absender": "mo",
+			"satz": "20 Sterne: Wolfgang hat sich den Namen verdient."
+		},
+		"ziel_25": {
+			"absender": "selin",
+			"satz": "Die Halle läuft von allein. Dann brauchen wir niemanden mehr."
+		}
+	}
+}

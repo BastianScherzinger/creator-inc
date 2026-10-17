@@ -1,0 +1,160 @@
+{
+	"_kommentar": "Anzeigetexte fuer Welt 1. Die einzige Stelle im Projekt, an der thematische Begriffe stehen duerfen (ADR-010). Systeme kennen ausschliesslich die neutralen IDs.",
+	"id": "amt",
+	"welt_name": "Amt für Grundsicherung",
+	"welt_untertitel": "Bahnhofstraße",
+	"waehrung": "€",
+	"stationen": {
+		"station_intake": {
+			"name": "Wartebereich",
+			"beschreibung": "Wer dich anspricht, während alle auf ihre Nummer warten.",
+			"engpass_hinweis": "Kaum jemand kommt bei dir an."
+		},
+		"station_buffer": {
+			"name": "Deine Mappe",
+			"beschreibung": "Der Stapel Fälle, die du noch offen hast.",
+			"engpass_hinweis": "Die Zettel stapeln sich, du verlierst den Überblick."
+		},
+		"station_processing": {
+			"name": "Der Klapptisch",
+			"beschreibung": "Wo du ausfüllst, prüfst und erklärst.",
+			"engpass_hinweis": "Die Schlange wächst — du kommst nicht hinterher."
+		},
+		"station_transport": {
+			"name": "Der Kumpel",
+			"beschreibung": "Er spricht Leute an und bringt sie zu dir.",
+			"engpass_hinweis": "Er schafft es allein nicht mehr."
+		},
+		"station_special": {
+			"name": "Der Sachbearbeiter",
+			"beschreibung": "Er sieht, was du tust — und schiebt dir Fälle zu.",
+			"engpass_hinweis": "Er hat gerade nichts für dich."
+		}
+	},
+	"upgrades": {
+		"station_intake": [
+			"Sichtbarer hinstellen",
+			"Ein Klemmbrett",
+			"Aushang am Brett",
+			"Die Stoßzeiten kennen"
+		],
+		"station_buffer": [
+			"Eine Klarsichthülle",
+			"Ordner mit Register",
+			"Farbige Trennblätter",
+			"Eine zweite Mappe"
+		],
+		"station_processing": [
+			"Ein Stift, der schreibt",
+			"Ein Klapphocker",
+			"Ein Taschenrechner",
+			"Eine Thermoskanne"
+		],
+		"station_transport": [
+			"Der Kumpel hilft",
+			"Er kennt die Leute",
+			"Er wird schneller"
+		],
+		"station_special": [
+			"Ein guter Draht",
+			"Er vertraut dir",
+			"Er schiebt mehr zu"
+		]
+	},
+	"meilenstein_name": "Routine",
+	"meilenstein_text": "Das geht dir jetzt leichter von der Hand.",
+	"grossauftrag": {
+		"titel": "Ein dicker Fall",
+		"texte": [
+			"Ein Rentner bringt einen Schuhkarton voller Belege von 1997.",
+			"Eine Familie braucht fünf Anträge auf einmal.",
+			"Der Sachbearbeiter schiebt dir heimlich einen Stapel zu."
+		]
+	},
+	"offline_bericht": {
+		"titel": "Willkommen zurück",
+		"text": "In deiner Abwesenheit sind %d Fälle durchgegangen."
+	},
+	"weltwechsel": {
+		"titel": "Gewerbe anmelden",
+		"text": "Der letzte Antrag, den du hier ausfüllst, ist der, mit dem du gehst.",
+		"knopf": "Weiter"
+	},
+	"silhouetten": {
+		"_kommentar": "Welche Silhouette in dieser Welt welche Rolle spielt. Dieselbe gebeugte Figur ist hier ein Rentner mit Schuhkarton und in Welt 4 ein Bote mit Paket.",
+		"npc_standard": "Wartender",
+		"npc_gebeugt": "Der Rentner mit dem Schuhkarton",
+		"npc_schritt": "Die Alleinerziehende in Eile",
+		"npc_kapuze": "Der Erstantragsteller",
+		"npc_breit": "Der Aufgebrachte",
+		"npc_rucksack": "Die Studentin mit Frist",
+		"npc_traeger": "Frau Kessler, Sachbearbeiterin"
+	},
+	"tutorial": {
+		"_kommentar": "Die Saetze der Einfuehrung. Der ABLAUF steht in data/tutorial/tutorial.json und kennt nur diese IDs -- er ueberlebt einen Themenwechsel unveraendert (D3/ADR-010). Ton: Der Spieler wird nicht belehrt, sondern eingeweiht. Kein Satz erklaert, was ein Knopf tut; jeder Satz sagt, warum es sich lohnt.",
+		"zoom": {"von": "", "text": "Mit zwei Fingern ziehst du die Karte groß und klein.", "text_b": "Zwei Finger zoomen. Doppeltipp auf freien Boden: Raum oder Überblick."},
+		"ueberspringen": "Kenne ich schon",
+		"waehlen": {
+			"titel": "Dein Schreibtisch",
+			"text": "Tipp ihn an. Er ist das Einzige hier, das dir gehört."
+		},
+		"ausbauen": {
+			"titel": "Schneller werden",
+			"text": "Jeder Ausbau spart dir Sekunden. Sekunden werden Minuten, Minuten werden Feierabend."
+		},
+		"engpass": {
+			"titel": "Wo es klemmt",
+			"text": "Rot heißt: Hier stauen sich die Leute. Alles danach wartet auf diese eine Stelle."
+		},
+		"kette": {
+			"titel": "Immer das Rote zuerst",
+			"text": "Bau die rote Stelle aus, nicht deine Lieblingsstelle. Der Rest folgt von selbst."
+		},
+		"fernziel": {
+			"titel": "Der Balken oben",
+			"text": "Er zählt, wie weit du noch hier drin sitzt. Am Ende steht dein eigener Laden."
+		}
+	},
+	"belohnung": {
+		"_kommentar": "Texte der Belohnungsschleife. Der Ton ist wichtig: Es ist ein ANGEBOT, kein Wegezoll. Kein Satz darf klingen, als bekaeme man ohne Werbung zu wenig.",
+		"schub_knopf": "Rückenwind",
+		"schub_laeuft": "Rückenwind %s",
+		"schub_wartet": "Rückenwind in %s",
+		"schub_titel": "Rückenwind",
+		"schub_text": "Für ein paar Minuten läuft alles doppelt so schnell.",
+		"offline_verdoppeln": "Verdoppeln",
+		"offline_verdoppelt_titel": "Doppelt",
+		"offline_verdoppelt_text": "Der Ertrag wurde verdoppelt.",
+		"laeuft_gerade": "Läuft …",
+		"nichts_da_titel": "Gerade nichts da",
+		"nichts_da_text": "Versuch es gleich nochmal."
+	},
+	"schlange_format": "%d warten",
+	"limit": {
+		"_kommentar": "Texte der harten Obergrenze (Welt 2). 'format' bekommt Titel und Auslastung in Prozent, 'knopf' den Preis. Prozent statt Megabyte, weil der Kern in Durchsatz rechnet -- eine erfundene Umrechnung waere eine Zahl, die nichts bedeutet.",
+		"titel": "Auslastung",
+		"format": "%s  %d %%",
+		"knopf": "Umbauen  (%s)",
+		"wand_titel": "Es klemmt",
+		"wand_text": "Es läuft. Es läuft nur nicht dort, wo es laufen muss.",
+		"erledigt_titel": "Luft",
+		"erledigt_text": "Jetzt geht wieder etwas durch."
+	},
+	"abspann": {
+		"_kommentar": "Der Abspann. Er erscheint genau einmal: wenn der ganze Bogen durch ist. Der 'hinweis' ist keine Zierde, sondern Pflicht -- Welt 6 handelt von Kapital, und kein Satz des Spiels darf als Finanzberatung lesbar sein (docs/PLAY_COMPLIANCE, TASK 050).",
+		"titel": "Der Zähler läuft weiter",
+		"text": "Du musst nicht mehr hinsehen.\n\nDas war die ganze Zeit das Ziel.",
+		"knopf": "Von vorn",
+		"hinweis": "Dies ist ein Spiel. Es bildet weder echte Märkte noch echte Erträge ab und ist keine Anlageberatung."
+	},
+	"personen": {
+		"_kommentar": "Nur Welt 4 benutzt diesen Abschnitt wirklich. Die anderen tragen ihn der Struktur wegen -- alle Themen haben dieselben Schluessel, damit ein fehlender Eintrag auffaellt statt stillschweigend zu fehlen.",
+		"ueberlast_text": "Es sitzt jemand laenger da als alle anderen. Die Arbeit wird davon nicht mehr."
+	},
+	"eroeffnung": {
+		"_kommentar": "Der allererste Bildschirm eines neuen Spielstands. Nur Welt 1 fuellt ihn -- in jeder anderen Welt bleibt er leer, weil dort niemand neu anfaengt. Ein leerer Titel heisst: nicht zeigen.",
+		"titel": "",
+		"text": "",
+		"knopf": ""
+	}
+}

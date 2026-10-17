@@ -1,0 +1,1042 @@
+{
+	"_kommentar": "Anzeigetexte fuer Welt 6 -- Die Zentrale (mit Selin und allen). Die einzige Stelle im Projekt, an der thematische Begriffe stehen duerfen (ADR-010). Systeme kennen ausschliesslich die neutralen IDs. Tonregel: keine echten Firmen, keine Anlageberatung; der Hinweis im Abspann ist Pflicht.",
+	"id": "kapital",
+	"welt_name": "Die Zentrale",
+	"welt_untertitel": "Die Zentrale",
+	"welt_ziel": "Alle sind da",
+	"marken_namen": [
+		"Die Galerie steht",
+		"Der Tresor ist da",
+		"Der Kunstsalon öffnet"
+	],
+	"ziel_warum": {
+		"station_stufe": "damit sich nichts staut und die Gründer nicht warten",
+		"ausstattung_stufe": "so schafft die Station mehr in derselben Zeit",
+		"bereich": "neuer Raum, neue Möglichkeiten, mehr Einkommen",
+		"verdient": "Geld für den nächsten Ausbau"
+	},
+	"waehrung": "€",
+	"stationen": {
+		"station_intake": {
+			"name": "Anfragen",
+			"beschreibung": "Bildschirme, Zeitungen, Kaffee. Hier melden sich Gründer mit ihren Ideen.",
+			"engpass_hinweis": "Keine neuen Anfragen. Die Prüfung wartet.",
+			"einheit": "Anfragen/Min",
+			"kurz": "Der Designertisch mit den Bildschirmen. Hier melden sich neue Gründer."
+		},
+		"station_buffer": {
+			"name": "Prüfung",
+			"beschreibung": "Der Glastisch mit den Kurven. Hier prüft ihr, welche Gründer passen. Roman hat eine Tabelle dazu.",
+			"engpass_hinweis": "Mehr Anfragen, als jemand prüfen kann.",
+			"einheit": "Prüfungen/Min",
+			"kurz": "Der Glastisch. Hier wird entschieden, an wem ihr euch beteiligt."
+		},
+		"station_processing": {
+			"name": "Beteiligungen",
+			"beschreibung": "Verträge mit Gründern. Euch gehört ein Anteil an ihren Firmen. Der Sessel daneben ist bequemer, als er aussieht.",
+			"engpass_hinweis": "Die Prüfungen sind fertig, aber kein Vertrag wird unterschrieben.",
+			"einheit": "Beteiligungen/Min",
+			"kurz": "Der Ledersessel. Hier liegen die Verträge, die euch gehören."
+		},
+		"station_transport": {
+			"name": "Verteilung",
+			"beschreibung": "Der Globus. Nicht alles auf eine Firma setzen, auch nicht auf eine gute.",
+			"engpass_hinweis": "Zu wenig Verteilung. Ein roter Tag trifft voll.",
+			"einheit": "Verteilung",
+			"kurz": "Das Globus-Podest. Es macht die roten Tage leiser."
+		},
+		"station_special": {
+			"name": "Gewinnanteile",
+			"beschreibung": "Das Sideboard im Sitzungssaal. Die gegründeten Firmen zahlen euch einen Teil ihres Gewinns.",
+			"engpass_hinweis": "Gerade zahlt niemand einen Gewinnanteil.",
+			"einheit": "Auszahlung",
+			"kurz": "Das Sideboard. Hier kommt Geld an, ohne dass jemand arbeitet."
+		}
+	},
+	"upgrades": {
+		"station_intake": [
+			"Eine Zeitung am Morgen",
+			"Zwei Monitore statt Tablet",
+			"Nachrichten laufen nebenbei",
+			"Sechs Monitore",
+			"Selin filtert den Lärm raus",
+			"Die Videowand",
+			"Nichts Wichtiges geht unter"
+		],
+		"station_buffer": [
+			"Ein Notizbuch für Kurven",
+			"Roman baut eine Tabelle",
+			"Ein Whiteboard",
+			"Eine zweite Meinung",
+			"Kurven an der Glaswand",
+			"Eine Besprechungsinsel",
+			"Selin prüft jede Annahme",
+			"Die Kaminecke für lange Abende"
+		],
+		"station_processing": [
+			"Der erste Vertrag im Rahmen",
+			"Eine Mappe für Darlehen",
+			"Ein Münzstapel",
+			"Die Tafel mit allen Firmen",
+			"Ein Archivschrank",
+			"Die Goldbarren-Vitrine",
+			"Alles an seinem Platz"
+		],
+		"station_transport": [
+			"Ein Globus auf dem Tisch",
+			"Eine Weltkarte an der Wand",
+			"Mehr als ein Geschäftsfeld",
+			"Ein Wandtresor",
+			"Die Kachelwand",
+			"Der Hologramm-Globus"
+		],
+		"station_special": [
+			"Das Sparschwein",
+			"Eine Kasse für Auszahlungen",
+			"Der Münzbrunnen",
+			"Ein Sektturm",
+			"Ein Podium mit Mikro",
+			"Die Goldregen-Skulptur"
+		]
+	},
+	"meilenstein_name": "Gelassenheit",
+	"meilenstein_text": "Ein roter Tag, und niemand verkauft. Selin nickt.",
+	"grossauftrag": {
+		"titel": "Ein grüner Tag",
+		"texte": [
+			"Ein ruhiger Tag. Alles steigt ein bisschen. Selin sagt, das bedeutet nichts.",
+			"Ein Gründer zahlt mehr Gewinnanteil als erwartet. Roman trägt es in die Tabelle ein.",
+			"Ein Haus im Stadtmodell bekommt ein Fähnchen mehr."
+		]
+	},
+	"offline_bericht": {
+		"titel": "Willkommen zurück",
+		"text": "Während du weg warst, sind %d Beteiligungen dazugekommen.",
+		"von": "selin",
+		"saetze": [
+			"Während du weg warst, hat sich die Zahl bewegt. Rauf und runter. Im Schnitt: rauf.",
+			"Nichts zu tun. Das ist der Punkt.",
+			"Ich habe die Kurve beobachtet. Mo hat sie beschimpft. Sie hat nicht reagiert.",
+			"Roman hat die Kurve laminiert. Sie bewegt sich trotzdem.",
+			"Mo hat den Oldtimer gewaschen, Bernd. Er sagt, es war nötig."
+		]
+	},
+	"weltwechsel": {
+		"_kommentar": "Welt 6 ist die letzte Welt: Der Weltwechsel wird hier nie angeboten (main.gd zeigt am Ende den Abspann). Der Abschnitt steht nur der Struktur wegen da und beschreibt den Neuanfang.",
+		"titel": "Neuanfang",
+		"text": "Die WG sieht beim zweiten Mal anders aus. Der Topf steht noch da.",
+		"knopf": "Weiter",
+		"figur": "mit Mo"
+	},
+	"silhouetten": {
+		"_kommentar": "Welche Silhouette in dieser Welt welche Rolle spielt. Oben ueber der Stadt sind es die alten Bekannten.",
+		"npc_standard": "Gast auf der Etage",
+		"npc_flach": "Kurier mit Mappe",
+		"npc_gebeugt": "Betrachtet ein Gemälde",
+		"npc_klein": "Mo, schon wieder am Tresor",
+		"npc_breit": "Selin"
+	},
+	"tutorial": {
+		"_kommentar": "Die Saetze der Einfuehrung. Der ABLAUF steht in data/tutorial/tutorial.json und kennt nur diese IDs -- er ueberlebt einen Themenwechsel unveraendert (D3/ADR-010). Ton: Der Spieler wird nicht belehrt, sondern eingeweiht. Kein Satz erklaert, was ein Knopf tut; jeder Satz sagt, warum es sich lohnt.",
+		"zoom": {
+			"von": "selin",
+			"text": "Mit zwei Fingern ziehst du die Karte groß und klein.",
+			"text_b": "Zwei Finger zoomen. Doppeltipp auf freien Boden: Raum oder Überblick."
+		},
+		"ueberspringen": "Kenne ich schon",
+		"waehlen": {
+			"titel": "Anfragen",
+			"text": "Hier melden sich Gründer mit ihren Ideen. Gerade bremst das am meisten. Tipp die Bildschirme an."
+		},
+		"ausbauen": {
+			"titel": "Schneller werden",
+			"text": "Mehr Stufen, mehr Anfragen pro Minute. Bau aus, bis etwas anderes bremst."
+		},
+		"ausstattung": {
+			"titel": "Sammlungen",
+			"text": "Ausstattung steht wirklich auf der Etage. Manche Ziele sind ganze Sammlungen."
+		},
+		"engpass": {
+			"titel": "Wo es klemmt",
+			"text": "Rot heißt: Hier stockt es. Ein Tag kann auch Geld kosten. Verteilung dämpft das."
+		},
+		"ziele": {
+			"titel": "Drei Ziele",
+			"text": "Drei Aufgaben, die als Nächstes dran sind. Die Missionen sind die großen."
+		},
+		"flur": {
+			"titel": "Die Galerie",
+			"text": "Marmor und Glas. Dort kommt die Verteilung hin."
+		},
+		"neu_hier": {
+			"titel": "Die Zentrale",
+			"text": "Neu: Ihr beteiligt euch an anderen Gründern und bekommt einen Teil ihres Gewinns."
+		},
+		"besonderheit": {
+			"titel": "Rote Tage",
+			"text": "Es gibt Tage, an denen die Zahl fällt. Mehr Verteilung macht sie leiser."
+		}
+	},
+	"belohnung": {
+		"_kommentar": "Texte der Belohnungsschleife. Der Ton ist wichtig: Es ist ein ANGEBOT, kein Wegezoll. Kein Satz darf klingen, als bekaeme man ohne Werbung zu wenig.",
+		"schub_knopf": "Rückenwind",
+		"schub_laeuft": "Rückenwind %s",
+		"schub_wartet": "Rückenwind in %s",
+		"schub_titel": "Rückenwind",
+		"schub_text": "Ein paar Minuten lang läuft alles ein bisschen besser.",
+		"offline_verdoppeln": "Verdoppeln",
+		"offline_verdoppelt_titel": "Doppelt",
+		"offline_verdoppelt_text": "Die Beteiligungen wurden verdoppelt.",
+		"laeuft_gerade": "Läuft …",
+		"nichts_da_titel": "Gerade nichts da",
+		"nichts_da_text": "Versuch es gleich nochmal."
+	},
+	"schlange_format": "%d Beteiligungen offen",
+	"limit": {
+		"_kommentar": "Texte der harten Obergrenze. Nur Welt 2 (auftrag) benutzt diesen Abschnitt wirklich; die anderen tragen ihn der Struktur wegen. 'format' bekommt Titel und Auslastung in Prozent, 'knopf' den Preis.",
+		"titel": "Volumen",
+		"format": "%s  %d %%",
+		"knopf": "Umbauen  (%s)",
+		"wand_titel": "Es klemmt",
+		"wand_text": "Mehr Anfragen ändern nichts. Die Prüfung kommt nicht hinterher.",
+		"erledigt_titel": "Weniger",
+		"erledigt_text": "Ein zweiter Glastisch. Die Prüfung braucht keine Wartezeit mehr."
+	},
+	"abspann": {
+		"_kommentar": "Der Abspann. Er erscheint genau einmal: wenn der ganze Bogen durch ist. Der 'hinweis' ist Pflicht -- diese Welt handelt von Kapital, und kein Satz des Spiels darf als Anlageberatung lesbar sein (docs/PLAY_COMPLIANCE, TASK 050). Text aus docs/STORY.md, Welt 6.",
+		"titel": "Der Zähler läuft weiter",
+		"text": "Du musst nicht mehr hinsehen.\n\nAngefangen hat es mit drei Aufrufen.\nZwei warst du.\nDer dritte hat nichts gesagt. Und ist geblieben.",
+		"knopf": "Von vorn",
+		"hinweis": "Dies ist ein Spiel. Es bildet weder echte Märkte noch echte Erträge ab und ist keine Anlageberatung.",
+		"zeilen": [
+			"Mo – isst mit.",
+			"Younes – noch einmal.",
+			"Roman – ein Blatt.",
+			"Jana – Ja.",
+			"Selin – Kurven. Und ein Klick, nachts.",
+			"Du – drei Aufrufe."
+		]
+	},
+	"personen": {
+		"_kommentar": "Nur Welt 4 benutzt diesen Abschnitt wirklich. Die anderen tragen ihn der Struktur wegen -- alle Themen haben dieselben Schluessel, damit ein fehlender Eintrag auffaellt statt stillschweigend zu fehlen.",
+		"ueberlast_text": "Jemand sitzt länger vor den Kurven als alle anderen. Die Entscheidung wird davon nicht besser."
+	},
+	"eroeffnung": {
+		"_kommentar": "Der allererste Bildschirm eines neuen Spielstands. Nur Welt 1 fuellt ihn -- in jeder anderen Welt bleibt er leer, weil dort niemand neu anfaengt. Ein leerer Titel heisst: nicht zeigen.",
+		"titel": "",
+		"text": "",
+		"knopf": ""
+	},
+	"ausstattung": {
+		"station_intake": {
+			"ausstattung_1": {
+				"name": "Bildschirme",
+				"stufen": [
+					"Tablet",
+					"Zwei Monitore",
+					"Sechs Monitore",
+					"Videowand"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Nachrichten",
+				"stufen": [
+					"Zeitung",
+					"Radio",
+					"Fernseher",
+					"Nachrichtenwand"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Kaffee",
+				"stufen": [
+					"Tasse",
+					"Espressokocher",
+					"Siebträger",
+					"Barista-Theke"
+				]
+			}
+		},
+		"station_buffer": {
+			"ausstattung_1": {
+				"name": "Modelle",
+				"stufen": [
+					"Notizbuch",
+					"Laptop",
+					"Workstation",
+					"Rechenschrank"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Charts",
+				"stufen": [
+					"Flipchart",
+					"Whiteboard",
+					"Glaswand mit Kurven",
+					"Leuchtkarte"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Beratung",
+				"stufen": [
+					"Sessel",
+					"Zwei Sessel",
+					"Besprechungsinsel",
+					"Kaminecke"
+				]
+			}
+		},
+		"station_processing": {
+			"ausstattung_1": {
+				"name": "Start-ups",
+				"stufen": [
+					"Ein Vertrag im Rahmen",
+					"Rahmenwand",
+					"Tafel mit Firmen",
+					"Glocke mit Tafel"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Darlehen",
+				"stufen": [
+					"Mappe",
+					"Aktenkoffer",
+					"Ordnerwand",
+					"Archivschrank"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Wertsachen",
+				"stufen": [
+					"Eine Münze",
+					"Münzstapel",
+					"Goldbarren",
+					"Goldbarren-Vitrine"
+				]
+			}
+		},
+		"station_transport": {
+			"ausstattung_1": {
+				"name": "Weltkarte",
+				"stufen": [
+					"Globus",
+					"Weltkarte",
+					"Leuchtende Karte",
+					"Hologramm-Globus"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Geschäftsfelder",
+				"stufen": [
+					"Ein Ordner",
+					"Ordnerreihe",
+					"Kachelwand",
+					"Mobile aus Kacheln"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Tresor",
+				"stufen": [
+					"Kassette",
+					"Wandtresor",
+					"Tresorschrank",
+					"Tresortür"
+				]
+			}
+		},
+		"station_special": {
+			"ausstattung_1": {
+				"name": "Auszahlung",
+				"stufen": [
+					"Sparschwein",
+					"Kasse",
+					"Münzbrunnen",
+					"Goldregen-Skulptur"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Feier",
+				"stufen": [
+					"Glas",
+					"Flasche im Kühler",
+					"Sektturm",
+					"Bar"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Gäste",
+				"stufen": [
+					"Ein Stuhl",
+					"Sofa",
+					"Lounge",
+					"Podium mit Mikro"
+				]
+			}
+		}
+	},
+	"bereiche": {
+		"bereich_1": {
+			"name": "Die Galerie",
+			"text": "Marmor, Glas, Blick über die Stadt. Hier kommt die Verteilung hin.",
+			"symbol": "saeule",
+			"danach": "Danach hier: die Verteilung. Die roten Tage werden leiser."
+		},
+		"bereich_2": {
+			"name": "Der Tresor",
+			"text": "Schmuck-Vitrinen, eine Uhrenwand, ein Diamant auf Sockel. Alles läuft ruhiger.",
+			"symbol": "diamant",
+			"danach": "Alle Stationen werden schneller. Ein echter Tresor, mit Tür."
+		},
+		"bereich_3": {
+			"name": "Der Sitzungssaal",
+			"text": "Ein langer Tisch. Hier kommen die Gewinnanteile an.",
+			"symbol": "tisch",
+			"danach": "Danach hier: Gewinnanteile. Gründer zahlen euch im Spiel einen Teil ihres Gewinns."
+		},
+		"bereich_4": {
+			"name": "Die Immobilien",
+			"text": "Ein Stadtmodell mit Fähnchen. Die Prüfung wird schneller.",
+			"symbol": "hochhaus",
+			"danach": "Danach hier: die Prüfung wird besser. Roman hat Fähnchen."
+		},
+		"bereich_5": {
+			"name": "Der Kunstsalon",
+			"text": "Gemälde, eine Skulptur und ein Oldtimer auf dem Drehteller.",
+			"wartet": "Der Oldtimer steht noch beim Händler.",
+			"symbol": "bilderrahmen",
+			"danach": "Alles wird schneller. Und ein roter Oldtimer namens Bernd."
+		},
+		"bereich_6": {
+			"name": "Die Dachterrasse",
+			"text": "Ein langer Tisch, viele Stühle, die Stadt im Blick. Hier sitzen bald alle.",
+			"danach": "Alle Stationen laufen schneller. Mo hat den ersten Stuhl reserviert."
+		}
+	},
+	"nebenraeume": {
+		"dachterrasse": {
+			"name": "Dachterrasse",
+			"text": "Der Ausblick über die Stadt. Hier gibt es nichts zu kaufen – nur zu genießen."
+		}
+	},
+	"ziel_formate": {
+		"station_stufe": "%s auf Stufe %d",
+		"ausstattung_stufe": "%s: %s auf Stufe %d",
+		"ausstattung_gesamt": "%d Ausstattungsstufen kaufen",
+		"bereich": "%s gehört dir",
+		"verdient": "%s € verdienen",
+		"momente": "%d Momente antippen",
+		"sterne": "%d Sterne sammeln",
+		"stufen_gesamt": "%d Stufen insgesamt",
+		"abschluss": "Alle sind da – ab auf die Dachterrasse",
+		"freigeschaltet": "Den Umbau fertigstellen",
+		"alle": "Mission: eine Sammlung komplett",
+		"ausstattung_station": "Mission: Alle Start-ups an Bord"
+	},
+	"absender": {
+		"plattform": "Dein Kanal",
+		"selin": "Selin",
+		"roman": "Roman",
+		"mo": "Mo",
+		"younes": "Younes",
+		"jana": "Jana",
+		"du": "Du"
+	},
+	"nachrichten": {
+		"nachricht_01": {
+			"von": "selin",
+			"text": "Das ist die Zentrale, ganz oben über der Stadt. Hier kommt alles zusammen.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "selin",
+					"text": "Das ist die Zentrale, ganz oben über der Stadt. Hier kommt alles zusammen.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "selin",
+					"text": "Wir beteiligen uns an Gründern, im Spiel mit Spielgeld. Tipp auf Anfragen.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "selin",
+					"text": "Ziel: Alle sind da, auf der Dachterrasse. Achtung: Es gibt rote Tage.",
+					"stimmung": "geschockt"
+				}
+			]
+		},
+		"nachricht_02": {
+			"von": "mo",
+			"text": "Darlehen ist Geld mit Zeit. Kauf was für die Prüfung."
+		},
+		"nachricht_03": {
+			"von": "roman",
+			"text": "Darlehens-Mappe abgeheftet. Bau die Beteiligungen aus."
+		},
+		"nachricht_04": {
+			"von": "selin",
+			"text": "Rote Tage gibt es im Spiel. Kauf die Galerie."
+		},
+		"nachricht_05": {
+			"von": "younes",
+			"text": "Ich filme die Galerie. Endlich Licht, das jemand anderes bezahlt hat.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "younes",
+					"text": "Ich filme die Galerie. Endlich Licht, das jemand anderes bezahlt hat.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "younes",
+					"text": "Die Verteilung läuft und macht die roten Tage kleiner. Weiter: der Tresor.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "younes",
+					"text": "Darf Mo im Bild stehen?",
+					"stimmung": "neutral"
+				}
+			],
+			"antworten": [
+				{
+					"text": "Darf er.",
+					"reaktion": "Er steht eh drin. Ich schneide ihn raus. Später."
+				},
+				{
+					"text": "Besser nicht.",
+					"reaktion": "Gut. Er steht trotzdem im Hintergrund. Immer."
+				}
+			]
+		},
+		"nachricht_16": {
+			"von": "roman",
+			"text": "Die Galerie hat 14 Bilder. Spar für den Tresor."
+		},
+		"nachricht_06": {
+			"von": "mo",
+			"text": "Wir haben einen Tresor! Einen echten, mit Tür.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Wir haben einen Tresor! Einen echten, mit Tür.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "mo",
+					"text": "Ich hab mich eingeschlossen. Nur kurz. Alles läuft ein Viertel schneller.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "roman",
+					"text": "14,3 Sekunden. Ich hab gestoppt.",
+					"stimmung": "neutral"
+				}
+			]
+		},
+		"nachricht_17": {
+			"von": "selin",
+			"text": "Mehr verteilen, weniger schwanken. Verteilung ausbauen."
+		},
+		"nachricht_07": {
+			"von": "mo",
+			"text": "Es ist rot. Alles. Ich habe mich im Tresor eingeschlossen. Von innen.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Es ist rot. Alles. Ich habe mich im Tresor eingeschlossen. Von innen.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "roman",
+					"text": "Minus. Dreimal gerechnet. Es bleibt minus.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "selin",
+					"text": "Im Spiel fällt die Zahl und fängt sich. Bau die Verteilung aus.",
+					"stimmung": "neutral"
+				}
+			]
+		},
+		"nachricht_18": {
+			"von": "younes",
+			"text": "Mo steht immer im Bild. Spar für den Sitzungssaal."
+		},
+		"nachricht_09": {
+			"von": "selin",
+			"text": "Sitzungssaal ist unser. Bau die Gewinnanteile aus."
+		},
+		"nachricht_08": {
+			"von": "roman",
+			"text": "Meine Tabelle hat nur noch ein Blatt: dritter Aufruf. Weiter: die Immobilien.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "roman",
+					"text": "Meine Tabelle hat nur noch ein Blatt: dritter Aufruf. Weiter: die Immobilien.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "roman",
+					"text": "Sachsen. Nachts. 2:51 Uhr. Ein Gerät. Immer dieselbe Stadt.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "roman",
+					"text": "Ich komme nicht weiter. Soll ich Selin fragen?",
+					"stimmung": "neutral"
+				}
+			],
+			"antworten": [
+				{
+					"text": "Frag Selin.",
+					"reaktion": "Gut. Ich schreibe ihr heute. Mit Betreff. Mo wird rot."
+				},
+				{
+					"text": "Lass es.",
+					"reaktion": "Gut. Das Blatt bleibt offen. Ich schau nur nachts hin."
+				}
+			]
+		},
+		"nachricht_19": {
+			"von": "mo",
+			"text": "Ich hab Kuchen mit. Zwölf Stück, für fünf Leute.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Ich hab Kuchen mit. Zwölf Stück, für fünf Leute.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "mo",
+					"text": "Zwei hab ich schon gegessen. Im Fahrstuhl.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "mo",
+					"text": "Ich muss dir was sagen. Nach dem Kuchen. Weiter: Immobilien.",
+					"stimmung": "neutral"
+				}
+			]
+		},
+		"nachricht_10": {
+			"von": "younes",
+			"text": "Mein Gut so hängt in Neon. Weiter: Immobilien."
+		},
+		"nachricht_20": {
+			"von": "mo",
+			"text": "Roman hat Fähnchen bestellt. Kauf die Immobilien."
+		},
+		"nachricht_11": {
+			"von": "roman",
+			"text": "Stadtmodell fertig. Weiter: der Kunstsalon."
+		},
+		"nachricht_12": {
+			"von": "selin",
+			"text": "Nicht alles auf ein Haus. Spar für den Kunstsalon."
+		},
+		"nachricht_14": {
+			"von": "roman",
+			"text": "Der Oldtimer ist da. Jetzt alles ausbauen."
+		},
+		"nachricht_13": {
+			"von": "younes",
+			"text": "Mo nennt den Oldtimer Bernd. Bau alles weiter aus."
+		},
+		"nachricht_21": {
+			"von": "mo",
+			"text": "Dachterrasse bald! Bring nichts mit, wir haben alles."
+		},
+		"nachricht_22": {
+			"von": "selin",
+			"text": "Drei Aufrufe. Einer war ich, nachts aus Sachsen, 2:51 Uhr. Nicht gesucht.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "selin",
+					"text": "Drei Aufrufe. Einer war ich, nachts aus Sachsen, 2:51 Uhr. Nicht gesucht.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "selin",
+					"text": "Ich hab nie gesagt, dass ich euch mag. Ich sag es einmal. Danach: Kurven.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "mo",
+					"text": "Und ich hab gesagt, ich war es. Damit du weitermachst. Das wollte ich sagen.",
+					"stimmung": "jubelnd"
+				}
+			]
+		},
+		"nachricht_15": {
+			"von": "plattform",
+			"text": "Neue Anfrage von jemandem, der gerade anfängt.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "plattform",
+					"text": "Neue Anfrage von jemandem, der gerade anfängt.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "plattform",
+					"text": "Sein erster Clip hat drei Aufrufe. Zwei davon ist er.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "plattform",
+					"text": "Der dritte bist du.",
+					"stimmung": "jubelnd"
+				}
+			]
+		},
+		"nachricht_23": {
+			"von": "selin",
+			"text": "Eine Gründerin mit Imbisswagen fragt an. Tipp das ! hier."
+		},
+		"nachricht_24": {
+			"von": "plattform",
+			"text": "Der Imbisswagen läuft. Du hast jemandem geholfen."
+		}
+	},
+	"momente": {
+		"texte": [
+			"Ein grüner Tag",
+			"Ein Gewinnanteil kommt an",
+			"Ein Fähnchen mehr",
+			"Selin nickt",
+			"Mo steht wieder am Tresor"
+		],
+		"gross_titel": "Ein sehr grüner Tag",
+		"kiste": {
+			"titel": "Post für die Zentrale",
+			"text": "Neue Verträge sind da. Tipp die Kiste an, der Inhalt bringt Geld."
+		}
+	},
+	"abschluss": {
+		"titel": "Alle sind da",
+		"text": "Die Zentrale ist komplett. Alle sind da. Auf der Dachterrasse sitzen Mo, Younes, Roman, Selin und Jana.\n\nMo isst den Kuchen. Younes filmt nichts. Roman hat keine Tabelle dabei. Jana sagt „Ja“.\n\nEine Nachricht von deinem Kanal.",
+		"antwort": "Ich schreib's.",
+		"zahlen": {
+			"spielzeit": "Spielzeit",
+			"verdient": "Verdient",
+			"raeume": "Räume",
+			"ausstattung": "Ausstattung"
+		}
+	},
+	"menue": {
+		"ausbau": "Ausbau",
+		"ziele": "Ziele",
+		"handy": "Handy",
+		"laden": "Laden",
+		"schub": "Boost"
+	},
+	"stil": {
+		"akzent": "#F2B200",
+		"akzent_text": "#1B1726",
+		"akzent_tief": "#B88300"
+	},
+	"absender_farben": {
+		"plattform": "#1B1726",
+		"selin": "#8B5CF6",
+		"roman": "#FF7A1A",
+		"mo": "#3D7BFF",
+		"younes": "#FF4FA3",
+		"jana": "#12B5A5",
+		"du": "#F2B200"
+	},
+	"ziele": {
+		"_kommentar": "Missionsnamen je Ziel-ID (nur Missionen; jeder Eintrag hier erscheint im Missionen-Streifen). Zahlen stehen auch in balance/<welt>.json -- bei Aenderung dort hier nachziehen.",
+		"ziel_11": "Mission: Schmuck & Uhren komplett",
+		"ziel_17": "Mission: Alle Start-ups an Bord",
+		"ziel_19": "Mission: Goldbarren-Vitrine",
+		"ziel_20": "Mission: Alle Immobilien",
+		"ziel_24": "Mission: Kunst & Oldtimer",
+		"ziel_36": "Mission: 500 Mrd € verdient",
+		"ziel_37": "Mission: 20 Sterne, Roman zählt"
+	},
+	"absender_figur": {
+		"mo": "figur_cap",
+		"younes": "figur_buckethat",
+		"roman": "figur_brille",
+		"selin": "figur_zopf",
+		"jana": "figur_packer",
+		"du": "figur_kapuze"
+	},
+	"ketten": {
+		"start": "Die Zentrale",
+		"bereich_1": "Verteilung",
+		"bereich_2": "Tresor",
+		"bereich_3": "Gewinnanteile",
+		"bereich_4": "Immobilien",
+		"bereich_5": "Kunst",
+		"welt": "Die große Liste",
+		"auftrag": "Auftrag: Der Imbisswagen"
+	},
+	"crew": {
+		"station_intake": {
+			"name": "Mo",
+			"portrait": "mo",
+			"raenge": [
+				"Liest Schlagzeilen",
+				"Liest Kleingedrucktes",
+				"Versteht es"
+			]
+		},
+		"station_buffer": {
+			"name": "Roman",
+			"portrait": "roman",
+			"raenge": [
+				"Sieben Blätter",
+				"Drei Blätter",
+				"Ein Blatt"
+			]
+		},
+		"station_processing": {
+			"name": "Selin",
+			"portrait": "selin",
+			"raenge": [
+				"Prüft",
+				"Wiegt ab",
+				"Nickt"
+			]
+		},
+		"station_transport": {
+			"name": "Younes",
+			"portrait": "younes",
+			"raenge": [
+				"Ein Winkel",
+				"Drei Winkel",
+				"Alle Winkel"
+			]
+		},
+		"station_special": {
+			"name": "Mo",
+			"portrait": "mo",
+			"raenge": [
+				"Wartet",
+				"Wartet gern",
+				"Isst mit"
+			]
+		}
+	},
+	"auftraege": {
+		"_kommentar": "K3 B3: Mini-Aufgaben zwischen Raum 3 und 4 (Ziel-IDs ziel_auftrag_1..3, kette 'auftrag'). Ein '!' steht ueber der Figur (absender_figur). Tipp -> Szene: 'satz' (warum es dem Geschaeft hilft) + 'aufgabe_format' mit dem echten Zieltext (was zu tun ist) -> 'knopf_start' springt zum Ziel. Ist das Ziel erfuellt: 'dank' + 'knopf_holen' loest es ein. Saetze <= 90 Zeichen.",
+		"knopf_start": "Mach ich",
+		"knopf_holen": "Abholen",
+		"aufgabe_format": "Deine Aufgabe: %s",
+		"symbol": "!",
+		"ziel_auftrag_1": {
+			"figur": "roman",
+			"satz": "Ich prüfe den Plan der Gründerin. Wer gut prüft, steigt nur bei guten Ideen ein.",
+			"dank": "Der Plan ist solide. Eine Zahl war krumm. Sie hat sie sofort korrigiert."
+		},
+		"ziel_auftrag_2": {
+			"figur": "selin",
+			"satz": "Jetzt steigen wir ein. Im Spiel kommt später ein Teil ihres Gewinns zu uns zurück.",
+			"dank": "Wir sind dabei. Sie hat sich bedankt. Zweimal. Ich hab es gezählt."
+		},
+		"ziel_auftrag_3": {
+			"figur": "mo",
+			"satz": "Die Gründerin braucht Leute, die an sie glauben. Zeig ihr, wie wir gewachsen sind.",
+			"dank": "Vor dem Imbisswagen steht jetzt eine Schlange. Ich stand dreimal an."
+		}
+	},
+	"kapitel": [
+		{
+			"id": "kapitel_1",
+			"titel": "Die Zentrale",
+			"ab_bereich": "",
+			"aufgabe": "Baue Anfragen, Prüfung und Beteiligungen aus. Kaufe die Galerie und den Tresor.",
+			"entscheidung": "nachricht_05"
+		},
+		{
+			"id": "kapitel_2",
+			"titel": "Rote Tage",
+			"ab_bereich": "bereich_2",
+			"aufgabe": "Baue die Verteilung aus, damit die roten Tage kleiner werden. Kaufe den Sitzungssaal.",
+			"entscheidung": ""
+		},
+		{
+			"id": "kapitel_3",
+			"titel": "Die Gründer",
+			"ab_bereich": "bereich_3",
+			"aufgabe": "Hilf der Gründerin mit dem Imbisswagen und kaufe die Immobilien.",
+			"entscheidung": "nachricht_08"
+		},
+		{
+			"id": "kapitel_4",
+			"titel": "Alle sind da",
+			"ab_bereich": "bereich_4",
+			"aufgabe": "Kaufe den Kunstsalon und baue alles aus, bis alle auf der Dachterrasse sitzen.",
+			"entscheidung": ""
+		}
+	],
+	"auftragsbrett": {
+		"_kommentar": "Absender und Warum-Satz je Ziel-ID (Auftragsbrett, Welle 2b). Bewusst NICHT unter \"ziele\": jeder Schluessel dort zaehlt als Mission.",
+		"ziel_02": {
+			"absender": "roman",
+			"satz": "Bessere Modelle: Wir rechnen, bevor wir einsteigen."
+		},
+		"ziel_01": {
+			"absender": "selin",
+			"satz": "Zehn Stufen: Dann trägt die Zentrale die ersten Beteiligungen."
+		},
+		"ziel_04": {
+			"absender": "younes",
+			"satz": "Die Galerie: Hier zeigen Gründer ihre Arbeit."
+		},
+		"ziel_26": {
+			"absender": "mo",
+			"satz": "Mehr Anfragen: Jede ist ein möglicher Gründer."
+		},
+		"ziel_03": {
+			"absender": "roman",
+			"satz": "Beteiligungen auf Stufe 10: Wir sind an echten Firmen dran."
+		},
+		"ziel_06": {
+			"absender": "selin",
+			"satz": "Sechs Ausstattungsstufen: Die Zentrale sieht seriös aus."
+		},
+		"ziel_07": {
+			"absender": "mo",
+			"satz": "Sterne machen Stationen schneller. Mehr Gewinn im Spiel."
+		},
+		"ziel_27": {
+			"absender": "roman",
+			"satz": "Bessere Prüfung: Wir finden schlechte Ideen früher."
+		},
+		"ziel_09": {
+			"absender": "mo",
+			"satz": "Der Tresor: Dort liegt, was wir uns erarbeitet haben."
+		},
+		"ziel_10": {
+			"absender": "plattform",
+			"satz": "Drei Momente antippen: kleine Extras für die Zentrale."
+		},
+		"ziel_29": {
+			"absender": "roman",
+			"satz": "15 Ausstattungsstufen: Die Prüfung wird gründlicher."
+		},
+		"ziel_13": {
+			"absender": "plattform",
+			"satz": "5 Mrd. € verdienen: Das Geld für den Sitzungssaal."
+		},
+		"ziel_05": {
+			"absender": "selin",
+			"satz": "Verteilung auf Stufe 5: Rote Tage werden kleiner."
+		},
+		"ziel_08": {
+			"absender": "roman",
+			"satz": "Prüfung auf Stufe 20: Wir sehen Risiken, bevor es teuer wird."
+		},
+		"ziel_16": {
+			"absender": "selin",
+			"satz": "30 Ausstattungsstufen: Die Zentrale arbeitet zuverlässig."
+		},
+		"ziel_28": {
+			"absender": "selin",
+			"satz": "Verteilung auf Stufe 10: Nicht alles auf ein Haus setzen."
+		},
+		"ziel_12": {
+			"absender": "mo",
+			"satz": "Mehr Anfragen auf Stufe 25: Die Nachfrage steigt."
+		},
+		"ziel_14": {
+			"absender": "selin",
+			"satz": "Der Sitzungssaal: Hier unterschreiben die Gründer."
+		},
+		"ziel_auftrag_1": {
+			"absender": "selin",
+			"satz": "Eine Gründerin mit Imbisswagen fragt, ob wir einsteigen."
+		},
+		"ziel_auftrag_2": {
+			"absender": "roman",
+			"satz": "Wir prüfen ihre Zahlen, bevor wir einsteigen."
+		},
+		"ziel_auftrag_3": {
+			"absender": "mo",
+			"satz": "Letzter Schritt: Wir helfen ihr beim Anfangen."
+		},
+		"ziel_15": {
+			"absender": "selin",
+			"satz": "Gewinnanteile: Gründer zahlen uns im Spiel einen Teil."
+		},
+		"ziel_32": {
+			"absender": "mo",
+			"satz": "Acht Sterne: Der Sitzungssaal brummt."
+		},
+		"ziel_18": {
+			"absender": "selin",
+			"satz": "Starke Verteilung: Viele kleine Anteile statt einem großen."
+		},
+		"ziel_11": {
+			"absender": "younes",
+			"satz": "Die Schmuck- und Uhrensammlung für die Galerie komplett."
+		},
+		"ziel_36": {
+			"absender": "plattform",
+			"satz": "500 Mrd. € verdient: Die Zentrale trägt sich selbst."
+		},
+		"ziel_34": {
+			"absender": "roman",
+			"satz": "Prüfung auf Stufe 35: Fast alle Fehler vorab gefunden."
+		},
+		"ziel_30": {
+			"absender": "selin",
+			"satz": "Gewinnanteile ausstatten: Mehr Gründer bekommen Platz."
+		},
+		"ziel_31": {
+			"absender": "selin",
+			"satz": "Gewinnanteile auf Stufe 15: Die Zahl wächst von allein."
+		},
+		"ziel_33": {
+			"absender": "mo",
+			"satz": "Anfragen auf Stufe 40: Gründer stehen Schlange."
+		},
+		"ziel_22": {
+			"absender": "roman",
+			"satz": "100 Ausstattungsstufen: Die Zentrale ist fertig eingerichtet."
+		},
+		"ziel_35": {
+			"absender": "selin",
+			"satz": "Beteiligungen auf Stufe 40: Ein breites Netz von Firmen."
+		},
+		"ziel_17": {
+			"absender": "selin",
+			"satz": "Alle Start-ups an Bord: Jeder Gründer hat einen Platz."
+		},
+		"ziel_19": {
+			"absender": "younes",
+			"satz": "Die Goldbarren-Vitrine: Etwas zum Anfassen für die Galerie."
+		},
+		"ziel_21": {
+			"absender": "selin",
+			"satz": "Beteiligungen auf Stufe 50: Das Netz trägt auch Verluste."
+		},
+		"ziel_37": {
+			"absender": "roman",
+			"satz": "20 Sterne: Ich zähle sie. Zweimal."
+		},
+		"ziel_20": {
+			"absender": "roman",
+			"satz": "Alle Immobilien: Das Stadtmodell bekommt seine Fähnchen."
+		},
+		"ziel_24": {
+			"absender": "mo",
+			"satz": "Kunst und Oldtimer: Dann kommen alle auf die Dachterrasse."
+		},
+		"ziel_23": {
+			"absender": "selin",
+			"satz": "Gewinnanteile auf Stufe 30: Jetzt zahlen alle mit."
+		},
+		"ziel_25": {
+			"absender": "mo",
+			"satz": "Dachterrasse! Dann sind alle da."
+		}
+	}
+}

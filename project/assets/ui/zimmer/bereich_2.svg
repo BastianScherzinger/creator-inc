@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 128">
+<path d="M42 34 C34 24 50 18 42 8 M64 34 C56 24 72 18 64 8 M86 34 C78 24 94 18 86 8" fill="none" stroke="#1B1726" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="10" y="50" width="108" height="14" rx="7" fill="#FFF7EA"/>
+<clipPath id="k57"><rect x="10" y="50" width="108" height="14" rx="7"/></clipPath>
+<g clip-path="url(#k57)"><g transform="translate(4 4)"><rect x="10" y="50" width="108" height="14" rx="7" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="10" y="50" width="108" height="14" rx="7" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M20 62 H108 V94 A18 18 0 0 1 90 112 H38 A18 18 0 0 1 20 94 Z" fill="#3D7BFF"/>
+<clipPath id="k58"><path d="M20 62 H108 V94 A18 18 0 0 1 90 112 H38 A18 18 0 0 1 20 94 Z"/></clipPath>
+<g clip-path="url(#k58)"><g transform="translate(4 4)"><path d="M20 62 H108 V94 A18 18 0 0 1 90 112 H38 A18 18 0 0 1 20 94 Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<path d="M20 62 H108 V94 A18 18 0 0 1 90 112 H38 A18 18 0 0 1 20 94 Z" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M8 80 H20 M108 80 H120" fill="none" stroke="#1B1726" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

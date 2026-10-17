@@ -1,0 +1,3209 @@
+{
+	"_kommentar": "Die Reihenfolge der Welten. Das ist die einzige Stelle, an der steht, welche Welt es gibt und was nach was kommt. Eine Welt hinzuzufuegen heisst: hier einen Eintrag ergaenzen, dazu data/themes/<id>/theme.json und data/balance/<id>.json anlegen. Kein Code aendert sich dabei.",
+	"_felder": {
+		"id": "Themen- und Ordner-ID. Bestimmt data/themes/<id>/, data/balance/<id>.json, assets/room/<id>/, assets/world/<id>/",
+		"raum_breite": "Grundriss in Rasterfeldern entlang X",
+		"raum_tiefe": "Grundriss in Rasterfeldern entlang Z",
+		"zoom_start": "Startzoom der Kamera. Grosse Raeume brauchen groessere Werte -- bei 45 Grad Kameradrehung haengt die Bildbreite an der SUMME aus Breite und Tiefe (siehe ART_DIRECTION 9)",
+		"kulisse": "Requisiten dieser Welt: Datei, Position (x,z), Drehung in Grad",
+		"tuer_x": "Rasterposition der Tuer in der Rueckwand (entlang X)",
+		"fenster_x": "Rasterpositionen der Fenster in der Rueckwand",
+		"fenster_z": "Rasterpositionen der Fenster in der Seitenwand",
+		"ausstattung": "Feste Einbauten aus assets/room/<id>/: Datei, Position (x,y,z), Drehung. y nur fuer Dinge an der Wand.",
+		"stationen": "Weltpositionen der fuenf Stationen. Die Kette gehoert auf die Diagonale (1,0,1) -- sie verlaeuft im Bild senkrecht, und im Hochformat ist das die einzige Richtung mit Platz.",
+		"laufwege": "Abgelaufene Stellen im Boden: Strecken von (x1,z1) nach (x2,z2) mit einer Breite. Sie erzaehlen, dass der Raum benutzt wird, und fuehren das Auge zur Kette.",
+		"figuren": "Verhalten der Figuren. modus 'kunden' (sie stellen sich an) oder 'zuschauer' (die meisten schauen kurz zu und gehen wieder). bleibt_anteil ist der Anteil derer, die tatsaechlich bleiben."
+	},
+	"welten": [
+		{
+			"id": "zimmer",
+			"_kommentar": "Welt 1 in voller Tiefe (ADR-021, docs/WELT1_TIEFE.md 3): die ganze WG. Ist \"zonen\" gesetzt, baut GrundrissBauer die Karte aus Zonen und Waenden; sonst baut RoomBuilder einen rechteckigen Raum wie in den anderen Welten.",
+			"raum_breite": 23,
+			"raum_tiefe": 17,
+			"zoom_start": 14.0,
+			"karte": {
+				"grenzen": {
+					"x1": -11.0,
+					"z1": -9.0,
+					"x2": 11.0,
+					"z2": 7.0
+				},
+				"kasse": {"x": 4.6, "z": 1.9},
+				"eingang": {"x": -3.6, "z": 1.8},
+				"zoom_min": 10.0,
+				"zoom_max": 65.0,
+				"zoom_stufen": {"raum": 16.0, "ueberblick": 59.0, "raum_rand_m": 2.0, "raum_zoom_min": 12.0},
+				"start": {
+					"x": 0.2,
+					"z": 2.6
+				}
+			},
+			"licht": {
+				"himmel": {"oben": "bcd9ee", "unten": "dfe9d0"},
+				"partikel": [{"typ": "staub", "x": 0, "z": 2, "menge": 22, "radius": 5, "groesse": 0.17, "alpha": 0.9, "tempo_min": 0.1, "tempo_max": 0.25}, {"typ": "voegel", "x": -12, "z": 0, "y": 5.5, "menge": 3, "radius": 1.5, "groesse": 0.42, "alpha": 0.9}],
+				"hintergrund": "dfe9d0",
+				"umgebung": "ffe8cc",
+				"umgebung_energie": 0.34,
+				"sonne": "ffe1b0",
+				"sonne_energie": 0.92,
+				"schatten": true,
+				"sonne_richtung": {
+					"x": -42.0,
+					"y": -70.0
+				}
+			},
+			"module": {
+				"boeden": {
+					"holz": ["wg_boden_holz_a", "wg_boden_holz_b"],
+					"flur": ["wg_boden_flur_a", "wg_boden_flur_b"],
+					"fliese": ["wg_boden_fliese_a", "wg_boden_fliese_b"],
+					"bad": ["wg_boden_bad_a", "wg_boden_bad_b"],
+					"deck": ["wg_boden_deck", "wg_boden_deck"],
+					"teppich": ["wg_boden_teppich_a", "wg_boden_teppich_b"],
+					"holzhell": ["wg_boden_holzhell_a", "wg_boden_holzhell_b"],
+					"schach": ["wg_boden_schach_a", "wg_boden_schach_b"]
+				},
+				"waende": {
+					"voll": ["wg_wand_voll", "wg_wand_halb_tuer", "wg_wand_voll_fenster", "wg_pfosten_voll"],
+					"halb": ["wg_wand_halb", "wg_wand_halb_tuer", "wg_wand_halb", "wg_pfosten_halb"],
+					"sockel": ["wg_wand_sockel", "wg_wand_sockel_tuer", "wg_wand_sockel", "wg_pfosten_sockel"],
+					"gelaender": ["wg_gelaender", "wg_gelaender", "wg_gelaender", ""]
+				}
+			},
+			"zonen": [
+				{
+					"id": "zimmer",
+					"x1": -3,
+					"z1": 1,
+					"x2": 3,
+					"z2": 7,
+					"boden": "holz",
+					"einrichtung": "einrichtung_zimmer"
+				},
+				{
+					"id": "flur",
+					"x1": -11,
+					"z1": -3,
+					"x2": 11,
+					"z2": 0,
+					"boden": "flur",
+					"einrichtung": "einrichtung_flur",
+					"bereich": "bereich_1"
+				},
+				{
+					"id": "kueche",
+					"x1": -2,
+					"z1": -9,
+					"x2": 3,
+					"z2": -4,
+					"boden": "schach",
+					"einrichtung": "einrichtung_kueche",
+					"bereich": "bereich_2"
+				},
+				{
+					"id": "wohnzimmer",
+					"x1": -11,
+					"z1": -9,
+					"x2": -3,
+					"z2": -4,
+					"boden": "teppich",
+					"einrichtung": "einrichtung_wohnzimmer",
+					"bereich": "bereich_3"
+				},
+				{
+					"id": "balkon",
+					"x1": 8,
+					"z1": -9,
+					"x2": 11,
+					"z2": -4,
+					"boden": "deck",
+					"einrichtung": "einrichtung_balkon",
+					"bereich": "bereich_4"
+				},
+				{
+					"id": "freies_zimmer",
+					"x1": -11,
+					"z1": 1,
+					"x2": -4,
+					"z2": 7,
+					"boden": "holzhell",
+					"einrichtung": "einrichtung_freies_zimmer",
+					"bereich": "bereich_5",
+					"varianten": {
+						"gesperrt": "_bewohnt",
+						"verfuegbar": "_leer",
+						"gekauft": "_studio"
+					}
+				},
+				{
+					"id": "bad",
+					"x1": 4,
+					"z1": -9,
+					"x2": 7,
+					"z2": -4,
+					"boden": "bad",
+					"einrichtung": "einrichtung_bad",
+					"bereich": "bereich_6"
+				},
+				{
+					"id": "miras_zimmer",
+					"x1": 4,
+					"z1": 1,
+					"x2": 11,
+					"z2": 7,
+					"boden": "holz",
+					"einrichtung": "einrichtung_miras_zimmer"
+				}
+			],
+			"_zonen_kommentar": "Das freie Zimmer hat drei Einrichtungen, die eine Geschichte erzaehlen: \"varianten\" nennt die Endung je Zustand -- gesperrt (Tobi wohnt noch da), verfuegbar (nach seinem Auszug), gekauft (Studio). Jede Zone jeder Welt kann das.",
+			"waende": [
+				{
+					"typ": "voll",
+					"achse": "x",
+					"fest": -9.5,
+					"von": -11.5,
+					"bis": 7.5,
+					"tueren": [],
+					"fenster": [
+						-9,
+						-5,
+						0,
+						6
+					]
+				},
+				{
+					"typ": "gelaender",
+					"achse": "x",
+					"fest": -9.5,
+					"von": 7.5,
+					"bis": 11.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "voll",
+					"achse": "z",
+					"fest": -11.5,
+					"von": -9.5,
+					"bis": 7.5,
+					"tueren": [],
+					"fenster": [
+						-7,
+						4
+					]
+				},
+				{
+					"typ": "sockel",
+					"achse": "x",
+					"fest": 7.5,
+					"von": -11.5,
+					"bis": 11.5,
+					"tueren": [],
+					"fenster": [],
+					"drehung": 180
+				},
+				{
+					"typ": "gelaender",
+					"achse": "z",
+					"fest": 11.5,
+					"von": -9.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": [],
+					"drehung": -90
+				},
+				{
+					"typ": "sockel",
+					"achse": "z",
+					"fest": 11.5,
+					"von": -3.5,
+					"bis": 7.5,
+					"tueren": [
+						-1
+					],
+					"fenster": [],
+					"drehung": -90
+				},
+				{
+					"typ": "halb",
+					"achse": "x",
+					"fest": -3.5,
+					"von": -11.5,
+					"bis": 11.5,
+					"tueren": [
+						-9,
+						0,
+						5,
+						9
+					],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "x",
+					"fest": 0.5,
+					"von": -11.5,
+					"bis": 11.5,
+					"tueren": [
+						-8,
+						0,
+						7
+					],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": -2.5,
+					"von": -9.5,
+					"bis": -3.5,
+					"tueren": [
+						-5
+					],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": 3.5,
+					"von": -9.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": 7.5,
+					"von": -9.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": -3.5,
+					"von": 0.5,
+					"bis": 7.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": 3.5,
+					"von": 0.5,
+					"bis": 7.5,
+					"tueren": [],
+					"fenster": []
+				}
+			],
+			"kulisse": [
+				{
+					"datei": "einrichtung_garten",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0
+				},
+				{
+					"datei": "wg_fundament",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0
+				},
+				{
+					"datei": "welt_strasse",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0,
+					"emission_puls": {"hz": 0.3, "min": 0.75, "max": 1.25}
+				},
+				{
+					"datei": "welt_fahrraeder",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0
+				},
+				{
+					"datei": "welt_tonnen",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0
+				},
+				{
+					"datei": "welt_auto_klein",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0,
+					"animation": {"typ": "fahren", "tempo": 2.2, "modus": "einmal", "pause": 6, "blick_versatz": 90, "route": [{"x": 0, "z": 0, "warten": 5}, {"x": -26, "z": 0}]}
+				},
+				{
+					"datei": "welt_balkon_deko",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0,
+					"animation": {"typ": "wackeln", "tempo": 0.5, "winkel": 1.5}
+				},
+				{
+					"datei": "welt_laeufer",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0
+				},
+				{
+					"datei": "welt_katze",
+					"x": -6.0,
+					"z": -1.3,
+					"drehung": 90.0,
+					"skala": 1.0,
+					"animation": {"typ": "fahren", "tempo": 0.8, "modus": "hin_und_her", "route": [{"x": -6, "z": -1.3, "warten": 1.5}, {"x": 0.5, "z": -1.3, "warten": 3}]}
+				}
+			],
+			"tuer_x": 2,
+			"fenster_x": [
+				-3
+			],
+			"fenster_z": [
+				1
+			],
+			"ausstattung": [],
+			"stationen": {
+				"station_intake": {
+					"x": -2.0,
+					"z": 1.65,
+					"schild": {
+						"x": 0.0,
+						"z": -0.54
+					}
+				},
+				"station_buffer": {
+					"x": 0.0,
+					"z": 4.7
+				},
+				"station_processing": {
+					"x": 1.8,
+					"z": 1.65
+				},
+				"station_transport": {
+					"x": 2.6,
+					"z": -2.85
+				},
+				"station_special": {
+					"x": -7.8,
+					"z": -6.2,
+					"schild": {
+						"x": -0.43,
+						"z": 0.0
+					}
+				}
+			},
+			"stationsmodell": "ausstattung",
+			"laufwege": [],
+			"figuren": {
+				"modus": "wg",
+				"plaetze": {"station_intake": {"x": 0.0, "z": 1.2, "blick": 30}, "station_buffer": {"x": 0.0, "z": 1.2, "blick": 0}, "station_processing": {"x": 0.0, "z": 1.2, "blick": 40}, "station_transport": {"x": 0.0, "z": 1.2, "blick": 20}, "station_special": {"x": 0.0, "z": 1.2, "blick": 10}},
+				"kunden": {"start": {"x": 0.0, "z": -1.8}, "via": [{"x": 0.0, "z": 1.0}], "ziel": {"x": 0.0, "z": 2.5}},
+				"_kommentar": "Bewohner laufen Punktfolgen durch die Tueren ab (warten in Sekunden, blick in Grad: 0 = +z). \"solange_nicht_verfuegbar\": die Figur verschwindet, sobald dieser Bereich kaufbar wird -- Tobi zieht aus, bevor sein Zimmer frei ist.",
+				"spielfigur": {
+					"station": "station_processing",
+					"x": 0.0,
+					"z": 0.05,
+					"blick": 180
+				},
+				"darsteller": {
+					"figur": "figur_cap",
+					"station": "station_buffer",
+					"x": -0.5,
+					"z": 0.0,
+					"blick": 90,
+					"ab": {
+						"station": "station_buffer",
+						"platz": "ausstattung_1",
+						"stufe": 1
+					}
+				},
+				"bewohner": [
+					{
+						"figur": "figur_dutt",
+						"route": [
+							{
+								"x": 4.9,
+								"z": 4.3,
+								"warten": 16,
+								"blick": -90
+							},
+							{
+								"x": 6.8,
+								"z": 3.0
+							},
+							{
+								"x": 7,
+								"z": 0.5
+							},
+							{
+								"x": 7,
+								"z": -1.2
+							},
+							{
+								"x": 5,
+								"z": -1.2
+							},
+							{
+								"x": 5,
+								"z": -3.5
+							},
+							{
+								"x": 5.4,
+								"z": -5.6,
+								"warten": 7,
+								"blick": 180
+							},
+							{
+								"x": 5,
+								"z": -3.5
+							},
+							{
+								"x": 5,
+								"z": -1.2
+							},
+							{
+								"x": 0,
+								"z": -1.2
+							},
+							{
+								"x": 0,
+								"z": -3.5
+							},
+							{
+								"x": 1.2,
+								"z": -6.0,
+								"warten": 9,
+								"blick": 180
+							},
+							{
+								"x": 0,
+								"z": -3.5
+							},
+							{
+								"x": 0,
+								"z": -1.2
+							},
+							{
+								"x": 7,
+								"z": -1.2
+							},
+							{
+								"x": 7,
+								"z": 0.5
+							},
+							{
+								"x": 6.8,
+								"z": 3.0
+							}
+						]
+					},
+					{
+						"figur": "figur_muetze",
+						"solange_nicht_verfuegbar": "bereich_5",
+						"route": [
+							{
+								"x": -6.5,
+								"z": 3.5,
+								"warten": 12,
+								"blick": 0
+							},
+							{
+								"x": -8,
+								"z": 2.0
+							},
+							{
+								"x": -8,
+								"z": 0.5
+							},
+							{
+								"x": -8,
+								"z": -1.2
+							},
+							{
+								"x": -1,
+								"z": -1.2
+							},
+							{
+								"x": 0,
+								"z": -3.5
+							},
+							{
+								"x": 0.5,
+								"z": -7.9,
+								"warten": 14,
+								"blick": 180
+							},
+							{
+								"x": 0,
+								"z": -3.5
+							},
+							{
+								"x": 0,
+								"z": -1.2
+							},
+							{
+								"x": 9,
+								"z": -1.2
+							},
+							{
+								"x": 9,
+								"z": -3.5
+							},
+							{
+								"x": 9.6,
+								"z": -6.8,
+								"warten": 12,
+								"blick": 90
+							},
+							{
+								"x": 9,
+								"z": -3.5
+							},
+							{
+								"x": 9,
+								"z": -1.2
+							},
+							{
+								"x": -8,
+								"z": -1.2
+							},
+							{
+								"x": -8,
+								"z": 0.5
+							},
+							{
+								"x": -8,
+								"z": 2.0
+							}
+						]
+					}
+				]
+			},
+			"_waende_kommentar": "Wandmodule haben ihre Innenseite bei lokal +z. Ohne \"drehung\" gilt 0 Grad fuer Waende entlang x und 90 Grad entlang z; die Aussenwaende vorn (180) und rechts (-90) zeigen damit nach innen."
+		},
+		{
+			"id": "auftrag",
+			"_kommentar": "Welt 2 in voller Tiefe (NACHT_PLAN 2): das Studio in der Hinterhof-Garage. Warmes Abendlicht.",
+			"raum_breite": 21,
+			"raum_tiefe": 15,
+			"zoom_start": 14.0,
+			"karte": {
+				"grenzen": {
+					"x1": -10.0,
+					"z1": -8.0,
+					"x2": 10.0,
+					"z2": 6.0
+				},
+				"kasse": {"x": 7.2, "z": 1.0},
+				"eingang": {"x": -3.6, "z": 0.9},
+				"zoom_min": 10.0,
+				"zoom_max": 58.0,
+				"zoom_stufen": {"raum": 16.0, "ueberblick": 53.0, "raum_rand_m": 2.0, "raum_zoom_min": 12.0},
+				"start": {
+					"x": 0.0,
+					"z": 1.5
+				}
+			},
+			"licht": {
+				"himmel": {"oben": "2a2145", "unten": "4b3d63", "sterne": 18},
+				"glow": {"intensitaet": 0.4, "staerke": 0.8, "schwelle": 1.0},
+				"partikel": [{"typ": "motten", "x": -1, "z": 0, "y": 2.4, "menge": 10, "radius": 1.3, "groesse": 0.12, "alpha": 1.0}, {"typ": "staub", "x": 0, "z": 1, "menge": 20, "radius": 5, "groesse": 0.15, "alpha": 0.85, "tempo_min": 0.08, "tempo_max": 0.2}],
+				"hintergrund": "4b3d63",
+				"umgebung": "9a8fc0",
+				"umgebung_energie": 0.54,
+				"sonne": "ffb270",
+				"sonne_energie": 1.05,
+				"schatten": true,
+				"sonne_richtung": {
+					"x": -24.0,
+					"y": -110.0
+				}
+			},
+			"module": "standard",
+			"zonen": [
+				{
+					"id": "garage",
+					"x1": -3,
+					"z1": 0,
+					"x2": 3,
+					"z2": 6,
+					"boden": "garage",
+					"einrichtung": "einrichtung_garage"
+				},
+				{
+					"id": "hof",
+					"x1": -10,
+					"z1": -3,
+					"x2": 10,
+					"z2": -1,
+					"boden": "hofpflaster",
+					"einrichtung": "einrichtung_hof",
+					"bereich": "bereich_1"
+				},
+				{
+					"id": "requisite",
+					"x1": -10,
+					"z1": -8,
+					"x2": -4,
+					"z2": -4,
+					"boden": "riffelblech",
+					"einrichtung": "einrichtung_requisite",
+					"bereich": "bereich_2"
+				},
+				{
+					"id": "greenscreen",
+					"x1": -3,
+					"z1": -8,
+					"x2": 3,
+					"z2": -4,
+					"boden": "studio",
+					"einrichtung": "einrichtung_greenscreen",
+					"bereich": "bereich_3"
+				},
+				{
+					"id": "dach",
+					"x1": 4,
+					"z1": -8,
+					"x2": 10,
+					"z2": -4,
+					"boden": "bitumen",
+					"einrichtung": "einrichtung_dach",
+					"bereich": "bereich_4"
+				},
+				{
+					"id": "kino",
+					"x1": -10,
+					"z1": 0,
+					"x2": -4,
+					"z2": 6,
+					"boden": "kinoteppich",
+					"einrichtung": "einrichtung_kino",
+					"bereich": "bereich_5"
+				},
+				{
+					"id": "younes_ecke",
+					"x1": 4,
+					"z1": 0,
+					"x2": 10,
+					"z2": 6,
+					"boden": "estrich",
+					"einrichtung": "einrichtung_younes_ecke",
+					"bereich": "bereich_6"
+				}
+			],
+			"waende": [
+				{
+					"typ": "voll",
+					"achse": "x",
+					"fest": -8.5,
+					"von": -10.5,
+					"bis": 3.5,
+					"tueren": [],
+					"fenster": [
+						-9,
+						-6,
+						0
+					]
+				},
+				{
+					"typ": "gelaender",
+					"achse": "x",
+					"fest": -8.5,
+					"von": 3.5,
+					"bis": 10.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "voll",
+					"achse": "z",
+					"fest": -10.5,
+					"von": -8.5,
+					"bis": 6.5,
+					"tueren": [],
+					"fenster": [
+						-6,
+						3
+					]
+				},
+				{
+					"typ": "sockel",
+					"achse": "x",
+					"fest": 6.5,
+					"von": -10.5,
+					"bis": 10.5,
+					"tueren": [],
+					"fenster": [],
+					"drehung": 180
+				},
+				{
+					"typ": "gelaender",
+					"achse": "z",
+					"fest": 10.5,
+					"von": -8.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": [],
+					"drehung": -90
+				},
+				{
+					"typ": "sockel",
+					"achse": "z",
+					"fest": 10.5,
+					"von": -3.5,
+					"bis": 6.5,
+					"tueren": [],
+					"fenster": [],
+					"drehung": -90
+				},
+				{
+					"typ": "halb",
+					"achse": "x",
+					"fest": -3.5,
+					"von": -10.5,
+					"bis": 10.5,
+					"tueren": [
+						-7,
+						0,
+						6
+					],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "x",
+					"fest": -0.5,
+					"von": -10.5,
+					"bis": 10.5,
+					"tueren": [
+						-7,
+						0,
+						6
+					],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": -3.5,
+					"von": -8.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": 3.5,
+					"von": -8.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": -3.5,
+					"von": -0.5,
+					"bis": 6.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": 3.5,
+					"von": -0.5,
+					"bis": 6.5,
+					"tueren": [],
+					"fenster": []
+				}
+			],
+			"kulisse": [
+				{
+					"datei": "umgebung",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0
+				},
+				{
+					"datei": "fundament",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0
+				},
+				{
+					"datei": "welt_rolltor",
+					"x": 13.8,
+					"z": 0.0,
+					"drehung": 90.0,
+					"emission_puls": {"hz": 0.6, "min": 0.3, "max": 1.6, "form": "blinken"}
+				},
+				{
+					"datei": "welt_kastenwagen",
+					"x": 2.5,
+					"z": -2.0,
+					"drehung": 0.0,
+					"animation": {"typ": "fahren", "tempo": 1.6, "modus": "hin_und_her", "blick_versatz": -90, "route": [{"x": 2.5, "z": -2.0, "warten": 2}, {"x": -7.5, "z": -2.0, "warten": 3}]}
+				},
+				{
+					"datei": "welt_neonschild",
+					"x": 6.5,
+					"z": 6.3,
+					"drehung": 0.0,
+					"skala": 0.7,
+					"emission_puls": {"hz": 0.8, "min": 0.5, "max": 1.5, "form": "flackern"}
+				},
+				{
+					"datei": "welt_hofleuchte",
+					"x": 11.8,
+					"z": 10.4,
+					"drehung": 0.0,
+					"emission_puls": {"hz": 0.25, "min": 0.8, "max": 1.2}
+				}
+			],
+			"stationen": {
+				"station_intake": {
+					"x": -2.0,
+					"z": 0.65
+				},
+				"station_buffer": {
+					"x": 0.0,
+					"z": 3.7
+				},
+				"station_processing": {
+					"x": 1.8,
+					"z": 0.65,
+					"schild": {
+						"x": 0,
+						"z": -0.34
+					}
+				},
+				"station_transport": {
+					"x": 8.4,
+					"z": -2.0,
+					"schild": {
+						"x": 0,
+						"z": -0.43
+					}
+				},
+				"station_special": {
+					"x": 0.6,
+					"z": -6.0
+				}
+			},
+			"stationsmodell": "ausstattung",
+			"figuren": {
+				"modus": "wg",
+				"plaetze": {"station_intake": {"x": 0.0, "z": 1.2, "blick": 30}, "station_buffer": {"x": 0.0, "z": 1.2, "blick": 0}, "station_processing": {"x": 0.0, "z": 1.2, "blick": 40}, "station_transport": {"x": 0.6, "z": -0.4, "blick": 20}, "station_special": {"x": 0.0, "z": 1.2, "blick": 10}},
+				"kunden": {"start": {"x": 0.0, "z": -2.0}, "via": [{"x": 0.0, "z": 0.6}], "ziel": {"x": 0.0, "z": 1.7}},
+				"_kommentar": "Spielfigur sitzt an der Verarbeitung. darsteller: eine Figur je Eintrag, sichtbar ab einer Ausstattungsstufe (station/platz/stufe) oder einem gekauften Bereich (bereich). Bewohner: \"bis\" blendet sie aus, sobald die Bedingung erfuellt ist. Figuren liegen in assets/characters/<welt>/ oder assets/characters/gemeinsam/.",
+				"spielfigur": {
+					"station": "station_processing",
+					"x": 0.0,
+					"z": 0.05,
+					"blick": 180
+				},
+				"darsteller": [
+					{
+						"figur": "figur_buckethat",
+						"station": "station_buffer",
+						"x": -0.9,
+						"z": 0.3,
+						"blick": 90,
+						"ab": {
+							"station": "station_buffer",
+							"platz": "ausstattung_1",
+							"stufe": 1
+						}
+					}
+				],
+				"bewohner": [
+					{
+						"figur": "figur_cap",
+						"route": [
+							{
+								"x": 7.0,
+								"z": 3.2,
+								"warten": 12,
+								"blick": -90
+							},
+							{
+								"x": 6,
+								"z": 1.0
+							},
+							{
+								"x": 6,
+								"z": -0.5
+							},
+							{
+								"x": 6,
+								"z": -1.8
+							},
+							{
+								"x": 0,
+								"z": -1.8
+							},
+							{
+								"x": 0,
+								"z": -0.5
+							},
+							{
+								"x": -0.1,
+								"z": 1.9,
+								"warten": 10,
+								"blick": 0
+							},
+							{
+								"x": 0,
+								"z": -0.5
+							},
+							{
+								"x": 0,
+								"z": -1.8
+							},
+							{
+								"x": -7,
+								"z": -1.8
+							},
+							{
+								"x": -7,
+								"z": -3.5
+							},
+							{
+								"x": -7,
+								"z": -5.6,
+								"warten": 8,
+								"blick": 180
+							},
+							{
+								"x": -7,
+								"z": -3.5
+							},
+							{
+								"x": -7,
+								"z": -1.8
+							},
+							{
+								"x": 6,
+								"z": -1.8
+							},
+							{
+								"x": 6,
+								"z": -0.5
+							},
+							{
+								"x": 6,
+								"z": 1.0
+							}
+						]
+					}
+				]
+			},
+			"tuer_x": 2,
+			"fenster_x": [
+				-3
+			],
+			"fenster_z": [
+				1
+			],
+			"ausstattung": [],
+			"laufwege": []
+		},
+		{
+			"id": "webseiten",
+			"_kommentar": "Welt 3 in voller Tiefe (NACHT_PLAN 2): der Merch-Laden mit Werkstatt. Sonnig und hell.",
+			"raum_breite": 21,
+			"raum_tiefe": 15,
+			"zoom_start": 16.0,
+			"karte": {
+				"grenzen": {
+					"x1": -10.0,
+					"z1": -8.0,
+					"x2": 10.0,
+					"z2": 6.0
+				},
+				"kasse": {"x": 7.2, "z": 1.0},
+				"eingang": {"x": -3.6, "z": 0.9},
+				"zoom_min": 10.0,
+				"zoom_max": 58.0,
+				"zoom_stufen": {"raum": 16.0, "ueberblick": 53.0, "raum_rand_m": 2.0, "raum_zoom_min": 12.0},
+				"start": {
+					"x": 1.6,
+					"z": 1.8
+				}
+			},
+			"licht": {
+				"himmel": {"oben": "b6cce2", "unten": "cfd8e0"},
+				"partikel": [{"typ": "staub", "x": 1, "z": 2, "menge": 22, "radius": 5, "groesse": 0.17, "alpha": 0.9, "tempo_min": 0.1, "tempo_max": 0.25}],
+				"hintergrund": "cfd8e0",
+				"umgebung": "e6d9c2",
+				"umgebung_energie": 0.22,
+				"sonne": "ffecc8",
+				"sonne_energie": 0.5,
+				"schatten": true,
+				"sonne_richtung": {
+					"x": -72.0,
+					"y": -20.0
+				}
+			},
+			"module": "standard",
+			"zonen": [
+				{
+					"id": "werkstatt",
+					"x1": -3,
+					"z1": 0,
+					"x2": 3,
+					"z2": 6,
+					"boden": "beton",
+					"einrichtung": "einrichtung_werkstatt"
+				},
+				{
+					"id": "laden",
+					"x1": -10,
+					"z1": -3,
+					"x2": 10,
+					"z2": -1,
+					"boden": "terrazzo",
+					"einrichtung": "einrichtung_laden",
+					"bereich": "bereich_1"
+				},
+				{
+					"id": "lager",
+					"x1": -10,
+					"z1": -8,
+					"x2": -4,
+					"z2": -4,
+					"boden": "beton",
+					"einrichtung": "einrichtung_lager",
+					"bereich": "bereich_2"
+				},
+				{
+					"id": "showroom",
+					"x1": -3,
+					"z1": -8,
+					"x2": 3,
+					"z2": -4,
+					"boden": "schachbrett",
+					"einrichtung": "einrichtung_showroom",
+					"bereich": "bereich_3"
+				},
+				{
+					"id": "fotostudio",
+					"x1": 4,
+					"z1": -8,
+					"x2": 10,
+					"z2": -4,
+					"boden": "studio",
+					"einrichtung": "einrichtung_fotostudio",
+					"bereich": "bereich_4"
+				},
+				{
+					"id": "siebdruck",
+					"x1": -10,
+					"z1": 0,
+					"x2": -4,
+					"z2": 6,
+					"boden": "farbbeton",
+					"einrichtung": "einrichtung_siebdruck",
+					"bereich": "bereich_5"
+				}
+			],
+			"waende": [
+				{
+					"typ": "voll",
+					"achse": "x",
+					"fest": -8.5,
+					"von": -10.5,
+					"bis": 10.5,
+					"tueren": [],
+					"fenster": [
+						-9,
+						-6,
+						0,
+						6,
+						9
+					]
+				},
+				{
+					"typ": "voll",
+					"achse": "z",
+					"fest": -10.5,
+					"von": -8.5,
+					"bis": 6.5,
+					"tueren": [],
+					"fenster": [
+						-6,
+						3
+					]
+				},
+				{
+					"typ": "sockel",
+					"achse": "x",
+					"fest": 6.5,
+					"von": -10.5,
+					"bis": 3.5,
+					"tueren": [],
+					"fenster": [],
+					"drehung": 180
+				},
+				{
+					"typ": "sockel",
+					"achse": "z",
+					"fest": 10.5,
+					"von": -8.5,
+					"bis": -0.5,
+					"tueren": [],
+					"fenster": [],
+					"drehung": -90
+				},
+				{
+					"typ": "halb",
+					"achse": "x",
+					"fest": -3.5,
+					"von": -10.5,
+					"bis": 10.5,
+					"tueren": [
+						-7,
+						0,
+						6
+					],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "x",
+					"fest": -0.5,
+					"von": -10.5,
+					"bis": 3.5,
+					"tueren": [
+						-7,
+						0
+					],
+					"fenster": []
+				},
+				{
+					"typ": "sockel",
+					"achse": "x",
+					"fest": -0.5,
+					"von": 3.5,
+					"bis": 10.5,
+					"tueren": [
+						6
+					],
+					"fenster": [],
+					"drehung": 180
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": -3.5,
+					"von": -8.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": 3.5,
+					"von": -8.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": -3.5,
+					"von": -0.5,
+					"bis": 6.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "sockel",
+					"achse": "z",
+					"fest": 3.5,
+					"von": -0.5,
+					"bis": 6.5,
+					"tueren": [],
+					"fenster": [],
+					"drehung": -90
+				}
+			],
+			"kulisse": [
+				{
+					"datei": "umgebung",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0,
+					"emission_puls": {"hz": 0.4, "min": 0.8, "max": 1.2}
+				},
+				{
+					"datei": "fundament",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0
+				},
+				{
+					"datei": "welt_lieferwagen",
+					"x": 9.4,
+					"z": 3.9,
+					"drehung": 0.0,
+					"animation": {"typ": "fahren", "tempo": 2.5, "modus": "hin_und_her", "route": [{"x": 9.4, "z": 3.9, "warten": 2}, {"x": 9.4, "z": 12}, {"x": 2, "z": 12, "warten": 4}]}
+				},
+				{
+					"datei": "welt_passant",
+					"x": 4.6,
+					"z": 8.6,
+					"drehung": 90.0,
+					"skala": 1.0,
+					"animation": {"typ": "fahren", "tempo": 0.9, "modus": "hin_und_her", "route": [{"x": 4.6, "z": 8.6, "warten": 1}, {"x": 8.0, "z": 8.6, "warten": 1}]}
+				}
+			],
+			"stationen": {
+				"station_intake": {
+					"x": -2.0,
+					"z": 0.65,
+					"schild": {
+						"x": 0,
+						"z": -0.27
+					}
+				},
+				"station_buffer": {
+					"x": 0.0,
+					"z": 3.7
+				},
+				"station_processing": {
+					"x": 1.8,
+					"z": 0.65
+				},
+				"station_transport": {
+					"x": 8.4,
+					"z": -2.0
+				},
+				"station_special": {
+					"x": 0.6,
+					"z": -6.0
+				}
+			},
+			"stationsmodell": "ausstattung",
+			"figuren": {
+				"modus": "wg",
+				"plaetze": {"station_intake": {"x": 0.0, "z": 1.2, "blick": 30}, "station_buffer": {"x": 0.0, "z": 1.2, "blick": 0}, "station_processing": {"x": 0.0, "z": 1.2, "blick": 40}, "station_transport": {"x": 0.0, "z": 1.2, "blick": 20}, "station_special": {"x": 0.0, "z": 1.2, "blick": 10}},
+				"kunden": {"start": {"x": 0.0, "z": -2.0}, "via": [{"x": 0.0, "z": 0.6}], "ziel": {"x": 0.0, "z": 1.7}},
+				"_kommentar": "Spielfigur sitzt an der Verarbeitung. darsteller: eine Figur je Eintrag, sichtbar ab einer Ausstattungsstufe (station/platz/stufe) oder einem gekauften Bereich (bereich). Bewohner: \"bis\" blendet sie aus, sobald die Bedingung erfuellt ist. Figuren liegen in assets/characters/<welt>/ oder assets/characters/gemeinsam/.",
+				"spielfigur": {
+					"station": "station_processing",
+					"x": 0.0,
+					"z": 0.05,
+					"blick": 180
+				},
+				"darsteller": [
+					{
+						"figur": "figur_brille",
+						"station": "station_buffer",
+						"x": -0.9,
+						"z": 0.3,
+						"blick": 90,
+						"ab": {
+							"station": "station_buffer",
+							"platz": "ausstattung_1",
+							"stufe": 1
+						}
+					},
+					{
+						"figur": "figur_buckethat",
+						"station": "station_special",
+						"x": -0.9,
+						"z": 0.5,
+						"blick": 90,
+						"ab": {
+							"bereich": "bereich_4"
+						}
+					}
+				],
+				"bewohner": [
+					{
+						"figur": "figur_cap",
+						"route": [
+							{
+								"x": 7.0,
+								"z": 3.4,
+								"warten": 12,
+								"blick": 90
+							},
+							{
+								"x": 6,
+								"z": 1.0
+							},
+							{
+								"x": 6,
+								"z": -0.5
+							},
+							{
+								"x": 6,
+								"z": -1.8
+							},
+							{
+								"x": 0,
+								"z": -1.8
+							},
+							{
+								"x": 0,
+								"z": -0.5
+							},
+							{
+								"x": -0.1,
+								"z": 1.9,
+								"warten": 10,
+								"blick": 0
+							},
+							{
+								"x": 0,
+								"z": -0.5
+							},
+							{
+								"x": 0,
+								"z": -1.8
+							},
+							{
+								"x": -7,
+								"z": -1.8
+							},
+							{
+								"x": -7,
+								"z": -3.5
+							},
+							{
+								"x": -7,
+								"z": -5.6,
+								"warten": 8,
+								"blick": 180
+							},
+							{
+								"x": -7,
+								"z": -3.5
+							},
+							{
+								"x": -7,
+								"z": -1.8
+							},
+							{
+								"x": 6,
+								"z": -1.8
+							},
+							{
+								"x": 6,
+								"z": -0.5
+							},
+							{
+								"x": 6,
+								"z": 1.0
+							}
+						]
+					},
+					{
+						"figur": "figur_buckethat",
+						"bis": {
+							"bereich": "bereich_4"
+						},
+						"route": [
+							{
+								"x": -3.5,
+								"z": -1.9,
+								"warten": 9,
+								"blick": 180
+							},
+							{
+								"x": 6,
+								"z": -1.8
+							},
+							{
+								"x": 6,
+								"z": -3.5
+							},
+							{
+								"x": 6.8,
+								"z": -5.8,
+								"warten": 10,
+								"blick": 180
+							},
+							{
+								"x": 6,
+								"z": -3.5
+							},
+							{
+								"x": 6,
+								"z": -1.8
+							},
+							{
+								"x": -7,
+								"z": -1.8
+							},
+							{
+								"x": -7,
+								"z": -0.5
+							},
+							{
+								"x": -7.2,
+								"z": 2.6,
+								"warten": 10,
+								"blick": 0
+							},
+							{
+								"x": -7,
+								"z": -0.5
+							},
+							{
+								"x": -7,
+								"z": -1.8
+							}
+						]
+					}
+				]
+			},
+			"tuer_x": 4,
+			"fenster_x": [
+				-4,
+				-1,
+				2
+			],
+			"fenster_z": [
+				-3,
+				0,
+				3
+			],
+			"ausstattung": [],
+			"laufwege": []
+		},
+		{
+			"id": "buero",
+			"_kommentar": "Welt 4 in voller Tiefe (NACHT_PLAN 2): die Lagerhalle. Kuehl und hell.",
+			"raum_breite": 25,
+			"raum_tiefe": 17,
+			"zoom_start": 15.0,
+			"karte": {
+				"grenzen": {
+					"x1": -12.0,
+					"z1": -9.0,
+					"x2": 12.0,
+					"z2": 11.0
+				},
+				"kasse": {"x": 6.4, "z": -1.4},
+				"eingang": {"x": -4.0, "z": 1.8},
+				"zoom_min": 10.0,
+				"zoom_max": 75.0,
+				"zoom_stufen": {"raum": 16.0, "ueberblick": 69.0, "raum_rand_m": 2.0, "raum_zoom_min": 12.0},
+				"start": {
+					"x": -1.5,
+					"z": 3.0
+				}
+			},
+			"licht": {
+				"himmel": {"oben": "a9b8c4", "unten": "b9c4cc"},
+				"partikel": [{"typ": "staub", "x": -3, "z": 2, "menge": 22, "radius": 5, "groesse": 0.17, "alpha": 0.8, "tempo_min": 0.1, "tempo_max": 0.25}, {"typ": "voegel", "x": -14, "z": -2, "y": 6, "menge": 3, "radius": 1.5, "groesse": 0.42, "alpha": 0.9}],
+				"hintergrund": "b9c4cc",
+				"umgebung": "e4ecf2",
+				"umgebung_energie": 0.3,
+				"sonne": "eef2f8",
+				"sonne_energie": 0.5,
+				"schatten": true,
+				"sonne_richtung": {
+					"x": -65.0,
+					"y": -40.0
+				}
+			},
+			"module": "standard",
+			"zonen": [
+				{
+					"id": "packhalle",
+					"x1": -4,
+					"z1": 1,
+					"x2": 4,
+					"z2": 7,
+					"boden": "hallenboden",
+					"einrichtung": "einrichtung_packhalle"
+				},
+				{
+					"id": "gang",
+					"x1": -12,
+					"z1": -3,
+					"x2": 12,
+					"z2": 0,
+					"boden": "hallenboden_linie",
+					"einrichtung": "einrichtung_gang",
+					"bereich": "bereich_1"
+				},
+				{
+					"id": "wareneingang",
+					"x1": -12,
+					"z1": -9,
+					"x2": -5,
+					"z2": -4,
+					"boden": "hallenboden",
+					"einrichtung": "einrichtung_wareneingang",
+					"bereich": "bereich_2"
+				},
+				{
+					"id": "buero_shops",
+					"x1": -4,
+					"z1": -9,
+					"x2": 4,
+					"z2": -4,
+					"boden": "teppich",
+					"einrichtung": "einrichtung_buero_shops",
+					"bereich": "bereich_3"
+				},
+				{
+					"id": "hochregal",
+					"x1": 5,
+					"z1": -9,
+					"x2": 12,
+					"z2": -4,
+					"boden": "hallenboden",
+					"einrichtung": "einrichtung_hochregal",
+					"bereich": "bereich_4"
+				},
+				{
+					"id": "rampe",
+					"x1": -12,
+					"z1": 1,
+					"x2": -5,
+					"z2": 7,
+					"boden": "asphalt",
+					"einrichtung": "einrichtung_rampe",
+					"bereich": "bereich_5"
+				},
+				{
+					"id": "pausenraum",
+					"x1": 5,
+					"z1": 1,
+					"x2": 12,
+					"z2": 7,
+					"boden": "fliese_gruen",
+					"einrichtung": "einrichtung_pausenraum",
+					"bereich": "bereich_6"
+				},
+				{
+					"id": "ladehof",
+					"x1": -12,
+					"z1": 8,
+					"x2": -5,
+					"z2": 11,
+					"boden": "asphalt",
+					"einrichtung": "einrichtung_ladehof"
+				}
+			],
+			"waende": [
+				{
+					"typ": "voll",
+					"achse": "x",
+					"fest": -9.5,
+					"von": -12.5,
+					"bis": 12.5,
+					"tueren": [],
+					"fenster": [
+						-10,
+						-7,
+						0,
+						7,
+						10
+					]
+				},
+				{
+					"typ": "voll",
+					"achse": "z",
+					"fest": -12.5,
+					"von": -9.5,
+					"bis": 11.5,
+					"tueren": [],
+					"fenster": [
+						-7,
+						4
+					]
+				},
+				{
+					"typ": "sockel",
+					"achse": "x",
+					"fest": 7.5,
+					"von": -4.5,
+					"bis": 12.5,
+					"tueren": [],
+					"fenster": [],
+					"drehung": 180
+				},
+				{
+					"typ": "sockel",
+					"achse": "z",
+					"fest": 12.5,
+					"von": -9.5,
+					"bis": 7.5,
+					"tueren": [
+						-2
+					],
+					"fenster": [],
+					"drehung": -90
+				},
+				{
+					"typ": "halb",
+					"achse": "x",
+					"fest": -3.5,
+					"von": -12.5,
+					"bis": 12.5,
+					"tueren": [
+						-8,
+						0,
+						8
+					],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "x",
+					"fest": 0.5,
+					"von": -12.5,
+					"bis": 12.5,
+					"tueren": [
+						-8,
+						0,
+						8
+					],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": -4.5,
+					"von": -9.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": 4.5,
+					"von": -9.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": -4.5,
+					"von": 0.5,
+					"bis": 7.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": 4.5,
+					"von": 0.5,
+					"bis": 7.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+						"typ": "sockel",
+						"achse": "x",
+						"fest": 11.5,
+						"von": -12.5,
+						"bis": -4.5,
+						"tueren": [],
+						"fenster": [],
+						"drehung": 180
+				},
+				{
+						"typ": "sockel",
+						"achse": "z",
+						"fest": -4.5,
+						"von": 7.5,
+						"bis": 11.5,
+						"tueren": [],
+						"fenster": [],
+						"drehung": -90
+					}
+			],
+			"kulisse": [
+				{
+					"datei": "umgebung",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0
+				},
+				{
+					"datei": "fundament",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0
+				},
+				{
+					"datei": "welt_lkw",
+					"x": 4.5,
+					"z": -12.9,
+					"drehung": 0.0,
+					"animation": {"typ": "fahren", "tempo": 2.5, "modus": "hin_und_her", "route": [{"x": 4.5, "z": -12.9, "warten": 5}, {"x": 4.5, "z": -6}, {"x": 10, "z": -6, "warten": 5}]}
+				},
+				{
+					"datei": "welt_stapler_lebendig",
+					"x": -4.0,
+					"z": -0.7,
+					"drehung": 0.0,
+					"skala": 0.8,
+					"animation": {"typ": "fahren", "tempo": 1.2, "modus": "hin_und_her", "route": [{"x": -4, "z": -0.7, "warten": 2}, {"x": -9, "z": -0.7, "warten": 2.5}]}
+				},
+				{
+					"datei": "welt_foerderband",
+					"x": -7.5,
+					"z": -2.55,
+					"drehung": 0.0,
+					"animation": {"typ": "treiben", "teil": "paket", "achse": "x", "tempo": 0.6, "weite": 0.25}
+				}
+			],
+			"stationen": {
+				"station_intake": {
+					"x": -2.4,
+					"z": 1.65
+				},
+				"station_buffer": {
+					"x": 0.0,
+					"z": 4.7
+				},
+				"station_processing": {
+					"x": 2.2,
+					"z": 1.65
+				},
+				"station_transport": {
+					"x": 4.0,
+					"z": -2.3
+				},
+				"station_special": {
+					"x": 0.8,
+					"z": -6.6
+				}
+			},
+			"stationsmodell": "ausstattung",
+			"figuren": {
+				"modus": "wg",
+				"plaetze": {"station_intake": {"x": 0.0, "z": 1.2, "blick": 30}, "station_buffer": {"x": 0.0, "z": 1.2, "blick": 0}, "station_processing": {"x": 0.0, "z": 1.2, "blick": 40}, "station_transport": {"x": 0.0, "z": 1.2, "blick": 20}, "station_special": {"x": 0.0, "z": 1.2, "blick": 10}},
+				"kunden": {"start": {"x": 0.0, "z": -1.8}, "via": [{"x": 0.0, "z": 1.0}], "ziel": {"x": 0.0, "z": 2.5}},
+				"_kommentar": "Spielfigur sitzt an der Verarbeitung. darsteller: eine Figur je Eintrag, sichtbar ab einer Ausstattungsstufe (station/platz/stufe) oder einem gekauften Bereich (bereich). Bewohner: \"bis\" blendet sie aus, sobald die Bedingung erfuellt ist. Figuren liegen in assets/characters/<welt>/ oder assets/characters/gemeinsam/.",
+				"spielfigur": {
+					"station": "station_processing",
+					"x": 0.0,
+					"z": 0.05,
+					"blick": 180
+				},
+				"darsteller": [
+					{
+						"figur": "figur_brille",
+						"station": "station_buffer",
+						"x": -0.9,
+						"z": 0.3,
+						"blick": 90,
+						"ab": {
+							"station": "station_buffer",
+							"platz": "ausstattung_1",
+							"stufe": 1
+						}
+					},
+					{
+						"figur": "figur_buckethat",
+						"station": "station_special",
+						"x": -0.9,
+						"z": 0.5,
+						"blick": 90,
+						"ab": {
+							"bereich": "bereich_4"
+						}
+					}
+				],
+				"bewohner": [
+					{
+						"figur": "figur_cap",
+						"route": [
+							{
+								"x": 8.5,
+								"z": 4.2,
+								"warten": 14,
+								"blick": -90
+							},
+							{
+								"x": 8,
+								"z": 2.0
+							},
+							{
+								"x": 8,
+								"z": 0.5
+							},
+							{
+								"x": 8,
+								"z": -0.6
+							},
+							{
+								"x": 0,
+								"z": -0.6
+							},
+							{
+								"x": 0,
+								"z": 0.5
+							},
+							{
+								"x": -0.1,
+								"z": 2.9,
+								"warten": 10,
+								"blick": 0
+							},
+							{
+								"x": 0,
+								"z": 0.5
+							},
+							{
+								"x": 0,
+								"z": -0.6
+							},
+							{
+								"x": -8,
+								"z": -0.6
+							},
+							{
+								"x": -8,
+								"z": -3.5
+							},
+							{
+								"x": -8.5,
+								"z": -6.0,
+								"warten": 9,
+								"blick": 180
+							},
+							{
+								"x": -8,
+								"z": -3.5
+							},
+							{
+								"x": -8,
+								"z": -0.6
+							},
+							{
+								"x": 8,
+								"z": -0.6
+							},
+							{
+								"x": 8,
+								"z": 0.5
+							},
+							{
+								"x": 8,
+								"z": 2.0
+							}
+						]
+					},
+					{
+						"figur": "figur_buckethat",
+						"bis": {
+							"bereich": "bereich_4"
+						},
+						"route": [
+							{
+								"x": -5.5,
+								"z": -1.6,
+								"warten": 12,
+								"blick": 180
+							},
+							{
+								"x": -8,
+								"z": -0.6
+							},
+							{
+								"x": -8,
+								"z": 0.5
+							},
+							{
+								"x": -8.5,
+								"z": 3.5,
+								"warten": 10,
+								"blick": 0
+							},
+							{
+								"x": -8,
+								"z": 0.5
+							},
+							{
+								"x": -8,
+								"z": -0.6
+							},
+							{
+								"x": 8,
+								"z": -0.6
+							},
+							{
+								"x": 8,
+								"z": -3.5
+							},
+							{
+								"x": 8.5,
+								"z": -6.2,
+								"warten": 10,
+								"blick": 180
+							},
+							{
+								"x": 8,
+								"z": -3.5
+							},
+							{
+								"x": 8,
+								"z": -0.6
+							}
+						]
+					}
+				]
+			},
+			"tuer_x": 5,
+			"fenster_x": [
+				-6,
+				-3,
+				0,
+				3
+			],
+			"fenster_z": [
+				-4,
+				-1,
+				2,
+				5
+			],
+			"ausstattung": [],
+			"laufwege": []
+		},
+		{
+			"id": "produkt",
+			"_kommentar": "Welt 5 in voller Tiefe (NACHT_PLAN 2): die Farm in der alten Fabrikhalle. Kuehles Blau-Violett, warme Sonne als Akzent.",
+			"raum_breite": 25,
+			"raum_tiefe": 17,
+			"zoom_start": 15.0,
+			"karte": {
+				"grenzen": {
+					"x1": -12.0,
+					"z1": -9.0,
+					"x2": 12.0,
+					"z2": 7.0
+				},
+				"kasse": {"x": 6.4, "z": -1.4},
+				"eingang": {"x": -4.0, "z": 1.8},
+				"zoom_min": 10.0,
+				"zoom_max": 68.0,
+				"zoom_stufen": {"raum": 16.0, "ueberblick": 62.0, "raum_rand_m": 2.0, "raum_zoom_min": 12.0},
+				"start": {
+					"x": 0.0,
+					"z": 1.8
+				}
+			},
+			"licht": {
+				"himmel": {"oben": "0b0a18", "unten": "1e1b2e", "sterne": 40, "mond": {"x": 0.8, "y": 0.08}},
+				"glow": {"intensitaet": 0.5, "staerke": 0.9, "schwelle": 1.0},
+				"partikel": [{"typ": "dampf", "x": -2.7, "z": -2.75, "y": 3.45, "menge": 18, "radius": 0.2, "groesse": 0.6, "groesse_ende": 2.0, "alpha": 0.55, "tempo_min": 0.6, "tempo_max": 1.0, "lebensdauer": 5.0}, {"typ": "funken", "x": -1.8, "z": 0.4, "y": 1.4, "menge": 14, "intervall": 2}, {"typ": "motten", "x": 3.4, "z": -1.8, "y": 2.0, "menge": 6}],
+				"hintergrund": "1e1b2e",
+				"umgebung": "8d96ae",
+				"umgebung_energie": 0.32,
+				"sonne": "b4c2f2",
+				"sonne_energie": 0.62,
+				"schatten": true,
+				"sonne_richtung": {
+					"x": -50.0,
+					"y": -30.0
+				}
+			},
+			"module": "standard",
+			"zonen": [
+				{
+					"id": "halle",
+					"x1": -4,
+					"z1": 1,
+					"x2": 4,
+					"z2": 7,
+					"boden": "hallenboden",
+					"einrichtung": "einrichtung_halle"
+				},
+				{
+					"id": "kabeltrasse",
+					"x1": -12,
+					"z1": -3,
+					"x2": 12,
+					"z2": 0,
+					"boden": "gitterrost",
+					"einrichtung": "einrichtung_kabeltrasse",
+					"bereich": "bereich_1"
+				},
+				{
+					"id": "trafo",
+					"x1": -12,
+					"z1": -9,
+					"x2": -5,
+					"z2": -4,
+					"boden": "beton",
+					"einrichtung": "einrichtung_trafo",
+					"bereich": "bereich_2"
+				},
+				{
+					"id": "kontrollraum",
+					"x1": -4,
+					"z1": -9,
+					"x2": 4,
+					"z2": -4,
+					"boden": "teppich",
+					"einrichtung": "einrichtung_kontrollraum",
+					"bereich": "bereich_3"
+				},
+				{
+					"id": "solardach",
+					"x1": 5,
+					"z1": -9,
+					"x2": 12,
+					"z2": -4,
+					"boden": "deck",
+					"einrichtung": "einrichtung_solardach",
+					"bereich": "bereich_4"
+				},
+				{
+					"id": "rackhalle_2",
+					"x1": -12,
+					"z1": 1,
+					"x2": -5,
+					"z2": 7,
+					"boden": "hallenboden",
+					"einrichtung": "einrichtung_rackhalle_2",
+					"bereich": "bereich_5"
+				},
+				{
+					"id": "selins_labor",
+					"x1": 5,
+					"z1": 1,
+					"x2": 12,
+					"z2": 7,
+					"boden": "fliese",
+					"einrichtung": "einrichtung_selins_labor",
+					"bereich": "bereich_6"
+				}
+			],
+			"waende": [
+				{
+					"typ": "voll",
+					"achse": "x",
+					"fest": -9.5,
+					"von": -12.5,
+					"bis": 4.5,
+					"tueren": [],
+					"fenster": [
+						-10,
+						-7,
+						0
+					]
+				},
+				{
+					"typ": "gelaender",
+					"achse": "x",
+					"fest": -9.5,
+					"von": 4.5,
+					"bis": 12.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "voll",
+					"achse": "z",
+					"fest": -12.5,
+					"von": -9.5,
+					"bis": 7.5,
+					"tueren": [],
+					"fenster": [
+						-7,
+						4
+					]
+				},
+				{
+					"typ": "sockel",
+					"achse": "x",
+					"fest": 7.5,
+					"von": -12.5,
+					"bis": 12.5,
+					"tueren": [],
+					"fenster": [],
+					"drehung": 180
+				},
+				{
+					"typ": "gelaender",
+					"achse": "z",
+					"fest": 12.5,
+					"von": -9.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": [],
+					"drehung": -90
+				},
+				{
+					"typ": "sockel",
+					"achse": "z",
+					"fest": 12.5,
+					"von": -3.5,
+					"bis": 7.5,
+					"tueren": [
+						-2
+					],
+					"fenster": [],
+					"drehung": -90
+				},
+				{
+					"typ": "halb",
+					"achse": "x",
+					"fest": -3.5,
+					"von": -12.5,
+					"bis": 12.5,
+					"tueren": [
+						-8,
+						0,
+						8
+					],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "x",
+					"fest": 0.5,
+					"von": -12.5,
+					"bis": 12.5,
+					"tueren": [
+						-8,
+						0,
+						8
+					],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": -4.5,
+					"von": -9.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": 4.5,
+					"von": -9.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": -4.5,
+					"von": 0.5,
+					"bis": 7.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": 4.5,
+					"von": 0.5,
+					"bis": 7.5,
+					"tueren": [],
+					"fenster": []
+				}
+			],
+			"kulisse": [
+				{
+					"datei": "umgebung",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0,
+					"emission_puls": {"hz": 0.5, "min": 0.6, "max": 1.3}
+				},
+				{
+					"datei": "fundament",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0
+				},
+				{
+					"datei": "welt_luefterwand",
+					"x": -6.5,
+					"z": -12.4,
+					"drehung": 0.0,
+					"emission_puls": {"hz": 1.6, "min": 0.3, "max": 2.0, "form": "blinken"}
+				},
+				{
+					"datei": "welt_strommast_trasse",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0
+				},
+				{
+					"datei": "welt_luefter_schlot",
+					"x": -5.0,
+					"z": -2.75,
+					"drehung": 0.0,
+					"animation": {"typ": "drehen", "teil": "luefter", "achse": "z", "tempo": 220},
+					"emission_puls": {"hz": 1.1, "min": 0.4, "max": 1.8}
+				}
+			],
+			"stationen": {
+				"station_intake": {
+					"x": -2.4,
+					"z": 1.65
+				},
+				"station_buffer": {
+					"x": 0.0,
+					"z": 4.7
+				},
+				"station_processing": {
+					"x": 2.2,
+					"z": 1.65,
+					"schild": {
+						"x": 0,
+						"z": -0.31
+					}
+				},
+				"station_transport": {
+					"x": 4.0,
+					"z": -2.3
+				},
+				"station_special": {
+					"x": 0.8,
+					"z": -6.6
+				}
+			},
+			"stationsmodell": "ausstattung",
+			"figuren": {
+				"modus": "wg",
+				"plaetze": {"station_intake": {"x": 0.0, "z": 1.2, "blick": 30}, "station_buffer": {"x": 0.0, "z": 1.2, "blick": 0}, "station_processing": {"x": 0.0, "z": 1.2, "blick": 40}, "station_transport": {"x": 0.0, "z": 1.2, "blick": 20}, "station_special": {"x": 0.0, "z": 1.2, "blick": 10}},
+				"kunden": {"start": {"x": 0.0, "z": -1.8}, "via": [{"x": 0.0, "z": 1.0}], "ziel": {"x": 0.0, "z": 2.5}},
+				"_kommentar": "Spielfigur sitzt an der Verarbeitung. darsteller: eine Figur je Eintrag, sichtbar ab einer Ausstattungsstufe (station/platz/stufe) oder einem gekauften Bereich (bereich). Bewohner: \"bis\" blendet sie aus, sobald die Bedingung erfuellt ist. Figuren liegen in assets/characters/<welt>/ oder assets/characters/gemeinsam/.",
+				"spielfigur": {
+					"station": "station_processing",
+					"x": 0.0,
+					"z": 0.05,
+					"blick": 180
+				},
+				"darsteller": [
+					{
+						"figur": "figur_zopf",
+						"station": "station_buffer",
+						"x": -0.9,
+						"z": 0.3,
+						"blick": 90,
+						"ab": {
+							"station": "station_buffer",
+							"platz": "ausstattung_1",
+							"stufe": 1
+						}
+					},
+					{
+						"figur": "figur_brille",
+						"station": "station_special",
+						"x": -0.9,
+						"z": 0.5,
+						"blick": 90,
+						"ab": {
+							"bereich": "bereich_4"
+						}
+					}
+				],
+				"bewohner": [
+					{
+						"figur": "figur_brille",
+						"bis": {
+							"bereich": "bereich_4"
+						},
+						"route": [
+							{
+								"x": 8.5,
+								"z": 4.2,
+								"warten": 14,
+								"blick": -90
+							},
+							{
+								"x": 8,
+								"z": 2.0
+							},
+							{
+								"x": 8,
+								"z": 0.5
+							},
+							{
+								"x": 8,
+								"z": -0.6
+							},
+							{
+								"x": 0,
+								"z": -0.6
+							},
+							{
+								"x": 0,
+								"z": 0.5
+							},
+							{
+								"x": -0.1,
+								"z": 2.9,
+								"warten": 10,
+								"blick": 0
+							},
+							{
+								"x": 0,
+								"z": 0.5
+							},
+							{
+								"x": 0,
+								"z": -0.6
+							},
+							{
+								"x": -8,
+								"z": -0.6
+							},
+							{
+								"x": -8,
+								"z": -3.5
+							},
+							{
+								"x": -8.5,
+								"z": -6.0,
+								"warten": 9,
+								"blick": 180
+							},
+							{
+								"x": -8,
+								"z": -3.5
+							},
+							{
+								"x": -8,
+								"z": -0.6
+							},
+							{
+								"x": 8,
+								"z": -0.6
+							},
+							{
+								"x": 8,
+								"z": 0.5
+							},
+							{
+								"x": 8,
+								"z": 2.0
+							}
+						]
+					},
+					{
+						"figur": "figur_cap",
+						"route": [
+							{
+								"x": -5.5,
+								"z": -1.6,
+								"warten": 12,
+								"blick": 180
+							},
+							{
+								"x": -8,
+								"z": -0.6
+							},
+							{
+								"x": -8,
+								"z": 0.5
+							},
+							{
+								"x": -8.5,
+								"z": 3.5,
+								"warten": 10,
+								"blick": 0
+							},
+							{
+								"x": -8,
+								"z": 0.5
+							},
+							{
+								"x": -8,
+								"z": -0.6
+							},
+							{
+								"x": 8,
+								"z": -0.6
+							},
+							{
+								"x": 8,
+								"z": -3.5
+							},
+							{
+								"x": 8.5,
+								"z": -6.2,
+								"warten": 10,
+								"blick": 180
+							},
+							{
+								"x": 8,
+								"z": -3.5
+							},
+							{
+								"x": 8,
+								"z": -0.6
+							}
+						]
+					}
+				]
+			},
+			"tuer_x": 6,
+			"fenster_x": [
+				-6,
+				-4,
+				-2,
+				0,
+				2
+			],
+			"fenster_z": [
+				-4,
+				-2,
+				0,
+				2,
+				4
+			],
+			"ausstattung": [],
+			"laufwege": []
+		},
+		{
+			"id": "kapital",
+			"_kommentar": "Welt 6 in voller Tiefe (NACHT_PLAN 2): das Penthouse mit Glaswaenden. Goldene Stunde.",
+			"raum_breite": 25,
+			"raum_tiefe": 17,
+			"zoom_start": 21.0,
+			"karte": {
+				"grenzen": {
+					"x1": -12.0,
+					"z1": -9.0,
+					"x2": 12.0,
+					"z2": 7.0
+				},
+				"kasse": {"x": 6.4, "z": -1.4},
+				"eingang": {"x": -4.0, "z": 1.8},
+				"zoom_min": 10.0,
+				"zoom_max": 68.0,
+				"zoom_stufen": {"raum": 16.0, "ueberblick": 62.0, "raum_rand_m": 2.0, "raum_zoom_min": 12.0},
+				"start": {
+					"x": 0.0,
+					"z": 1.8
+				}
+			},
+			"licht": {
+				"himmel": {"oben": "8a92bc", "unten": "d9a77c"},
+				"glow": {"intensitaet": 0.4, "staerke": 0.8, "schwelle": 1.0},
+				"partikel": [{"typ": "voegel", "x": -12, "z": -2, "y": 6, "menge": 4, "radius": 1.5, "groesse": 0.42, "alpha": 0.9}, {"typ": "staub", "x": 0, "z": 2, "menge": 22, "radius": 5, "groesse": 0.15, "alpha": 0.85, "tempo_min": 0.1, "tempo_max": 0.25}],
+				"hintergrund": "d9a77c",
+				"umgebung": "f0d6bd",
+				"umgebung_energie": 0.34,
+				"sonne": "ffb36b",
+				"sonne_energie": 0.85,
+				"schatten": true,
+				"sonne_richtung": {
+					"x": -24.0,
+					"y": -75.0
+				}
+			},
+			"module": "standard",
+			"zonen": [
+				{
+					"id": "lounge",
+					"x1": -4,
+					"z1": 1,
+					"x2": 4,
+					"z2": 7,
+					"boden": "parkett",
+					"einrichtung": "einrichtung_lounge"
+				},
+				{
+					"id": "galerie",
+					"x1": -12,
+					"z1": -3,
+					"x2": 12,
+					"z2": 0,
+					"boden": "marmor",
+					"einrichtung": "einrichtung_galerie",
+					"bereich": "bereich_1"
+				},
+				{
+					"id": "tresor",
+					"x1": -12,
+					"z1": -9,
+					"x2": -5,
+					"z2": -4,
+					"boden": "stahl",
+					"einrichtung": "einrichtung_tresor",
+					"bereich": "bereich_2"
+				},
+				{
+					"id": "boardroom",
+					"x1": -4,
+					"z1": -9,
+					"x2": 4,
+					"z2": -4,
+					"boden": "parkett",
+					"einrichtung": "einrichtung_boardroom",
+					"bereich": "bereich_3"
+				},
+				{
+					"id": "immobilien",
+					"x1": 5,
+					"z1": -9,
+					"x2": 12,
+					"z2": -4,
+					"boden": "parkett",
+					"einrichtung": "einrichtung_immobilien",
+					"bereich": "bereich_4"
+				},
+				{
+					"id": "kunstsalon",
+					"x1": -12,
+					"z1": 1,
+					"x2": -5,
+					"z2": 7,
+					"boden": "marmor",
+					"einrichtung": "einrichtung_kunstsalon",
+					"bereich": "bereich_5"
+				},
+				{
+					"id": "dachterrasse",
+					"x1": 5,
+					"z1": 1,
+					"x2": 12,
+					"z2": 7,
+					"boden": "deck",
+					"einrichtung": "einrichtung_dachterrasse",
+					"bereich": "bereich_6"
+				}
+			],
+			"waende": [
+				{
+					"typ": "voll",
+					"achse": "x",
+					"fest": -9.5,
+					"von": -12.5,
+					"bis": 12.5,
+					"tueren": [],
+					"fenster": [
+						-11,
+						-10,
+						-9,
+						-8,
+						-7,
+						-6,
+						-5,
+						-4,
+						-3,
+						-2,
+						-1,
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				},
+				{
+					"typ": "voll",
+					"achse": "z",
+					"fest": -12.5,
+					"von": -9.5,
+					"bis": 7.5,
+					"tueren": [],
+					"fenster": [
+						-8,
+						-7,
+						-6,
+						-5,
+						-4,
+						-3,
+						-2,
+						-1,
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"typ": "sockel",
+					"achse": "x",
+					"fest": 7.5,
+					"von": -12.5,
+					"bis": 4.5,
+					"tueren": [],
+					"fenster": [],
+					"drehung": 180
+				},
+				{
+					"typ": "gelaender",
+					"achse": "x",
+					"fest": 7.5,
+					"von": 4.5,
+					"bis": 12.5,
+					"tueren": [],
+					"fenster": [],
+					"drehung": 180
+				},
+				{
+					"typ": "sockel",
+					"achse": "z",
+					"fest": 12.5,
+					"von": -9.5,
+					"bis": 0.5,
+					"tueren": [
+						-2
+					],
+					"fenster": [],
+					"drehung": -90
+				},
+				{
+					"typ": "gelaender",
+					"achse": "z",
+					"fest": 12.5,
+					"von": 0.5,
+					"bis": 7.5,
+					"tueren": [],
+					"fenster": [],
+					"drehung": -90
+				},
+				{
+					"typ": "halb",
+					"achse": "x",
+					"fest": -3.5,
+					"von": -12.5,
+					"bis": 12.5,
+					"tueren": [
+						-8,
+						0,
+						8
+					],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "x",
+					"fest": 0.5,
+					"von": -12.5,
+					"bis": 12.5,
+					"tueren": [
+						-8,
+						0,
+						8
+					],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": -4.5,
+					"von": -9.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": 4.5,
+					"von": -9.5,
+					"bis": -3.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": -4.5,
+					"von": 0.5,
+					"bis": 7.5,
+					"tueren": [],
+					"fenster": []
+				},
+				{
+					"typ": "halb",
+					"achse": "z",
+					"fest": 4.5,
+					"von": 0.5,
+					"bis": 7.5,
+					"tueren": [],
+					"fenster": []
+				}
+			],
+			"kulisse": [
+				{
+					"datei": "umgebung",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0,
+					"emission_puls": {"hz": 0.2, "min": 0.8, "max": 1.2}
+				},
+				{
+					"datei": "fundament",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0
+				},
+				{
+					"datei": "welt_kran",
+					"x": 0.0,
+					"z": 0.0,
+					"drehung": 0.0,
+					"emission_puls": {"hz": 0.8, "min": 0.2, "max": 1.8, "form": "blinken"}
+				},
+				{
+					"datei": "welt_wolken",
+					"x": 0.0,
+					"z": -4.0,
+					"drehung": 0.0,
+					"animation": {"typ": "treiben", "achse": "x", "tempo": 0.5, "weite": 4}
+				},
+				{
+					"datei": "welt_wolken_hoch",
+					"x": 0.0,
+					"z": -4.0,
+					"drehung": 0.0,
+					"animation": {"typ": "treiben", "teil": "wolke", "achse": [1, 0, -1], "tempo": 0.7, "weite": 4}
+				},
+				{
+					"datei": "welt_poolglanz",
+					"x": 10.5,
+					"z": 5.6,
+					"drehung": 0.0,
+					"animation": {"typ": "treiben", "teil": "glanz", "achse": "x", "tempo": 0.3, "weite": 0.45},
+					"emission_puls": {"hz": 0.7, "min": 0.3, "max": 2.0}
+				}
+			],
+			"stationen": {
+				"station_intake": {
+					"x": -2.4,
+					"z": 1.65
+				},
+				"station_buffer": {
+					"x": 0.0,
+					"z": 4.7
+				},
+				"station_processing": {
+					"x": 2.2,
+					"z": 1.65
+				},
+				"station_transport": {
+					"x": 4.0,
+					"z": -2.3
+				},
+				"station_special": {
+					"x": 0.8,
+					"z": -6.6,
+					"schild": {
+						"x": 0,
+						"z": -0.27
+					}
+				}
+			},
+			"stationsmodell": "ausstattung",
+			"figuren": {
+				"modus": "wg",
+				"plaetze": {"station_intake": {"x": 0.0, "z": 1.2, "blick": 30}, "station_buffer": {"x": 0.0, "z": 1.2, "blick": 0}, "station_processing": {"x": 0.0, "z": 1.2, "blick": 40}, "station_transport": {"x": 0.0, "z": 1.2, "blick": 20}, "station_special": {"x": 0.1, "z": 1.9, "blick": 10}},
+				"kunden": {"start": {"x": 0.0, "z": -1.8}, "via": [{"x": 0.0, "z": 1.0}], "ziel": {"x": 0.0, "z": 2.5}},
+				"_kommentar": "Spielfigur sitzt an der Verarbeitung. darsteller: eine Figur je Eintrag, sichtbar ab einer Ausstattungsstufe (station/platz/stufe) oder einem gekauften Bereich (bereich). Bewohner: \"bis\" blendet sie aus, sobald die Bedingung erfuellt ist. Figuren liegen in assets/characters/<welt>/ oder assets/characters/gemeinsam/.",
+				"spielfigur": {
+					"station": "station_processing",
+					"x": 0.0,
+					"z": 0.05,
+					"blick": 180
+				},
+				"darsteller": [
+					{
+						"figur": "figur_zopf",
+						"station": "station_buffer",
+						"x": -0.9,
+						"z": 0.3,
+						"blick": 90,
+						"ab": {
+							"station": "station_buffer",
+							"platz": "ausstattung_1",
+							"stufe": 1
+						}
+					},
+					{
+						"figur": "figur_brille",
+						"station": "station_special",
+						"x": -0.9,
+						"z": 0.5,
+						"blick": 90,
+						"ab": {
+							"bereich": "bereich_3"
+						}
+					},
+					{
+						"figur": "figur_buckethat",
+						"station": "station_special",
+						"x": 0.9,
+						"z": 0.9,
+						"blick": -90,
+						"ab": {
+							"bereich": "bereich_5"
+						}
+					},
+					{
+						"figur": "figur_cap",
+						"station": "station_transport",
+						"x": 0.2,
+						"z": 1.4,
+						"blick": 180,
+						"ab": {
+							"bereich": "bereich_4"
+						}
+					}
+				],
+				"bewohner": [
+					{
+						"figur": "figur_cap",
+						"bis": {
+							"bereich": "bereich_4"
+						},
+						"route": [
+							{
+								"x": 8.5,
+								"z": 4.2,
+								"warten": 14,
+								"blick": -90
+							},
+							{
+								"x": 8,
+								"z": 2.0
+							},
+							{
+								"x": 8,
+								"z": 0.5
+							},
+							{
+								"x": 8,
+								"z": -0.6
+							},
+							{
+								"x": 0,
+								"z": -0.6
+							},
+							{
+								"x": 0,
+								"z": 0.5
+							},
+							{
+								"x": -0.1,
+								"z": 2.9,
+								"warten": 10,
+								"blick": 0
+							},
+							{
+								"x": 0,
+								"z": 0.5
+							},
+							{
+								"x": 0,
+								"z": -0.6
+							},
+							{
+								"x": -8,
+								"z": -0.6
+							},
+							{
+								"x": -8,
+								"z": -3.5
+							},
+							{
+								"x": -8.5,
+								"z": -6.0,
+								"warten": 9,
+								"blick": 180
+							},
+							{
+								"x": -8,
+								"z": -3.5
+							},
+							{
+								"x": -8,
+								"z": -0.6
+							},
+							{
+								"x": 8,
+								"z": -0.6
+							},
+							{
+								"x": 8,
+								"z": 0.5
+							},
+							{
+								"x": 8,
+								"z": 2.0
+							}
+						]
+					},
+					{
+						"figur": "figur_buckethat",
+						"bis": {
+							"bereich": "bereich_5"
+						},
+						"route": [
+							{
+								"x": -5.5,
+								"z": -1.6,
+								"warten": 12,
+								"blick": 180
+							},
+							{
+								"x": -8,
+								"z": -0.6
+							},
+							{
+								"x": -8,
+								"z": 0.5
+							},
+							{
+								"x": -8.5,
+								"z": 3.5,
+								"warten": 10,
+								"blick": 0
+							},
+							{
+								"x": -8,
+								"z": 0.5
+							},
+							{
+								"x": -8,
+								"z": -0.6
+							},
+							{
+								"x": 8,
+								"z": -0.6
+							},
+							{
+								"x": 8,
+								"z": -3.5
+							},
+							{
+								"x": 8.5,
+								"z": -6.2,
+								"warten": 10,
+								"blick": 180
+							},
+							{
+								"x": 8,
+								"z": -3.5
+							},
+							{
+								"x": 8,
+								"z": -0.6
+							}
+						]
+					}
+				]
+			},
+			"tuer_x": 3,
+			"fenster_x": [
+				-1
+			],
+			"fenster_z": [
+				0
+			],
+			"ausstattung": [],
+			"laufwege": []
+		}
+	],
+	"_ausserhalb_des_bogens": "Die Welt 'amt' liegt weiterhin vollstaendig im Projekt (Themendaten, Assets, Balance). Sie gehoert seit ADR-020 nicht mehr zum Bogen, wird aber nicht geloescht: Sie ist der Beweis, dass ein Themenwechsel eine Datenaenderung ist, und der zweite Datensatz, an dem sich die Trennung D3 messen laesst.",
+	"weitere": [
+		{
+			"id": "amt",
+			"_hinweis": "Nicht Teil des Bogens (ADR-020). Die Daten bleiben vollstaendig, damit die Welt jederzeit wieder spielbar ist -- sie ist der zweite Datensatz, an dem sich die Themen-Trennung D3 messen laesst.",
+			"raum_breite": 13,
+			"raum_tiefe": 11,
+			"zoom_start": 30.0,
+			"kulisse": [
+				{
+					"datei": "welt_tresen",
+					"x": 2.0,
+					"z": -4.2,
+					"drehung": 180.0
+				},
+				{
+					"datei": "welt_pflanze",
+					"x": -5.2,
+					"z": -3.8,
+					"drehung": 0.0
+				},
+				{
+					"datei": "welt_bank",
+					"x": -5.4,
+					"z": 2.2,
+					"drehung": 90.0
+				},
+				{
+					"datei": "welt_bank",
+					"x": -5.4,
+					"z": -1.4,
+					"drehung": 90.0
+				},
+				{
+					"datei": "welt_bank",
+					"x": -3.6,
+					"z": 4.4,
+					"drehung": 180.0
+				},
+				{
+					"datei": "welt_bank",
+					"x": -0.2,
+					"z": 4.4,
+					"drehung": 180.0
+				},
+				{
+					"datei": "welt_bank",
+					"x": 3.8,
+					"z": 3.8,
+					"drehung": 225.0
+				},
+				{
+					"datei": "welt_pflanze",
+					"x": 5.4,
+					"z": 4.6,
+					"drehung": 0.0
+				}
+			],
+			"tuer_x": 3,
+			"fenster_x": [
+				-4,
+				-2,
+				5
+			],
+			"fenster_z": [
+				-3,
+				1,
+				4
+			],
+			"ausstattung": [
+				{
+					"datei": "raum_automat",
+					"x": -2.0,
+					"y": 0.0,
+					"z": -5.3,
+					"drehung": 0.0
+				},
+				{
+					"datei": "raum_muelleimer",
+					"x": -0.6,
+					"y": 0.0,
+					"z": -5.2,
+					"drehung": 0.0
+				},
+				{
+					"datei": "raum_uhr",
+					"x": 1.0,
+					"y": 2.3,
+					"z": -5.84,
+					"drehung": 0.0
+				},
+				{
+					"datei": "raum_muelleimer",
+					"x": -6.1,
+					"y": 0.0,
+					"z": 3.0,
+					"drehung": 0.0
+				}
+			],
+			"stationen": {
+				"station_intake": {
+					"x": -3.0,
+					"z": -3.0
+				},
+				"station_buffer": {
+					"x": 0.0,
+					"z": 0.0
+				},
+				"station_processing": {
+					"x": 3.0,
+					"z": 3.0
+				},
+				"station_transport": {
+					"x": -4.8,
+					"z": -0.6
+				},
+				"station_special": {
+					"x": 4.8,
+					"z": 0.6
+				}
+			},
+			"laufwege": [
+				{
+					"x1": 3.0,
+					"z1": -5.0,
+					"x2": 3.0,
+					"z2": -3.0,
+					"breite": 0.7
+				},
+				{
+					"x1": -3.0,
+					"z1": -3.0,
+					"x2": 3.0,
+					"z2": 3.0,
+					"breite": 0.8
+				}
+			],
+			"figuren": {
+				"modus": "kunden",
+				"bleibt_anteil": 1.0,
+				"verweildauer": 1.6
+			}
+		}
+	],
+	"licht_vorlagen": {
+		"_kommentar": "Lichtstimmungen, auf die eine Welt mit \"licht\": \"<name>\" verweisen kann. Ein Dictionary in der Welt ueberschreibt einzelne Werte der Vorlage \"warm\". Kein Filmic-Tonemapping (CLAUDE.md).",
+		"warm": {
+			"hintergrund": "e9d8bf",
+			"umgebung": "ffe8cc",
+			"umgebung_energie": 0.38,
+			"sonne": "ffe9c9",
+			"sonne_energie": 0.85,
+			"schatten": true,
+			"sonne_richtung": {
+				"x": -55.0,
+				"y": -30.0
+			}
+		},
+		"alt": {
+			"hintergrund": "2a2f3a",
+			"umgebung": "6b7183",
+			"umgebung_energie": 0.6,
+			"sonne": "ffffff",
+			"sonne_energie": 1.1,
+			"schatten": false,
+			"sonne_richtung": {
+				"x": -55.0,
+				"y": -30.0
+			}
+		}
+	}
+}

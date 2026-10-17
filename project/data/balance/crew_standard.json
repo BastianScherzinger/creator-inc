@@ -1,0 +1,10 @@
+{
+	"_kommentar": "Crew-Karten (Manager). Gilt fuer jede Station, die in balance/<welt>.json unter `crew` nichts Eigenes hat. Kosten = basis_kosten der Station x kosten_x_basis. `faktor` ist der Gesamtfaktor auf die Station bei diesem Rang (nicht kumulativ). Vor `karte_ab_stufe` zeigt das Stationsmenue gar keine Crew, bis `frei_ab_stufe` nur eine schmale gesperrte Zeile. Freischaltung: Stationsstufe `frei_ab_stufe`, sofern die Welt keine eigene Bedingung `frei` setzt.",
+	"frei_ab_stufe": 8,
+	"karte_ab_stufe": 4,
+	"raenge": [
+		{"kosten_x_basis": 60.0, "faktor": 1.10},
+		{"kosten_x_basis": 900.0, "faktor": 1.20},
+		{"kosten_x_basis": 15000.0, "faktor": 1.35}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"_kommentar": "A/B-Varianten der Kernbildschirme. Nur Darstellung. KEINE Datenerhebung, kein Netz: Ohne `--variante`/`--ab` und ohne Eintrag unter `aktiv` waehlt die Installation deterministisch aus ihrem Zufallswert (SaveData.installations_wert). Ausgewertet wird per Rueckmeldung der Tester, nicht in der App. `aktiv` = Standard bzw. Gewinner; Verlierer werden aus dem Code gestrichen. K3-Urteil 16.10.2026 (K3_AB_BEWERTUNG Abschnitt 5): karte, plakette, pfeil, zoom -> b, A-Zweige gestrichen. Offen: boost (`--ab boost=b`), Standard a bis zur Pruefung ab Rang 3.",
+	"aktiv": {"stations_panel": "a", "raum_panel": "a", "ziele_leiste": "a", "story_szene": "a", "boost": "a"},
+	"varianten": {
+		"stations_panel": ["a", "b"],
+		"raum_panel": ["a", "b"],
+		"ziele_leiste": ["a", "b"],
+		"story_szene": ["a", "b"],
+		"boost": ["a", "b"]
+	}
+}

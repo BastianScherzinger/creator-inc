@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 128">
+<path d="M64 10 L120 108 H8 Z" fill="#FF4D3D"/>
+<clipPath id="k48"><path d="M64 10 L120 108 H8 Z"/></clipPath>
+<g clip-path="url(#k48)"><g transform="translate(4 4)"><path d="M64 10 L120 108 H8 Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<path d="M64 10 L120 108 H8 Z" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M64 46 V74" fill="none" stroke="#1B1726" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="64" cy="92" r="7.5" fill="#1B1726"/>
+</svg>

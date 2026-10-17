@@ -1,0 +1,1053 @@
+{
+	"_kommentar": "Anzeigetexte fuer Welt 1 -- Das Zimmer. Die einzige Stelle im Projekt, an der thematische Begriffe stehen duerfen (ADR-010). Systeme kennen ausschliesslich die neutralen IDs.",
+	"id": "zimmer",
+	"welt_name": "Das Zimmer",
+	"welt_untertitel": "Die WG",
+	"welt_ziel": "Der Gaming-PC",
+	"marken_namen": {
+		"_kommentar": "Name der Zwischenmarken auf dem Welt-Ziel-Balken, Schluessel = Marken-ID (fortschritt_<Prozent>).",
+		"fortschritt_25": "Stativ steht",
+		"fortschritt_50": "Erster Stream",
+		"fortschritt_75": "Paket bestellt"
+	},
+	"marken_hinweis": "Als Nächstes: %s",
+	"ziel_warum": {
+		"_kommentar": "Ein Halbsatz je Zieltyp: warum dieses Ziel sich lohnt (K2 4.2). Mo spricht, der Satz erklaert.",
+		"station_stufe": "Jede Stufe bringt mehr Euro pro Sekunde.",
+		"ausstattung_stufe": "Ausstattung steht sichtbar im Raum und macht schneller.",
+		"ausstattung_gesamt": "Ausstattung steht sichtbar im Raum und macht schneller.",
+		"bereich": "Ein neuer Raum bringt eine neue Möglichkeit.",
+		"verdient": "Je mehr Geld, desto näher der Gaming-PC.",
+		"momente": "Antippen bringt Extra-Geld, wenn ein Clip zieht.",
+		"sterne": "Jeder Stern macht eine Station merklich schneller.",
+		"stufen_gesamt": "Wer ausbaut, verdient mehr pro Sekunde.",
+		"abschluss": "Dann steht der Gaming-PC auf deinem Schreibtisch."
+	},
+	"waehrung": "€",
+	"stationen": {
+		"station_intake": {
+			"name": "Idee",
+			"beschreibung": "Notizzettel, offene Tabs, eine Liste mit Spielen, die Mo unbedingt zeigen will.",
+			"engpass_hinweis": "Dir fällt nichts Neues ein — die Aufnahme wartet auf ein Thema.",
+			"einheit": "Ideen/Min",
+			"kurz": "Die Pinnwand über dem kleinen Regal. Notizzettel, offene Tabs, ein halb fertiges Skript."
+		},
+		"station_buffer": {
+			"name": "Aufnahme",
+			"beschreibung": "Handy auf dem Bücherstapel, die Lampe verkehrt herum als Ringlicht davor.",
+			"engpass_hinweis": "Du hast mehr Ideen, als du aufnehmen kannst.",
+			"einheit": "Aufnahmen/Min",
+			"kurz": "Handy, Licht, ein Stück Wand. Mehr braucht ein Clip am Anfang nicht."
+		},
+		"station_processing": {
+			"name": "Schnitt",
+			"beschreibung": "Der Laptop mit der lauten Lüftung, die Zeitleiste auf dem Bildschirm.",
+			"engpass_hinweis": "Die Aufnahmen stapeln sich, geschnitten wird nichts mehr.",
+			"einheit": "Clips/Min",
+			"kurz": "Der Schreibtisch. Hier wird aus einer Aufnahme ein Clip."
+		},
+		"station_transport": {
+			"name": "Upload",
+			"beschreibung": "Der Upload läuft jetzt von allein. Das erste Mal, dass etwas weitergeht, während du nichts tust.",
+			"engpass_hinweis": "Er schafft die Clips allein nicht mehr raus.",
+			"einheit": "Reichweite",
+			"kurz": "Das Regal am Router. Das beste WLAN der Wohnung."
+		},
+		"station_special": {
+			"name": "Der Stream",
+			"beschreibung": "Sofa, Fernseher, Chat. Abends zockst du mit Mo live.",
+			"engpass_hinweis": "Gerade schaut niemand live zu.",
+			"einheit": "Erlös je Clip",
+			"kurz": "Das Sofa. Hier streamt ihr abends – und der Chat bezahlt mit."
+		}
+	},
+	"upgrades": {
+		"station_intake": [
+			"Ein Notizbuch nur für Ideen",
+			"Der Zettel wandert an die Wand",
+			"Feste Zeit zum Nachdenken",
+			"Ein Blick auf das, was gerade läuft",
+			"Eine Liste, die nie leer ist",
+			"Drei Ideen im Voraus",
+			"Ein Ordner nur für gute Anfänge"
+		],
+		"station_buffer": [
+			"Stativ aus Büchern",
+			"Endlich ein echtes Stativ",
+			"Zweite Lampe",
+			"Ein Mikrofon, das nicht rauscht",
+			"Die Wand als Hintergrund freigeräumt",
+			"Ein Ringlicht, das auch eins ist",
+			"Ein Ladekabel, das bis zum Bett reicht",
+			"Der erste Versuch reicht jetzt"
+		],
+		"station_processing": [
+			"Ein Schnittprogramm, das nicht abstürzt",
+			"Kopfhörer, die den Ton ehrlich zeigen",
+			"Tastenkombinationen statt Klicken",
+			"Ein zweiter Ordner für die Reste",
+			"Vorlagen für den Schnitt",
+			"Die Lüftung übersteht einen Export",
+			"Der Schnitt braucht keinen zweiten Anlauf mehr"
+		],
+		"station_transport": [
+			"Ein fester Zeitplan für den Upload",
+			"Titel und Text liegen schon bereit",
+			"Mehrere Plattformen auf einmal",
+			"Ein Klick für alles",
+			"Er läuft auch mit leerem Akku",
+			"Upload und Ablage in einem Schritt"
+		],
+		"station_special": [
+			"Der erste Stream mit vier Zuschauern",
+			"Mo bringt seinen Controller mit",
+			"Ein Name für den Stream",
+			"Feste Sendezeit am Abend",
+			"Der Chat kennt eure Insider",
+			"Ein Stream, den man nachschaut"
+		]
+	},
+	"meilenstein_name": "Übung",
+	"meilenstein_text": "Die Handgriffe sitzen. Mo sagt, du schneidest schneller, als er redet.",
+	"grossauftrag": {
+		"titel": "Ein Clip zieht an",
+		"texte": [
+			"Ein Clip wird über Nacht geteilt. Auf einmal schauen tausend zu.",
+			"Mo hat den Clip in fünf Gruppen gepostet. Es hat funktioniert.",
+			"Jemand fragt, ob ihr den Clip auch für seine Marke macht."
+		]
+	},
+	"offline_bericht": {
+		"titel": "Willkommen zurück",
+		"text": "Während du weg warst, sind %d Clips online gegangen.",
+		"von": "mo",
+		"saetze": [
+			"Du warst weg. Ich hab deine Clips für dich geguckt. Alle. Zweimal.",
+			"Es lief die ganze Zeit. Ich glaub, ich hab geholfen. Ich hab Chips gebracht.",
+			"Ich hab den Kanal bewacht, während du weg warst. Gegessen hab ich auch."
+		]
+	},
+	"weltwechsel": {
+		"titel": "Das Studio",
+		"text": "Eine Garage im Hinterhof, ein Rolltor, das klemmt. Younes wartet schon. Er hat die Lampen dreimal verstellt.",
+		"knopf": "Los",
+		"figur": "mit Younes"
+	},
+	"silhouetten": {
+		"_kommentar": "Welche Silhouette in dieser Welt welche Rolle spielt. Dieselbe kommentierende Figur ist hier ein Zuschauer, der schreibt, und in Welt 2 der erste Auftraggeber.",
+		"npc_standard": "Zuschauer, der kurz bleibt",
+		"npc_flach": "Scrollt vorbei, bleibt nicht",
+		"npc_gebeugt": "Schaut sich den Clip zu Ende an",
+		"npc_klein": "Kommt öfter wieder",
+		"npc_breit": "Mo"
+	},
+	"tutorial": {
+		"_kommentar": "Die Saetze der Einfuehrung (K2 P3). Der ABLAUF steht in data/tutorial/tutorial.json und kennt nur diese IDs -- er ueberlebt einen Themenwechsel unveraendert (D3/ADR-010). Mo spricht (K2 Regel 19): kurz, warm, konkret. JEDE Karte sagt, WAS die Handlung bewirkt. Platzhalter: {plus} = Mehreinnahmen der naechsten Stufe (z. B. +0,9 €/s; sonst 'mehr Geld'), {ziel} = Text des ersten Ziels.",
+		"zoom": {
+			"von": "mo",
+			"text": "Mit zwei Fingern ziehst du die Karte groß und klein.",
+			"text_b": "Zwei Finger zoomen. Doppeltipp auf freien Boden: Raum oder Überblick."
+		},
+		"ueberspringen": "Kenne ich schon",
+		"waehlen": {
+			"titel": "Mo",
+			"text": "Jeder Clip beginnt mit einer Idee. Die hängen an der Pinnwand. Tipp drauf."
+		},
+		"ausbauen": {
+			"titel": "Mo",
+			"text": "Mehr Ideen sind mehr Clips und damit mehr Geld. Eine Stufe bringt dir {plus}. Tipp auf Ausbauen."
+		},
+		"kette": {
+			"titel": "Mo",
+			"text": "Jeder Clip geht durch diese drei Schritte. Der langsamste bremst alle anderen. Tipp auf die rote Station."
+		},
+		"rot": {
+			"titel": "Mo",
+			"text": "Rot heißt: Hier klemmt's. Baust du das Rote aus, verdienst du sofort mehr. Eine Stufe bringt {plus}. Bau ein paar aus."
+		},
+		"erstes_ziel": {
+			"titel": "Mo",
+			"text": "Dein erstes Ziel steht oben: {ziel}. Jedes Ziel zahlt Geld und bringt den Gaming-PC näher."
+		},
+		"belohnung": {
+			"titel": "Mo",
+			"text": "Geschafft! Tipp aufs Ziel und hol dir die Belohnung. Das Geld ist sofort da."
+		},
+		"belohnung_moment": {
+			"titel": "Dein erstes Ziel!",
+			"untertitel": "Mo: Der Gaming-PC rückt näher."
+		},
+		"ausstattung": {
+			"titel": "Mo",
+			"text": "Kauf eine Ausstattung. Sie steht danach wirklich im Raum und macht die Station schneller: mehr Geld pro Sekunde."
+		},
+		"flur": {
+			"titel": "Mo",
+			"text": "Hinter der Tür steht der Router. Kauf den Flur, dann laden deine Clips von allein hoch und bringen mehr Geld."
+		},
+		"upload": {
+			"titel": "Mo",
+			"text": "Der Upload macht die ganze Kette schneller. Je höher du ihn ausbaust, desto mehr Reichweite und Geld."
+		}
+	},
+	"belohnung": {
+		"_kommentar": "Texte der Belohnungsschleife. Der Ton ist wichtig: Es ist ein ANGEBOT, kein Wegezoll. Kein Satz darf klingen, als bekaeme man ohne Werbung zu wenig.",
+		"schub_knopf": "Trend-Boost",
+		"schub_laeuft": "Boost %s",
+		"schub_wartet": "Boost in %s",
+		"schub_titel": "Der Trend trägt dich",
+		"schub_text": "Für ein paar Minuten sehen mehr Leute deine Clips.",
+		"offline_verdoppeln": "Verdoppeln",
+		"offline_verdoppelt_titel": "Doppelt",
+		"offline_verdoppelt_text": "Die Aufrufe wurden verdoppelt.",
+		"laeuft_gerade": "Läuft …",
+		"nichts_da_titel": "Gerade nichts da",
+		"nichts_da_text": "Versuch es gleich nochmal."
+	},
+	"schlange_format": "%d bleiben dran",
+	"limit": {
+		"_kommentar": "Texte der harten Obergrenze (Welt 2). 'format' bekommt Titel und Auslastung in Prozent, 'knopf' den Preis. Prozent statt Megabyte, weil der Kern in Durchsatz rechnet -- eine erfundene Umrechnung waere eine Zahl, die nichts bedeutet.",
+		"titel": "Speicher",
+		"format": "%s  %d %%",
+		"knopf": "Umbauen  (%s)",
+		"wand_titel": "Es klemmt",
+		"wand_text": "Es läuft. Es läuft nur nicht dort, wo es laufen muss.",
+		"erledigt_titel": "Weniger",
+		"erledigt_text": "Zwei Tage Arbeit, um etwas wegzunehmen. 180 MB."
+	},
+	"abspann": {
+		"_kommentar": "Der Abspann. Er erscheint genau einmal: wenn der ganze Bogen durch ist. Der 'hinweis' ist keine Zierde, sondern Pflicht -- Welt 6 handelt von Kapital, und kein Satz des Spiels darf als Finanzberatung lesbar sein (docs/PLAY_COMPLIANCE, TASK 050).",
+		"titel": "Der Zähler läuft weiter",
+		"text": "Du musst nicht mehr hinsehen.\n\nDas war die ganze Zeit das Ziel.",
+		"knopf": "Von vorn",
+		"hinweis": "Dies ist ein Spiel. Es bildet weder echte Märkte noch echte Erträge ab und ist keine Anlageberatung."
+	},
+	"personen": {
+		"_kommentar": "Nur Welt 4 benutzt diesen Abschnitt wirklich. Die anderen tragen ihn der Struktur wegen -- alle Themen haben dieselben Schluessel, damit ein fehlender Eintrag auffaellt statt stillschweigend zu fehlen.",
+		"ueberlast_text": "Es sitzt jemand laenger da als alle anderen. Die Arbeit wird davon nicht mehr."
+	},
+	"eroeffnung": {
+		"_kommentar": "Der allererste Bildschirm eines neuen Spielstands. Nur Welt 1 fuellt ihn. Drei Blasen nach K2 Regel 20: Ort/Geschaeft, Verhaeltnis, Welt-Ziel. Kein Antwortchip, ein Knopf. Ein leerer Titel heisst: nicht zeigen.",
+		"titel": "CREATOR INC",
+		"text": "Dein erster Clip hat drei Aufrufe. Zwei warst du. Einer war Mo.\n\nLass uns daraus was machen. Ziel: dein erster Gaming-PC.",
+		"knopf": "Los geht's",
+		"chat": [
+			{
+				"von": "mo",
+				"text": "Dein erster Clip hat drei Aufrufe."
+			},
+			{
+				"von": "mo",
+				"text": "Zwei warst du. Einer war ich."
+			},
+			{
+				"von": "mo",
+				"text": "Lass uns daraus was machen. Ziel: dein erster Gaming-PC."
+			}
+		]
+	},
+	"ausstattung": {
+		"station_intake": {
+			"ausstattung_1": {
+				"name": "Notizen",
+				"stufen": [
+					"Lose Zettel",
+					"Notizbuch",
+					"Klebezettel-Wand",
+					"Whiteboard"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Recherche",
+				"stufen": [
+					"Nichts",
+					"Altes Tablet",
+					"Tablet mit Tastatur",
+					"Trend-Monitor"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Inspiration",
+				"stufen": [
+					"Leere Tasse",
+					"Kaffee und Pflanze",
+					"Box und Lichterkette",
+					"Ideen-Lampe"
+				]
+			}
+		},
+		"station_buffer": {
+			"ausstattung_1": {
+				"name": "Kamera",
+				"stufen": [
+					"Handy auf Büchern",
+					"Kleines Stativ",
+					"Stativ mit Gimbal",
+					"Systemkamera"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Licht",
+				"stufen": [
+					"Lampe verkehrt herum",
+					"Kleines Ringlicht",
+					"Großes Ringlicht",
+					"Zwei Softboxen"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Ton",
+				"stufen": [
+					"Kopfhörer am Boden",
+					"Ansteckmikro",
+					"Richtmikro",
+					"Studiomikro"
+				]
+			}
+		},
+		"station_processing": {
+			"ausstattung_1": {
+				"name": "Bildschirm",
+				"stufen": [
+					"Nur der Laptop",
+					"Monitor auf Büchern",
+					"Großer Monitor",
+					"Zwei Monitore"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Rechner",
+				"stufen": [
+					"Alter Laptop",
+					"Laptop mit Kühlpad",
+					"Gebrauchter Gaming-Laptop",
+					"Der Gaming-PC"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Stuhl",
+				"stufen": [
+					"Plastikhocker",
+					"Bürostuhl",
+					"Stuhl mit Armlehnen",
+					"Gaming-Stuhl"
+				]
+			}
+		},
+		"station_transport": {
+			"ausstattung_1": {
+				"name": "Netz",
+				"stufen": [
+					"Alter Router",
+					"Router mit drei Antennen",
+					"Mesh-Router",
+					"Switch und Kabel"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Planung",
+				"stufen": [
+					"Ein Zettel",
+					"Tischkalender",
+					"Plan auf dem Tablet",
+					"Upload-Warteschlange"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Reichweite",
+				"stufen": [
+					"Nichts",
+					"Zweithandy",
+					"Handyständer",
+					"Kleiner Server"
+				]
+			}
+		},
+		"station_special": {
+			"ausstattung_1": {
+				"name": "Chat",
+				"stufen": [
+					"Handy auf dem Sofa",
+					"Handy auf Ständer",
+					"Tablet mit Tastatur",
+					"Laptop"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Gemütlichkeit",
+				"stufen": [
+					"Nichts",
+					"Kissen und Decke",
+					"Stehlampe",
+					"Pflanze und Kerze"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Gäste",
+				"stufen": [
+					"Nichts",
+					"Zweiter Controller",
+					"Sitzsack für Mo",
+					"Sessel für Gäste"
+				]
+			}
+		}
+	},
+	"bereiche": {
+		"bereich_1": {
+			"name": "Der Flur",
+			"text": "Der Router steht hier. Das beste WLAN der Wohnung — und bald dein Upload.",
+			"danach": "Neu: Upload. Deine Clips laden jetzt von allein hoch."
+		},
+		"bereich_2": {
+			"name": "Die Küche",
+			"text": "Wer isst, schneidet schneller. Tobi kocht für zwei – Mo isst mit.",
+			"danach": "Alle Stationen ×1,25. Tobi kocht, Mo isst, der Rest läuft."
+		},
+		"bereich_3": {
+			"name": "Das Wohnzimmer",
+			"text": "Sofa, Fernseher, Controller. Hier streamt ihr abends.",
+			"danach": "Neu: Der Stream. Der Chat zahlt mit, jeder Clip bringt mehr."
+		},
+		"bereich_4": {
+			"name": "Der Balkon",
+			"text": "Tageslicht. Kein Ringlicht der Welt ist so gut.",
+			"danach": "Die Aufnahme wird besser. Dein Gesicht bekommt Farbe."
+		},
+		"bereich_5": {
+			"name": "Das freie Zimmer",
+			"text": "Tobis Zimmer. Bald dein Studio. Sonst Miras Cousine.",
+			"wartet": "Tobi wohnt noch hier. Der Topf auch.",
+			"danach": "Alles wird schneller. Der Topf bleibt."
+		},
+		"bereich_6": {
+			"name": "Das Tonstudio im Bad",
+			"text": "Fliesen, ein Mikro über der Wanne. Hier sprichst du deine Clips ein.",
+			"danach": "Alle Stationen laufen schneller. Deine Clips klingen jetzt wie vom Profi."
+		}
+	},
+	"nebenraeume": {
+		"bad": {
+			"name": "Das Bad",
+			"text": "Das Bad gehört zur WG. Hier gibt es nichts auszubauen – es muss nur jemand die Tür aufmachen."
+		},
+		"miras_zimmer": {
+			"name": "Miras Zimmer",
+			"text": "Miras Zimmer. Ihre Tür bleibt offen, aber hier gibt es nichts zu kaufen."
+		}
+	},
+	"ziel_formate": {
+		"station_stufe": "%s auf Stufe %d",
+		"ausstattung_stufe": "%s: %s auf Stufe %d",
+		"ausstattung_gesamt": "%d Ausstattungsstufen kaufen",
+		"bereich": "%s gehört dir",
+		"verdient": "%s € verdienen",
+		"momente": "%d Momente antippen",
+		"sterne": "%d Sterne sammeln",
+		"stufen_gesamt": "%d Stufen insgesamt",
+		"abschluss": "Der Gaming-PC steht – die ganze WG ist ausgebaut"
+	},
+	"absender": {
+		"plattform": "Dein Kanal",
+		"mo": "Mo",
+		"mira": "Mira",
+		"tobi": "Tobi",
+		"younes": "Younes",
+		"du": "Du"
+	},
+	"nachrichten": {
+		"nachricht_01": {
+			"von": "mo",
+			"text": "Tipp auf die Pinnwand und bau sie aus. Was rot ist, bremst.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Tipp auf die Pinnwand und bau sie aus. Was rot ist, bremst.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "mira",
+					"text": "Und wer zahlt das hier? Ich zahle die Miete, nur zur Info.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "mo",
+					"text": "Der erste Kunde kommt. Ich hab ein Gefühl und einen Cousin.",
+					"stimmung": "jubelnd"
+				}
+			]
+		},
+		"nachricht_02": {
+			"von": "mira",
+			"text": "Meine Lampe ist weg. Bau weiter aus."
+		},
+		"nachricht_03": {
+			"von": "mo",
+			"text": "8 Stufen! Spar auf den Flur, dort steht der Router."
+		},
+		"nachricht_04": {
+			"von": "plattform",
+			"text": "100 Aufrufe, 61 von Mo. Der Flur kostet 200 €."
+		},
+		"nachricht_05": {
+			"von": "mo",
+			"text": "Der Router steht im Flur, deine Clips laden von allein hoch.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Der Router steht im Flur, deine Clips laden von allein hoch.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "mira",
+					"text": "Das WLAN im Bad ist besser als in meinem Zimmer.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "mira",
+					"text": "Hast du das extra für mich gemacht? Weiter: die Küche.",
+					"stimmung": "neutral"
+				}
+			],
+			"antworten": [
+				{
+					"text": "Klar, extra.",
+					"reaktion": "Süß. Ich merk mir das. Und ich bleib trotzdem länger im Bad."
+				},
+				{
+					"text": "Zufall.",
+					"reaktion": "Dachte ich mir. Ich nehm das WLAN trotzdem. Danke. Hab ich gesagt."
+				}
+			]
+		},
+		"nachricht_16": {
+			"von": "mo",
+			"text": "Jeder Raum bringt den Gaming-PC näher. Kauf die Küche."
+		},
+		"nachricht_06": {
+			"von": "tobi",
+			"text": "Die Küche gehört dir, alles läuft ein Viertel schneller.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "tobi",
+					"text": "Die Küche gehört dir, alles läuft ein Viertel schneller.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "tobi",
+					"text": "Aber die Miete steigt und der Herd ist von 1994. Wer zahlt das?",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "mo",
+					"text": "Das Wohnzimmer! Dort streamen wir. Kauf es, Bruder.",
+					"stimmung": "jubelnd"
+				}
+			]
+		},
+		"nachricht_17": {
+			"von": "mo",
+			"text": "Die Leute wollen uns zocken sehen. Kauf das Wohnzimmer."
+		},
+		"nachricht_07": {
+			"von": "mira",
+			"text": "Dein Schreibtisch summt. Bau den Schnitt aus."
+		},
+		"nachricht_18": {
+			"von": "plattform",
+			"text": "1.000 Aufrufe. Weiter: Wohnzimmer kaufen."
+		},
+		"nachricht_09": {
+			"von": "mo",
+			"text": "Sofa, Fernseher, Chat: Ab heute streamen wir abends.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Sofa, Fernseher, Chat: Ab heute streamen wir abends.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "mo",
+					"text": "Vier Zuschauer haben zugesagt, zwei davon bin ich.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "mo",
+					"text": "Wer schreibt im Chat? Danach: den Stream ausbauen.",
+					"stimmung": "neutral"
+				}
+			],
+			"antworten": [
+				{
+					"text": "Ich.",
+					"reaktion": "Okay, Chef. Ich sitz daneben und klatsche. Mit Snack."
+				},
+				{
+					"text": "Du, Mo.",
+					"reaktion": "JA. Ich schreibe jede Minute Hallo in den Chat. Du wirst es sehen."
+				}
+			]
+		},
+		"nachricht_08": {
+			"von": "tobi",
+			"text": "Nach 22 Uhr nur leise Nudeln. Spar für den Balkon."
+		},
+		"nachricht_19": {
+			"von": "mira",
+			"text": "Die Nachbarin fragt nach dem Stream. Ich: nie gesehen."
+		},
+		"nachricht_10": {
+			"von": "plattform",
+			"text": "1.000 Zuschauer, Mo hat gewunken. Weiter: Balkon."
+		},
+		"nachricht_20": {
+			"von": "mo",
+			"text": "1.000 Leute gleichzeitig im Stream!",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "1.000 Leute gleichzeitig im Stream!",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "mo",
+					"text": "Halbzeit: Der Gaming-PC ist zur Hälfte bezahlt. Weiter: Balkon.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "tobi",
+					"text": "Wer hat auf meinen Kühlschrank geschrieben? Mit Edding?",
+					"stimmung": "geschockt"
+				}
+			]
+		},
+		"nachricht_11": {
+			"von": "tobi",
+			"text": "Ich zieh zum Ersten aus. Der Topf bleibt.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "tobi",
+					"text": "Ich zieh zum Ersten aus. Der Topf bleibt.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "tobi",
+					"text": "Meine Miete fehlt dir dann. Kauf mein Zimmer, bevor es leer steht.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "mira",
+					"text": "Dann zahlen wir alle mehr. Mo, hörst du?",
+					"stimmung": "geschockt"
+				}
+			]
+		},
+		"nachricht_12": {
+			"von": "mira",
+			"text": "Meine Cousine will Tobis Zimmer. Kauf es zuerst!"
+		},
+		"nachricht_14": {
+			"von": "mo",
+			"text": "Das freie Zimmer ist dein Studio. Alles ausbauen."
+		},
+		"nachricht_13": {
+			"von": "plattform",
+			"text": "126.000 Aufrufe. Mo zählt sich dreimal."
+		},
+		"nachricht_21": {
+			"von": "mira",
+			"text": "Ein Paket vor der Tür piept. Es ist groß.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mira",
+					"text": "Ein Paket vor der Tür piept. Es ist groß.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "mo",
+					"text": "Der Gaming-PC! Fast. Bau noch alles aus, dann steht er.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "mira",
+					"text": "Es piept lauter. Mach du auf, ich trau mich nicht.",
+					"stimmung": "geschockt"
+				}
+			]
+		},
+		"nachricht_22": {
+			"von": "mo",
+			"text": "Der Gaming-PC bootet. Die Lüfter heulen. Noch ein Stück!"
+		},
+		"nachricht_15": {
+			"von": "younes",
+			"text": "Hier ist Younes, Mos Cousin.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "younes",
+					"text": "Hier ist Younes, Mos Cousin.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "younes",
+					"text": "Ich hab eine Garage, ein klemmendes Rolltor und Kunden, die warten.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "younes",
+					"text": "Ich brauche jemanden zum Schneiden. Bring Kaffee.",
+					"stimmung": "neutral"
+				}
+			]
+		},
+		"nachricht_23": {
+			"von": "mo",
+			"text": "Die Bäckerei will einen Clip! Tipp das ! über mir."
+		},
+		"nachricht_24": {
+			"von": "plattform",
+			"text": "Bäckerei-Clip online. Weiter: Balkon kaufen."
+		}
+	},
+	"momente": {
+		"texte": [
+			"Ein Clip zieht an",
+			"Jemand teilt euer Video",
+			"Mo hat einen Clip gepostet",
+			"Die Empfehlung schaut kurz her",
+			"Ein Duett mit deinem Clip"
+		],
+		"gross_titel": "Ein Clip geht durch die Decke",
+		"kiste": {
+			"titel": "Ein Paket vor der Tür",
+			"text": "Mo hat etwas bestellt. Tipp die Kiste an, der Inhalt bringt Geld."
+		}
+	},
+	"abschluss": {
+		"titel": "Der Gaming-PC steht",
+		"text": "Die WG ist fertig. Der Gaming-PC leuchtet auf deinem Schreibtisch, die Miete ist bezahlt, Tobis Topf steht noch da. Mo hat geweint. Er sagt, es war der Lüfter.\n\nEine Nachricht von Younes.",
+		"antwort": "Morgen.",
+		"zahlen": {
+			"spielzeit": "Spielzeit",
+			"verdient": "Verdient",
+			"raeume": "Räume",
+			"ausstattung": "Ausstattung"
+		}
+	},
+	"menue": {
+		"ausbau": "Ausbau",
+		"ziele": "Ziele",
+		"handy": "Handy",
+		"laden": "Laden",
+		"schub": "Boost"
+	},
+	"stil": {
+		"akzent": "#3D7BFF",
+		"akzent_text": "#1B1726",
+		"akzent_tief": "#2456C8"
+	},
+	"absender_farben": {
+		"plattform": "#1B1726",
+		"mo": "#3D7BFF",
+		"mira": "#FF6FA8",
+		"tobi": "#F59E0B",
+		"younes": "#FF4FA3",
+		"du": "#3D7BFF"
+	},
+	"absender_figur": {
+		"mo": "figur_cap",
+		"mira": "figur_dutt",
+		"tobi": "figur_muetze",
+		"younes": "figur_buckethat",
+		"du": "figur_kapuze"
+	},
+	"crew": {
+		"_kommentar": "Crew-Karten je Station: Figur, Rolle, Rangtitel (I-III), Kartentext je Rang. Nur Darstellung.",
+		"station_intake": {
+			"name": "Mira",
+			"portrait": "mira",
+			"rolle": "Fragt nach",
+			"raenge": [
+				"Skeptisch",
+				"Neugierig",
+				"Redaktion"
+			],
+			"texte": [
+				"„Und was soll das sein?“ Genau die Frage, die ein Clip braucht.",
+				"„Warum das?“ Mira fragt, du hast plötzlich Antworten.",
+				"Sie schreibt mit. Sie sagt, sie tut es nicht."
+			]
+		},
+		"station_buffer": {
+			"name": "Mo",
+			"portrait": "mo",
+			"figur": "figur_anzug",
+			"rolle": "Steht vor der Kamera",
+			"raenge": [
+				"Statist",
+				"Hauptrolle",
+				"Star (laut Mo)"
+			],
+			"texte": [
+				"Mo steht rum. Mit Snack.",
+				"Mo kennt jetzt sein Licht. Und seine Seite.",
+				"Die Kamera liebt ihn, sagt Mo. Die Kamera sagt nichts."
+			]
+		},
+		"station_processing": {
+			"name": "Tobi",
+			"portrait": "tobi",
+			"rolle": "Kocht neben dem Schreibtisch",
+			"raenge": [
+				"Nudeln",
+				"Nudeln mit Soße",
+				"Nudeln für drei"
+			],
+			"texte": [
+				"Tobi stellt einen Teller neben den Laptop. Du schneidest schneller. Warum auch immer.",
+				"Nach dem Essen sitzt der Schnitt. Tobi nennt das Wissenschaft.",
+				"Drei Teller, ein Schnitt, null Beschwerden."
+			]
+		},
+		"station_transport": {
+			"name": "Mira",
+			"portrait": "mira",
+			"rolle": "Hütet das WLAN im Bad",
+			"raenge": [
+				"Beobachtet",
+				"Beschwert sich",
+				"Sorgt fürs Netz"
+			],
+			"texte": [
+				"Mira prüft den Router. Nur zur Info.",
+				"Mira beschwert sich. Das Netz wird besser.",
+				"Das WLAN im Bad ist jetzt ihr Projekt."
+			]
+		},
+		"station_special": {
+			"name": "Mo",
+			"portrait": "mo",
+			"rolle": "Moderiert den Chat",
+			"raenge": [
+				"Zuschauer",
+				"Mod",
+				"Hype-Mann"
+			],
+			"texte": [
+				"Mo schreibt im Chat. Unter drei Namen.",
+				"Mo bannt Trolle und gibt ihnen dann Chips aus.",
+				"Der Chat wartet auf Mo. Er lässt sich Zeit."
+			]
+		}
+	},
+	"auftraege": {
+		"_kommentar": "K3 B3: Mini-Aufgaben zwischen Raum 3 und 4 (Ziel-IDs ziel_auftrag_1..3, kette 'auftrag'). Ein '!' steht ueber der Figur (absender_figur). Tipp -> Szene: 'satz' (warum es dem Geschaeft hilft) + 'aufgabe_format' mit dem echten Zieltext (was zu tun ist) -> 'knopf_start' springt zum Ziel. Ist das Ziel erfuellt: 'dank' + 'knopf_holen' loest es ein. Saetze <= 90 Zeichen.",
+		"knopf_start": "Mach ich",
+		"knopf_holen": "Abholen",
+		"aufgabe_format": "Deine Aufgabe: %s",
+		"symbol": "!",
+		"ziel_auftrag_1": {
+			"figur": "mo",
+			"satz": "Die Bäckerin unten will frische Brötchen im Clip. Gute Bilder machen sie zur Stammkundin.",
+			"dank": "Die Bilder sehen lecker aus. Die Bäckerin hat schon zweimal geschrieben."
+		},
+		"ziel_auftrag_2": {
+			"figur": "mira",
+			"satz": "Ich hab der Bäckerin Musik versprochen. Ist der Clip fertig, zahlt sie.",
+			"dank": "Sie hat gelacht. Und gezahlt. Ich nehm das als Danke."
+		},
+		"ziel_auftrag_3": {
+			"figur": "tobi",
+			"satz": "Die Bäckerin will den Clip heute posten. Je schneller er online ist, desto mehr Kunden.",
+			"dank": "Der Clip ist online. Wir kriegen Brötchen umsonst. Für immer, sagt Mo."
+		}
+	},
+	"ketten": {
+		"auftrag": "Auftrag: Clip für die Bäckerei"
+	},
+	"kapitel": [
+		{
+			"id": "kapitel_1",
+			"titel": "Drei Aufrufe",
+			"ab_bereich": "",
+			"aufgabe": "Baue Pinnwand, Aufnahme und Schnitt aus und kaufe den Flur.",
+			"entscheidung": "nachricht_05"
+		},
+		{
+			"id": "kapitel_2",
+			"titel": "Zu wenig Platz",
+			"ab_bereich": "bereich_2",
+			"aufgabe": "Verdiene mehr und kaufe das Wohnzimmer für den Stream.",
+			"entscheidung": ""
+		},
+		{
+			"id": "kapitel_3",
+			"titel": "Der Stream",
+			"ab_bereich": "bereich_3",
+			"aufgabe": "Erledige den Auftrag der Bäckerei und kaufe den Balkon.",
+			"entscheidung": "nachricht_09"
+		},
+		{
+			"id": "kapitel_4",
+			"titel": "Der Gaming-PC",
+			"ab_bereich": "bereich_4",
+			"aufgabe": "Kaufe Tobis Zimmer und baue alles aus, bis der Gaming-PC steht.",
+			"entscheidung": ""
+		}
+	],
+	"auftragsbrett": {
+		"_kommentar": "Absender und Warum-Satz je Ziel-ID (Auftragsbrett, Welle 2b). Bewusst NICHT unter \"ziele\": jeder Schluessel dort zaehlt als Mission.",
+		"ziel_01": {
+			"absender": "mo",
+			"satz": "Zehn Stufen, dann schafft die Pinnwand den ersten Kunden."
+		},
+		"ziel_32": {
+			"absender": "mo",
+			"satz": "Gute Aufnahmen: Wer zusieht, bleibt auch dran."
+		},
+		"ziel_02": {
+			"absender": "mira",
+			"satz": "Mit Recherche weiß ich, was Kunden sehen wollen."
+		},
+		"ziel_03": {
+			"absender": "mira",
+			"satz": "Schneller Schnitt heißt: Der Kunde wartet nicht."
+		},
+		"ziel_04": {
+			"absender": "mo",
+			"satz": "Der Flur: Dort steht der Router. Ohne ihn kein Upload."
+		},
+		"ziel_05": {
+			"absender": "plattform",
+			"satz": "Schneller Upload, schneller Kunde, schneller Verdienst."
+		},
+		"ziel_33": {
+			"absender": "mo",
+			"satz": "Mehr Ideen, mehr Clips. Mehr Clips, mehr Geld."
+		},
+		"ziel_06": {
+			"absender": "mira",
+			"satz": "Gutes Zubehör sieht der Kunde im fertigen Clip."
+		},
+		"ziel_07": {
+			"absender": "mo",
+			"satz": "Sterne machen eine Station schneller. Das merkt die Kasse."
+		},
+		"ziel_08": {
+			"absender": "mo",
+			"satz": "Aufnahmen auf Vorrat: So reißt der Nachschub nie ab."
+		},
+		"ziel_09": {
+			"absender": "tobi",
+			"satz": "Die Küche: Wer satt ist, arbeitet länger. Ich muss es wissen."
+		},
+		"ziel_10": {
+			"absender": "plattform",
+			"satz": "Drei Zuschauer-Momente: Jeder Tipp bringt Zusatzgeld."
+		},
+		"ziel_26": {
+			"absender": "mira",
+			"satz": "Bessere Kamera, bessere Bilder, zufriedenere Kunden."
+		},
+		"ziel_11": {
+			"absender": "mo",
+			"satz": "Besseres Licht, sonst sieht man dich nicht im Stream."
+		},
+		"ziel_12": {
+			"absender": "mo",
+			"satz": "Ideen sind unser Rohstoff. Ohne sie keine Aufträge."
+		},
+		"ziel_13": {
+			"absender": "plattform",
+			"satz": "Erst 50.000 € verdienen, dann das Wohnzimmer leisten."
+		},
+		"ziel_14": {
+			"absender": "mo",
+			"satz": "Wohnzimmer: Dort streamen wir. Dort wachsen die Zuschauer."
+		},
+		"ziel_auftrag_1": {
+			"absender": "mo",
+			"satz": "Die Bäckerei zahlt für einen Clip: erster Kunde!"
+		},
+		"ziel_auftrag_2": {
+			"absender": "mira",
+			"satz": "Der Bäcker will es bald. Wir liefern schnell."
+		},
+		"ziel_auftrag_3": {
+			"absender": "tobi",
+			"satz": "Letzter Schritt, dann zahlt die Bäckerei und empfiehlt uns."
+		},
+		"ziel_15": {
+			"absender": "mo",
+			"satz": "Der Stream bringt Stammpublikum. Das zahlt dauerhaft."
+		},
+		"ziel_27": {
+			"absender": "mo",
+			"satz": "Ein starker Stream: Jeder Abend bringt Neue dazu."
+		},
+		"ziel_16": {
+			"absender": "mira",
+			"satz": "30 Ausstattungsstufen: Ab da sieht es nach Firma aus."
+		},
+		"ziel_17": {
+			"absender": "mo",
+			"satz": "Zwölf Sterne: Dann läuft die ganze Kette schneller."
+		},
+		"ziel_20": {
+			"absender": "tobi",
+			"satz": "Der Balkon: Dort ist gutes Licht zum Filmen."
+		},
+		"ziel_18": {
+			"absender": "plattform",
+			"satz": "Starker Upload: Kein Clip bleibt mehr liegen."
+		},
+		"ziel_19": {
+			"absender": "mira",
+			"satz": "Guter Schnitt ist der Unterschied zwischen Hobby und Auftrag."
+		},
+		"ziel_28": {
+			"absender": "mo",
+			"satz": "15 Sterne: Wir sind schneller als jede andere WG."
+		},
+		"ziel_24": {
+			"absender": "mira",
+			"satz": "Tobis Zimmer: Mehr Platz für Technik und für uns."
+		},
+		"ziel_21": {
+			"absender": "younes",
+			"satz": "Stufe 50 beim Schnitt: So schneidet ein Profi."
+		},
+		"ziel_22": {
+			"absender": "mo",
+			"satz": "100 Ausstattungsstufen: Dein Zimmer ist ein Studio."
+		},
+		"ziel_23": {
+			"absender": "mo",
+			"satz": "Der Stream auf Stufe 30: Jetzt schauen viele zu."
+		},
+		"ziel_29": {
+			"absender": "plattform",
+			"satz": "100 Mio. € verdient: Das Geld für den Gaming-PC."
+		},
+		"ziel_30": {
+			"absender": "mo",
+			"satz": "200 Stufen: Die ganze Firma zieht an einem Strang."
+		},
+		"ziel_31": {
+			"absender": "mira",
+			"satz": "20 Sterne: Besser wird es kaum."
+		},
+		"ziel_25": {
+			"absender": "mo",
+			"satz": "Der Gaming-PC! Dann ist aus dem Zimmer eine Firma geworden."
+		}
+	}
+}

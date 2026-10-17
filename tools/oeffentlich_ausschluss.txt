@@ -1,0 +1,35 @@
+# oeffentlich_ausschluss.txt -- Pfade, die im oeffentlichen Schnappschuss (Repo creator-inc) NICHT landen.
+# Eine Zeile = ein Pfad oder Ordner relativ zum Repo-Wurzelordner (Verzeichnisse mit / am Ende).
+# Grund je Block; Begruendung und Scan-Ergebnis: docs/release/OEFFENTLICH_PRUEFUNG.md (Stand 17.10.2026).
+# Nicht getrackt und schon per .gitignore draussen: build/, shots/, reports/, .godot/, Keystores.
+
+# Private Daten (Wohnanschrift, D-U-N-S-Antrag)
+docs/DUNS_ANTRAG.md
+
+# Interne Absprachen mit Florin / WVM-IT, AdMob-Planung (seit 17.10. ueberholt)
+docs/release/ADMOB.md
+docs/release/UEBERGABE_FLORIN.md
+docs/release/fragebogen_antworten.md
+docs/release/datenschutz_de.html
+docs/release/datenschutz_de_admob.html
+docs/release/datenschutz_en.html
+docs/release/datenschutz_en_admob.html
+docs/RELEASE_PLAN_2026-10-14.md
+docs/STORE_EINTRAG.md
+docs/PLAY_COMPLIANCE_HELLOWORLD.md
+docs/DATENSCHUTZ.md
+
+# Frueheres Thema (vor dem Themenwechsel, ADR-015) -- Recherche mit Drogenbegriffen
+docs/RESEARCH_SUMMARY.md
+docs/PLAY_COMPLIANCE.md
+MASTER_PROMPT_V2.md
+
+# Arbeitsnotizen der KI-Agenten (intern, ohne Wert fuer Leser)
+docs/nacht/
+OPEN_QUESTIONS.md
+
+# Planungsdokumente mit dem frueheren Thema und alte Store-Texte (Werbung/Play-Plan)
+MASTER_DECISIONS.md
+MASTER_PLAN.md
+docs/release/store_eintrag.md
+docs/release/PLAY_CHECKLISTE.md

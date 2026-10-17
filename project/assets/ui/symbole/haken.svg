@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 128">
+<circle cx="64" cy="64" r="52" fill="#B6F03C"/>
+<clipPath id="k13"><circle cx="64" cy="64" r="52"/></clipPath>
+<g clip-path="url(#k13)"><g transform="translate(4 4)"><circle cx="64" cy="64" r="52" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<circle cx="64" cy="64" r="52" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M38 66 L57 84 L92 46" fill="none" stroke="#1B1726" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

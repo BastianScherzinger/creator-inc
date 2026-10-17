@@ -1,0 +1,24 @@
+{
+	"_kommentar": "K3 -- Verhalten der unteren Panels (Sheet). Logische Pixel bei 720 Breite. Ein Wisch ist nie ein Tipp: Bewegt sich der Finger mehr als tipp_schwelle_px, gilt die Beruehrung als Wisch und loest keinen Knopf aus. Geschlossen wird nur per Wisch nach unten, der im Kopf (Griff + Titelstreifen) beginnt, oder per Kreuz.",
+	"tipp_schwelle_px": 14,
+	"_kommentar_k6": "K6 -- Tippflaechen auf der Karte (TippErkenner): Tipp = Druck + Loslassen innerhalb tipp_schwelle_px, Maus oder Touch. Bleibt der Finger langdruck_ms ruhig liegen, ist es ein Langdruck (Plakette: Raum-Sheet statt Sofortkauf). Nach einem Sofortkauf per Plakette nimmt sie kauf_sperre_ms lang keinen zweiten an (Doppeltipp kauft nie doppelt).",
+	"langdruck_ms": 400,
+	"kauf_sperre_ms": 350,
+	"schliess_wisch_px": 90,
+	"_kommentar_w2e": "W2e -- Raum-Panel und Stationsmenue im Stil von Idle Bank Tycoon: hoechstens max_anteil der Bildhoehe (Menueleiste eingerechnet), Raster mit spalten Spalten, Glanz-Streifen nach dem Kauf.",
+	"raum_panel": {
+		"max_anteil": 0.45,
+		"spalten": 3,
+		"team_spalten": 2,
+		"kachel_h": 112,
+		"pille_h": 104,
+		"reiter_h": 56,
+		"pfeil_b": 56,
+		"zahl_springt_s": 0.45,
+		"glanz_s": 0.42
+	},
+	"station_menue": {
+		"max_anteil": 0.45,
+		"mengen_h": 56
+	}
+}

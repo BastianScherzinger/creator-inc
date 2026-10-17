@@ -1,0 +1,30 @@
+{
+	"_hinweis": "EINGEFROREN. Nachbildung eines Spielstands, wie ihn die App in Schema-Version 4 geschrieben hat (Stand 2026-10-14, vor dem Design-Overhaul): Welt 2, zwei Raeume, fuenf Ziele eingeloest, eine Fortschrittsmarke abgeholt, Tagesgeschenk Serientag 3. Kennt weder Crew noch Tagesaufgaben noch Erfolge. Darf nie wieder angefasst werden (ADR-006).",
+	"schema_version": 4,
+	"kapital": 4321.5,
+	"stationen": {
+		"station_intake": {"stufe": 14, "freigeschaltet": true, "ausstattung": {"ausstattung_1": 3}},
+		"station_buffer": {"stufe": 12, "freigeschaltet": true, "ausstattung": {}},
+		"station_processing": {"stufe": 11, "freigeschaltet": true, "ausstattung": {"ausstattung_1": 2}},
+		"station_transport": {"stufe": 0, "freigeschaltet": false, "ausstattung": {}},
+		"station_special": {"stufe": 0, "freigeschaltet": false, "ausstattung": {}}
+	},
+	"unlocks": ["unlock_transport"],
+	"letzter_zeitstempel": 1789200000,
+	"gesamt_verdient": 981234.0,
+	"spielzeit_sekunden": 5400.0,
+	"auftraege": {"wartend": 0, "seit_letztem": 10.0},
+	"einstellungen": {"ton": true},
+	"tutorial": {"schritt": 9, "beendet": true},
+	"schub": {"faktor": 1.0, "rest": 0.0},
+	"welt_index": 1,
+	"durchlaeufe": 0,
+	"bestand": 0.0,
+	"welt_verdient": 15300.0,
+	"bereiche": ["bereich_1", "bereich_2"],
+	"ziele": ["ziel_01", "ziel_02", "ziel_03", "ziel_04", "ziel_05"],
+	"nachrichten": {"empfangen": ["nachricht_01", "nachricht_02"], "gelesen": 2},
+	"momente": {"angetippt": 4},
+	"marken": ["fortschritt_25"],
+	"tagesgeschenk": {"serientag": 3, "letzter_tag": 20400}
+}

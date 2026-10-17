@@ -1,0 +1,15 @@
+{
+	"_kommentar": "Lokale Messung fuer Handytests und A/B-Auswertung (K3 C3). Schreibt NUR nach user://messung.json, kein Netz, kein Personenbezug (keine Geraete-ID, keine Uhrzeit, nur Sekunden seit Sitzungsstart). Grenzen sind ein Ringpuffer: ist eine Grenze erreicht, fallen die aeltesten Ereignisse weg.",
+	"aktiv": true,
+	"version": 1,
+	"max_ereignisse": 3000,
+	"max_sitzungen": 12,
+	"speichern_alle_sekunden": 15.0,
+	"nachkommastellen": 1,
+	"ereignisse": [
+		"start", "erster_tipp", "tipp_leer", "tipp_station", "tipp_plakette",
+		"kauf", "raum", "moment",
+		"angebot_gezeigt", "angebot_genommen", "angebot_abgelehnt",
+		"sitzung_ende"
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"_kommentar": "Der Katalog. HEUTE ABSICHTLICH LEER -- der Laden existiert, die Ware nicht. Ein Regal, das mit null Produkten sauber aussieht, sieht mit drei erst recht sauber aus; umgekehrt gilt das nicht.",
+
+	"_geplant": "Kandidaten fuer spaeter, ausdruecklich noch NICHT eingebaut: eine einmalige Werbefreiheit und ein dauerhafter Offline-Zuschlag. Beides muss die Regel aushalten, dass niemand Fortschritt kaufen kann, den er sich nicht auch erspielen kann -- sonst wird aus einem Idle-Game eine Kasse.",
+
+	"_produkt_felder": "id, name_schluessel (Text kommt aus dem Thema, D3), preis_text, art (einmalig | verbrauchbar)",
+
+	"produkte": []
+}

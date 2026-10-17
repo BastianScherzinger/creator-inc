@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 128">
+<circle cx="60" cy="68" r="48" fill="#FFF7EA"/>
+<clipPath id="k52"><circle cx="60" cy="68" r="48"/></clipPath>
+<g clip-path="url(#k52)"><g transform="translate(4 4)"><circle cx="60" cy="68" r="48" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<circle cx="60" cy="68" r="48" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="60" cy="68" r="32" fill="#FF4D3D"/>
+<circle cx="60" cy="68" r="32" fill="none" stroke="#1B1726" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="60" cy="68" r="17" fill="#FFF7EA"/>
+<circle cx="60" cy="68" r="17" fill="none" stroke="#1B1726" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="60" cy="68" r="6" fill="#1B1726"/>
+<path d="M60 68 L104 24" fill="none" stroke="#1B1726" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M96 10 L118 8 L112 30 L100 28 Z" fill="#FFF7EA"/>
+<path d="M96 10 L118 8 L112 30 L100 28 Z" fill="none" stroke="#1B1726" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

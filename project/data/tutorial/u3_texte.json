@@ -1,0 +1,21 @@
+{
+	"_kommentar": "Bedientexte und Schwellen der Szenen, Momente und Zeigehand (Paket U3). Keine Themenbegriffe -- die stehen in data/themes. Die Zahlen sind Darstellungsschwellen, kein Spielwert.",
+	"texte": {
+		"szene_weiter": "Tippen",
+		"szene_ende": "Weiter",
+		"moment_einsammeln": "Einsammeln",
+		"moment_ziel": "Ziel geschafft!",
+		"moment_marke": "%d %% geschafft!",
+		"moment_geschenk": "Tagesgeschenk",
+		"moment_raum": "Neuer Raum!",
+		"moment_stern": "Neuer Stern!",
+		"moment_levelup": "Aufgestiegen!",
+		"moment_offline": "Willkommen zurück!"
+	},
+	"schwellen": {
+		"ziel_moment_ab": 200,
+		"hand_leerlauf_sekunden": 60,
+		"tipp_sekunden_je_zeichen": 0.022,
+		"tipp_max_sekunden": 1.0
+	}
+}

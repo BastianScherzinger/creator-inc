@@ -1,0 +1,1014 @@
+{
+	"_kommentar": "Anzeigetexte fuer Welt 4 -- Das Lager (mit Roman). Die einzige Stelle im Projekt, an der thematische Begriffe stehen duerfen (ADR-010). Systeme kennen ausschliesslich die neutralen IDs.",
+	"id": "buero",
+	"welt_name": "Das Lager",
+	"welt_untertitel": "Das Lager",
+	"welt_ziel": "Der Großhändler-Vertrag",
+	"marken_namen": [
+		"Das Band läuft",
+		"Das Team steht",
+		"Die Rampe gehört euch"
+	],
+	"ziel_warum": {
+		"station_stufe": "damit sich keine Bestellungen oder Pakete stauen",
+		"ausstattung_stufe": "so schafft die Station mehr in derselben Zeit",
+		"bereich": "neuer Raum, neue Station, mehr Pakete pro Minute",
+		"verdient": "Geld für den nächsten Ausbau"
+	},
+	"waehrung": "€",
+	"stationen": {
+		"station_intake": {
+			"name": "Bestellungen",
+			"beschreibung": "Vier Shops, vier Bildschirme. Die Bestellungen kommen rund um die Uhr.",
+			"engpass_hinweis": "Gerade kommen zu wenige Bestellungen rein. Das Regal wartet.",
+			"einheit": "Bestellungen/Min",
+			"kurz": "Das Stehpult mit den Bildschirmen. Hier kommt alles an."
+		},
+		"station_buffer": {
+			"name": "Hochregal",
+			"beschreibung": "Stahl, Paletten, Barcodes. Jedes Teil hat seinen Platz.",
+			"engpass_hinweis": "Es kommen mehr Bestellungen an, als das Regal bereitstellen kann.",
+			"einheit": "Paletten/Min",
+			"kurz": "Das Regal. Was hier fehlt, kann niemand packen."
+		},
+		"station_processing": {
+			"name": "Packteam",
+			"beschreibung": "Jana und das Team. Menschen, keine Maschinen.",
+			"engpass_hinweis": "Das Team kommt nicht hinterher. Mehr Arbeit macht es langsamer, nicht schneller.",
+			"einheit": "Pakete/Min",
+			"kurz": "Die Packtischreihe. Hier arbeiten Menschen."
+		},
+		"station_transport": {
+			"name": "Förderband",
+			"beschreibung": "Die Pakete laufen, nicht ihr. Das Band summt die ganze Nacht.",
+			"engpass_hinweis": "Das Band schafft die Pakete nicht mehr weg.",
+			"einheit": "Durchsatz",
+			"kurz": "Das Band im Gang. Ab hier bewegt sich alles von allein."
+		},
+		"station_special": {
+			"name": "Großhändler",
+			"beschreibung": "Das Büro mit dem langen Tisch. Hier wird für zwölf Städte bestellt.",
+			"engpass_hinweis": "Gerade sitzt kein Großhändler am Tisch.",
+			"einheit": "Erlös je Paket",
+			"kurz": "Der Besprechungstisch. Eine Unterschrift hier bringt tausend Pakete."
+		}
+	},
+	"upgrades": {
+		"station_intake": [
+			"Ein zweiter Bildschirm",
+			"Bestellungen sortieren sich selbst",
+			"Ein Headset für Rückfragen",
+			"Alle Shops in einer Liste",
+			"Romans Tabelle bekommt ein Blatt mehr",
+			"Nachtbestellungen liegen morgens bereit",
+			"Keine Bestellung geht verloren"
+		],
+		"station_buffer": [
+			"Jedes Fach beschriftet",
+			"Ein Hubwagen",
+			"Barcodes an jedem Platz",
+			"Ein zweites Regal",
+			"Bestseller nach vorn",
+			"Ein Gabelstapler",
+			"Das Regal reicht bis zur Decke",
+			"Nichts wird zweimal gesucht"
+		],
+		"station_processing": [
+			"Feste Plätze für jeden",
+			"Jana zeigt, wie es geht",
+			"Ein Tablet am Packtisch",
+			"Eine zweite Schicht",
+			"Pausen, die wirklich Pausen sind",
+			"Jana baut die Nachtschicht um",
+			"Das Team braucht niemanden, der zusieht"
+		],
+		"station_transport": [
+			"Ein längeres Band",
+			"Ein Motor statt Handkurbel",
+			"Eine Kurve zur Rampe",
+			"Die Weiche sortiert mit",
+			"Zwei Motoren",
+			"Das Band läuft auch nachts"
+		],
+		"station_special": [
+			"Die erste Palette für einen Händler",
+			"Ein Mustersatz für jeden Besuch",
+			"Verträge über ein ganzes Jahr",
+			"Zwölf Städte auf der Liste",
+			"Händler fragen von allein",
+			"Ein Tresor für die Verträge"
+		]
+	},
+	"meilenstein_name": "Eingespielt",
+	"meilenstein_text": "Das Lager hat einen festen Takt. Roman hat ihn gemessen und nichts mehr geändert.",
+	"grossauftrag": {
+		"titel": "Eine Großbestellung",
+		"texte": [
+			"Ein Händler bestellt zehn Paletten auf einmal. Roman hat schon Platz gemacht.",
+			"Ein Shop hat einen Aktionstag. Die Bildschirme blinken im Sekundentakt.",
+			"Eine Kette will euch für zwölf Filialen. Jana plant die Schicht um."
+		]
+	},
+	"offline_bericht": {
+		"titel": "Willkommen zurück",
+		"text": "Während du weg warst, sind %d Pakete rausgegangen.",
+		"von": "roman",
+		"saetze": [
+			"Die Nachtschicht hat gepackt. Jana sagt, es war ruhig. Ich hab trotzdem nachgezählt.",
+			"Das Förderband läuft ohne Pause. Ich nicht.",
+			"Ich habe nichts kontrolliert, während du weg warst. Es lief gut. Ich habe dreimal nachgesehen."
+		]
+	},
+	"weltwechsel": {
+		"titel": "Das Rechenzentrum",
+		"text": "Eine alte Halle mit sehr viel Strom. Hier entsteht ein Rechenzentrum. Selin wartet am Stromkasten.",
+		"knopf": "Los",
+		"figur": "mit Selin"
+	},
+	"silhouetten": {
+		"_kommentar": "Welche Silhouette in dieser Welt welche Rolle spielt. Im Lager sind es das Packteam und die Fahrer.",
+		"npc_standard": "Jemand aus dem Packteam",
+		"npc_flach": "Fahrer, der nur kurz lädt",
+		"npc_gebeugt": "Sucht im Regal",
+		"npc_klein": "Aushilfe in der ersten Woche",
+		"npc_breit": "Roman mit Klemmbrett"
+	},
+	"tutorial": {
+		"_kommentar": "Die Saetze der Einfuehrung. Der ABLAUF steht in data/tutorial/tutorial.json und kennt nur diese IDs -- er ueberlebt einen Themenwechsel unveraendert (D3/ADR-010). Ton: Der Spieler wird nicht belehrt, sondern eingeweiht. Kein Satz erklaert, was ein Knopf tut; jeder Satz sagt, warum es sich lohnt.",
+		"zoom": {
+			"von": "roman",
+			"text": "Mit zwei Fingern ziehst du die Karte groß und klein.",
+			"text_b": "Zwei Finger zoomen. Doppeltipp auf freien Boden: Raum oder Überblick."
+		},
+		"ueberspringen": "Kenne ich schon",
+		"waehlen": {
+			"titel": "Bestellungen",
+			"text": "Hier kommen alle Bestellungen an. Gerade bremsen sie am meisten. Tipp den Bildschirm an."
+		},
+		"ausbauen": {
+			"titel": "Schneller werden",
+			"text": "Mehr Stufen heißt mehr Bestellungen pro Minute. Bau aus, bis etwas anderes bremst."
+		},
+		"ausstattung": {
+			"titel": "Menschen",
+			"text": "Im Packteam sind die Plätze Personen. Mehr Leute heißt mehr Pakete."
+		},
+		"engpass": {
+			"titel": "Wo es klemmt",
+			"text": "Rot heißt: Hier stockt es. Beim Packteam heißt Rot: zu viel Arbeit für zu wenig Leute."
+		},
+		"ziele": {
+			"titel": "Drei Ziele",
+			"text": "Drei Aufgaben, die als Nächstes sowieso dran sind. Abhaken bringt Geld."
+		},
+		"flur": {
+			"titel": "Der Gang",
+			"text": "Der Gang ist noch leer. Dort kommt das Förderband hin. Es bringt die Pakete zur Rampe."
+		},
+		"neu_hier": {
+			"titel": "Das Lager",
+			"text": "Neu: Vier Shops bestellen bei dir. Du packst und verschickst, ihr verdient pro Paket."
+		},
+		"besonderheit": {
+			"titel": "Menschen",
+			"text": "Das Packteam sind Menschen. Zu viel Arbeit macht sie langsamer, nicht schneller."
+		}
+	},
+	"belohnung": {
+		"_kommentar": "Texte der Belohnungsschleife. Der Ton ist wichtig: Es ist ein ANGEBOT, kein Wegezoll. Kein Satz darf klingen, als bekaeme man ohne Werbung zu wenig.",
+		"schub_knopf": "Express-Schicht",
+		"schub_laeuft": "Express-Schicht %s",
+		"schub_wartet": "Express-Schicht in %s",
+		"schub_titel": "Express-Schicht",
+		"schub_text": "Ein paar Minuten lang packt das ganze Lager doppelt so schnell.",
+		"offline_verdoppeln": "Verdoppeln",
+		"offline_verdoppelt_titel": "Doppelt",
+		"offline_verdoppelt_text": "Die Pakete wurden verdoppelt.",
+		"laeuft_gerade": "Läuft …",
+		"nichts_da_titel": "Gerade nichts da",
+		"nichts_da_text": "Versuch es gleich nochmal."
+	},
+	"schlange_format": "%d Pakete warten",
+	"limit": {
+		"_kommentar": "Texte der harten Obergrenze. Nur Welt 2 (auftrag) benutzt diesen Abschnitt wirklich; die anderen tragen ihn der Struktur wegen. 'format' bekommt Titel und Auslastung in Prozent, 'knopf' den Preis.",
+		"titel": "Stellplatz",
+		"format": "%s  %d %%",
+		"knopf": "Umbauen  (%s)",
+		"wand_titel": "Es klemmt",
+		"wand_text": "Das Regal ist voll. Mehr Bestellungen helfen gerade nicht.",
+		"erledigt_titel": "Weniger",
+		"erledigt_text": "Ein zweites Regal. Roman hat die Decke nachgemessen."
+	},
+	"abspann": {
+		"_kommentar": "Der Abspann erscheint genau einmal, am Ende von Welt 6. Hier nur der Struktur wegen, woertlich wie in kapital/theme.json -- der Pflichthinweis bleibt ueberall stehen.",
+		"titel": "Der Zähler läuft weiter",
+		"text": "Du musst nicht mehr hinsehen.\n\nAngefangen hat es mit drei Aufrufen.",
+		"knopf": "Von vorn",
+		"hinweis": "Dies ist ein Spiel. Es bildet weder echte Märkte noch echte Erträge ab und ist keine Anlageberatung."
+	},
+	"personen": {
+		"_kommentar": "Diese Welt benutzt den Abschnitt wirklich: Das Packteam sind Menschen, Ueberlast macht es langsamer. Text woertlich aus docs/STORY.md, Welt 4.",
+		"ueberlast_text": "Jemand sitzt länger da als alle anderen. Es werden davon nicht mehr Pakete."
+	},
+	"eroeffnung": {
+		"_kommentar": "Der allererste Bildschirm eines neuen Spielstands. Nur Welt 1 fuellt ihn -- in jeder anderen Welt bleibt er leer, weil dort niemand neu anfaengt. Ein leerer Titel heisst: nicht zeigen.",
+		"titel": "",
+		"text": "",
+		"knopf": ""
+	},
+	"ausstattung": {
+		"station_intake": {
+			"ausstattung_1": {
+				"name": "Shops",
+				"stufen": [
+					"Ein Bildschirm",
+					"Zwei Bildschirme",
+					"Vier Bildschirme",
+					"Übersichtswand"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Kundendienst",
+				"stufen": [
+					"Telefon",
+					"Headset",
+					"Zwei Headsets",
+					"Telefon-Insel"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Drucker",
+				"stufen": [
+					"Tintenstrahler",
+					"Laserdrucker",
+					"Etikettenstraße",
+					"Druckzentrum"
+				]
+			}
+		},
+		"station_buffer": {
+			"ausstattung_1": {
+				"name": "Regal",
+				"stufen": [
+					"Ein Fach",
+					"Regal halb",
+					"Regal voll",
+					"Hochregal bis zur Decke"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Stapler",
+				"stufen": [
+					"Sackkarre",
+					"Hubwagen",
+					"Gabelstapler",
+					"E-Stapler"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Scanner",
+				"stufen": [
+					"Klemmbrett",
+					"Handscanner",
+					"Scanner-Tor",
+					"Kamera-Tor"
+				]
+			}
+		},
+		"station_processing": {
+			"ausstattung_1": {
+				"name": "Erster Packplatz",
+				"stufen": [
+					"Leerer Platz",
+					"Eine Packerin",
+					"Packerin mit Tablet",
+					"Teamleitung"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Zweiter Packplatz",
+				"stufen": [
+					"Leerer Platz",
+					"Ein Packer",
+					"Packer mit Hubwagen",
+					"Zweiter Packtisch"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Springerplatz",
+				"stufen": [
+					"Leerer Platz",
+					"Aushilfe",
+					"Profi-Packerin",
+					"Nachtschicht mit Lampe"
+				]
+			}
+		},
+		"station_transport": {
+			"ausstattung_1": {
+				"name": "Band",
+				"stufen": [
+					"Kurzes Band",
+					"Langes Band",
+					"Kurve",
+					"Weiche"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Motor",
+				"stufen": [
+					"Handkurbel",
+					"Motor",
+					"Zwei Motoren",
+					"Steuerschrank"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Sortierung",
+				"stufen": [
+					"Kiste",
+					"Rutsche",
+					"Sortierweiche",
+					"Sortierroboter"
+				]
+			}
+		},
+		"station_special": {
+			"ausstattung_1": {
+				"name": "Verträge",
+				"stufen": [
+					"Mappe",
+					"Aktenstapel",
+					"Aktenschrank",
+					"Tresor"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Muster",
+				"stufen": [
+					"Ein Karton",
+					"Palette",
+					"Zwei Paletten",
+					"Musterwand"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Gäste",
+				"stufen": [
+					"Klappstuhl",
+					"Stühle",
+					"Ledersessel",
+					"Lounge"
+				]
+			}
+		}
+	},
+	"bereiche": {
+		"bereich_1": {
+			"name": "Der Gang",
+			"text": "Eine Linie auf dem Boden, quer durch die Halle. Hier kommt das Förderband hin.",
+			"danach": "Danach hier: das Förderband. Die Pakete laufen von allein zur Rampe."
+		},
+		"bereich_2": {
+			"name": "Der Wareneingang",
+			"text": "Rolltore, Paletten, eine Waage. Was pünktlich ankommt, geht schneller raus.",
+			"danach": "Danach hier: alle Stationen ×1,25. Pünktliche Lieferungen gehen schneller raus."
+		},
+		"bereich_3": {
+			"name": "Das Händler-Büro",
+			"text": "Teppich, ein langer Tisch. Hier sitzen bald die Großhändler.",
+			"danach": "Danach hier: der Großhandel. Zwölf Stühle für zwölf Städte."
+		},
+		"bereich_4": {
+			"name": "Das Hochregal",
+			"text": "Bis zur Decke. Das Regal liefert schneller.",
+			"danach": "Danach hier: das Regal liefert ×1,5 schneller. Es wächst bis zur Decke."
+		},
+		"bereich_5": {
+			"name": "Die Laderampe",
+			"text": "Zwei Transporter, zwei Fahrer, null Ausreden.",
+			"wartet": "Die Rampe gehört noch der Spedition nebenan.",
+			"danach": "Danach hier: alle Stationen ×1,5. Zwei Transporter laden gleichzeitig."
+		},
+		"bereich_6": {
+			"name": "Der Pausenraum",
+			"text": "Kaffee, Sofa, eine Uhr, die Jana gestellt hat. Wer Pause macht, packt besser.",
+			"danach": "Alle Stationen laufen schneller. Das Team ist ausgeruht."
+		}
+	},
+	"nebenraeume": {
+		"pausenraum": {
+			"name": "Pausenraum",
+			"text": "Kaffee, Sofa, kurz durchatmen. Hier gibt es nichts auszubauen."
+		},
+		"ladehof": {
+			"name": "Ladehof",
+			"text": "Hier warten die Lieferwagen. Der Hof gehört zur Kulisse – nichts zu kaufen."
+		}
+	},
+	"ziel_formate": {
+		"station_stufe": "%s auf Stufe %d",
+		"ausstattung_stufe": "%s: %s auf Stufe %d",
+		"ausstattung_gesamt": "%d Ausstattungsstufen kaufen",
+		"bereich": "%s gehört dir",
+		"verdient": "%s € verdienen",
+		"momente": "%d Momente antippen",
+		"sterne": "%d Sterne sammeln",
+		"stufen_gesamt": "%d Stufen insgesamt",
+		"abschluss": "Das Lager ist fertig – die Pakete gehen auch nachts raus",
+		"freigeschaltet": "Den Umbau fertigstellen",
+		"alle": "Eine Sammlung komplett",
+		"ausstattung_station": "%d Ausstattungsstufen an einer Station"
+	},
+	"absender": {
+		"plattform": "Dein Shop",
+		"roman": "Roman",
+		"mo": "Mo",
+		"younes": "Younes",
+		"grosshaendler": "Ein Großhändler",
+		"unbekannt": "Unbekannte Nummer",
+		"jana": "Jana",
+		"du": "Du"
+	},
+	"nachrichten": {
+		"nachricht_01": {
+			"von": "roman",
+			"text": "Das ist das Lager. Vier Online-Shops lassen hier packen.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "roman",
+					"text": "Das ist das Lager. Vier Online-Shops lassen hier packen.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "roman",
+					"text": "Bestellungen annehmen, packen, losschicken. Tipp auf Bestellungen.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "roman",
+					"text": "Jana fängt morgen an. Ziel: ein Großhändler-Vertrag, zwölf Städte.",
+					"stimmung": "geschockt"
+				}
+			]
+		},
+		"nachricht_02": {
+			"von": "mo",
+			"text": "Der Hubwagen heißt Hubert. Kauf was fürs Hochregal."
+		},
+		"nachricht_05": {
+			"von": "roman",
+			"text": "Gang offen, Band läuft. Weiter: Ausstattung fürs Packteam."
+		},
+		"nachricht_03": {
+			"von": "mo",
+			"text": "Roman hat Jana eingestellt. Sie packt schneller, als er rechnen kann.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Roman hat Jana eingestellt. Sie packt schneller, als er rechnen kann.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "roman",
+					"text": "Ein Shop droht schon mit Abspringen. Bau das Packteam aus!",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "jana",
+					"text": "Ja.",
+					"stimmung": "neutral"
+				}
+			]
+		},
+		"nachricht_04": {
+			"von": "jana",
+			"text": "Packtisch war zu niedrig. Ich habe ihn geändert."
+		},
+		"nachricht_16": {
+			"von": "mo",
+			"text": "2 Mio. € verdient! Kauf den Wareneingang."
+		},
+		"nachricht_06": {
+			"von": "roman",
+			"text": "Wareneingang offen: vier Paletten, eine Unterschrift."
+		},
+		"nachricht_17": {
+			"von": "jana",
+			"text": "Pausenzeiten waren falsch. Hab sie geändert."
+		},
+		"nachricht_07": {
+			"von": "younes",
+			"text": "Das Förderband beruhigt. Bau es auf Stufe 20 aus."
+		},
+		"nachricht_18": {
+			"von": "roman",
+			"text": "Es staut sich: Die Pakete kommen schneller, als wir packen.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "roman",
+					"text": "Es staut sich: Die Pakete kommen schneller, als wir packen.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "roman",
+					"text": "Jana hat die Pausenzeiten geändert, ohne zu fragen. Sie hatte recht.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "roman",
+					"text": "Soll sie künftig vorher fragen? Weiter: das Händler-Büro.",
+					"stimmung": "neutral"
+				}
+			],
+			"antworten": [
+				{
+					"text": "Lass sie.",
+					"reaktion": "Ja."
+				},
+				{
+					"text": "Erst fragen.",
+					"reaktion": "Sie nickt. Das heißt: Sie fragt nicht. Aber sie nickt."
+				}
+			]
+		},
+		"nachricht_09": {
+			"von": "grosshaendler",
+			"text": "Zwölf Städte, wenn ihr liefern könnt. Bau das Packteam aus."
+		},
+		"nachricht_08": {
+			"von": "roman",
+			"text": "Der Großhändler will zwölf Städte. Kauf das Hochregal.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "roman",
+					"text": "Der Großhändler will zwölf Städte. Kauf das Hochregal.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "jana",
+					"text": "Ich habe die Schicht umgebaut: Nachtschicht ab morgen. Das Band läuft durch.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "roman",
+					"text": "Sie hat mich nicht gefragt. Bleibt die Nachtschicht?",
+					"stimmung": "geschockt"
+				}
+			],
+			"antworten": [
+				{
+					"text": "Bleibt.",
+					"reaktion": "Gut. Jana hat schon genickt. Für mich mit."
+				},
+				{
+					"text": "Nur testen.",
+					"reaktion": "Ja. Eine Nacht. Dann siehst du es."
+				}
+			]
+		},
+		"nachricht_19": {
+			"von": "mo",
+			"text": "Roman hat zwölf Stühle gekauft. Ich saß auf allen."
+		},
+		"nachricht_10": {
+			"von": "jana",
+			"text": "Die Nachtschicht läuft. Kauf das Hochregal."
+		},
+		"nachricht_20": {
+			"von": "mo",
+			"text": "Jana hat mir den Hubwagen verboten. Hubert ist arbeitslos.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Jana hat mir den Hubwagen verboten. Hubert ist arbeitslos.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "mo",
+					"text": "Das Band läuft allein. Kauf das Hochregal, dann hat Hubert Arbeit.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "mo",
+					"text": "Ich steh im Hof und zähl Transporter. Es sind zwei.",
+					"stimmung": "geschockt"
+				}
+			]
+		},
+		"nachricht_11": {
+			"von": "roman",
+			"text": "Das Hochregal reicht bis zur Decke. Weiter: Laderampe."
+		},
+		"nachricht_12": {
+			"von": "jana",
+			"text": "Regal geprüft: sicher. Mo war dabei, hat überlebt."
+		},
+		"nachricht_14": {
+			"von": "roman",
+			"text": "Laderampe gehört euch. Jetzt alles ausbauen."
+		},
+		"nachricht_13": {
+			"von": "mo",
+			"text": "Eine Frau im Blaumann hat die Rampe vermessen: zu wenig Strom.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Eine Frau im Blaumann hat die Rampe vermessen: zu wenig Strom.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "mo",
+					"text": "Sie kannte meinen Clip mit den drei Aufrufen. Ich nenn sie Strom-Frau.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "mo",
+					"text": "Ich hab ihr deine Nummer gegeben. Sie kommt wieder.",
+					"stimmung": "neutral"
+				}
+			]
+		},
+		"nachricht_21": {
+			"von": "younes",
+			"text": "Ich habe Janas Nachtschicht gefilmt. Sag es keinem."
+		},
+		"nachricht_22": {
+			"von": "roman",
+			"text": "Das Lager läuft fast ohne uns. Noch ein Stück ausbauen.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "roman",
+					"text": "Das Lager läuft fast ohne uns. Noch ein Stück ausbauen.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "jana",
+					"text": "Normal.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "roman",
+					"text": "Ich gehe heute um sechs nach Hause. Es ist noch hell.",
+					"stimmung": "jubelnd"
+				}
+			]
+		},
+		"nachricht_15": {
+			"von": "unbekannt",
+			"text": "Ich bin Selin. Ich habe eine Halle mit viel Strom und eine Idee.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "unbekannt",
+					"text": "Ich bin Selin. Ich habe eine Halle mit viel Strom und eine Idee.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "unbekannt",
+					"text": "Deine Rampe hat zu wenig Strom. Meine Halle hat zehnmal so viel.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "unbekannt",
+					"text": "Mo hat mir deine Nummer gegeben. Er hätte nicht sollen.",
+					"stimmung": "geschockt"
+				}
+			]
+		},
+		"nachricht_23": {
+			"von": "roman",
+			"text": "Der Großhändler will erst eine Probe. Tipp das ! über mir."
+		},
+		"nachricht_24": {
+			"von": "grosshaendler",
+			"text": "Probe pünktlich da. Wir reden über mehr."
+		}
+	},
+	"momente": {
+		"texte": [
+			"Eine Großbestellung",
+			"Ein Shop hat Aktionstag",
+			"Jana legt einen Rekord hin",
+			"Ein Transporter ist früher da",
+			"Mo fährt Hubwagen"
+		],
+		"gross_titel": "Zwölf Städte bestellen",
+		"kiste": {
+			"titel": "Eine Palette am Tor",
+			"text": "Eine Lieferung ist da. Tipp die Kiste an, der Inhalt bringt Geld."
+		}
+	},
+	"abschluss": {
+		"titel": "Läuft ohne uns",
+		"text": "Das Lager ist fertig. Die Pakete gehen auch nachts raus. Jana hat „Ja“ gesagt. Das war alles.\n\nEine Nachricht von einer unbekannten Nummer.",
+		"antwort": "Mo ...",
+		"zahlen": {
+			"spielzeit": "Spielzeit",
+			"verdient": "Verdient",
+			"raeume": "Räume",
+			"ausstattung": "Ausstattung"
+		}
+	},
+	"menue": {
+		"ausbau": "Ausbau",
+		"ziele": "Ziele",
+		"handy": "Handy",
+		"laden": "Laden",
+		"schub": "Boost"
+	},
+	"stil": {
+		"akzent": "#12B5A5",
+		"akzent_text": "#1B1726",
+		"akzent_tief": "#0C8A7E"
+	},
+	"absender_farben": {
+		"plattform": "#1B1726",
+		"roman": "#FF7A1A",
+		"mo": "#3D7BFF",
+		"younes": "#FF4FA3",
+		"grosshaendler": "#5A5368",
+		"unbekannt": "#5A5368",
+		"jana": "#12B5A5",
+		"du": "#12B5A5"
+	},
+	"absender_figur": {
+		"mo": "figur_cap",
+		"younes": "figur_buckethat",
+		"roman": "figur_brille",
+		"jana": "figur_packer",
+		"du": "figur_kapuze"
+	},
+	"ziele": {
+		"_kommentar": "Missionsnamen der Welt-Kette (kette 'welt'). WeltTexte.ziel liest sie vor ziel_formate; das Ziele-Menue zeigt sie als Missionen. Alle anderen Ziele behalten den Standardtext.",
+		"ziel_18": "Mission: Das Band läuft (Band 20)",
+		"ziel_21": "Mission: Janas Team (Stufe 50)",
+		"ziel_32": "Mission: Nichts staut sich",
+		"ziel_34": "Mission: Janas Packtisch",
+		"ziel_25": "Mission: Läuft ohne uns"
+	},
+	"crew": {
+		"station_intake": {
+			"name": "Roman",
+			"portrait": "figur_brille",
+			"raenge": [
+				"Tippt Bestellungen ab",
+				"Tippt nur Ausnahmen",
+				"Liest nur noch Mails"
+			]
+		},
+		"station_buffer": {
+			"name": "Hubert",
+			"portrait": "figur_cap",
+			"raenge": [
+				"Hubwagen im Hof",
+				"Hubwagen im Gang",
+				"Hubwagen mit Schein"
+			]
+		},
+		"station_processing": {
+			"name": "Jana",
+			"portrait": "figur_packer",
+			"raenge": [
+				"Ja.",
+				"Ja. Wirklich.",
+				"Ja. Ab sofort."
+			]
+		},
+		"station_transport": {
+			"name": "Frank",
+			"portrait": "figur_kapuze",
+			"raenge": [
+				"Läuft",
+				"Läuft nachts",
+				"Läuft allein"
+			]
+		},
+		"station_special": {
+			"name": "Die Großhändler",
+			"portrait": "figur_brille",
+			"raenge": [
+				"Eine Stadt",
+				"Sechs Städte",
+				"Zwölf Städte"
+			]
+		}
+	},
+	"auftraege": {
+		"_kommentar": "K3 B3: Mini-Aufgaben zwischen Raum 3 und 4 (Ziel-IDs ziel_auftrag_1..3, kette 'auftrag'). Ein '!' steht ueber der Figur (absender_figur). Tipp -> Szene: 'satz' (warum es dem Geschaeft hilft) + 'aufgabe_format' mit dem echten Zieltext (was zu tun ist) -> 'knopf_start' springt zum Ziel. Ist das Ziel erfuellt: 'dank' + 'knopf_holen' loest es ein. Saetze <= 90 Zeichen.",
+		"knopf_start": "Mach ich",
+		"knopf_holen": "Abholen",
+		"aufgabe_format": "Deine Aufgabe: %s",
+		"symbol": "!",
+		"ziel_auftrag_1": {
+			"figur": "roman",
+			"satz": "Erst die Bestellungen der Probestadt annehmen. Wer schnell zusagt, bekommt den Vertrag.",
+			"dank": "Alle Bestellungen sind drin. Meine Tabelle ist grün. Das passiert selten."
+		},
+		"ziel_auftrag_2": {
+			"figur": "mo",
+			"satz": "Jana sagt: Jetzt wird gepackt. Saubere Pakete zeigen dem Händler, dass wir es können.",
+			"dank": "Jana hat genickt. Bei ihr ist das wie ein Pokal."
+		},
+		"ziel_auftrag_3": {
+			"figur": "younes",
+			"satz": "Ich filme die Abfahrt. Das Video zeigt anderen Händlern, wie zuverlässig wir sind.",
+			"dank": "Der Transporter ist pünktlich los. Ich hab es in einem Versuch gefilmt."
+		}
+	},
+	"ketten": {
+		"auftrag": "Auftrag: Probelieferung"
+	},
+	"kapitel": [
+		{
+			"id": "kapitel_1",
+			"titel": "Das Lager",
+			"ab_bereich": "",
+			"aufgabe": "Baue Bestellungen, Hochregal und Packteam aus. Kaufe den Gang und den Wareneingang.",
+			"entscheidung": ""
+		},
+		{
+			"id": "kapitel_2",
+			"titel": "Es staut sich",
+			"ab_bereich": "bereich_2",
+			"aufgabe": "Baue das Packteam und das Förderband aus, damit nichts liegen bleibt. Kaufe das Händler-Büro.",
+			"entscheidung": "nachricht_18"
+		},
+		{
+			"id": "kapitel_3",
+			"titel": "Zwölf Städte",
+			"ab_bereich": "bereich_3",
+			"aufgabe": "Erledige die Probelieferung und kaufe das Hochregal.",
+			"entscheidung": "nachricht_08"
+		},
+		{
+			"id": "kapitel_4",
+			"titel": "Läuft ohne uns",
+			"ab_bereich": "bereich_4",
+			"aufgabe": "Kaufe die Laderampe und baue alles aus, bis das Lager von allein läuft.",
+			"entscheidung": ""
+		}
+	],
+	"auftragsbrett": {
+		"_kommentar": "Absender und Warum-Satz je Ziel-ID (Auftragsbrett, Welle 2b). Bewusst NICHT unter \"ziele\": jeder Schluessel dort zaehlt als Mission.",
+		"ziel_26": {
+			"absender": "roman",
+			"satz": "Bestellungen müssen schneller reinkommen, sonst springen Shops ab."
+		},
+		"ziel_01": {
+			"absender": "roman",
+			"satz": "Zehn Stufen: Dann trägt das Lager vier Shops."
+		},
+		"ziel_02": {
+			"absender": "jana",
+			"satz": "Ein besseres Packteam: Weniger Fehler, weniger Reklamation."
+		},
+		"ziel_03": {
+			"absender": "jana",
+			"satz": "Packteam auf Stufe 10: Jeder Karton geht pünktlich raus."
+		},
+		"ziel_04": {
+			"absender": "roman",
+			"satz": "Der Gang: Ohne ihn kommt kein Wagen durch."
+		},
+		"ziel_05": {
+			"absender": "roman",
+			"satz": "Ein schnelles Förderband, damit kein Paket liegen bleibt."
+		},
+		"ziel_27": {
+			"absender": "mo",
+			"satz": "Besseres Band: Hubert muss weniger schleppen."
+		},
+		"ziel_06": {
+			"absender": "roman",
+			"satz": "Sechs Ausstattungsstufen, und das Lager wirkt wie ein Betrieb."
+		},
+		"ziel_07": {
+			"absender": "mo",
+			"satz": "Sterne machen Stationen schneller. Mehr Pakete am Tag."
+		},
+		"ziel_09": {
+			"absender": "roman",
+			"satz": "Der Wareneingang: Hier kommen die Paletten der Shops an."
+		},
+		"ziel_08": {
+			"absender": "roman",
+			"satz": "Mehr Regalplatz, mehr Ware auf Vorrat."
+		},
+		"ziel_10": {
+			"absender": "plattform",
+			"satz": "Drei Momente antippen: kleine Extras für die Kasse."
+		},
+		"ziel_11": {
+			"absender": "jana",
+			"satz": "Besseres Packteam: Dann kommt der Stau gar nicht erst."
+		},
+		"ziel_28": {
+			"absender": "mo",
+			"satz": "Sechs Sterne: Frank, das Förderband, läuft wie geschmiert."
+		},
+		"ziel_12": {
+			"absender": "roman",
+			"satz": "Mehr Bestellungen, mehr Shops. Das ist unser Geschäft."
+		},
+		"ziel_13": {
+			"absender": "plattform",
+			"satz": "50 Mio. € verdienen: Das Geld für das Händler-Büro."
+		},
+		"ziel_14": {
+			"absender": "roman",
+			"satz": "Das Händler-Büro: Hier unterschreibt der Großhändler."
+		},
+		"ziel_auftrag_1": {
+			"absender": "roman",
+			"satz": "Der Großhändler will erst eine Probelieferung."
+		},
+		"ziel_auftrag_2": {
+			"absender": "mo",
+			"satz": "Klappt die Probe, liefern wir in zwölf Städte."
+		},
+		"ziel_auftrag_3": {
+			"absender": "younes",
+			"satz": "Pünktlich und heil ankommen: Dann kommt der Vertrag."
+		},
+		"ziel_15": {
+			"absender": "roman",
+			"satz": "Der Großhändler: Ein Vertrag, der uns Monate sichert."
+		},
+		"ziel_29": {
+			"absender": "grosshaendler",
+			"satz": "Euer Großhändler-Kontakt: Je stärker, desto größer unsere Bestellung."
+		},
+		"ziel_16": {
+			"absender": "jana",
+			"satz": "30 Ausstattungsstufen: Die Nachtschicht kann kommen."
+		},
+		"ziel_17": {
+			"absender": "mo",
+			"satz": "Zwölf Sterne: Dann kommt keiner mehr hinterher."
+		},
+		"ziel_18": {
+			"absender": "roman",
+			"satz": "Starkes Förderband: Auch Großbestellungen laufen durch."
+		},
+		"ziel_19": {
+			"absender": "jana",
+			"satz": "Gutes Packteam: Kein Karton geht kaputt raus."
+		},
+		"ziel_30": {
+			"absender": "roman",
+			"satz": "Viel Ware im Regal, auch für zwölf Städte."
+		},
+		"ziel_20": {
+			"absender": "roman",
+			"satz": "Das Hochregal: Mehr Platz, schnellere Lieferung."
+		},
+		"ziel_21": {
+			"absender": "jana",
+			"satz": "Packteam auf Stufe 50: Ohne uns kann der Laden nicht."
+		},
+		"ziel_31": {
+			"absender": "roman",
+			"satz": "Viele Bestellungen: Wir sind nicht mehr nur ein Lager."
+		},
+		"ziel_22": {
+			"absender": "mo",
+			"satz": "100 Ausstattungsstufen: Das Lager sieht nach Zukunft aus."
+		},
+		"ziel_23": {
+			"absender": "grosshaendler",
+			"satz": "Starke Partnerschaft: Zwölf Städte auf einmal."
+		},
+		"ziel_32": {
+			"absender": "roman",
+			"satz": "Alle Sammlungen komplett: Das Sortiment steht."
+		},
+		"ziel_24": {
+			"absender": "roman",
+			"satz": "Die Laderampe: Zwei Transporter laden gleichzeitig."
+		},
+		"ziel_33": {
+			"absender": "mo",
+			"satz": "18 Sterne: Das Lager gehört zu den schnellsten."
+		},
+		"ziel_34": {
+			"absender": "jana",
+			"satz": "Packteam komplett ausgestattet: Es läuft ohne Zusehen."
+		},
+		"ziel_35": {
+			"absender": "plattform",
+			"satz": "2 Bio. € verdient: Das Lager arbeitet für euch."
+		},
+		"ziel_25": {
+			"absender": "roman",
+			"satz": "Das Lager läuft von allein. Dann gehe ich um sechs heim."
+		}
+	}
+}

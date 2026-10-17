@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 128">
+<circle cx="40" cy="30" r="18" fill="#FFF7EA"/>
+<clipPath id="k83"><circle cx="40" cy="30" r="18"/></clipPath>
+<g clip-path="url(#k83)"><g transform="translate(4 4)"><circle cx="40" cy="30" r="18" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<circle cx="40" cy="30" r="18" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="64" cy="22" r="20" fill="#FFF7EA"/>
+<clipPath id="k84"><circle cx="64" cy="22" r="20"/></clipPath>
+<g clip-path="url(#k84)"><g transform="translate(4 4)"><circle cx="64" cy="22" r="20" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<circle cx="64" cy="22" r="20" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88" cy="30" r="18" fill="#FFF7EA"/>
+<clipPath id="k85"><circle cx="88" cy="30" r="18"/></clipPath>
+<g clip-path="url(#k85)"><g transform="translate(4 4)"><circle cx="88" cy="30" r="18" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<circle cx="88" cy="30" r="18" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M18 52 H110 L98 116 H30 Z" fill="#FF4FA3"/>
+<clipPath id="k86"><path d="M18 52 H110 L98 116 H30 Z"/></clipPath>
+<g clip-path="url(#k86)"><g transform="translate(4 4)"><path d="M18 52 H110 L98 116 H30 Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<path d="M18 52 H110 L98 116 H30 Z" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M50 58 L54 112 M64 58 V112 M78 58 L74 112" fill="none" stroke="#FFF7EA" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

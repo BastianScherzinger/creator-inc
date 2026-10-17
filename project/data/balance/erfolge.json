@@ -1,0 +1,143 @@
+{
+	"_kommentar": "Erfolge ueber den ganzen Bogen: Abzeichen ohne Einkommensbonus (bonus 0, seit K2 P2a). Der Dauerfaktor kommt aus dem Firmen-Rang (`rang`). Typen: sterne_station, sterne_gesamt, ziele_gesamt, bereiche_gesamt, welten_fertig, serie_tage, crew_gekauft, tagesaufgaben, momente, stufen_gesamt, durchlaeufe. Namen/Texte in i18n unter erfolg.<id>.",
+	"rang": {
+		"_kommentar": "Firmen-Rang 1-30 (5 je Welt). Punkte: Ziel 1, Raumziel (typ bereich) 3, Welt-Mission (kette welt) 5, Welt fertig 10. schwellen[n-1] = Punkte fuer Rang n (ueber den ganzen Bogen, seit K3 B1 mit je 3 Punkten fuer die Auftraege: W1 0-68, W2 68-136, W3 136-211, W4 211-289, W5 289-373, W6 373-461; Rang 4 und 5 etwas frueher als in P6, damit zwischen den Raeumen ein Rang faellt). bonus_je_rang: +x auf den Weltfaktor je Rang ab bonus_ab_rang. freischaltung: Rang -> Merkmale (Abfrage GameCore.ist_frei); nicht gelistete Merkmale sind von Anfang an frei. Namen in i18n rang_name_<n>.",
+		"punkte": {
+			"ziel": 1,
+			"bereich": 3,
+			"mission": 5,
+			"welt_fertig": 10
+		},
+		"schwellen": [0, 2, 7, 11, 17, 26, 70, 75, 82, 92, 100, 138, 142, 148, 161, 171, 213, 218, 225, 235, 247, 291, 296, 308, 319, 332, 376, 388, 412, 461],
+		"bonus_je_rang": 0.005,
+		"bonus_ab_rang": 2,
+		"offline_sekunden": {
+			"offline_6h": 21600,
+			"offline_8h": 28800,
+			"offline_12h": 43200
+		},
+		"freischaltung": {
+			"2": [
+				"menue_ziele"
+			],
+			"3": [
+				"schub"
+			],
+			"4": [
+				"crew",
+				"menue_fortschritt"
+			],
+			"5": [
+				"tagesaufgaben",
+				"offline_6h"
+			],
+			"11": [
+				"offline_8h"
+			],
+			"16": [
+				"offline_12h"
+			],
+			"30": [
+				"abspann"
+			]
+		}
+	},
+	"erfolge": [
+		{
+			"id": "erfolg_erster_stern",
+			"bedingung": {
+				"typ": "sterne_station",
+				"wert": 1
+			},
+			"bonus": 0.0
+		},
+		{
+			"id": "erfolg_erster_raum",
+			"bedingung": {
+				"typ": "bereiche_gesamt",
+				"wert": 1
+			},
+			"bonus": 0.0
+		},
+		{
+			"id": "erfolg_erste_crew",
+			"bedingung": {
+				"typ": "crew_gekauft",
+				"wert": 1
+			},
+			"bonus": 0.0
+		},
+		{
+			"id": "erfolg_zehn_ziele",
+			"bedingung": {
+				"typ": "ziele_gesamt",
+				"wert": 10
+			},
+			"bonus": 0.0
+		},
+		{
+			"id": "erfolg_zehn_sterne",
+			"bedingung": {
+				"typ": "sterne_gesamt",
+				"wert": 10
+			},
+			"bonus": 0.0
+		},
+		{
+			"id": "erfolg_meisterstation",
+			"bedingung": {
+				"typ": "sterne_station",
+				"wert": 5
+			},
+			"bonus": 0.0
+		},
+		{
+			"id": "erfolg_serie_3",
+			"bedingung": {
+				"typ": "serie_tage",
+				"wert": 3
+			},
+			"bonus": 0.0
+		},
+		{
+			"id": "erfolg_serie_7",
+			"bedingung": {
+				"typ": "serie_tage",
+				"wert": 7
+			},
+			"bonus": 0.0
+		},
+		{
+			"id": "erfolg_aufgaben_10",
+			"bedingung": {
+				"typ": "tagesaufgaben",
+				"wert": 10
+			},
+			"bonus": 0.0
+		},
+		{
+			"id": "erfolg_fuenfzig_ziele",
+			"bedingung": {
+				"typ": "ziele_gesamt",
+				"wert": 50
+			},
+			"bonus": 0.0
+		},
+		{
+			"id": "erfolg_welt_1_fertig",
+			"bedingung": {
+				"typ": "welten_fertig",
+				"wert": 1
+			},
+			"bonus": 0.0
+		},
+		{
+			"id": "erfolg_alle_welten",
+			"bedingung": {
+				"typ": "welten_fertig",
+				"wert": 6
+			},
+			"bonus": 0.0
+		}
+	]
+}

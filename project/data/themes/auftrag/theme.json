@@ -1,0 +1,1030 @@
+{
+	"_kommentar": "Anzeigetexte fuer Welt 2 -- Das Studio (mit Younes). Die einzige Stelle im Projekt, an der thematische Begriffe stehen duerfen (ADR-010). Systeme kennen ausschliesslich die neutralen IDs.",
+	"id": "auftrag",
+	"welt_name": "Das Studio",
+	"welt_untertitel": "Das Studio",
+	"waehrung": "€",
+	"stationen": {
+		"station_intake": {
+			"name": "Konzept",
+			"beschreibung": "Die Storyboard-Wand in der Garage. Hier wird geplant, welches Video als Nächstes gedreht wird.",
+			"engpass_hinweis": "Es fehlt ein Konzept — am Set gibt es nichts zu drehen.",
+			"einheit": "Konzepte/Min",
+			"kurz": "Stehtisch vor der Pinnwand. Hier entscheidet Younes, was gedreht wird."
+		},
+		"station_buffer": {
+			"name": "Dreh",
+			"beschreibung": "Das Set mit Kamera auf Schienen. Hier wird gefilmt, was an der Wand geplant wurde.",
+			"engpass_hinweis": "Mehr Konzepte als Drehzeit. Das Set kommt nicht hinterher.",
+			"einheit": "Aufnahmen/Min",
+			"kurz": "Podest, Hintergrund, Licht. Hier steht Mo vor der Kamera."
+		},
+		"station_processing": {
+			"name": "Schnitt",
+			"beschreibung": "Der Gaming-PC aus der WG, jetzt mit Farbkorrektur. Hier wird aus Rohmaterial ein Video.",
+			"engpass_hinweis": "Das Rohmaterial stapelt sich, geschnitten wird nichts mehr.",
+			"einheit": "Videos/Min",
+			"kurz": "Der Schreibtisch. Aus zwanzig Aufnahmen wird ein Video."
+		},
+		"station_transport": {
+			"name": "Video-Server",
+			"beschreibung": "Ein Container im Hof, voller Rechner. Sie machen Videos fertig, auch während du schläfst.",
+			"engpass_hinweis": "Der Server schafft die fertigen Videos nicht mehr raus.",
+			"einheit": "Reichweite",
+			"kurz": "Der Container im Hof. Laut, warm und sehr zuverlässig."
+		},
+		"station_special": {
+			"name": "Sponsoren",
+			"beschreibung": "Die Lounge im Grünen Raum. Hier sitzen Firmen, die für Videos bezahlen.",
+			"engpass_hinweis": "Gerade wartet keine Marke in der Lounge.",
+			"einheit": "Erlös je Video",
+			"kurz": "Sofa, Tisch, Kaffee. Hier werden Videos bezahlt, bevor sie gedreht sind."
+		}
+	},
+	"upgrades": {
+		"station_intake": [
+			"Ein Notizbuch nur für Szenen",
+			"Die Wand hängt voller Skizzen",
+			"Feste Ideen-Runde am Montag",
+			"Younes streicht früher",
+			"Drei Folgen im Voraus",
+			"Ein Plan für die ganze Staffel",
+			"Das Konzept hält beim ersten Lesen"
+		],
+		"station_buffer": [
+			"Ein Gimbal, der nicht wackelt",
+			"Klebeband-Markierungen auf dem Boden",
+			"Zweite Softbox",
+			"Eine Tonangel für Mo",
+			"Kamera auf Schienen",
+			"Das Rolltor bleibt beim Dreh zu",
+			"Licht, das Younes nicht ändert",
+			"Die dritte Aufnahme ist die letzte"
+		],
+		"station_processing": [
+			"Vorlagen für Schnitt und Titel",
+			"Eine Wasserkühlung für den PC",
+			"Farbprofile für jede Szene",
+			"Tastenkürzel statt Klicken",
+			"Zwei Monitore nebeneinander",
+			"Younes schneidet mit",
+			"Der Export läuft ohne Absturz"
+		],
+		"station_transport": [
+			"Ein Rechner exportiert nachts",
+			"Warteschlange für die Exporte",
+			"Ein zweites Rack",
+			"Fertige Videos gehen von allein raus",
+			"Das Archiv sortiert sich selbst",
+			"Export und Upload in einem Schritt"
+		],
+		"station_special": [
+			"Die erste Marke schickt einen Karton",
+			"Eine Infomappe mit Zahlen",
+			"Feste Werbeplätze im Video",
+			"Ein Vertrag über drei Folgen",
+			"Marken fragen von allein",
+			"Die Lounge ist nie leer"
+		]
+	},
+	"meilenstein_name": "Routine",
+	"meilenstein_text": "Das Team spielt sich ein. Younes verlangt nur noch zweimal eine Wiederholung.",
+	"grossauftrag": {
+		"titel": "Eine Marke fragt an",
+		"texte": [
+			"Eine Firma will ein ganzes Video bezahlen. Younes will das Licht trotzdem selbst machen.",
+			"Ein Video wird in einer großen Gruppe geteilt. Das Postfach läuft über.",
+			"Jemand bestellt eine Serie aus drei Videos. Budget ist da."
+		]
+	},
+	"offline_bericht": {
+		"titel": "Willkommen zurück",
+		"text": "Während du weg warst, sind %d Videos fertig geworden.",
+		"von": "younes",
+		"saetze": [
+			"Während du weg warst, wurden Videos fertig und rausgeschickt. Ich hab alle gesehen. Eins war gut.",
+			"Ich hab die Aufnahmen gezählt, während du weg warst. Achtunddreißig. Du hast nichts verpasst.",
+			"Das Rolltor hat geklemmt, die Videos sind trotzdem raus. Mo sagt, es hat Charakter."
+		]
+	},
+	"weltwechsel": {
+		"titel": "Der Merch-Laden",
+		"text": "Ein Eckladen mit Schaufenster. Hier verkauft ihr eigene Shirts. Roman hat schon ausgemessen, wie viele in den Keller passen.",
+		"knopf": "Los",
+		"figur": "mit Roman"
+	},
+	"silhouetten": {
+		"_kommentar": "Welche Silhouette in dieser Welt welche Rolle spielt. Im Studio sind es Crew und Besuch.",
+		"npc_standard": "Jemand von der Crew",
+		"npc_flach": "Lieferant, der nur kurz reinschaut",
+		"npc_gebeugt": "Schaut beim Schnitt über die Schulter",
+		"npc_klein": "Nachbarskind, das jeden Dreh sehen will",
+		"npc_breit": "Younes"
+	},
+	"tutorial": {
+		"_kommentar": "Die Saetze der Einfuehrung. Der ABLAUF steht in data/tutorial/tutorial.json und kennt nur diese IDs -- er ueberlebt einen Themenwechsel unveraendert (D3/ADR-010). Ton: Der Spieler wird nicht belehrt, sondern eingeweiht. Kein Satz erklaert, was ein Knopf tut; jeder Satz sagt, warum es sich lohnt.",
+		"zoom": {
+			"von": "younes",
+			"text": "Mit zwei Fingern ziehst du die Karte groß und klein.",
+			"text_b": "Zwei Finger zoomen. Doppeltipp auf freien Boden: Raum oder Überblick."
+		},
+		"ueberspringen": "Kenne ich schon",
+		"waehlen": {
+			"titel": "Konzept",
+			"text": "Die Storyboard-Wand: Hier fängt jedes Video an. Gerade ist sie am langsamsten — tipp sie an."
+		},
+		"ausbauen": {
+			"titel": "Schneller werden",
+			"text": "Ausbauen bringt mehr Videos pro Minute. Ein paar Stufen, dann klemmt es woanders."
+		},
+		"ausstattung": {
+			"titel": "Etwas, das man sieht",
+			"text": "Ausstattung steht wirklich im Studio, sobald du sie kaufst. Und sie macht schneller."
+		},
+		"engpass": {
+			"titel": "Wo es klemmt",
+			"text": "Rot heißt: Hier stockt es gerade. Bau die rote Stelle aus, nicht deine Lieblingsstelle."
+		},
+		"ziele": {
+			"titel": "Drei Ziele",
+			"text": "Drei Aufgaben, die als Nächstes anstehen. Für jede gibt es eine Belohnung."
+		},
+		"flur": {
+			"titel": "Der Hof",
+			"text": "Draußen steht ein Container. Dort kommt dein Video-Server hin."
+		},
+		"neu_hier": {
+			"titel": "Neu im Studio",
+			"text": "Hier drehst du bezahlte Videos für Firmen. Jedes fertige Video bringt Geld, am Ende kaufst du die Garage."
+		},
+		"besonderheit": {
+			"titel": "Der Speicher",
+			"text": "Der Balken zeigt, wie voll die Platten sind. Bei 100 % stockt alles, bis das Archiv steht."
+		}
+	},
+	"belohnung": {
+		"_kommentar": "Texte der Belohnungsschleife. Der Ton ist wichtig: Es ist ein ANGEBOT, kein Wegezoll. Kein Satz darf klingen, als bekaeme man ohne Werbung zu wenig.",
+		"schub_knopf": "Boost",
+		"schub_laeuft": "Boost %s",
+		"schub_wartet": "Boost in %s",
+		"schub_titel": "Das Video geht rum",
+		"schub_text": "Für ein paar Minuten sehen mehr Leute eure Videos, und ihr verdient mehr.",
+		"offline_verdoppeln": "Verdoppeln",
+		"offline_verdoppelt_titel": "Doppelt",
+		"offline_verdoppelt_text": "Die Videos wurden verdoppelt.",
+		"laeuft_gerade": "Läuft …",
+		"nichts_da_titel": "Gerade nichts da",
+		"nichts_da_text": "Versuch es gleich nochmal."
+	},
+	"schlange_format": "%d schauen zu",
+	"limit": {
+		"_kommentar": "Texte der harten Obergrenze. In dieser Welt ist der Abschnitt die zentrale Mechanik (Speicher-Limit, Umbau 'Render-Server mit Archiv'). 'format' bekommt Titel und Auslastung in Prozent, 'knopf' den Preis. wand_text woertlich aus docs/STORY.md, Welt 2.",
+		"titel": "Speicher",
+		"format": "%s  %d %%",
+		"knopf": "Archiv bauen  (%s)",
+		"wand_titel": "Der Speicher ist voll",
+		"wand_text": "Neue Videos haben keinen Platz mehr. Mehr Ausbau hilft erst, wenn das Archiv steht.",
+		"erledigt_titel": "Archiv läuft",
+		"erledigt_text": "Video-Server mit Archiv. Der Speicher ist frei, und kein Video geht verloren."
+	},
+	"abspann": {
+		"_kommentar": "Der Abspann erscheint genau einmal, am Ende von Welt 6. Hier nur der Struktur wegen, woertlich wie in kapital/theme.json -- der Pflichthinweis bleibt ueberall stehen.",
+		"titel": "Der Zähler läuft weiter",
+		"text": "Du musst nicht mehr hinsehen.\n\nAngefangen hat es mit drei Aufrufen.",
+		"knopf": "Von vorn",
+		"hinweis": "Dies ist ein Spiel. Es bildet weder echte Märkte noch echte Erträge ab und ist keine Anlageberatung."
+	},
+	"personen": {
+		"_kommentar": "Nur Welt 4 benutzt diesen Abschnitt wirklich. Die anderen tragen ihn der Struktur wegen -- alle Themen haben dieselben Schluessel, damit ein fehlender Eintrag auffaellt statt stillschweigend zu fehlen.",
+		"ueberlast_text": "Jemand sitzt länger am Set als alle anderen. Das Video wird davon nicht besser."
+	},
+	"eroeffnung": {
+		"_kommentar": "Der allererste Bildschirm eines neuen Spielstands. Nur Welt 1 fuellt ihn -- in jeder anderen Welt bleibt er leer, weil dort niemand neu anfaengt. Ein leerer Titel heisst: nicht zeigen.",
+		"titel": "",
+		"text": "",
+		"knopf": ""
+	},
+	"ausstattung": {
+		"station_intake": {
+			"ausstattung_1": {
+				"name": "Storyboard",
+				"stufen": [
+					"Zettel",
+					"Skizzenblock",
+					"Storyboard-Wand",
+					"Bildschirm-Wand"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Recherche",
+				"stufen": [
+					"Nichts",
+					"Tablet",
+					"Doppelmonitor",
+					"Trend-Bildschirm"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Team",
+				"stufen": [
+					"Hocker",
+					"Sitzsack",
+					"Sofa-Ecke",
+					"Konferenztisch"
+				]
+			}
+		},
+		"station_buffer": {
+			"ausstattung_1": {
+				"name": "Kamera",
+				"stufen": [
+					"Handy auf Gimbal",
+					"Systemkamera",
+					"Kinokamera",
+					"Kamera auf Kran"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Licht",
+				"stufen": [
+					"Eine Softbox",
+					"Zwei Softboxen",
+					"LED-Wand",
+					"Lichtgestell an der Decke"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Ton",
+				"stufen": [
+					"Ansteckmikro",
+					"Tonangel",
+					"Tonpult",
+					"Tonkabine"
+				]
+			}
+		},
+		"station_processing": {
+			"ausstattung_1": {
+				"name": "Rechner",
+				"stufen": [
+					"Der Gaming-PC",
+					"PC mit Wasserkühlung",
+					"Doppel-PC",
+					"Schnitt-Workstation"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Monitor",
+				"stufen": [
+					"Ein Monitor",
+					"Zwei Monitore",
+					"Gebogener Monitor",
+					"Monitorwand"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Farbe",
+				"stufen": [
+					"Nichts",
+					"Farbpult",
+					"Profi-Monitor",
+					"Farbstudio"
+				]
+			}
+		},
+		"station_transport": {
+			"ausstattung_1": {
+				"name": "Server",
+				"stufen": [
+					"Ein Tower",
+					"Rack halb",
+					"Rack voll",
+					"Zwei Racks"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Speicher",
+				"stufen": [
+					"Festplatten-Stapel",
+					"Speicher-Server",
+					"Speicher-Server mit 8 Platten",
+					"Band-Archiv"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Kühlung",
+				"stufen": [
+					"Tischventilator",
+					"Standventilator",
+					"Klimagerät",
+					"Klimaanlage mit Rohren"
+				]
+			}
+		},
+		"station_special": {
+			"ausstattung_1": {
+				"name": "Präsentation",
+				"stufen": [
+					"Laptop",
+					"Tablet-Ständer",
+					"Fernseher",
+					"Leinwand mit Beamer"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Produkte",
+				"stufen": [
+					"Ein Karton",
+					"Produktregal",
+					"Vitrine",
+					"Messestand"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Empfang",
+				"stufen": [
+					"Wasserflasche",
+					"Kaffeemaschine",
+					"Theke",
+					"Bar"
+				]
+			}
+		}
+	},
+	"bereiche": {
+		"bereich_1": {
+			"name": "Der Hof",
+			"text": "Pflaster, ein Container, ein Starkstromanschluss. Hier kommt der Video-Server hin.",
+			"danach": "Danach hier: der Video-Server. Er macht Videos von allein fertig."
+		},
+		"bereich_2": {
+			"name": "Das Requisitenlager",
+			"text": "Kisten voller Kram, den Younes irgendwann braucht. Alles geht schneller.",
+			"danach": "Danach hier: alle Stationen ×1,25. Und ein Thron, auf dem keiner sitzt."
+		},
+		"bereich_3": {
+			"name": "Der Grüne Raum",
+			"text": "Grüne Wand, weiches Sofa. Hier sitzen bald die Sponsoren.",
+			"danach": "Danach hier: die Sponsoren. Sie bezahlen Videos schon vor dem Dreh."
+		},
+		"bereich_4": {
+			"name": "Das Dach",
+			"text": "Um sieben ist das Licht perfekt. Hier wird schneller gedreht.",
+			"danach": "Danach hier: der Dreh ×1,5. Um sieben ist das Licht perfekt."
+		},
+		"bereich_5": {
+			"name": "Der Kinoraum",
+			"text": "Leinwand, zwölf Sessel, einer mit Mos Schild.",
+			"wartet": "Der Onkel lagert hier noch seine Winterreifen.",
+			"danach": "Danach hier: alles ×1,5. Und Mos Stammplatz mit Schild."
+		},
+		"bereich_6": {
+			"name": "Younes' Schnittplatz",
+			"text": "Zwei Bildschirme, ein guter Stuhl. Hier wird ab jetzt in Ruhe geschnitten.",
+			"danach": "Alle Stationen laufen schneller. Younes hat endlich seine Ruhe."
+		}
+	},
+	"nebenraeume": {
+		"younes_ecke": {
+			"name": "Younes' Ecke",
+			"text": "Younes' Arbeitsplatz im Studio. Hier läuft alles von allein – nichts zu kaufen."
+		}
+	},
+	"ziel_formate": {
+		"station_stufe": "%s auf Stufe %d",
+		"ausstattung_stufe": "%s: %s auf Stufe %d",
+		"ausstattung_gesamt": "%d Ausstattungsstufen kaufen",
+		"bereich": "%s gehört dir",
+		"verdient": "%s € verdienen",
+		"momente": "%d Momente antippen",
+		"sterne": "%d Sterne sammeln",
+		"stufen_gesamt": "%d Stufen insgesamt",
+		"abschluss": "Das Studio gehört euch – Younes zählt keine Aufnahmen mehr",
+		"freigeschaltet": "Das Archiv für den Video-Server bauen",
+		"alle": "Eine Sammlung komplett",
+		"ausstattung_station": "%d Ausstattungsstufen an einer Station"
+	},
+	"absender": {
+		"plattform": "Dein Kanal",
+		"younes": "Younes",
+		"mo": "Mo",
+		"marke": "Eine Marke",
+		"roman": "Roman",
+		"du": "Du"
+	},
+	"nachrichten": {
+		"nachricht_01": {
+			"von": "mo",
+			"text": "Das ist Younes' Garage. Sein Onkel lässt uns hier drehen.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Das ist Younes' Garage. Sein Onkel lässt uns hier drehen.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "younes",
+					"text": "Wir machen bezahlte Videos für Firmen. Tipp den Dreh an, bau ihn aus.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "mo",
+					"text": "Der Onkel verkauft die Garage bald. Ziel: Das Studio gehört uns.",
+					"stimmung": "geschockt"
+				}
+			]
+		},
+		"nachricht_02": {
+			"von": "mo",
+			"text": "Neue Ausstattung macht schneller. Kauf eine für den Dreh."
+		},
+		"nachricht_03": {
+			"von": "younes",
+			"text": "8 Stufen. Bau das Rote aus, dann der Hof."
+		},
+		"nachricht_04": {
+			"von": "mo",
+			"text": "Die Platten sind voll. Ich wollte Platz machen und hab ein Video gelöscht.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Die Platten sind voll. Ich wollte Platz machen und hab ein Video gelöscht.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "younes",
+					"text": "Elf Aufnahmen, weg. Ein Kunde wartet genau darauf.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "younes",
+					"text": "Kauf den Hof: Dort steht der Server, dann bauen wir ein Archiv.",
+					"stimmung": "neutral"
+				}
+			]
+		},
+		"nachricht_05": {
+			"von": "younes",
+			"text": "Der Hof gehört dazu. Im Container steht der Video-Server.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "younes",
+					"text": "Der Hof gehört dazu. Im Container steht der Video-Server.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "younes",
+					"text": "Er macht Videos fertig, auch nachts. Als Nächstes: das Archiv.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "younes",
+					"text": "Der Onkel will bis Freitag ein Video sehen. Perfekt dauert länger.",
+					"stimmung": "geschockt"
+				}
+			]
+		},
+		"nachricht_16": {
+			"von": "plattform",
+			"text": "1.000 Abos. Zwei davon: Mo und Mos Zweitkonto."
+		},
+		"nachricht_06": {
+			"von": "younes",
+			"text": "Das Archiv läuft. Weiter: das Requisitenlager."
+		},
+		"nachricht_07": {
+			"von": "mo",
+			"text": "Requisitenlager gekauft. Sammle jetzt Sterne."
+		},
+		"nachricht_17": {
+			"von": "younes",
+			"text": "Aufnahme 14 war gut. Aufnahme 15 war besser.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "younes",
+					"text": "Aufnahme 14 war gut. Aufnahme 15 war besser.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "younes",
+					"text": "Der Onkel wartet, die Sponsoren im Grünen Raum auch.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "younes",
+					"text": "… Gut so. Oder noch eine?",
+					"stimmung": "neutral"
+				}
+			],
+			"antworten": [
+				{
+					"text": "Gut so.",
+					"reaktion": "Ich hab es gesagt. Notier das. Es kommt nie wieder vor."
+				},
+				{
+					"text": "Nochmal.",
+					"reaktion": "Aufnahme 17. Ich liebe dich. Beruflich."
+				}
+			]
+		},
+		"nachricht_18": {
+			"von": "plattform",
+			"text": "10.000 Abos. Kauf den Grünen Raum."
+		},
+		"nachricht_09": {
+			"von": "mo",
+			"text": "Der Grüne Raum ist offen. Bau die Sponsoren aus."
+		},
+		"nachricht_08": {
+			"von": "younes",
+			"text": "Der Onkel hat die Videos gesehen und genickt. Das gab es noch nie.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "younes",
+					"text": "Der Onkel hat die Videos gesehen und genickt. Das gab es noch nie.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "younes",
+					"text": "Ich will fest angestellt werden, mit Lohn. Ich bin teuer. Ja?",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "younes",
+					"text": "Und der Container summt. Bau den Server aus.",
+					"stimmung": "geschockt"
+				}
+			],
+			"antworten": [
+				{
+					"text": "Ja, fest.",
+					"reaktion": "Eingestellt. Den Vertrag hab ich schon geschrieben. Gelb markiert."
+				},
+				{
+					"text": "Noch nicht.",
+					"reaktion": "Verstanden. Ich bin teuer, aber ich warte. Bis Freitag."
+				}
+			]
+		},
+		"nachricht_19": {
+			"von": "marke",
+			"text": "Wir brauchen ein Video, heute! Bau den Schnitt aus."
+		},
+		"nachricht_10": {
+			"von": "plattform",
+			"text": "Ein Video hat 1 Mio. Aufrufe. Weiter: Dach kaufen."
+		},
+		"nachricht_20": {
+			"von": "mo",
+			"text": "Eine Million Aufrufe! Seit heute fragen Firmen von allein an.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Eine Million Aufrufe! Seit heute fragen Firmen von allein an.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "younes",
+					"text": "Beim dritten Aufruf deines ersten Clips warst du bei mir. Zocken.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "mo",
+					"text": "Ich bin Multitasker. Weiter: das Dach, dort ist das Licht perfekt.",
+					"stimmung": "jubelnd"
+				}
+			]
+		},
+		"nachricht_11": {
+			"von": "younes",
+			"text": "Das Dach macht den Dreh besser. Weiter: Kinoraum."
+		},
+		"nachricht_12": {
+			"von": "mo",
+			"text": "60 Mio. € verdient! Kauf den Kinoraum."
+		},
+		"nachricht_14": {
+			"von": "younes",
+			"text": "Kinoraum fertig. Bau alles aus, dann gehört es euch."
+		},
+		"nachricht_13": {
+			"von": "plattform",
+			"text": "Vier Firmen wollen Videos. Younes prüft noch den Ton."
+		},
+		"nachricht_21": {
+			"von": "mo",
+			"text": "Ein anderes Studio hat unser Intro kopiert. Fast Bild für Bild!",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Ein anderes Studio hat unser Intro kopiert. Fast Bild für Bild!",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "younes",
+					"text": "Dann drehen wir das nächste so, dass keiner es kopieren kann.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "mo",
+					"text": "Auf dem Teamfoto hat Younes gelächelt. Ein halbes Bild lang.",
+					"stimmung": "jubelnd"
+				}
+			]
+		},
+		"nachricht_22": {
+			"von": "younes",
+			"text": "Fast: das erste Video, an dem ich nichts ändern will."
+		},
+		"nachricht_15": {
+			"von": "roman",
+			"text": "Euer Logo war schief gesetzt. Ich hab es neu gemacht.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "roman",
+					"text": "Euer Logo war schief gesetzt. Ich hab es neu gemacht.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "roman",
+					"text": "Dazu hab ich 380 Shirts bestellt. Ohne Laden bleiben sie im Karton.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "roman",
+					"text": "Ich habe schon einen Laden gefunden. Das Schaufenster ist zu klein.",
+					"stimmung": "neutral"
+				}
+			]
+		},
+		"nachricht_23": {
+			"von": "younes",
+			"text": "Der Fußballverein will ein Video. Tipp das ! über mir."
+		},
+		"nachricht_24": {
+			"von": "plattform",
+			"text": "Vereinsvideo läuft, drei Vereine fragen an."
+		}
+	},
+	"momente": {
+		"texte": [
+			"Ein Video zieht an",
+			"Jemand teilt euer Video",
+			"Mo postet einen Ausschnitt",
+			"Eine Marke schaut zu",
+			"Ein Kommentar wird gefeiert"
+		],
+		"gross_titel": "Ein Video geht durch die Decke",
+		"kiste": {
+			"titel": "Lieferung am Rolltor",
+			"text": "Neues Zubehör fürs Studio. Tipp die Kiste an, der Inhalt bringt Geld."
+		}
+	},
+	"abschluss": {
+		"titel": "Gut so",
+		"text": "Der Onkel hat die Garage verkauft: Das Studio gehört euch. Younes hat „gut so“ gesagt. Einmal. Er hat es sofort bereut.\n\nEine Nachricht von Roman.",
+		"antwort": "Warum 380?",
+		"zahlen": {
+			"spielzeit": "Spielzeit",
+			"verdient": "Verdient",
+			"raeume": "Räume",
+			"ausstattung": "Ausstattung"
+		}
+	},
+	"menue": {
+		"ausbau": "Ausbau",
+		"ziele": "Ziele",
+		"handy": "Handy",
+		"laden": "Laden",
+		"schub": "Boost"
+	},
+	"stil": {
+		"akzent": "#FF4FA3",
+		"akzent_text": "#1B1726",
+		"akzent_tief": "#C8307C"
+	},
+	"absender_farben": {
+		"plattform": "#1B1726",
+		"younes": "#FF4FA3",
+		"mo": "#3D7BFF",
+		"marke": "#5A5368",
+		"roman": "#FF7A1A",
+		"du": "#FF4FA3"
+	},
+	"absender_figur": {
+		"mo": "figur_cap",
+		"younes": "figur_buckethat",
+		"roman": "figur_brille",
+		"du": "figur_kapuze"
+	},
+	"crew": {
+		"_kommentar": "Crew-Karten je Station: Figur, Rolle, Rangtitel (I-III), Kartentext je Rang. Nur Darstellung.",
+		"station_intake": {
+			"name": "Younes",
+			"portrait": "younes",
+			"rolle": "Streicht",
+			"raenge": [
+				"Streicht",
+				"Streicht mehr",
+				"Lässt eins stehen"
+			],
+			"texte": [
+				"Younes streicht zwei Ideen. Die dritte darf bleiben.",
+				"Nur noch das Beste bleibt an der Wand. Es sind zwei Zettel.",
+				"Ein Konzept, das er nicht streicht. Er schaut es misstrauisch an."
+			]
+		},
+		"station_buffer": {
+			"name": "Mo",
+			"portrait": "mo",
+			"rolle": "Steht vor der Kamera",
+			"raenge": [
+				"Komparse",
+				"Hauptrolle",
+				"Auf dem Mond"
+			],
+			"texte": [
+				"Mo steht im Bild. Mit Snack. Younes sagt: Snack raus.",
+				"Mo hat Text. Er hält sich selten daran.",
+				"Grünes Tuch, Mo im Raumanzug. Aufnahme 16."
+			]
+		},
+		"station_processing": {
+			"name": "Das Nachbarskind",
+			"portrait": "kind",
+			"figur": "figur_zopf",
+			"rolle": "Schaut über die Schulter",
+			"raenge": [
+				"Zuschauer",
+				"Drückt Knöpfe",
+				"Praktikant ohne Vertrag"
+			],
+			"texte": [
+				"Es schaut zu. Es sagt: „Cool.“ Mehr nicht.",
+				"Es darf die Leertaste drücken. Es tut es sehr ernst.",
+				"Kein Vertrag, kein Lohn, bester Mitarbeiter."
+			]
+		},
+		"station_transport": {
+			"name": "Der Onkel",
+			"portrait": "onkel",
+			"figur": "figur_anzug",
+			"rolle": "Gehört der Garage",
+			"raenge": [
+				"Neugierig",
+				"Stromgeber",
+				"Fragt nach dem Summen"
+			],
+			"texte": [
+				"Der Onkel guckt in den Container. Er nickt. Er weiß nicht, warum.",
+				"Der Onkel zahlt den Strom. Dafür will er einen Namen im Abspann.",
+				"„Was summt da?“ – „Dein Container.“ – „Aha.“"
+			]
+		},
+		"station_special": {
+			"name": "Mo",
+			"portrait": "mo",
+			"rolle": "Empfängt die Marken",
+			"raenge": [
+				"Gastgeber",
+				"Verhandler",
+				"Marken-Flüsterer"
+			],
+			"texte": [
+				"Mo bringt Kaffee. Sogar den richtigen.",
+				"Mo verhandelt. Zwei Marken springen ab, eine bleibt.",
+				"Die Marken reden nur noch mit Mo. Younes ist erleichtert."
+			]
+		}
+	},
+	"welt_ziel": "Das Studio gehört euch",
+	"marken_namen": [
+		"Der Server läuft",
+		"Die Sponsoren sind da",
+		"Der Onkel verhandelt"
+	],
+	"ziel_warum": {
+		"station_stufe": "Eine schnellere Station bringt mehr pro Minute.",
+		"ausstattung_stufe": "Ausstattung steht wirklich im Raum und macht schneller.",
+		"ausstattung_gesamt": "Mehr Ausstattung heißt: mehr Ertrag pro Minute.",
+		"bereich": "Jeder neue Raum bringt eine Station oder einen Bonus.",
+		"verdient": "Mit dem Geld kaufst du Räume, am Ende das Studio.",
+		"momente": "Antippen bringt einen kleinen Extra-Gewinn.",
+		"sterne": "Jeder Stern macht eine Station anderthalbmal so schnell.",
+		"stufen_gesamt": "Jede Stufe bringt dich dem Welt-Ziel näher.",
+		"abschluss": "Dann verkauft der Onkel euch die Garage.",
+		"freigeschaltet": "Das Archiv schafft Platz, damit kein Video verloren geht.",
+		"alle": "Eine Sammlung ist komplett, wenn du alles daraus hast.",
+		"ausstattung_station": "Eine voll ausgestattete Station läuft deutlich schneller."
+	},
+	"auftraege": {
+		"_kommentar": "K3 B3: Mini-Aufgaben zwischen Raum 3 und 4 (Ziel-IDs ziel_auftrag_1..3, kette 'auftrag'). Ein '!' steht ueber der Figur (absender_figur). Tipp -> Szene: 'satz' (warum es dem Geschaeft hilft) + 'aufgabe_format' mit dem echten Zieltext (was zu tun ist) -> 'knopf_start' springt zum Ziel. Ist das Ziel erfuellt: 'dank' + 'knopf_holen' loest es ein. Saetze <= 90 Zeichen.",
+		"knopf_start": "Mach ich",
+		"knopf_holen": "Abholen",
+		"aufgabe_format": "Deine Aufgabe: %s",
+		"symbol": "!",
+		"ziel_auftrag_1": {
+			"figur": "younes",
+			"satz": "Wir filmen das Training. Gute Bilder überzeugen den Verein, wieder zu buchen.",
+			"dank": "Das Training sieht aus wie ein Profispiel. Der Trainer war still. Gutes Zeichen."
+		},
+		"ziel_auftrag_2": {
+			"figur": "mo",
+			"satz": "Der Verein will das Video bald. Je schneller wir liefern, desto mehr Anfragen kommen.",
+			"dank": "Der Trainer hat mich umarmt. Ich glaube, ich bin jetzt Mitglied."
+		},
+		"ziel_auftrag_3": {
+			"figur": "younes",
+			"satz": "Letzter Schritt: fertig machen und abgeben. Zufriedene Kunden empfehlen uns weiter.",
+			"dank": "Abgegeben. Ich hab nichts mehr geändert. Fast nichts."
+		}
+	},
+	"ketten": {
+		"auftrag": "Auftrag: Video für den Fußballverein"
+	},
+	"kapitel": [
+		{
+			"id": "kapitel_1",
+			"titel": "Die Garage",
+			"ab_bereich": "",
+			"aufgabe": "Baue Konzept, Dreh und Schnitt aus. Kaufe den Hof und bau das Archiv.",
+			"entscheidung": ""
+		},
+		{
+			"id": "kapitel_2",
+			"titel": "Perfekt dauert zu lang",
+			"ab_bereich": "bereich_2",
+			"aufgabe": "Sammle Sterne und verdiene genug für den Grünen Raum.",
+			"entscheidung": "nachricht_17"
+		},
+		{
+			"id": "kapitel_3",
+			"titel": "Die Sponsoren",
+			"ab_bereich": "bereich_3",
+			"aufgabe": "Erledige das Vereinsvideo und kaufe das Dach.",
+			"entscheidung": "nachricht_08"
+		},
+		{
+			"id": "kapitel_4",
+			"titel": "Das Studio gehört euch",
+			"ab_bereich": "bereich_4",
+			"aufgabe": "Kaufe den Kinoraum und baue alles aus, bis das Studio euch gehört.",
+			"entscheidung": ""
+		}
+	],
+	"auftragsbrett": {
+		"_kommentar": "Absender und Warum-Satz je Ziel-ID (Auftragsbrett, Welle 2b). Bewusst NICHT unter \"ziele\": jeder Schluessel dort zaehlt als Mission.",
+		"ziel_01": {
+			"absender": "younes",
+			"satz": "Zehn Stufen: Dann schafft das Studio den ersten Firmenkunden."
+		},
+		"ziel_32": {
+			"absender": "younes",
+			"satz": "Ein guter Dreh spart uns jede Nachdreh-Nacht."
+		},
+		"ziel_02": {
+			"absender": "younes",
+			"satz": "Bessere Kamera, sonst nimmt uns keine Firma ernst."
+		},
+		"ziel_03": {
+			"absender": "younes",
+			"satz": "Schneller Schnitt: Kunden warten ungern auf ihr Video."
+		},
+		"ziel_04": {
+			"absender": "younes",
+			"satz": "Der Hof: Dort steht der Server, der Videos fertig rechnet."
+		},
+		"ziel_05": {
+			"absender": "mo",
+			"satz": "Der Server soll schneller liefern, auch nachts."
+		},
+		"ziel_33": {
+			"absender": "younes",
+			"satz": "Mehr Konzepte, mehr Aufträge im Kalender."
+		},
+		"ziel_06": {
+			"absender": "younes",
+			"satz": "Das Archiv: Nie wieder löscht jemand elf Aufnahmen."
+		},
+		"ziel_07": {
+			"absender": "mo",
+			"satz": "Sterne machen eine Station schneller. Mehr Videos pro Tag."
+		},
+		"ziel_08": {
+			"absender": "younes",
+			"satz": "Genug Aufnahmen auf Vorrat, auch wenn die Firma drängelt."
+		},
+		"ziel_09": {
+			"absender": "mo",
+			"satz": "Das Requisitenlager: Mehr Kulissen, mehr Aufträge."
+		},
+		"ziel_10": {
+			"absender": "plattform",
+			"satz": "Drei Momente antippen: kleine Extras für die Kasse."
+		},
+		"ziel_26": {
+			"absender": "younes",
+			"satz": "Besserer Schnitt, bessere Vorführung beim Kunden."
+		},
+		"ziel_11": {
+			"absender": "younes",
+			"satz": "Besseres Licht: Das sieht die Firma sofort im Video."
+		},
+		"ziel_12": {
+			"absender": "mo",
+			"satz": "Mehr Ideen: Jede Firma will etwas anderes."
+		},
+		"ziel_13": {
+			"absender": "plattform",
+			"satz": "500.000 € verdienen: Das Geld für den Grünen Raum."
+		},
+		"ziel_14": {
+			"absender": "mo",
+			"satz": "Der Grüne Raum: Dort sitzen die Sponsoren."
+		},
+		"ziel_auftrag_1": {
+			"absender": "younes",
+			"satz": "Der Fußballverein sucht Spieler und braucht ein gutes Video."
+		},
+		"ziel_auftrag_2": {
+			"absender": "mo",
+			"satz": "Der Verein will es bald. Wir sind schneller als gedacht."
+		},
+		"ziel_auftrag_3": {
+			"absender": "younes",
+			"satz": "Abgeben, dann bucht uns der Verein wieder."
+		},
+		"ziel_15": {
+			"absender": "mo",
+			"satz": "Sponsoren zahlen schon vor dem Dreh. Das ist Sicherheit."
+		},
+		"ziel_27": {
+			"absender": "mo",
+			"satz": "Mehr Sponsoren, weniger Sorgen um die Miete."
+		},
+		"ziel_16": {
+			"absender": "younes",
+			"satz": "30 Ausstattungsstufen: Dann sieht es nach Filmstudio aus."
+		},
+		"ziel_17": {
+			"absender": "mo",
+			"satz": "Zwölf Sterne: Die ganze Kette wird spürbar schneller."
+		},
+		"ziel_20": {
+			"absender": "younes",
+			"satz": "Das Dach: perfektes Licht für unsere besten Videos."
+		},
+		"ziel_18": {
+			"absender": "mo",
+			"satz": "Starker Server: Kein Video bleibt mehr liegen."
+		},
+		"ziel_19": {
+			"absender": "younes",
+			"satz": "Guter Schnitt: Genau das bezahlt die Firma."
+		},
+		"ziel_28": {
+			"absender": "mo",
+			"satz": "15 Sterne: Wir drehen schneller als der Konkurrent kopiert."
+		},
+		"ziel_24": {
+			"absender": "younes",
+			"satz": "Der Kinoraum: Hier zeigen wir Kunden ihr fertiges Video."
+		},
+		"ziel_21": {
+			"absender": "younes",
+			"satz": "Schnitt auf Stufe 50: Nicht mal ich finde noch Fehler."
+		},
+		"ziel_22": {
+			"absender": "mo",
+			"satz": "100 Ausstattungsstufen: Echtes Studio, kein Garagenprojekt."
+		},
+		"ziel_23": {
+			"absender": "mo",
+			"satz": "Sponsoren auf Stufe 30: Die Großen klopfen an."
+		},
+		"ziel_29": {
+			"absender": "plattform",
+			"satz": "1 Mrd. € verdient: Der Onkel nennt seinen Preis."
+		},
+		"ziel_30": {
+			"absender": "younes",
+			"satz": "200 Stufen: Das ganze Studio arbeitet wie ein Uhrwerk."
+		},
+		"ziel_31": {
+			"absender": "mo",
+			"satz": "20 Sterne: Besser wird kein Studio hier."
+		},
+		"ziel_25": {
+			"absender": "younes",
+			"satz": "Die Garage kaufen: Dann gehört das Studio euch."
+		}
+	}
+}

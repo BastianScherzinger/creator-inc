@@ -1,0 +1,174 @@
+{
+	"_kommentar": "ERSATZTHEMA -- reiner Platzhalter. Es traegt die Struktur einer Themendatei, aber keinen einzigen echten Satz. Es greift, wenn eine Welt noch keine eigenen Texte hat (ThemeData.ERSATZ), damit sich Raum, Kamera, Beleuchtung und Balance einer neuen Welt beurteilen lassen, lange bevor ihr letzter Satz geschrieben ist. '[Text fehlt]' steht absichtlich sichtbar im Bild: Ein Platzhalter, den man fuer fertig haelt, ist schlimmer als eine Luecke, die man sieht.",
+	"id": "neutral",
+	"welt_name": "[Welt ohne Texte]",
+	"welt_untertitel": "[Text fehlt]",
+	"waehrung": "€",
+	"stationen": {
+		"station_intake": {
+			"name": "[Text fehlt]",
+			"beschreibung": "[Text fehlt]",
+			"engpass_hinweis": "[Text fehlt]"
+		},
+		"station_buffer": {
+			"name": "[Text fehlt]",
+			"beschreibung": "[Text fehlt]",
+			"engpass_hinweis": "[Text fehlt]"
+		},
+		"station_processing": {
+			"name": "[Text fehlt]",
+			"beschreibung": "[Text fehlt]",
+			"engpass_hinweis": "[Text fehlt]"
+		},
+		"station_transport": {
+			"name": "[Text fehlt]",
+			"beschreibung": "[Text fehlt]",
+			"engpass_hinweis": "[Text fehlt]"
+		},
+		"station_special": {
+			"name": "[Text fehlt]",
+			"beschreibung": "[Text fehlt]",
+			"engpass_hinweis": "[Text fehlt]"
+		}
+	},
+	"upgrades": {
+		"station_intake": [
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]"
+		],
+		"station_buffer": [
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]"
+		],
+		"station_processing": [
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]"
+		],
+		"station_transport": [
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]"
+		],
+		"station_special": [
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]"
+		]
+	},
+	"meilenstein_name": "[Text fehlt]",
+	"meilenstein_text": "[Text fehlt]",
+	"grossauftrag": {
+		"titel": "[Text fehlt]",
+		"texte": [
+			"[Text fehlt]",
+			"[Text fehlt]",
+			"[Text fehlt]"
+		]
+	},
+	"offline_bericht": {
+		"titel": "[Text fehlt]",
+		"text": "[Text fehlt]"
+	},
+	"weltwechsel": {
+		"titel": "[Text fehlt]",
+		"text": "[Text fehlt]",
+		"knopf": "[Text fehlt]"
+	},
+	"silhouetten": {
+		"_kommentar": "[Text fehlt]",
+		"npc_standard": "[Text fehlt]",
+		"npc_flach": "[Text fehlt]",
+		"npc_gebeugt": "[Text fehlt]",
+		"npc_klein": "[Text fehlt]",
+		"npc_breit": "[Text fehlt]"
+	},
+	"tutorial": {
+		"_kommentar": "[Text fehlt]",
+		"zoom": {"von": "", "text": "Mit zwei Fingern ziehst du die Karte groß und klein.", "text_b": "Zwei Finger zoomen. Doppeltipp auf freien Boden: Raum oder Überblick."},
+		"ueberspringen": "[Text fehlt]",
+		"waehlen": {
+			"titel": "[Text fehlt]",
+			"text": "[Text fehlt]"
+		},
+		"ausbauen": {
+			"titel": "[Text fehlt]",
+			"text": "[Text fehlt]"
+		},
+		"engpass": {
+			"titel": "[Text fehlt]",
+			"text": "[Text fehlt]"
+		},
+		"kette": {
+			"titel": "[Text fehlt]",
+			"text": "[Text fehlt]"
+		},
+		"fernziel": {
+			"titel": "[Text fehlt]",
+			"text": "[Text fehlt]"
+		}
+	},
+	"belohnung": {
+		"_kommentar": "[Text fehlt]",
+		"schub_knopf": "[Text fehlt]",
+		"schub_laeuft": "[Text fehlt]",
+		"schub_wartet": "[Text fehlt]",
+		"schub_titel": "[Text fehlt]",
+		"schub_text": "[Text fehlt]",
+		"offline_verdoppeln": "[Text fehlt]",
+		"offline_verdoppelt_titel": "[Text fehlt]",
+		"offline_verdoppelt_text": "[Text fehlt]",
+		"laeuft_gerade": "[Text fehlt]",
+		"nichts_da_titel": "[Text fehlt]",
+		"nichts_da_text": "[Text fehlt]"
+	},
+	"schlange_format": "%d [Text fehlt]",
+	"limit": {
+		"_kommentar": "Texte der harten Obergrenze (Welt 2). 'format' bekommt Titel und Auslastung in Prozent, 'knopf' den Preis. Prozent statt Megabyte, weil der Kern in Durchsatz rechnet -- eine erfundene Umrechnung waere eine Zahl, die nichts bedeutet.",
+		"titel": "[Text fehlt]",
+		"format": "%s  %d %%",
+		"knopf": "[Text fehlt]  (%s)",
+		"wand_titel": "[Text fehlt]",
+		"wand_text": "[Text fehlt]",
+		"erledigt_titel": "[Text fehlt]",
+		"erledigt_text": "[Text fehlt]"
+	},
+	"abspann": {
+		"_kommentar": "Der Abspann. Er erscheint genau einmal: wenn der ganze Bogen durch ist. Der 'hinweis' ist keine Zierde, sondern Pflicht -- Welt 6 handelt von Kapital, und kein Satz des Spiels darf als Finanzberatung lesbar sein (docs/PLAY_COMPLIANCE, TASK 050).",
+		"titel": "[Text fehlt]",
+		"text": "[Text fehlt]",
+		"knopf": "[Text fehlt]",
+		"hinweis": "Dies ist ein Spiel. Es bildet weder echte Märkte noch echte Erträge ab und ist keine Anlageberatung."
+	},
+	"personen": {
+		"_kommentar": "Nur Welt 4 benutzt diesen Abschnitt wirklich. Die anderen tragen ihn der Struktur wegen -- alle Themen haben dieselben Schluessel, damit ein fehlender Eintrag auffaellt statt stillschweigend zu fehlen.",
+		"ueberlast_text": "[Text fehlt]"
+	},
+	"eroeffnung": {
+		"_kommentar": "Der allererste Bildschirm eines neuen Spielstands. Nur Welt 1 fuellt ihn -- in jeder anderen Welt bleibt er leer, weil dort niemand neu anfaengt. Ein leerer Titel heisst: nicht zeigen.",
+		"titel": "[Text fehlt]",
+		"text": "[Text fehlt]",
+		"knopf": "[Text fehlt]"
+	}
+}

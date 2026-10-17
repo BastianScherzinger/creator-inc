@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
+  <!--
+    Feature-Grafik fuer den Play-Eintrag (1024 x 500).
+
+    Sie steht ganz oben im Store und wird auf kleinen Bildschirmen auf ein
+    Drittel verkleinert. Deshalb: ein Motiv, ein Satz, sonst nichts.
+
+    WARUM KEIN SCREENSHOT DARIN:
+    Die Screenshots stehen direkt darunter. Eine Feature-Grafik, die dasselbe
+    zeigt, verdoppelt nur -- sie soll die HALTUNG zeigen, nicht den Inhalt.
+
+    Google beschneidet die Grafik je nach Oberflaeche seitlich. Alles
+    Wesentliche liegt deshalb in der Mitte, mit reichlich Luft am Rand.
+  -->
+
+  <rect width="1024" height="500" fill="#1A1E27"/>
+
+  <!-- Der Prompt, dasselbe Zeichen wie im App-Symbol -->
+  <g transform="translate(96 178) scale(0.68)">
+    <path d="M 0 0 L 72 66 L 0 132"
+          fill="none" stroke="#8E97A8" stroke-width="34"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="110" y="0" width="72" height="132" rx="8" fill="#F2A93B"/>
+  </g>
+
+  <text x="292" y="238"
+        font-family="DejaVu Sans, Verdana, sans-serif" font-weight="700"
+        font-size="82" fill="#F2A93B" letter-spacing="2">HELLO WORLD</text>
+
+  <text x="296" y="300"
+        font-family="DejaVu Sans, Verdana, sans-serif" font-weight="400"
+        font-size="31" fill="#C3C9D4">Vom ersten Clip zum eigenen Konzern.</text>
+
+  <!-- Eine Linie, die den Bogen andeutet: sechs Stufen, jede groesser.
+       Kein Diagramm, nur ein Rhythmus -- aber er sagt, worum es geht.
+
+       Sie sitzt UNTER dem Untertitel. Im ersten Anlauf lag sie auf gleicher
+       Hoehe, und der Text lief mitten durch die Balken. Godot rastert nur die
+       Formen, die Schrift kommt erst im zweiten Schritt dazu -- der Konflikt
+       war deshalb in der SVG-Datei nicht zu sehen, nur im fertigen Bild. -->
+  <g fill="#3A4252">
+    <rect x="296" y="414" width="44" height="14" rx="7"/>
+    <rect x="352" y="406" width="44" height="22" rx="7"/>
+    <rect x="408" y="394" width="44" height="34" rx="7"/>
+    <rect x="464" y="378" width="44" height="50" rx="7"/>
+    <rect x="520" y="358" width="44" height="70" rx="7"/>
+  </g>
+  <rect x="576" y="332" width="44" height="96" rx="7" fill="#F2A93B"/>
+</svg>

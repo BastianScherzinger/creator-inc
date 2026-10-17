@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="432" viewBox="0 0 432 432">
+  <!-- Vordergrund des adaptiven Symbols. Transparent, Marke auf 62 Prozent verkleinert: Android beschneidet adaptive Symbole auf einen Kreis und zoomt dabei zu. Wer hier die Vollbildfassung einsetzt, verliert den Cursor am Rand. -->
+
+  <g transform="translate(216 216) scale(0.62) translate(-216 -216)">
+    <path d="M 138 150 L 210 216 L 138 282"
+          fill="none" stroke="#8E97A8" stroke-width="34"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="248" y="150" width="72" height="132" rx="8" fill="#F2A93B"/>
+  </g>
+</svg>

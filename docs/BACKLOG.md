@@ -1,0 +1,3 @@
+
+- (U5, 15.10.) Welt 4: Überlast-Animation Packteam (Figuren gedrängt, braucht Überlast-Zustand aus dem Kern als Signal) und animiertes Förderband (Textur-Scroll/Rollen). Welt 1: sichtbarer Nudeltopf auf dem Herd (bleibt nach Raum 5 stehen).
+- (U6, 15.10.) UI-Reste aus ov_wuensche_u4_an_u2: Erfolge (`achievement_unlocked`, Namen/Texte `erfolg.<id>` fehlen in i18n, Moment/Toast), Tagesaufgaben-Abschluss-Moment (`daily_task_completed/claimed`), Crew-Moment bei `crew_hired`, Crew-Übersicht über alle Stationen (bisher nur Karte im Stationsmenü). Crew-Porträts für `figur_packer`/`figur_kapuze`/`figur_cap` ohne eigene PNGs zeigen die Initiale (Assets fehlen). `abschluss`-Bildschirm Welt 6 (3 Absätze) scrollbar machen, nicht geprüft.

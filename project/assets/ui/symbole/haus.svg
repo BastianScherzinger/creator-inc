@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 128">
+<path d="M22 60 V112 H106 V60" fill="#FFF7EA"/>
+<clipPath id="k16"><path d="M22 60 V112 H106 V60"/></clipPath>
+<g clip-path="url(#k16)"><g transform="translate(4 4)"><path d="M22 60 V112 H106 V60" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<path d="M22 60 V112 H106 V60" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M10 64 L64 14 L118 64 Z" fill="#FF4D3D"/>
+<clipPath id="k17"><path d="M10 64 L64 14 L118 64 Z"/></clipPath>
+<g clip-path="url(#k17)"><g transform="translate(4 4)"><path d="M10 64 L64 14 L118 64 Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<path d="M10 64 L64 14 L118 64 Z" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="50" y="76" width="28" height="36" rx="5" fill="#FF4D3D"/>
+<rect x="50" y="76" width="28" height="36" rx="5" fill="none" stroke="#1B1726" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="28" y="72" width="16" height="16" rx="3" fill="#FFF7EA"/>
+<rect x="28" y="72" width="16" height="16" rx="3" fill="none" stroke="#1B1726" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="84" y="72" width="16" height="16" rx="3" fill="#FFF7EA"/>
+<rect x="84" y="72" width="16" height="16" rx="3" fill="none" stroke="#1B1726" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

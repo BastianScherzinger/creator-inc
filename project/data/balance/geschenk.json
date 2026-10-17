@@ -1,0 +1,13 @@
+{
+	"_kommentar": "Tagesgeschenk und Fortschrittsmarken. Alle Werte hier, nichts im Code. Betrag = Einkommen pro Sekunde x sekunden x Serienfaktor, mindestens `minimum`.",
+	"tagesgeschenk": {
+		"sekunden": 600,
+		"minimum": 100,
+		"serie_faktoren": [1.0, 1.15, 1.3, 1.45, 1.6, 1.8, 2.0]
+	},
+	"fortschrittsmarken": {
+		"belohnung_sekunden": 120,
+		"belohnung_minimum": 50,
+		"schwellen": [0.25, 0.5, 0.75]
+	}
+}

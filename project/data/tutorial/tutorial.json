@@ -1,0 +1,58 @@
+{
+	"_kommentar": "ABLAUF des Tutorials (K2 Paket P3: die ersten 10 Minuten) -- ohne einen einzigen Satz Text. Die Texte stehen unter data/themes/<welt>/theme.json im Abschnitt 'tutorial' und werden ueber die Schritt-ID gefunden (Regel D3 / ADR-010). Eine Stimme, ein Knopf pro Bildschirm: erst Pinnwand, dann ausbauen, die Kette mit dem roten Engpass, das erste Ziel samt Belohnung, die erste Ausstattung, der erste Raum, die erste Station dahinter. Danach endet das Tutorial.",
+
+	"_bedingungen": "abschluss.typ ist eines von: station_gewaehlt (wert = Stations-ID), stufen_gesamt (wert = Schwelle der Gesamtstufen), ziele_eingeloest (wert = Schwelle der eingeloesten Ziele), sowie zaehlend (wert = Anzahl): engpass_gewaehlt, engpass_gesehen, ausstattung_gekauft, ziel_erfuellt, bereich_gekauft. 'neu': true heisst: nur Ereignisse seit Beginn des Schritts zaehlen.",
+
+	"_ziele": "ziel ist eine Stations-ID, eine Bereichs-ID oder ein Bedienelement: knopf_upgrade, engpass (Ring auf die langsamste Station), kette (Ring auf die langsamste Station plus Pfeile durch die ersten drei Stationen), engpass_ausbau (Ausbau-Knopf, sonst Ring auf die langsamste), zielleiste, ausstattung (erste Karte, sonst Ring auf station_buffer), menue_ziele, menue_ausbau.",
+
+	"_zeigt": "zeigt: schaltet ein Oberflaechenelement frei, das bis dahin fehlt (zielleiste).",
+
+	"schritte": [
+		{
+			"id": "waehlen",
+			"ziel": "station_intake",
+			"abschluss": { "typ": "station_gewaehlt", "wert": "station_intake" }
+		},
+		{
+			"id": "ausbauen",
+			"ziel": "knopf_upgrade",
+			"abschluss": { "typ": "stufen_gesamt", "wert": 4 }
+		},
+		{
+			"id": "kette",
+			"ziel": "kette",
+			"abschluss": { "typ": "engpass_gewaehlt", "wert": 1, "neu": true }
+		},
+		{
+			"id": "rot",
+			"ziel": "engpass_ausbau",
+			"abschluss": { "typ": "stufen_gesamt", "wert": 6 }
+		},
+		{
+			"id": "erstes_ziel",
+			"ziel": "zielleiste",
+			"zeigt": "zielleiste",
+			"abschluss": { "typ": "ziel_erfuellt", "wert": 1 }
+		},
+		{
+			"id": "belohnung",
+			"ziel": "zielleiste",
+			"abschluss": { "typ": "ziele_eingeloest", "wert": 1 }
+		},
+		{
+			"id": "ausstattung",
+			"ziel": "ausstattung",
+			"abschluss": { "typ": "ausstattung_gekauft", "wert": 1 }
+		},
+		{
+			"id": "flur",
+			"ziel": "bereich_1",
+			"abschluss": { "typ": "bereich_gekauft", "wert": 1 }
+		},
+		{
+			"id": "upload",
+			"ziel": "station_transport",
+			"abschluss": { "typ": "station_gewaehlt", "wert": "station_transport" }
+		}
+	]
+}

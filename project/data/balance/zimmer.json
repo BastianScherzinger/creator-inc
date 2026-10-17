@@ -1,0 +1,956 @@
+{
+	"_kommentar": "Balance der Welt 'zimmer' (Position 1 im Bogen) -- in Idle-Tycoon-Tiefe (ADR-021, docs/WELT1_TIEFE.md). Die Welt endet nicht an einer Stufen-Schwelle, sondern bei 100 %: alle Stationen auf max_stufe, alle Ausstattung auf Stufe 10, alle Raeume gekauft. Gemessen wird das mit tools/balance_sim.gd.",
+	"_schema_version": 2,
+	"crew_kosten_faktor": 10.0,
+	"ziel_belohnung_faktor": 0.5,
+	"ziel_minuten": [75,80],
+	"abschluss": "alles",
+	"start_kapital": 30.0,
+	"sparen": {
+		"_kommentar": "K7: Liegt der naechste Raum innerhalb dieses Einkommensfensters, zeigt die Karte keine gruenen Ausbauten (Spieler spart auf den Raum).",
+		"fenster_sekunden": 240,
+		"ab_anteil": 0.15
+	},
+	"offline": {
+		"rate": 0.5,
+		"obergrenze_sekunden": 14400.0,
+		"obergrenze_ausgebaut_sekunden": 43200.0
+	},
+	"stationen": {
+		"station_intake": {
+			"basis_kosten": 24.17,
+			"wachstum": 1.28433,
+			"basis_durchsatz": 1.0,
+			"multiplikator": 1.0,
+			"start_stufe": 1,
+			"max_stufe": 50,
+			"freigeschaltet": true,
+			"meilenstein_intervall": 10,
+			"meilenstein_faktor": 1.5,
+			"ausstattung": {
+				"ausstattung_1": {
+					"ab_stufe": 1,
+					"basis_kosten": 50.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				},
+				"ausstattung_2": {
+					"ab_stufe": 10,
+					"basis_kosten": 1500.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				},
+				"ausstattung_3": {
+					"ab_stufe": 25,
+					"basis_kosten": 25000.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				}
+			}
+		},
+		"station_buffer": {
+			"basis_kosten": 29.01,
+			"wachstum": 1.28433,
+			"basis_durchsatz": 1.1,
+			"multiplikator": 1.0,
+			"start_stufe": 1,
+			"max_stufe": 50,
+			"freigeschaltet": true,
+			"meilenstein_intervall": 10,
+			"meilenstein_faktor": 1.5,
+			"ausstattung": {
+				"ausstattung_1": {
+					"ab_stufe": 1,
+					"basis_kosten": 60.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				},
+				"ausstattung_2": {
+					"ab_stufe": 10,
+					"basis_kosten": 2000.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				},
+				"ausstattung_3": {
+					"ab_stufe": 25,
+					"basis_kosten": 30000.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				}
+			}
+		},
+		"station_processing": {
+			"basis_kosten": 38.68,
+			"wachstum": 1.28433,
+			"basis_durchsatz": 1.2,
+			"multiplikator": 1.0,
+			"start_stufe": 1,
+			"max_stufe": 50,
+			"freigeschaltet": true,
+			"meilenstein_intervall": 10,
+			"meilenstein_faktor": 1.5,
+			"ausstattung": {
+				"ausstattung_1": {
+					"ab_stufe": 5,
+					"basis_kosten": 400.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				},
+				"ausstattung_2": {
+					"ab_stufe": 1,
+					"basis_kosten": 40.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				},
+				"ausstattung_3": {
+					"ab_stufe": 25,
+					"basis_kosten": 40000.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				}
+			}
+		},
+		"station_transport": {
+			"basis_kosten": 386.76,
+			"wachstum": 1.28433,
+			"basis_durchsatz": 0.0,
+			"multiplikator": 1.0,
+			"start_stufe": 0,
+			"max_stufe": 30,
+			"freigeschaltet": false,
+			"meilenstein_intervall": 10,
+			"meilenstein_faktor": 1.5,
+			"ausstattung": {
+				"ausstattung_1": {
+					"ab_stufe": 1,
+					"basis_kosten": 800.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				},
+				"ausstattung_2": {
+					"ab_stufe": 10,
+					"basis_kosten": 12000.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				},
+				"ausstattung_3": {
+					"ab_stufe": 20,
+					"basis_kosten": 100000.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				}
+			}
+		},
+		"station_special": {
+			"basis_kosten": 5801.4,
+			"wachstum": 1.28433,
+			"basis_durchsatz": 0.0,
+			"multiplikator": 1.0,
+			"start_stufe": 0,
+			"max_stufe": 30,
+			"freigeschaltet": false,
+			"meilenstein_intervall": 10,
+			"meilenstein_faktor": 1.5,
+			"ausstattung": {
+				"ausstattung_1": {
+					"ab_stufe": 1,
+					"basis_kosten": 10000.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				},
+				"ausstattung_2": {
+					"ab_stufe": 10,
+					"basis_kosten": 60000.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				},
+				"ausstattung_3": {
+					"ab_stufe": 20,
+					"basis_kosten": 300000.0,
+					"wachstum": 2.25,
+					"bonus_je_stufe": 0.05,
+					"stern_faktor": 1.2,
+					"max_stufe": 10,
+					"modell_schwellen": [
+						1,
+						5,
+						10
+					]
+				}
+			}
+		}
+	},
+	"erloes_pro_einheit": 1.0,
+	"transport": {
+		"faktor_pro_stufe": 0.02,
+		"faktor_maximum": 50.0
+	},
+	"sonder": {
+		"_kommentar": "Der Kommentar hebt den Erloes je Clip: Wer mit seinem Publikum redet, verdient an jedem Clip mehr.",
+		"faktor_pro_stufe": 0.02
+	},
+	"unlocks": {},
+	"bereiche": {
+		"bereich_1": {
+			"kosten": 200.0,
+			"schaltet_frei": "unlock_transport"
+		},
+		"bereich_2": {
+			"kosten": 2000.0,
+			"bonus": {
+				"ziel": "alle",
+				"faktor": 1.25
+			}
+		},
+		"bereich_3": {
+			"kosten": 20542.257864644795,
+			"schaltet_frei": "unlock_special"
+		},
+		"bereich_6": {
+			"kosten": 17260.163743996254,
+			"bonus": {
+				"ziel": "alle",
+				"faktor": 1.06
+			},
+			"nach": "bereich_3"
+		},
+		"bereich_4": {
+			"kosten": 67308.06977833212,
+			"bonus": {
+				"ziel": "alle",
+				"faktor": 1.12
+			},
+			"nach": "bereich_6"
+		},
+		"bereich_5": {
+			"kosten": 278141.1079074291,
+			"nach": "bereich_4",
+			"bonus": {
+				"ziel": "alle",
+				"faktor": 1.15
+			}
+		}
+	},
+	"ziele": [
+		{
+			"id": "ziel_01",
+			"kette": "start",
+			"typ": "stufen_gesamt",
+			"wert": 10,
+			"belohnung_sekunden": 20,
+			"belohnung_minimum": 40
+		},
+		{
+			"id": "ziel_32",
+			"kette": "start",
+			"typ": "station_stufe",
+			"station": "station_buffer",
+			"wert": 5,
+			"belohnung_sekunden": 8,
+			"belohnung_minimum": 50
+		},
+		{
+			"id": "ziel_02",
+			"kette": "start",
+			"typ": "ausstattung_stufe",
+			"station": "station_processing",
+			"platz": "ausstattung_2",
+			"wert": 1,
+			"belohnung_sekunden": 30,
+			"belohnung_minimum": 60
+		},
+		{
+			"id": "ziel_03",
+			"kette": "start",
+			"typ": "station_stufe",
+			"station": "station_processing",
+			"wert": 10,
+			"belohnung_sekunden": 30,
+			"belohnung_minimum": 100
+		},
+		{
+			"id": "ziel_04",
+			"kette": "bereich_1",
+			"typ": "bereich",
+			"bereich": "bereich_1",
+			"wert": 1,
+			"belohnung_sekunden": 60,
+			"belohnung_minimum": 200
+		},
+		{
+			"id": "ziel_05",
+			"kette": "bereich_1",
+			"typ": "station_stufe",
+			"station": "station_transport",
+			"wert": 5,
+			"belohnung_sekunden": 45,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_33",
+			"kette": "bereich_1",
+			"typ": "station_stufe",
+			"station": "station_intake",
+			"wert": 10,
+			"belohnung_sekunden": 8,
+			"belohnung_minimum": 80
+		},
+		{
+			"id": "ziel_06",
+			"kette": "bereich_1",
+			"typ": "ausstattung_gesamt",
+			"wert": 6,
+			"belohnung_sekunden": 45,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_07",
+			"kette": "bereich_1",
+			"typ": "sterne",
+			"wert": 3,
+			"belohnung_sekunden": 60,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_08",
+			"kette": "bereich_1",
+			"typ": "station_stufe",
+			"station": "station_buffer",
+			"wert": 20,
+			"belohnung_sekunden": 60,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_09",
+			"kette": "bereich_2",
+			"typ": "bereich",
+			"bereich": "bereich_2",
+			"wert": 1,
+			"belohnung_sekunden": 90,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_10",
+			"kette": "bereich_2",
+			"typ": "momente",
+			"wert": 3,
+			"belohnung_sekunden": 60,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_26",
+			"kette": "bereich_2",
+			"typ": "ausstattung_stufe",
+			"station": "station_processing",
+			"platz": "ausstattung_1",
+			"wert": 3,
+			"belohnung_sekunden": 8,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_11",
+			"kette": "bereich_2",
+			"typ": "ausstattung_stufe",
+			"station": "station_buffer",
+			"platz": "ausstattung_2",
+			"wert": 4,
+			"belohnung_sekunden": 60,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_12",
+			"kette": "bereich_2",
+			"typ": "station_stufe",
+			"station": "station_intake",
+			"wert": 25,
+			"belohnung_sekunden": 60,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_13",
+			"kette": "bereich_2",
+			"typ": "verdient",
+			"wert": 50000,
+			"belohnung_sekunden": 90,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_14",
+			"kette": "bereich_3",
+			"typ": "bereich",
+			"bereich": "bereich_3",
+			"wert": 1,
+			"belohnung_sekunden": 120,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_auftrag_1",
+			"kette": "auftrag",
+			"typ": "station_stufe",
+			"station": "station_intake",
+			"wert": 23,
+			"belohnung_sekunden": 60,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_auftrag_2",
+			"kette": "auftrag",
+			"typ": "station_stufe",
+			"station": "station_processing",
+			"wert": 21,
+			"belohnung_sekunden": 60,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_auftrag_3",
+			"kette": "auftrag",
+			"typ": "station_stufe",
+			"station": "station_transport",
+			"wert": 13,
+			"belohnung_sekunden": 60,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_15",
+			"kette": "bereich_3",
+			"typ": "station_stufe",
+			"station": "station_special",
+			"wert": 5,
+			"belohnung_sekunden": 60,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_27",
+			"kette": "bereich_3",
+			"typ": "station_stufe",
+			"station": "station_special",
+			"wert": 15,
+			"belohnung_sekunden": 8,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_16",
+			"kette": "bereich_3",
+			"typ": "ausstattung_gesamt",
+			"wert": 30,
+			"belohnung_sekunden": 90,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_17",
+			"kette": "bereich_3",
+			"typ": "sterne",
+			"wert": 12,
+			"belohnung_sekunden": 90,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_20",
+			"kette": "bereich_4",
+			"typ": "bereich",
+			"bereich": "bereich_4",
+			"wert": 1,
+			"belohnung_sekunden": 120,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_18",
+			"kette": "bereich_4",
+			"typ": "station_stufe",
+			"station": "station_transport",
+			"wert": 20,
+			"belohnung_sekunden": 90,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_19",
+			"kette": "bereich_4",
+			"typ": "ausstattung_stufe",
+			"station": "station_processing",
+			"platz": "ausstattung_1",
+			"wert": 8,
+			"belohnung_sekunden": 120,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_28",
+			"kette": "bereich_4",
+			"typ": "sterne",
+			"wert": 15,
+			"belohnung_sekunden": 8,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_24",
+			"kette": "bereich_5",
+			"typ": "bereich",
+			"bereich": "bereich_5",
+			"wert": 1,
+			"belohnung_sekunden": 180,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_21",
+			"kette": "bereich_5",
+			"typ": "station_stufe",
+			"station": "station_processing",
+			"wert": 50,
+			"belohnung_sekunden": 120,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_22",
+			"kette": "bereich_5",
+			"typ": "ausstattung_gesamt",
+			"wert": 100,
+			"belohnung_sekunden": 120,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_23",
+			"kette": "bereich_5",
+			"typ": "station_stufe",
+			"station": "station_special",
+			"wert": 30,
+			"belohnung_sekunden": 120,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_29",
+			"kette": "bereich_5",
+			"typ": "verdient",
+			"wert": 100000000,
+			"belohnung_sekunden": 8,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_30",
+			"kette": "welt",
+			"typ": "stufen_gesamt",
+			"wert": 200,
+			"belohnung_sekunden": 5,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_31",
+			"kette": "welt",
+			"typ": "sterne",
+			"wert": 20,
+			"belohnung_sekunden": 5,
+			"belohnung_minimum": 0
+		},
+		{
+			"id": "ziel_25",
+			"kette": "welt",
+			"typ": "abschluss",
+			"wert": 1,
+			"belohnung_sekunden": 0,
+			"belohnung_minimum": 0
+		}
+	],
+	"nachrichten": [
+		{
+			"id": "nachricht_01",
+			"szene": true,
+			"ausloeser": {
+				"typ": "start"
+			}
+		},
+		{
+			"id": "nachricht_02",
+			"ausloeser": {
+				"typ": "ausstattung_gesamt",
+				"wert": 1
+			}
+		},
+		{
+			"id": "nachricht_03",
+			"ausloeser": {
+				"typ": "stufen_gesamt",
+				"wert": 8
+			}
+		},
+		{
+			"id": "nachricht_04",
+			"ausloeser": {
+				"typ": "verdient",
+				"wert": 500
+			}
+		},
+		{
+			"id": "nachricht_05",
+			"szene": true,
+			"ausloeser": {
+				"typ": "bereich",
+				"bereich": "bereich_1"
+			}
+		},
+		{
+			"id": "nachricht_16",
+			"ausloeser": {
+				"typ": "fortschritt",
+				"wert": 0.11
+			}
+		},
+		{
+			"id": "nachricht_06",
+			"ausloeser": {
+				"typ": "bereich",
+				"bereich": "bereich_2"
+			}
+		},
+		{
+			"id": "nachricht_17",
+			"ausloeser": {
+				"typ": "fortschritt",
+				"wert": 0.23
+			}
+		},
+		{
+			"id": "nachricht_07",
+			"ausloeser": {
+				"typ": "fortschritt",
+				"wert": 0.26
+			}
+		},
+		{
+			"id": "nachricht_18",
+			"ausloeser": {
+				"typ": "fortschritt",
+				"wert": 0.29
+			}
+		},
+		{
+			"id": "nachricht_09",
+			"ausloeser": {
+				"typ": "bereich",
+				"bereich": "bereich_3"
+			}
+		},
+		{
+			"id": "nachricht_23",
+			"ausloeser": {
+				"typ": "bereich",
+				"bereich": "bereich_3"
+			}
+		},
+		{
+			"id": "nachricht_24",
+			"ausloeser": {
+				"typ": "kette",
+				"kette": "auftrag",
+				"wert": 1
+			}
+		},
+		{
+			"id": "nachricht_08",
+			"ausloeser": {
+				"typ": "verdient",
+				"wert": 300000
+			}
+		},
+		{
+			"id": "nachricht_19",
+			"ausloeser": {
+				"typ": "fortschritt",
+				"wert": 0.44
+			}
+		},
+		{
+			"id": "nachricht_10",
+			"ausloeser": {
+				"typ": "fortschritt",
+				"wert": 0.48
+			}
+		},
+		{
+			"id": "nachricht_20",
+			"szene": true,
+			"ausloeser": {
+				"typ": "fortschritt",
+				"wert": 0.51
+			}
+		},
+		{
+			"id": "nachricht_11",
+			"szene": true,
+			"ausloeser": {
+				"typ": "bereich",
+				"bereich": "bereich_4"
+			}
+		},
+		{
+			"id": "nachricht_12",
+			"ausloeser": {
+				"typ": "verdient",
+				"wert": 5000000
+			}
+		},
+		{
+			"id": "nachricht_14",
+			"ausloeser": {
+				"typ": "bereich",
+				"bereich": "bereich_5"
+			}
+		},
+		{
+			"id": "nachricht_13",
+			"ausloeser": {
+				"typ": "verdient",
+				"wert": 10000000
+			}
+		},
+		{
+			"id": "nachricht_21",
+			"ausloeser": {
+				"typ": "verdient",
+				"wert": 20000000
+			}
+		},
+		{
+			"id": "nachricht_22",
+			"ausloeser": {
+				"typ": "fortschritt",
+				"wert": 0.92
+			}
+		},
+		{
+			"id": "nachricht_15",
+			"szene": true,
+			"ausloeser": {
+				"typ": "abschluss"
+			}
+		}
+	],
+	"momente": {
+		"aktiv": true,
+		"abstand_min": 90.0,
+		"abstand_max": 150.0,
+		"frueh_bis_s": 300.0,
+		"frueh_abstand_min": 12.0,
+		"frueh_abstand_max": 22.0,
+		"dauer": 20.0,
+		"belohnung_sekunden": 20.0,
+		"belohnung_minimum": 5.0,
+		"gross_chance": 0.08,
+		"gross_sekunden": 120.0,
+		"stapel_schub_sekunden": 30.0,
+		"kiste_sekunden": 60.0,
+		"kasse_ab_s": 20.0,
+		"kasse_max_s": 90.0,
+		"kasse_anteil": 0.018
+	},
+	"schub": {
+		"_kommentar": "Zeitlich begrenzter Multiplikator auf den Durchsatz -- die Waehrung der Belohnungsschleife.",
+		"faktor": 1.5,
+		"dauer_sekunden": 1800.0,
+		"hoechstdauer_sekunden": 7200.0
+	},
+	"welt_faktor_pro_welt": 10.0,
+	"_besonderheit": "Die erste Welt -- und die erste in voller Tiefe: Ausstattung, Raeume, Ziele, Nachrichten, Tipp-Momente.",
+	"crew": {
+		"station_intake": {
+			"frei": {
+				"typ": "bereich",
+				"bereich": "bereich_1",
+				"wert": 1
+			},
+			"raenge": [
+				{
+					"kosten": 1500.0,
+					"faktor": 1.1
+				},
+				{
+					"kosten": 8000.0,
+					"faktor": 1.2
+				},
+				{
+					"kosten": 24000.0,
+					"faktor": 1.35
+				}
+			]
+		},
+		"station_buffer": {
+			"frei": {
+				"typ": "bereich",
+				"bereich": "bereich_1",
+				"wert": 1
+			},
+			"raenge": [
+				{
+					"kosten": 1500.0,
+					"faktor": 1.1
+				},
+				{
+					"kosten": 8000.0,
+					"faktor": 1.2
+				},
+				{
+					"kosten": 24000.0,
+					"faktor": 1.35
+				}
+			]
+		},
+		"station_processing": {
+			"frei": {
+				"typ": "bereich",
+				"bereich": "bereich_1",
+				"wert": 1
+			},
+			"raenge": [
+				{
+					"kosten": 1500.0,
+					"faktor": 1.1
+				},
+				{
+					"kosten": 8000.0,
+					"faktor": 1.2
+				},
+				{
+					"kosten": 24000.0,
+					"faktor": 1.35
+				}
+			]
+		},
+		"station_transport": {
+			"frei": {
+				"typ": "bereich",
+				"bereich": "bereich_2",
+				"wert": 1
+			},
+			"raenge": [
+				{
+					"kosten": 18750.0,
+					"faktor": 1.1
+				},
+				{
+					"kosten": 100000.0,
+					"faktor": 1.2
+				},
+				{
+					"kosten": 300000.0,
+					"faktor": 1.35
+				}
+			]
+		},
+		"station_special": {
+			"frei": {
+				"typ": "bereich",
+				"bereich": "bereich_3",
+				"wert": 1
+			},
+			"raenge": [
+				{
+					"kosten": 225000.0,
+					"faktor": 1.1
+				},
+				{
+					"kosten": 1200000.0,
+					"faktor": 1.2
+				},
+				{
+					"kosten": 3600000.0,
+					"faktor": 1.35
+				}
+			]
+		}
+	}
+}

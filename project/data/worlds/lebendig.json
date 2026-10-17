@@ -1,0 +1,112 @@
+{
+	"_kommentar": "Regeln und Grenzen des Lebendigkeits-Systems (game/world/e_lebendig.gd). Die Welt-Daten (licht.himmel, licht.glow, licht.partikel, kulisse[].animation, kulisse[].emission_puls) stehen in worlds.json; hier stehen nur Standardwerte und feste Obergrenzen. Fehlt ein Schluessel in worlds.json, passiert nichts.",
+	"grenzen": {
+		"max_animiert": 20,
+		"max_puls": 24,
+		"max_materialien_je_knoten": 12,
+		"max_partikel_systeme": 6,
+		"max_partikel_menge": 24,
+		"max_route_punkte": 16,
+		"max_sterne": 60
+	},
+	"himmel": {
+		"sterne_groesse": 1.6,
+		"sterne_farbe": "ffffff",
+		"sterne_alpha_min": 0.35,
+		"sterne_alpha_max": 0.95,
+		"sterne_seed": 7,
+		"sterne_bis_hoehe": 0.7,
+		"mond_x": 0.82,
+		"mond_y": 0.1,
+		"mond_groesse": 26.0,
+		"mond_farbe": "f4f1dc",
+		"mond_halo": 2.2,
+		"mond_halo_alpha": 0.12,
+		"ebene": -10
+	},
+	"glow": {
+		"intensitaet": 0.6,
+		"staerke": 0.9,
+		"schwelle": 0.9,
+		"bloom": 0.0,
+		"hdr_deckel": 4.0
+	},
+	"animation": {
+		"drehen": { "achse": "y", "tempo": 90.0 },
+		"treiben": { "achse": "x", "tempo": 0.4, "weite": 3.0 },
+		"foerdern": { "achse": "x", "tempo": 0.25 },
+		"wackeln": { "achse": "z", "tempo": 1.2, "winkel": 4.0 },
+		"fahren": { "tempo": 2.0, "pause": 0.0, "modus": "schleife", "wende_tempo": 6.0, "blick_versatz": 0.0 }
+	},
+	"emission_puls": {
+		"hz": 0.5,
+		"min": 0.4,
+		"max": 1.6,
+		"form": "sinus",
+		"versatz": 0.37
+	},
+	"partikel_typen": {
+		"staub": {
+			"anzahl_faktor": 1.0, "lebensdauer": 6.0, "groesse": 0.1, "farbe": "fff1d0", "alpha": 0.6,
+			"richtung": [0.0, 1.0, 0.0], "streuung": 180.0, "tempo_min": 0.02, "tempo_max": 0.08,
+			"schwerkraft": 0.0, "radius": 2.5, "hoehe": 0.8, "vol_y": 0.8, "intervall": 0.0, "blenden": "mix"
+		},
+		"dampf": {
+			"anzahl_faktor": 1.0, "lebensdauer": 4.0, "groesse": 0.5, "groesse_ende": 1.6, "farbe": "e8eaf0", "alpha": 0.35,
+			"richtung": [0.0, 1.0, 0.0], "streuung": 14.0, "tempo_min": 0.5, "tempo_max": 0.9,
+			"schwerkraft": 0.0, "radius": 0.25, "hoehe": 0.0, "vol_y": 0.0, "intervall": 0.0, "blenden": "mix"
+		},
+		"funken": {
+			"anzahl_faktor": 1.0, "lebensdauer": 0.9, "groesse": 0.07, "farbe": "ffc060", "alpha": 1.0,
+			"richtung": [0.0, 1.0, 0.0], "streuung": 70.0, "tempo_min": 1.5, "tempo_max": 3.2,
+			"schwerkraft": 6.0, "radius": 0.15, "hoehe": 1.0, "vol_y": 0.0, "intervall": 20.0, "blenden": "add"
+		},
+		"motten": {
+			"anzahl_faktor": 1.0, "lebensdauer": 3.0, "groesse": 0.05, "farbe": "fff0b0", "alpha": 0.85,
+			"richtung": [0.0, 0.0, 0.0], "streuung": 180.0, "tempo_min": 0.25, "tempo_max": 0.7,
+			"schwerkraft": 0.0, "radius": 0.7, "hoehe": 2.4, "vol_y": 0.6, "intervall": 0.0, "blenden": "add"
+		},
+		"voegel": {
+			"anzahl_faktor": 1.0, "lebensdauer": 14.0, "groesse": 0.22, "farbe": "2a2a34", "alpha": 0.8,
+			"richtung": [1.0, 0.0, 0.2], "streuung": 6.0, "tempo_min": 1.2, "tempo_max": 1.9,
+			"schwerkraft": 0.0, "radius": 1.5, "hoehe": 9.0, "vol_y": 0.5, "intervall": 0.0, "blenden": "mix"
+		}
+	},
+	"crew": {
+		"_kommentar": "Mitarbeiter-Figuren an den Stationen (K6 2a). raenge[0..2] = Rang 1..3: Skalierung, Kopfhoerer, Brosche, Ring. platz_standard gilt, wenn worlds.json figuren.plaetze die Station nicht nennt. arbeit = wie die Figur arbeitet (tippen, nicken, hin_und_her, wippen).",
+		"raenge": [
+			{ "skala": 1.0, "kopfhoerer": false, "brosche": false, "ring": false },
+			{ "skala": 1.08, "kopfhoerer": true, "brosche": false, "ring": false },
+			{ "skala": 1.18, "kopfhoerer": true, "brosche": true, "ring": true }
+		],
+		"platz_standard": { "x": 0.0, "z": 1.2, "blick": 20.0 },
+		"ersatz_modelle": ["figur_zopf", "figur_anzug", "figur_packer", "figur_kapuze"],
+		"farben": { "kopfhoerer": "2b2f3a", "polster": "ffc21a", "brosche": "ffc21a", "ring": "ffc21a", "ring_alpha": 0.55 },
+		"arbeit": {
+			"station_intake": "nicken",
+			"station_buffer": "wippen",
+			"station_processing": "tippen",
+			"station_transport": "hin_und_her",
+			"station_special": "nicken"
+		},
+		"tempo": { "tippen_hz": 3.4, "nicken_hz": 0.9, "nicken_winkel": 0.2, "wippen_hz": 1.3, "wippen_winkel": 0.06, "gehen_tempo": 0.55, "gehen_weite": 0.55, "gehen_schwung": 0.5 },
+		"schild": { "hoehe": 1.45, "pixel": 0.0032, "name_groesse": 56, "titel_groesse": 32, "polster": 12, "kontur": 5 },
+		"auftritt": { "dauer": 0.5, "hoepfer": 0.22, "staub_menge": 14, "staub_groesse": 0.22, "staub_dauer": 0.8, "staub_farbe": "f1e7d4" }
+	},
+	"kunden": {
+		"_kommentar": "Kunden-Figuren (nur Darstellung, K6 2a): kommen in Abstaenden zum Eingang der Kette, bleiben kurz, gehen zurueck. Der Abstand sinkt mit dem Durchsatz (log). Start/Ziel je Welt in worlds.json figuren.kunden {start:{x,z}, ziel:{x,z}}.",
+		"max_gleichzeitig": 3,
+		"intervall_langsam": 9.0,
+		"intervall_schnell": 2.6,
+		"durchsatz_klein": 1.0,
+		"durchsatz_voll": 1000000.0,
+		"tempo": 1.5,
+		"warten": 1.5,
+		"modelle": ["figur_anzug", "figur_zopf", "figur_packer"],
+		"gehen_schwung": 0.55,
+		"gehen_hz": 2.6,
+		"skala": 0.85
+	},
+	"partikel_textur": { "groesse": 16, "haerte": 1.6 },
+	"partikel_fenster": { "sichtbar_ausdehnung": 30.0 }
+}

@@ -1,0 +1,18 @@
+{
+	"_kommentar": "Beispielszenen nur zum Ansehen (Prüfschalter --szene bsp_<n>). Die echten Szenen stehen in den Themendateien (nachrichten mit szene: true).",
+	"bsp_mo": {
+		"von": "mo", "ausdruck": "jubelnd",
+		"blasen": ["Bruder. Drei Aufrufe.", "Zwei warst du. Der dritte war ich.", "Jetzt kaufen wir einen Gaming-PC. Fang an."],
+		"antworten": [{"text": "Okay.", "reaktion": "Genau so."}, {"text": "Mit was?", "reaktion": "Mit dem, was du gleich verdienst."}]
+	},
+	"bsp_tobi": {
+		"von": "tobi", "ausdruck": "geschockt",
+		"blasen": [{"text": "Ich zieh aus. Der Topf bleibt."}, {"ausdruck": "neutral", "text": "Mach was draus. Aber nicht laut nach 22 Uhr."}],
+		"antworten": ["Versprochen.", "Kein Versprechen."]
+	},
+	"bsp_younes": {
+		"von": "younes", "ausdruck": "neutral",
+		"blasen": ["Mo sagt, du schneidest.", "Ich hab eine Garage und ein Rolltor, das klemmt.", "Bring Kaffee."],
+		"antworten": ["Wann?", "Welcher Kaffee?"]
+	}
+}

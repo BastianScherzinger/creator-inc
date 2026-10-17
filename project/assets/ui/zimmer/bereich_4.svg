@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 128">
+<circle cx="64" cy="44" r="26" fill="#FFF7EA"/>
+<clipPath id="k63"><circle cx="64" cy="44" r="26"/></clipPath>
+<g clip-path="url(#k63)"><g transform="translate(4 4)"><circle cx="64" cy="44" r="26" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<circle cx="64" cy="44" r="26" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M64 6 V10 M24 24 L28 28 M104 24 L100 28 M12 52 H16 M112 52 H116" fill="none" stroke="#1B1726" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="10" y="70" width="108" height="12" rx="6" fill="#3D7BFF"/>
+<clipPath id="k64"><rect x="10" y="70" width="108" height="12" rx="6"/></clipPath>
+<g clip-path="url(#k64)"><g transform="translate(4 4)"><rect x="10" y="70" width="108" height="12" rx="6" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="10" y="70" width="108" height="12" rx="6" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="16" y="82" width="14" height="32" rx="5" fill="#3D7BFF"/>
+<clipPath id="k65"><rect x="16" y="82" width="14" height="32" rx="5"/></clipPath>
+<g clip-path="url(#k65)"><g transform="translate(4 4)"><rect x="16" y="82" width="14" height="32" rx="5" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="16" y="82" width="14" height="32" rx="5" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="57" y="82" width="14" height="32" rx="5" fill="#3D7BFF"/>
+<clipPath id="k66"><rect x="57" y="82" width="14" height="32" rx="5"/></clipPath>
+<g clip-path="url(#k66)"><g transform="translate(4 4)"><rect x="57" y="82" width="14" height="32" rx="5" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="57" y="82" width="14" height="32" rx="5" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="98" y="82" width="14" height="32" rx="5" fill="#3D7BFF"/>
+<clipPath id="k67"><rect x="98" y="82" width="14" height="32" rx="5"/></clipPath>
+<g clip-path="url(#k67)"><g transform="translate(4 4)"><rect x="98" y="82" width="14" height="32" rx="5" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="98" y="82" width="14" height="32" rx="5" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

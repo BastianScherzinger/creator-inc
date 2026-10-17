@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 128">
+<rect x="8" y="14" width="112" height="74" rx="10" fill="#8B5CF6"/>
+<clipPath id="k132"><rect x="8" y="14" width="112" height="74" rx="10"/></clipPath>
+<g clip-path="url(#k132)"><g transform="translate(4 4)"><rect x="8" y="14" width="112" height="74" rx="10" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="8" y="14" width="112" height="74" rx="10" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="20" y="26" width="88" height="50" rx="4" fill="#FFF7EA"/>
+<clipPath id="k133"><rect x="20" y="26" width="88" height="50" rx="4"/></clipPath>
+<g clip-path="url(#k133)"><g transform="translate(4 4)"><rect x="20" y="26" width="88" height="50" rx="4" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="20" y="26" width="88" height="50" rx="4" fill="none" stroke="#1B1726" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M30 66 L50 48 L68 60 L96 36" fill="none" stroke="#1B1726" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="50" y="88" width="28" height="12" rx="3" fill="#8B5CF6"/>
+<rect x="50" y="88" width="28" height="12" rx="3" fill="none" stroke="#1B1726" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="32" y="100" width="64" height="14" rx="7" fill="#8B5CF6"/>
+<clipPath id="k135"><rect x="32" y="100" width="64" height="14" rx="7"/></clipPath>
+<g clip-path="url(#k135)"><g transform="translate(4 4)"><rect x="32" y="100" width="64" height="14" rx="7" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="32" y="100" width="64" height="14" rx="7" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,41 @@
+MIT License
+
+Copyright (c) 2026 Bastian Scherzinger
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+Third-party components and assets (not covered by the MIT license above)
+-------------------------------------------------------------------------------
+
+- Fonts Nunito and Bricolage Grotesque: SIL Open Font License 1.1
+  (project/assets/fonts/OFL.txt, project/assets/fonts/OFL_Bricolage.txt).
+- gdUnit4 test framework: MIT License (project/addons/gdUnit4/LICENSE).
+- Godot Engine: MIT License (https://godotengine.org/license). Not included
+  in this repository; the exported app contains the Godot runtime.
+
+Assets made for this project:
+
+- 3D rooms, furniture, figures and portraits are generated procedurally by the
+  Blender/Python scripts in art_source/scripts/ (no third-party models).
+- Sound effects are synthesized by art_source/scripts/build_sounds.py
+  (Python standard library, no samples).
+- The app icon was created with an AI image generator (ChatGPT) from a prompt
+  by the author and post-processed with art_source/icon/icon_m3_einbau.py.
+These project assets are released under the same MIT license as the code.

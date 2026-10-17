@@ -1,0 +1,89 @@
+{
+	"_kommentar": "Balance-Werte. Aenderungen hier brauchen KEINE Codeaenderung (ADR-005). Nach jeder Aenderung tools/balance_sim.gd laufen lassen -- er prueft gegen die Zielkurve in docs/GAME_DESIGN.md 5.5.",
+	"_schema_version": 1,
+	"start_kapital": 0.0,
+	"offline": {
+		"rate": 0.5,
+		"obergrenze_sekunden": 14400.0,
+		"obergrenze_ausgebaut_sekunden": 43200.0
+	},
+	"stationen": {
+		"station_intake": {
+			"basis_kosten": 25.0,
+			"wachstum": 1.15,
+			"basis_durchsatz": 1.0,
+			"multiplikator": 1.0,
+			"start_stufe": 1,
+			"freigeschaltet": true,
+			"meilenstein_intervall": 12,
+			"meilenstein_faktor": 1.7
+		},
+		"station_buffer": {
+			"basis_kosten": 30.0,
+			"wachstum": 1.15,
+			"basis_durchsatz": 1.1,
+			"multiplikator": 1.0,
+			"start_stufe": 1,
+			"freigeschaltet": true,
+			"meilenstein_intervall": 12,
+			"meilenstein_faktor": 1.7
+		},
+		"station_processing": {
+			"basis_kosten": 40.0,
+			"wachstum": 1.15,
+			"basis_durchsatz": 1.2,
+			"multiplikator": 1.0,
+			"start_stufe": 1,
+			"freigeschaltet": true,
+			"meilenstein_intervall": 12,
+			"meilenstein_faktor": 1.7
+		},
+		"station_transport": {
+			"basis_kosten": 500.0,
+			"wachstum": 1.15,
+			"basis_durchsatz": 0.0,
+			"multiplikator": 1.0,
+			"start_stufe": 0,
+			"freigeschaltet": false,
+			"meilenstein_intervall": 12,
+			"meilenstein_faktor": 1.7
+		},
+		"station_special": {
+			"basis_kosten": 2500.0,
+			"wachstum": 1.15,
+			"basis_durchsatz": 0.0,
+			"multiplikator": 1.0,
+			"start_stufe": 0,
+			"freigeschaltet": false,
+			"meilenstein_intervall": 12,
+			"meilenstein_faktor": 1.7
+		}
+	},
+	"erloes_pro_einheit": 1.0,
+	"transport": {
+		"faktor_pro_stufe": 0.05,
+		"faktor_maximum": 3.0
+	},
+	"unlocks": {
+		"unlock_transport": {
+			"typ": "kapital",
+			"schwelle": 3000.0
+		},
+		"unlock_special": {
+			"typ": "kapital",
+			"schwelle": 15000.0
+		},
+		"unlock_world_2": {
+			"typ": "stufen_gesamt",
+			"schwelle": 90
+		}
+	},
+	"schub": {
+		"_kommentar": "Zeitlich begrenzter Multiplikator auf den Durchsatz -- die Waehrung der Belohnungsschleife. Faktor und Dauer stehen hier und nicht im Code, damit sie messbar bleiben: Der Balance-Simulator kann sie mitrechnen.",
+		"faktor": 1.5,
+		"dauer_sekunden": 1800.0,
+		"hoechstdauer_sekunden": 7200.0
+	},
+	"welt_faktor_pro_welt": 6.0,
+	"_welt_faktor_kommentar": "Dauerhafter Faktor je abgeschlossener Welt, multiplikativ. Ohne ihn faengt der Spieler sechsmal bei null an und merkt beim dritten Mal, dass Fortschritt nichts bedeutet. Mit 6,0 ist eine neue Welt sofort ertragreicher als die alte, ohne dass die Kurve innerhalb der Welt flach wird."
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 128">
+<rect x="20" y="10" width="88" height="108" rx="14" fill="#FFF7EA"/>
+<clipPath id="k5"><rect x="20" y="10" width="88" height="108" rx="14"/></clipPath>
+<g clip-path="url(#k5)"><g transform="translate(4 4)"><rect x="20" y="10" width="88" height="108" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="20" y="10" width="88" height="108" rx="14" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="32" y="22" width="64" height="48" rx="6" fill="#FF4D3D"/>
+<clipPath id="k6"><rect x="32" y="22" width="64" height="48" rx="6"/></clipPath>
+<g clip-path="url(#k6)"><g transform="translate(4 4)"><rect x="32" y="22" width="64" height="48" rx="6" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="32" y="22" width="64" height="48" rx="6" fill="none" stroke="#1B1726" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M56.0 34.0 L56.0 58.0 L78.0 46.0 Z" fill="#FFF7EA"/>
+<path d="M56.0 34.0 L56.0 58.0 L78.0 46.0 Z" fill="none" stroke="#1B1726" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M34 86 H94 M34 102 H72" fill="none" stroke="#1B1726" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

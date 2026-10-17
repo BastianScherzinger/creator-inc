@@ -1,0 +1,48 @@
+; Projektkonfiguration -- siehe MASTER_DECISIONS.md ADR-002 (Renderer) und ADR-011 (Android)
+; Aenderungen hier bitte im ADR begruenden.
+
+config_version=5
+
+[application]
+
+config/name="Creator Inc"
+config/description="Idle-Management-Tycoon: ein Buergeramt vom Chaos zur reibungslosen Verwaltung. Arbeitstitel."
+config/version="1.0.0"
+run/main_scene="res://game/main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://assets/icon/icon_128.png"
+
+[display]
+
+; Hochformat, gesperrt (ADR: Genre-Standard, halbiert den UI-Aufwand)
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/handheld/orientation=1
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+; Compatibility-Renderer: maximale Low-End-Reichweite, laeuft auf Intel UHD 620 (ADR-002)
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+
+[physics]
+
+; Fester Simulationstakt -- Wirtschaft darf niemals an der Bildrate haengen (ARCHITECTURE.md 3.1)
+common/physics_ticks_per_second=60
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[debug]
+
+gdscript/warnings/untyped_declaration=1
+gdscript/warnings/unsafe_method_access=1
+gdscript/warnings/unused_variable=1
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gdUnit4/plugin.cfg")

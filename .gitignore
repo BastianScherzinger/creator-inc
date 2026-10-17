@@ -1,0 +1,77 @@
+# ─── Secrets: NIEMALS committen ───────────────────────────
+*.keystore
+*.jks
+*.p12
+*.pepk
+export_credentials.cfg
+.env
+.env.*
+google-services.json
+service-account*.json
+
+# ─── Godot ────────────────────────────────────────────────
+.godot/
+project/.godot/
+*.translation
+.import/
+export.cfg
+
+# ─── Build-Artefakte ──────────────────────────────────────
+build/
+dist/
+*.apk
+*.aab
+*.idsig
+*.so
+build/*.aab
+# Android-Build-Vorlage (project/android/build) ist versioniert, ihre Gradle-Erzeugnisse nicht.
+# .gdignore dort MUSS bleiben und eingecheckt sein (sonst importiert Godot die Vorlage).
+!project/android/build/
+project/android/build/build/
+project/android/build/libs/
+project/android/build/.gradle/
+project/android/build/*/build/
+project/android/build/local.properties
+project/android/build/src/main/assets/
+project/android/.gradle/
+.gradle/
+
+# ─── Blender / Art-Zwischenstände ─────────────────────────
+*.blend1
+*.blend2
+art_source/**/render/
+art_source/**/tmp/
+
+# ─── Testberichte ─────────────────────────────────────────
+project/reports/
+
+# ─── Screenshots & Diagnose ───────────────────────────────
+shots/
+logs/
+*.log
+
+# ─── Windows / IDE ────────────────────────────────────────
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+
+# ─── Ausnahmen: das gehört ins Repo ───────────────────────
+!docs/**/*.png
+!project/assets/**
+
+# HINWEIS zu project/export_presets.cfg:
+# Die Datei IST versioniert -- sie enthaelt nur das Debug-Preset ohne Secrets
+# (Debug-Signing laeuft ueber Godots Editor-Einstellungen, nicht ueber diese Datei).
+# Release-Keystore, Passwort und Alias duerfen NIEMALS hier eingetragen werden.
+# Godot liest sie stattdessen aus Umgebungsvariablen -- siehe docs/ANDROID.md.
+# Achtung: In .gitignore gibt es KEINE Kommentare am Zeilenende --
+# "muster.cfg  # text" ignoriert nichts.
+
+# ─── Vorschau-Renders der Asset-Skripte (reproduzierbar, gross) ───
+art_source/vorschau/
+__pycache__/
+*.tmp.*
+project/android/build/assetPackInstallTime/src/main/assets/

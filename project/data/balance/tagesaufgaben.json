@@ -1,0 +1,13 @@
+{
+	"_kommentar": "Tagesaufgaben. Je Kalendertag werden `pro_tag` Aufgaben deterministisch aus dem Pool gewaehlt (verschiedene Zaehler). Aktiv ab `ab_fortschritt` des Weltfortschritts. Belohnung = Einkommen x belohnung_sekunden, mindestens belohnung_minimum. Ein Weltpool (balance/<welt>.json -> tagesaufgaben_pool) ergaenzt oder ueberschreibt Eintraege gleicher id.",
+	"pro_tag": 2,
+	"ab_fortschritt": 0.2,
+	"pool": [
+		{"id": "ta_stufen",   "zaehler": "stufen_kauf",     "wert": 5, "belohnung_sekunden": 180, "belohnung_minimum": 100},
+		{"id": "ta_stufen_viel", "zaehler": "stufen_kauf",     "wert": 12, "belohnung_sekunden": 240, "belohnung_minimum": 150},
+		{"id": "ta_ziel",     "zaehler": "ziel_eingeloest", "wert": 1, "belohnung_sekunden": 180, "belohnung_minimum": 100},
+		{"id": "ta_momente",  "zaehler": "moment_getippt",  "wert": 3, "belohnung_sekunden": 180, "belohnung_minimum": 100},
+		{"id": "ta_raum",     "zaehler": "raum_gekauft",    "wert": 1, "belohnung_sekunden": 300, "belohnung_minimum": 200},
+		{"id": "ta_crew",     "zaehler": "crew_gekauft",    "wert": 1, "belohnung_sekunden": 240, "belohnung_minimum": 150}
+	]
+}

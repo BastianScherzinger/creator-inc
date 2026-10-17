@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 128">
+<rect x="10" y="34" width="108" height="74" rx="14" fill="#FF7A1A"/>
+<clipPath id="k101"><rect x="10" y="34" width="108" height="74" rx="14"/></clipPath>
+<g clip-path="url(#k101)"><g transform="translate(4 4)"><rect x="10" y="34" width="108" height="74" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="10" y="34" width="108" height="74" rx="14" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="36" y="18" width="28" height="20" rx="5" fill="#FF7A1A"/>
+<clipPath id="k102"><rect x="36" y="18" width="28" height="20" rx="5"/></clipPath>
+<g clip-path="url(#k102)"><g transform="translate(4 4)"><rect x="36" y="18" width="28" height="20" rx="5" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<rect x="36" y="18" width="28" height="20" rx="5" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="64" cy="72" r="26" fill="#FFF7EA"/>
+<clipPath id="k103"><circle cx="64" cy="72" r="26"/></clipPath>
+<g clip-path="url(#k103)"><g transform="translate(4 4)"><circle cx="64" cy="72" r="26" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="6" stroke-linejoin="round"/></g></g>
+<circle cx="64" cy="72" r="26" fill="none" stroke="#1B1726" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="64" cy="72" r="12" fill="#FF7A1A"/>
+<circle cx="64" cy="72" r="12" fill="none" stroke="#1B1726" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100" cy="50" r="5" fill="#FFF7EA"/>
+</svg>

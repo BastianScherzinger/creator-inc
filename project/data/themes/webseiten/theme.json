@@ -1,0 +1,1010 @@
+{
+	"_kommentar": "Anzeigetexte fuer Welt 3 -- Der Merch-Laden (mit Roman). Die einzige Stelle im Projekt, an der thematische Begriffe stehen duerfen (ADR-010). Systeme kennen ausschliesslich die neutralen IDs.",
+	"id": "webseiten",
+	"welt_name": "Der Merch-Laden",
+	"welt_untertitel": "Der Merch-Laden",
+	"waehrung": "€",
+	"stationen": {
+		"station_intake": {
+			"name": "Design",
+			"beschreibung": "Romans Zeichentisch. Hier entsteht das Motiv für jedes Shirt: zwanzig Varianten, eine bleibt.",
+			"engpass_hinweis": "Kein neuer Entwurf — der Druck wartet auf ein Motiv.",
+			"einheit": "Entwürfe/Min",
+			"kurz": "Der Zeichentisch. Hier entsteht jedes Motiv."
+		},
+		"station_buffer": {
+			"name": "Druck",
+			"beschreibung": "Die Presse zischt, das Shirt riecht nach Farbe. Hier wird das Motiv aufs Shirt gedruckt.",
+			"engpass_hinweis": "Mehr Entwürfe als Shirts. Die Presse kommt nicht hinterher.",
+			"einheit": "Shirts/Min",
+			"kurz": "Die Werkbank mit der Presse. Hier wird aus einem Motiv ein Shirt."
+		},
+		"station_processing": {
+			"name": "Verpacken",
+			"beschreibung": "Falten, Karton, Sticker, Dankeskarte. Jedes Paket gleich.",
+			"engpass_hinweis": "Die Shirts stapeln sich, gepackt wird nichts mehr.",
+			"einheit": "Pakete/Min",
+			"kurz": "Der Packtisch. Hier wird aus einem Shirt eine Bestellung."
+		},
+		"station_transport": {
+			"name": "Versand",
+			"beschreibung": "Das Paketregal leert sich von allein. Die Abholung kommt zweimal am Tag.",
+			"engpass_hinweis": "Die Pakete kommen nicht mehr schnell genug raus.",
+			"einheit": "Versandtempo",
+			"kurz": "Das Paketregal am Eingang. Alles, was hier steht, ist schon verkauft."
+		},
+		"station_special": {
+			"name": "Verkaufsstart",
+			"beschreibung": "Die Bühne im Showroom. Zum Verkaufsstart steht die Schlange bis zur Ecke.",
+			"engpass_hinweis": "Gerade ist kein Verkaufsstart geplant.",
+			"einheit": "Stammkunden",
+			"kurz": "Die Bühne. Wer hier einmal kauft, kommt wieder."
+		}
+	},
+	"upgrades": {
+		"station_intake": [
+			"Ein Skizzenbuch nur für Logos",
+			"Farben, die im Druck gleich aussehen",
+			"Feste Motiv-Runde am Freitag",
+			"Roman misst die Ränder nach",
+			"Eine Kollektion statt Einzelstücke",
+			"Drei Verkaufsstarts im Voraus",
+			"Der erste Entwurf wird genommen"
+		],
+		"station_buffer": [
+			"Ein Lineal für den Druck",
+			"Schablonen für jede Größe",
+			"Die Presse wird richtig heiß",
+			"Zweite Presse",
+			"Rohware im Regal statt im Karton",
+			"Der Druck ist nicht mehr schief",
+			"Hoodies gehen jetzt auch",
+			"Druckstraße ohne Pause"
+		],
+		"station_processing": [
+			"Kartons in der richtigen Größe",
+			"Ein Etikettendrucker",
+			"Sticker liegen schon bereit",
+			"Ein Handgriff pro Paket weniger",
+			"Dankeskarten vorgeschrieben",
+			"Mo hilft beim Falten",
+			"Das Paket sieht aus wie ein Geschenk"
+		],
+		"station_transport": [
+			"Feste Abholzeit",
+			"Eine Paketwaage",
+			"Das Lastenrad",
+			"Ein Kleintransporter",
+			"Etikett und Waage in einem Schritt",
+			"Zweimal am Tag Abholung"
+		],
+		"station_special": [
+			"Der erste Verkaufsstart mit zwölf Leuten",
+			"Ein Countdown im Schaufenster",
+			"Younes filmt die Schlange",
+			"Nummerierte Stücke",
+			"Stammkunden bekommen einen Tag Vorsprung",
+			"Der Verkaufsstart ist in Minuten ausverkauft"
+		]
+	},
+	"meilenstein_name": "Handgriff",
+	"meilenstein_text": "Jeder Handgriff sitzt. Roman hat nachgezählt: drei Sekunden schneller pro Paket.",
+	"grossauftrag": {
+		"titel": "Eine Sammelbestellung",
+		"texte": [
+			"Ein Sportverein will fünfzig Shirts. Mit Rückennummer.",
+			"Ein Video zeigt deinen Hoodie. Die Bestellungen kommen im Minutentakt.",
+			"Eine Schule bestellt Shirts für den Abschlussjahrgang. Roman hat die Größen schon sortiert."
+		]
+	},
+	"offline_bericht": {
+		"titel": "Willkommen zurück",
+		"text": "Während du weg warst, sind %d Pakete rausgegangen.",
+		"von": "roman",
+		"saetze": [
+			"Während du weg warst, sind Pakete rausgegangen. Ich habe mitgezählt. Es stimmt.",
+			"Die Schlange war bis zur Ecke. Ich habe sie nicht gezählt. Es war schwer.",
+			"Der Druck war nur ein bisschen schief. Ich habe es trotzdem gesehen."
+		]
+	},
+	"weltwechsel": {
+		"titel": "Das Lager",
+		"text": "Eine Halle am Stadtrand. Dort lagert und verschickt ihr auch Ware für andere Shops. Roman kommt mit Klemmbrett.",
+		"knopf": "Los",
+		"figur": "mit Roman"
+	},
+	"silhouetten": {
+		"_kommentar": "Welche Silhouette in dieser Welt welche Rolle spielt. Im Laden sind es Kundschaft und Lieferanten.",
+		"npc_standard": "Kundin, die sich umsieht",
+		"npc_flach": "Schaut ins Schaufenster und geht weiter",
+		"npc_gebeugt": "Probiert jeden Hoodie an",
+		"npc_klein": "Stammkunde, kommt zu jedem Verkaufsstart",
+		"npc_breit": "Roman"
+	},
+	"tutorial": {
+		"_kommentar": "Die Saetze der Einfuehrung. Der ABLAUF steht in data/tutorial/tutorial.json und kennt nur diese IDs -- er ueberlebt einen Themenwechsel unveraendert (D3/ADR-010). Ton: Der Spieler wird nicht belehrt, sondern eingeweiht. Kein Satz erklaert, was ein Knopf tut; jeder Satz sagt, warum es sich lohnt.",
+		"zoom": {
+			"von": "roman",
+			"text": "Mit zwei Fingern ziehst du die Karte groß und klein.",
+			"text_b": "Zwei Finger zoomen. Doppeltipp auf freien Boden: Raum oder Überblick."
+		},
+		"ueberspringen": "Kenne ich schon",
+		"waehlen": {
+			"titel": "Design",
+			"text": "Der Zeichentisch: Hier fängt jedes Shirt an. Gerade ist er am langsamsten — tipp ihn an."
+		},
+		"ausbauen": {
+			"titel": "Schneller werden",
+			"text": "Ausbauen bringt mehr Shirts pro Minute. Ein paar Stufen, dann klemmt es woanders."
+		},
+		"ausstattung": {
+			"titel": "Etwas, das man sieht",
+			"text": "Ausstattung steht wirklich im Laden, sobald du sie kaufst. Und sie macht schneller."
+		},
+		"engpass": {
+			"titel": "Wo es klemmt",
+			"text": "Rot heißt: Hier stockt es gerade. Bau die rote Stelle aus, nicht deine Lieblingsstelle."
+		},
+		"ziele": {
+			"titel": "Drei Ziele",
+			"text": "Drei Aufgaben, die als Nächstes anstehen. Für jede gibt es eine Belohnung."
+		},
+		"flur": {
+			"titel": "Der Verkaufsraum",
+			"text": "Vorne ist noch zu. Dort kommt der Versand hin: Pakete gehen dann von allein raus."
+		},
+		"neu_hier": {
+			"titel": "Neu im Laden",
+			"text": "Hier entsteht deine eigene Marke: Motiv, Druck, Paket. Jeder Verkauf zahlt Romans Shirts ab."
+		},
+		"besonderheit": {
+			"titel": "Stammkunden",
+			"text": "Wer einmal kauft, kommt wieder. Stammkunden bringen Geld, auch wenn du nichts tust, sogar offline."
+		}
+	},
+	"belohnung": {
+		"_kommentar": "Texte der Belohnungsschleife. Der Ton ist wichtig: Es ist ein ANGEBOT, kein Wegezoll. Kein Satz darf klingen, als bekaeme man ohne Werbung zu wenig.",
+		"schub_knopf": "Boost",
+		"schub_laeuft": "Boost %s",
+		"schub_wartet": "Boost in %s",
+		"schub_titel": "Die Aktion läuft",
+		"schub_text": "Für ein paar Minuten bestellen mehr Leute, und du verdienst mehr.",
+		"offline_verdoppeln": "Verdoppeln",
+		"offline_verdoppelt_titel": "Doppelt",
+		"offline_verdoppelt_text": "Die Pakete wurden verdoppelt.",
+		"laeuft_gerade": "Läuft …",
+		"nichts_da_titel": "Gerade nichts da",
+		"nichts_da_text": "Versuch es gleich nochmal."
+	},
+	"schlange_format": "%d stehen an",
+	"limit": {
+		"_kommentar": "Texte der harten Obergrenze. Nur Welt 2 (auftrag) benutzt diesen Abschnitt wirklich; die anderen tragen ihn der Struktur wegen. 'format' bekommt Titel und Auslastung in Prozent, 'knopf' den Preis.",
+		"titel": "Lagerplatz",
+		"format": "%s  %d %%",
+		"knopf": "Umbauen  (%s)",
+		"wand_titel": "Es klemmt",
+		"wand_text": "Die Kartons stehen bis zur Tür. Mehr Shirts helfen gerade nicht.",
+		"erledigt_titel": "Weniger",
+		"erledigt_text": "Ein Regal mehr. Roman hat es auf den Zentimeter ausgemessen."
+	},
+	"abspann": {
+		"_kommentar": "Der Abspann erscheint genau einmal, am Ende von Welt 6. Hier nur der Struktur wegen, woertlich wie in kapital/theme.json -- der Pflichthinweis bleibt ueberall stehen.",
+		"titel": "Der Zähler läuft weiter",
+		"text": "Du musst nicht mehr hinsehen.\n\nAngefangen hat es mit drei Aufrufen.",
+		"knopf": "Von vorn",
+		"hinweis": "Dies ist ein Spiel. Es bildet weder echte Märkte noch echte Erträge ab und ist keine Anlageberatung."
+	},
+	"personen": {
+		"_kommentar": "Nur Welt 4 benutzt diesen Abschnitt wirklich. Die anderen tragen ihn der Struktur wegen -- alle Themen haben dieselben Schluessel, damit ein fehlender Eintrag auffaellt statt stillschweigend zu fehlen.",
+		"ueberlast_text": "Jemand steht länger am Packtisch als alle anderen. Die Pakete werden davon nicht mehr."
+	},
+	"eroeffnung": {
+		"_kommentar": "Der allererste Bildschirm eines neuen Spielstands. Nur Welt 1 fuellt ihn -- in jeder anderen Welt bleibt er leer, weil dort niemand neu anfaengt. Ein leerer Titel heisst: nicht zeigen.",
+		"titel": "",
+		"text": "",
+		"knopf": ""
+	},
+	"ausstattung": {
+		"station_intake": {
+			"ausstattung_1": {
+				"name": "Zeichnen",
+				"stufen": [
+					"Skizzenbuch",
+					"Grafiktablett",
+					"Stift-Display",
+					"Großes Stift-Display"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Muster",
+				"stufen": [
+					"Nichts",
+					"Stoffproben",
+					"Musterwand",
+					"Farbfächer-Regal"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Moodboard",
+				"stufen": [
+					"Ein Poster",
+					"Pinnwand",
+					"Moodboard-Wand",
+					"Leuchtkasten"
+				]
+			}
+		},
+		"station_buffer": {
+			"ausstattung_1": {
+				"name": "Drucker",
+				"stufen": [
+					"Bügelpresse",
+					"Transferpresse",
+					"Digitaldrucker",
+					"Druckstraße"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Rohware",
+				"stufen": [
+					"Ein Stapel Shirts",
+					"Regal Shirts",
+					"Rollwagen",
+					"Hoodie-Regal"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Trockner",
+				"stufen": [
+					"Wäscheleine",
+					"Heißluftföhn",
+					"Trockenofen",
+					"Tunneltrockner"
+				]
+			}
+		},
+		"station_processing": {
+			"ausstattung_1": {
+				"name": "Verpackung",
+				"stufen": [
+					"Plastiktüte",
+					"Karton",
+					"Karton mit Logo",
+					"Geschenkbox"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Etiketten",
+				"stufen": [
+					"Stift",
+					"Etikettendrucker",
+					"Zwei Drucker",
+					"Etikettenautomat"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Füllung",
+				"stufen": [
+					"Zeitungspapier",
+					"Seidenpapier",
+					"Sticker-Rolle",
+					"Dankeskarten-Station"
+				]
+			}
+		},
+		"station_transport": {
+			"ausstattung_1": {
+				"name": "Pakete",
+				"stufen": [
+					"Ein Stapel",
+					"Gitterbox",
+					"Rollcontainer",
+					"Paketrutsche"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Waage",
+				"stufen": [
+					"Küchenwaage",
+					"Paketwaage",
+					"Plattformwaage",
+					"Waage mit Scanner"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Abholung",
+				"stufen": [
+					"Fahrrad",
+					"Lastenrad",
+					"Kleintransporter",
+					"Zwei Transporter"
+				]
+			}
+		},
+		"station_special": {
+			"ausstattung_1": {
+				"name": "Präsentation",
+				"stufen": [
+					"Kleiderstange",
+					"Schaufensterpuppe",
+					"Zwei Puppen",
+					"Laufsteg"
+				]
+			},
+			"ausstattung_2": {
+				"name": "Kasse",
+				"stufen": [
+					"Kassenbox",
+					"Kartenterminal",
+					"Tablet-Kasse",
+					"Kassentheke"
+				]
+			},
+			"ausstattung_3": {
+				"name": "Warteschlange",
+				"stufen": [
+					"Ein Absperrpfosten",
+					"Absperrband",
+					"Wartebereich",
+					"Neon-Schild"
+				]
+			}
+		}
+	},
+	"bereiche": {
+		"bereich_1": {
+			"name": "Der Verkaufsraum",
+			"text": "Schaufenster, Theke, Paketausgabe. Ab hier geht der Versand raus.",
+			"danach": "Danach hier: der Versand. Pakete gehen von allein raus, Roman bekommt seinen Stuhl zurück."
+		},
+		"bereich_2": {
+			"name": "Der Keller",
+			"text": "Regale bis unter die Decke. Wer nicht suchen muss, arbeitet schneller.",
+			"danach": "Danach hier: alles ×1,25. 380 Shirts passen rein. 381 nicht."
+		},
+		"bereich_3": {
+			"name": "Der Showroom",
+			"text": "Eine Bühne, drei Puppen. Hier finden die Verkaufsstarts statt.",
+			"danach": "Danach hier: der Verkaufsstart mit Stammkunden. Drei Puppen, eine Schlange."
+		},
+		"bereich_4": {
+			"name": "Das Fotostudio",
+			"text": "Weiße Wand, gutes Licht. Mit guten Fotos wird schneller gedruckt.",
+			"danach": "Danach hier: der Druck ×1,5. Die Fotos sehen nicht mehr nach Bücherstapel aus."
+		},
+		"bereich_5": {
+			"name": "Das Hinterzimmer",
+			"text": "Siebdruck. Ab jetzt drucken zwei Straßen gleichzeitig.",
+			"wartet": "Hier stehen noch die Kartons vom Vormieter.",
+			"danach": "Danach hier: alles ×1,5. Zwei Druckstraßen, eine heißt Siebi."
+		},
+		"bereich_6": {
+			"name": "Die Nähecke",
+			"text": "Eine Nähmaschine, ein Tisch voller Stoff. Hier entstehen Sonderwünsche.",
+			"danach": "Alle Stationen laufen schneller. Sonderwünsche näht ihr jetzt selbst."
+		}
+	},
+	"ziel_formate": {
+		"station_stufe": "%s auf Stufe %d",
+		"ausstattung_stufe": "%s: %s auf Stufe %d",
+		"ausstattung_gesamt": "%d Ausstattungsstufen kaufen",
+		"bereich": "%s gehört dir",
+		"verdient": "%s € verdienen",
+		"momente": "%d Momente antippen",
+		"sterne": "%d Sterne sammeln",
+		"stufen_gesamt": "%d Stufen insgesamt",
+		"abschluss": "Der Laden ist abbezahlt – vor der Tür steht jemand mit deinem Hoodie",
+		"freigeschaltet": "Den Lagerumbau fertigstellen",
+		"alle": "Eine Sammlung komplett",
+		"ausstattung_station": "%d Ausstattungsstufen an einer Station"
+	},
+	"absender": {
+		"plattform": "Dein Shop",
+		"roman": "Roman",
+		"mo": "Mo",
+		"younes": "Younes",
+		"kundin": "Eine Kundin",
+		"du": "Du"
+	},
+	"nachrichten": {
+		"nachricht_01": {
+			"von": "mo",
+			"text": "Das ist unser Laden: Eckladen, Schaufenster, eigene Shirts.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Das ist unser Laden: Eckladen, Schaufenster, eigene Shirts.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "roman",
+					"text": "Ich hab 380 Shirts vorbestellt, weil 400 zu rund war. Jeder Verkauf zahlt ab.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "mo",
+					"text": "Ziel: Der Laden ist abbezahlt. Tipp auf Design und bau es aus.",
+					"stimmung": "neutral"
+				}
+			]
+		},
+		"nachricht_02": {
+			"von": "mo",
+			"text": "Neue Ausstattung macht schneller. Kauf eine für den Druck."
+		},
+		"nachricht_03": {
+			"von": "roman",
+			"text": "Druck zwei Millimeter schief. Noch 372 Shirts offen."
+		},
+		"nachricht_04": {
+			"von": "plattform",
+			"text": "10 Bestellungen, 6 von Mo. Kauf den Verkaufsraum."
+		},
+		"nachricht_05": {
+			"von": "roman",
+			"text": "Der Verkaufsraum ist offen, der Versand läuft. Weiter: der Keller.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "roman",
+					"text": "Der Verkaufsraum ist offen, der Versand läuft. Weiter: der Keller.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "mo",
+					"text": "Erster Kunde: ich. Zweiter: auch ich. Dritter: eine echte Frau!",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "roman",
+					"text": "Noch 340 Shirts abzuzahlen. Mo hat sein Namensschild schon aufgehängt.",
+					"stimmung": "geschockt"
+				}
+			]
+		},
+		"nachricht_16": {
+			"von": "plattform",
+			"text": "100 Bestellungen, 38 an dieselbe Adresse. Kauf den Keller."
+		},
+		"nachricht_06": {
+			"von": "roman",
+			"text": "Keller frei, alles ein Viertel schneller. Weiter: Showroom."
+		},
+		"nachricht_17": {
+			"von": "kundin",
+			"text": "Zweite Bestellung! Schneller Versand wäre perfekt."
+		},
+		"nachricht_07": {
+			"von": "roman",
+			"text": "Drei Bestellungen lagen in Mos Rucksack. Eine Kundin hat schon gemailt.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "roman",
+					"text": "Drei Bestellungen lagen in Mos Rucksack. Eine Kundin hat schon gemailt.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "roman",
+					"text": "Bau Verpacken und Versand aus. Danach: der Showroom.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "roman",
+					"text": "Mo packt künftig nur noch am Packtisch. Einverstanden?",
+					"stimmung": "neutral"
+				}
+			],
+			"antworten": [
+				{
+					"text": "Einverstanden.",
+					"reaktion": "Gut. Mo bekommt ein Namensschild. Er trägt es auf dem Rucksack."
+				},
+				{
+					"text": "Lass ihn.",
+					"reaktion": "Okay. Der Rucksack bleibt. Ich zähle die Pakete nach."
+				}
+			]
+		},
+		"nachricht_18": {
+			"von": "plattform",
+			"text": "1.000 Bestellungen, keine Rücksendung. Weiter: Showroom."
+		},
+		"nachricht_09": {
+			"von": "roman",
+			"text": "Showroom offen. Bau den Verkaufsstart aus."
+		},
+		"nachricht_08": {
+			"von": "younes",
+			"text": "Ich filme den Verkaufsstart. Mo steht mit Brötchen im Bild.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "younes",
+					"text": "Ich filme den Verkaufsstart. Mo steht mit Brötchen im Bild.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "younes",
+					"text": "Das Brötchen hat Präsenz. Ich leuchte es aus.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "younes",
+					"text": "Ein Konkurrent druckt schon ähnliche Shirts. Wir müssen schneller sein.",
+					"stimmung": "geschockt"
+				}
+			]
+		},
+		"nachricht_19": {
+			"von": "mo",
+			"text": "Die Puppen im Showroom heißen jetzt Gerd, Gerd und Gerd.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "mo",
+					"text": "Die Puppen im Showroom heißen jetzt Gerd, Gerd und Gerd.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "mo",
+					"text": "Halbzeit! Roman zählt den Bestand und hat Pizza bestellt.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "mo",
+					"text": "Ein Stück war für dich. Es war. Weiter: das Fotostudio.",
+					"stimmung": "neutral"
+				}
+			]
+		},
+		"nachricht_10": {
+			"von": "roman",
+			"text": "Verkaufsstart in 4 Minuten weg! Kauf das Fotostudio."
+		},
+		"nachricht_20": {
+			"von": "kundin",
+			"text": "Dritte Bestellung! Bitte bessere Fotos im Shop."
+		},
+		"nachricht_11": {
+			"von": "roman",
+			"text": "Das Fotostudio steht. Weiter: das Hinterzimmer."
+		},
+		"nachricht_14": {
+			"von": "mo",
+			"text": "Im Hinterzimmer druckt Siebi. Bau alles aus!"
+		},
+		"nachricht_12": {
+			"von": "roman",
+			"text": "Jemand verkauft unser Logo online. Schief gedruckt, zwei Millimeter.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "roman",
+					"text": "Jemand verkauft unser Logo online. Schief gedruckt, zwei Millimeter.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "roman",
+					"text": "Ich hab es in drei Sekunden gesehen. Mo hat eins bestellt. Zum Vergleich.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "roman",
+					"text": "Was machen wir? Meine Tabelle hat dafür eine Spalte. Sie heißt Wut.",
+					"stimmung": "neutral"
+				}
+			],
+			"antworten": [
+				{
+					"text": "Anzeigen.",
+					"reaktion": "Hab ich überlegt. Dann hab ich ihm das richtige Logo geschickt. Er hat sich bedankt."
+				},
+				{
+					"text": "Ignorieren.",
+					"reaktion": "Kann ich nicht. Ich hab ihm das richtige Logo geschickt. Jetzt sieht seins gut aus."
+				}
+			]
+		},
+		"nachricht_13": {
+			"von": "mo",
+			"text": "Fast geschafft. Roman hat einen Zollstock bestellt."
+		},
+		"nachricht_21": {
+			"von": "roman",
+			"text": "Ausverkauft! Alles. Ich habe dreimal nachgezählt.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "roman",
+					"text": "Ausverkauft! Alles. Ich habe dreimal nachgezählt.",
+					"stimmung": "jubelnd"
+				},
+				{
+					"von": "roman",
+					"text": "Der Laden ist zu klein für so viele Bestellungen. Ich hab gemessen.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "mo",
+					"text": "Roman klappt den Zollstock aus und zeigt nach draußen. Bau alles aus.",
+					"stimmung": "neutral"
+				}
+			]
+		},
+		"nachricht_22": {
+			"von": "plattform",
+			"text": "100.000 Bestellungen! Mo hat nicht alle selbst gemacht."
+		},
+		"nachricht_15": {
+			"von": "roman",
+			"text": "Drei Marken wollen, dass wir ihre Pakete mitversenden.",
+			"szene": true,
+			"blasen": [
+				{
+					"von": "roman",
+					"text": "Drei Marken wollen, dass wir ihre Pakete mitversenden.",
+					"stimmung": "neutral"
+				},
+				{
+					"von": "roman",
+					"text": "Dafür ist der Laden zu klein. Ich habe eine Halle gemietet. Zu groß.",
+					"stimmung": "geschockt"
+				},
+				{
+					"von": "roman",
+					"text": "Die Schulden sind weg. Dafür habe ich jetzt neue. Sie heißen Halle.",
+					"stimmung": "neutral"
+				}
+			]
+		},
+		"nachricht_23": {
+			"von": "roman",
+			"text": "Die Schule will 120 Shirts bis Freitag. Tipp das ! über mir."
+		},
+		"nachricht_24": {
+			"von": "plattform",
+			"text": "120 Abschluss-Shirts geliefert. Weiter: Fotostudio."
+		}
+	},
+	"momente": {
+		"texte": [
+			"Ein Hoodie im Video",
+			"Eine Sammelbestellung",
+			"Mo trägt das neue Shirt",
+			"Jemand postet sein Paket",
+			"Die Schlange wird länger"
+		],
+		"gross_titel": "Der Verkaufsstart ist ausverkauft",
+		"kiste": {
+			"titel": "Der Stoff ist da",
+			"text": "Neue Shirts zum Bedrucken. Tipp die Kiste an, der Inhalt bringt Geld."
+		}
+	},
+	"abschluss": {
+		"titel": "Ausverkauft",
+		"text": "Der Laden ist abbezahlt. Vor der Tür steht jemand mit deinem Hoodie. Roman hat die Minuten gezählt.\n\nEine Nachricht von Roman.",
+		"antwort": "Wie groß?",
+		"zahlen": {
+			"spielzeit": "Spielzeit",
+			"verdient": "Verdient",
+			"raeume": "Räume",
+			"ausstattung": "Ausstattung"
+		}
+	},
+	"menue": {
+		"ausbau": "Ausbau",
+		"ziele": "Ziele",
+		"handy": "Handy",
+		"laden": "Laden",
+		"schub": "Boost"
+	},
+	"stil": {
+		"akzent": "#FF7A1A",
+		"akzent_text": "#1B1726",
+		"akzent_tief": "#C85A0C"
+	},
+	"absender_farben": {
+		"plattform": "#1B1726",
+		"roman": "#FF7A1A",
+		"mo": "#3D7BFF",
+		"younes": "#FF4FA3",
+		"kundin": "#5A5368",
+		"du": "#FF7A1A"
+	},
+	"absender_figur": {
+		"mo": "figur_cap",
+		"younes": "figur_buckethat",
+		"roman": "figur_brille",
+		"du": "figur_kapuze"
+	},
+	"ziele": {
+		"_kommentar": "Missionsnamen der Welt-Kette (kette 'welt'). WeltTexte.ziel liest sie vor ziel_formate; das Ziele-Menue zeigt sie als Missionen. Alle anderen Ziele behalten den Standardtext.",
+		"ziel_30": "Mission: 380 Shirts abbezahlt",
+		"ziel_33": "Mission: Alles läuft (Stufe 40)",
+		"ziel_35": "Mission: Presse komplett",
+		"ziel_25": "Mission: Ausverkauft"
+	},
+	"crew": {
+		"station_intake": {
+			"name": "Roman",
+			"portrait": "figur_brille",
+			"raenge": [
+				"Zeichnet nach Lineal",
+				"Zeichnet nach Gefühl",
+				"Zeichnet nicht mehr nach"
+			]
+		},
+		"station_buffer": {
+			"name": "Kalle",
+			"portrait": "figur_packer",
+			"raenge": [
+				"Druckhelfer",
+				"Druckmeister",
+				"Chef der Straße"
+			]
+		},
+		"station_processing": {
+			"name": "Mo",
+			"portrait": "figur_cap",
+			"raenge": [
+				"Faltet mit",
+				"Faltet allein",
+				"Faltet und isst nicht"
+			]
+		},
+		"station_transport": {
+			"name": "Dilan",
+			"portrait": "figur_packer",
+			"raenge": [
+				"Fährt Lastenrad",
+				"Fährt Transporter",
+				"Fährt zweimal am Tag"
+			]
+		},
+		"station_special": {
+			"name": "Younes",
+			"portrait": "figur_buckethat",
+			"raenge": [
+				"Aufnahme 1",
+				"Aufnahme 2",
+				"Noch eine Aufnahme"
+			]
+		}
+	},
+	"welt_ziel": "Der Laden ist abbezahlt",
+	"marken_namen": [
+		"Laden eröffnet",
+		"Erster Verkaufsstart",
+		"Schulden fast weg"
+	],
+	"ziel_warum": {
+		"station_stufe": "Eine schnellere Station bringt mehr pro Minute.",
+		"ausstattung_stufe": "Ausstattung steht wirklich im Raum und macht schneller.",
+		"ausstattung_gesamt": "Mehr Ausstattung heißt: mehr Ertrag pro Minute.",
+		"bereich": "Jeder neue Raum bringt eine Station oder einen Bonus.",
+		"verdient": "Jeder verdiente Euro zahlt den Laden ab und öffnet neue Räume.",
+		"momente": "Antippen bringt einen kleinen Extra-Gewinn.",
+		"sterne": "Jeder Stern macht eine Station anderthalbmal so schnell.",
+		"stufen_gesamt": "Jede Stufe bringt dich dem Welt-Ziel näher.",
+		"abschluss": "Dann sind Romans 380 Shirts abbezahlt.",
+		"freigeschaltet": "Der Umbau schafft Lagerplatz, damit nichts stecken bleibt.",
+		"alle": "Eine Sammlung ist komplett, wenn du alles daraus hast.",
+		"ausstattung_station": "Eine voll ausgestattete Station läuft deutlich schneller."
+	},
+	"auftraege": {
+		"_kommentar": "K3 B3: Mini-Aufgaben zwischen Raum 3 und 4 (Ziel-IDs ziel_auftrag_1..3, kette 'auftrag'). Ein '!' steht ueber der Figur (absender_figur). Tipp -> Szene: 'satz' (warum es dem Geschaeft hilft) + 'aufgabe_format' mit dem echten Zieltext (was zu tun ist) -> 'knopf_start' springt zum Ziel. Ist das Ziel erfuellt: 'dank' + 'knopf_holen' loest es ein. Saetze <= 90 Zeichen.",
+		"knopf_start": "Mach ich",
+		"knopf_holen": "Abholen",
+		"aufgabe_format": "Deine Aufgabe: %s",
+		"symbol": "!",
+		"ziel_auftrag_1": {
+			"figur": "roman",
+			"satz": "Erst das Design: Name und Jahr auf jedes Shirt. Gutes Design verkauft sich fast allein.",
+			"dank": "Das Design passt. Ich hab es elfmal gemessen. Es passt immer noch."
+		},
+		"ziel_auftrag_2": {
+			"figur": "younes",
+			"satz": "Die Schüler wollen Fotos von den Shirts. Gute Fotos bringen neue Bestellungen.",
+			"dank": "Die Fotos hängen in der Schule. Drei Lehrer wollen auch ein Shirt."
+		},
+		"ziel_auftrag_3": {
+			"figur": "mo",
+			"satz": "Jetzt packen und raus damit. Wer pünktlich liefert, bei dem bestellt die Schule wieder.",
+			"dank": "Alle 120 Shirts sind da. Ein Schüler hat geweint. Vor Freude, sagt er."
+		}
+	},
+	"ketten": {
+		"auftrag": "Auftrag: 120 Shirts für die Schule"
+	},
+	"kapitel": [
+		{
+			"id": "kapitel_1",
+			"titel": "380 Shirts",
+			"ab_bereich": "",
+			"aufgabe": "Entwirf, drucke und packe die ersten Shirts. Kaufe den Verkaufsraum und den Keller.",
+			"entscheidung": ""
+		},
+		{
+			"id": "kapitel_2",
+			"titel": "Die Schulden",
+			"ab_bereich": "bereich_2",
+			"aufgabe": "Verkaufe Shirts, damit die Schulden schrumpfen. Kaufe den Showroom.",
+			"entscheidung": "nachricht_07"
+		},
+		{
+			"id": "kapitel_3",
+			"titel": "Der Verkaufsstart",
+			"ab_bereich": "bereich_3",
+			"aufgabe": "Liefere die 120 Abschluss-Shirts und kaufe das Fotostudio.",
+			"entscheidung": ""
+		},
+		{
+			"id": "kapitel_4",
+			"titel": "Ausverkauft",
+			"ab_bereich": "bereich_4",
+			"aufgabe": "Kaufe das Hinterzimmer und baue alles aus, bis der Laden abbezahlt ist.",
+			"entscheidung": "nachricht_12"
+		}
+	],
+	"auftragsbrett": {
+		"_kommentar": "Absender und Warum-Satz je Ziel-ID (Auftragsbrett, Welle 2b). Bewusst NICHT unter \"ziele\": jeder Schluessel dort zaehlt als Mission.",
+		"ziel_26": {
+			"absender": "roman",
+			"satz": "Erste Entwürfe: Ohne Design gibt es keine Bestellung."
+		},
+		"ziel_01": {
+			"absender": "roman",
+			"satz": "Zehn Stufen: Dann schafft der Laden die ersten Kunden."
+		},
+		"ziel_02": {
+			"absender": "roman",
+			"satz": "Besserer Druck, sonst kommen die Shirts zurück."
+		},
+		"ziel_03": {
+			"absender": "roman",
+			"satz": "Schnelles Verpacken: Kunden warten nicht gern."
+		},
+		"ziel_04": {
+			"absender": "mo",
+			"satz": "Der Verkaufsraum: Dort geht der Versand los."
+		},
+		"ziel_05": {
+			"absender": "roman",
+			"satz": "Schneller Versand, zufriedene Kunden, bessere Bewertungen."
+		},
+		"ziel_27": {
+			"absender": "roman",
+			"satz": "Bessere Versandstation: Pakete gehen pünktlich raus."
+		},
+		"ziel_06": {
+			"absender": "roman",
+			"satz": "Sechs Ausstattungsstufen, und es sieht nach Betrieb aus."
+		},
+		"ziel_07": {
+			"absender": "mo",
+			"satz": "Sterne machen Stationen schneller. Das spürt die Kasse."
+		},
+		"ziel_09": {
+			"absender": "roman",
+			"satz": "Der Keller: Mehr Platz für Rohware und Pakete."
+		},
+		"ziel_08": {
+			"absender": "roman",
+			"satz": "Genug Shirts auf Vorrat, auch wenn alle gleichzeitig bestellen."
+		},
+		"ziel_10": {
+			"absender": "plattform",
+			"satz": "Drei Momente antippen: kleine Extras für die Schuldenkasse."
+		},
+		"ziel_11": {
+			"absender": "roman",
+			"satz": "Mehr Rohware: Sonst steht der Druck leer."
+		},
+		"ziel_28": {
+			"absender": "mo",
+			"satz": "Sechs Sterne: Wir packen schneller als Gerd stehen kann."
+		},
+		"ziel_12": {
+			"absender": "roman",
+			"satz": "Mehr Entwürfe, mehr Auswahl für die Kundschaft."
+		},
+		"ziel_13": {
+			"absender": "plattform",
+			"satz": "5 Mio. € verdienen: Dann können wir den Showroom leisten."
+		},
+		"ziel_14": {
+			"absender": "roman",
+			"satz": "Der Showroom: Hier probieren Kunden Shirts an."
+		},
+		"ziel_auftrag_1": {
+			"absender": "roman",
+			"satz": "Die Schule bestellt 120 Shirts. Der erste Großkunde!"
+		},
+		"ziel_auftrag_2": {
+			"absender": "mo",
+			"satz": "Die Schule will bis Freitag. Alle Hände ran."
+		},
+		"ziel_auftrag_3": {
+			"absender": "younes",
+			"satz": "Pünktlich liefern, dann bestellen die anderen Schulen auch."
+		},
+		"ziel_15": {
+			"absender": "roman",
+			"satz": "Der Verkaufsstart bringt Stammkunden, die jeden Tag zahlen."
+		},
+		"ziel_29": {
+			"absender": "roman",
+			"satz": "Mehr Plätze im Verkaufsstart, mehr Stammkunden."
+		},
+		"ziel_16": {
+			"absender": "mo",
+			"satz": "30 Ausstattungsstufen: Der Laden sieht aus wie ein Profi."
+		},
+		"ziel_17": {
+			"absender": "roman",
+			"satz": "Zwölf Sterne: Dann läuft alles spürbar flotter."
+		},
+		"ziel_18": {
+			"absender": "roman",
+			"satz": "Starker Versand: Auch große Bestellungen gehen raus."
+		},
+		"ziel_19": {
+			"absender": "roman",
+			"satz": "Gutes Verpacken: Keine Kratzer, keine Reklamationen."
+		},
+		"ziel_30": {
+			"absender": "plattform",
+			"satz": "250 Mio. € verdient: Die Schulden schrumpfen."
+		},
+		"ziel_31": {
+			"absender": "roman",
+			"satz": "Viel Rohware auf Vorrat, auch für Großaufträge."
+		},
+		"ziel_20": {
+			"absender": "younes",
+			"satz": "Das Fotostudio: Gute Bilder verkaufen mehr Shirts."
+		},
+		"ziel_21": {
+			"absender": "roman",
+			"satz": "Verpacken auf Stufe 50: Auch Großkunden bekommen alles heil."
+		},
+		"ziel_32": {
+			"absender": "roman",
+			"satz": "Design auf Stufe 50: Wir entwerfen für ganze Marken."
+		},
+		"ziel_22": {
+			"absender": "mo",
+			"satz": "100 Ausstattungsstufen: Ein richtiger Betrieb!"
+		},
+		"ziel_23": {
+			"absender": "roman",
+			"satz": "Verkaufsstart auf Stufe 30: Jede Veröffentlichung ist ein Ereignis."
+		},
+		"ziel_33": {
+			"absender": "roman",
+			"satz": "Alle Sammlungen komplett: Das Sortiment steht."
+		},
+		"ziel_24": {
+			"absender": "roman",
+			"satz": "Das Hinterzimmer: Dort druckt jetzt eine zweite Maschine."
+		},
+		"ziel_34": {
+			"absender": "mo",
+			"satz": "18 Sterne: Wir sind kaum noch zu bremsen."
+		},
+		"ziel_35": {
+			"absender": "roman",
+			"satz": "Die Druckausstattung komplett: Jedes Motiv in jeder Größe."
+		},
+		"ziel_36": {
+			"absender": "plattform",
+			"satz": "100 Mrd. € verdient: Der Laden gehört dir."
+		},
+		"ziel_25": {
+			"absender": "roman",
+			"satz": "Schuldenfrei! Dann gehört der Laden wirklich euch."
+		}
+	}
+}
